@@ -178,9 +178,8 @@
                     </svg>
                 </button>
             </nav>
-            <div id="hero-bg" class="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal/80 to-charcoal pointer-events-none"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-ivory opacity-[0.02] rounded-full blur-3xl pointer-events-none"></div>
+            <canvas id="pt-wave" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
 
             <div class="relative z-10 text-center max-w-5xl mx-auto">
                 <h1 id="hero-title" class="font-space font-bold text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8">
@@ -191,15 +190,11 @@
                     Here at Prime Time Miami we source the finest watches available from brands such as Rolex, Audemars Piguet, Patek Philippe and Richard Mille. Submit a sourcing request and we&rsquo;ll get back to you as soon as possible.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                    <button id="hero-btn" onclick="app.openModal('BUY')" class="shimmer-btn group relative overflow-hidden text-charcoal w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-transform hover:scale-105 text-center">
-                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">
-                            <span id="hero-btn-text">REQUEST A PIECE</span>
-                        </span>
-                        <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
+                    <button id="hero-btn" onclick="app.openModal('BUY')" class="brutal-btn brutal-btn--solid w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest text-center">
+                        <span id="hero-btn-text">REQUEST A PIECE</span>
                     </button>
-                    <a href="inventory.html" class="group relative overflow-hidden border border-ivory/40 bg-transparent text-ivory w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-all hover:scale-105 hover:border-ivory text-center inline-flex items-center justify-center">
-                        <span class="relative z-10 group-hover:text-charcoal transition-colors duration-300">Browse Pieces</span>
-                        <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
+                    <a href="inventory.html" class="brutal-btn w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest text-center inline-flex items-center justify-center">
+                        Browse Pieces
                     </a>
                 </div>
             </div>
@@ -752,5 +747,73 @@
 
         window.addEventListener('DOMContentLoaded', app.init);
     </script>
+<script type="module">
+/* Hero particle wave (ported from a React/three.js component to vanilla) */
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  try {
+    const THREE = await import('/scripts/three.module.min.js');
+    const canvas = document.getElementById('pt-wave');
+    if (canvas) {
+      const hero = canvas.parentElement;
+      const camera = new THREE.PerspectiveCamera(75, 1, 0.01, 1000);
+      camera.position.set(0, 6, 5);
+      const scene = new THREE.Scene();
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(new THREE.Color(0x000000));
+
+      const gap = 0.3, amountX = 200, amountY = 200;
+      const num = amountX * amountY;
+      const positions = new Float32Array(num * 3);
+      const scales = new Float32Array(num);
+      let i = 0, j = 0;
+      for (let ix = 0; ix < amountX; ix++) {
+        for (let iy = 0; iy < amountY; iy++) {
+          positions[i] = ix * gap - (amountX * gap) / 2;
+          positions[i + 1] = 0;
+          positions[i + 2] = iy * gap - (amountX * gap) / 2;
+          scales[j] = 1;
+          i += 3; j++;
+        }
+      }
+      const geo = new THREE.BufferGeometry();
+      geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      geo.setAttribute('scale', new THREE.BufferAttribute(scales, 1));
+      const mat = new THREE.ShaderMaterial({
+        transparent: true,
+        vertexShader: 'attribute float scale; uniform float uTime;' +
+          'void main() { vec3 p = position; float s = scale;' +
+          'p.y += (sin(p.x + uTime) * 0.5) + (cos(p.y + uTime) * 0.1) * 2.0;' +
+          'p.x += (sin(p.y + uTime) * 0.5);' +
+          's += (sin(p.x + uTime) * 0.5) + (cos(p.y + uTime) * 0.1) * 2.0;' +
+          'vec4 mv = modelViewMatrix * vec4(p, 1.0);' +
+          'gl_PointSize = s * 15.0 * (1.0 / -mv.z);' +
+          'gl_Position = projectionMatrix * mv; }',
+        fragmentShader: 'uniform vec3 uColor; void main() { gl_FragColor = vec4(uColor, 0.5); }',
+        uniforms: {
+          uTime: { value: 0 },
+          uColor: { value: new THREE.Vector3(1.0, 1.0, 1.0) }
+        }
+      });
+      scene.add(new THREE.Points(geo, mat));
+
+      const size = () => {
+        const w = hero.clientWidth, h = hero.clientHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      };
+      size();
+      window.addEventListener('resize', size);
+
+      renderer.setAnimationLoop(() => {
+        mat.uniforms.uTime.value += 0.05;
+        camera.lookAt(scene.position);
+        renderer.render(scene, camera);
+      });
+    }
+  } catch (e) { console.warn('particle wave skipped:', e); }
+}
+</script>
 </body>
 </html>
