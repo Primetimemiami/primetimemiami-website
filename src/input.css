@@ -705,3 +705,14 @@ body { text-transform: none !important; }
 
 /* nothing on this site is force-uppercased */
 * { text-transform: none !important; }
+
+/* ── Prime Time type system: logo pairing ──
+   grotesque (Instrument Sans ~ the PRIMETIME wordmark) + didone serif (Bodoni Moda ~ the ghost MIAMI) */
+.font-space, .font-inter, body, button, input, select, textarea {
+  font-family: 'Instrument Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.font-didone {
+  font-family: 'Bodoni Moda', 'Didot', 'Bodoni MT', serif !important;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
