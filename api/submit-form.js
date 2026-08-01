@@ -4,9 +4,9 @@ const React = require("react");
 const { WelcomeEmail } = require("./emails/welcome.js");
 const { InquiryEmail } = require("./emails/inquiry.js");
 
-// Supabase REST API — DialedbyH project
-const SUPABASE_URL = process.env.SUPABASE_URL || "https://untnrofsnmoyxdidxbdj.supabase.co";
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVudG5yb2Zzbm1veXhkaWR4YmRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA2ODgyMjQsImV4cCI6MjA4NjI2NDIyNH0.dlm7v9mq7OdA2nJX7BpNtEXRCLW0uZb7QLkhSMxWF1k";
+// Supabase REST API — Prime Time Miami project
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 async function supabaseInsert(table, row) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
@@ -189,7 +189,7 @@ module.exports = async (req, res) => {
     }
 
     // For JOIN_LIST from footer form, pack intent/budget/lookingFor into watch_details
-    // so Henry actually sees the qualifying info in his inbox + Supabase
+    // so the team actually sees the qualifying info in his inbox + Supabase
     let detailsForRow = watchDetails?.trim() || null;
     if (type === "JOIN_LIST") {
       const parts = [];
@@ -211,7 +211,7 @@ module.exports = async (req, res) => {
     };
 
     console.log("[submit-form] Inserting into Supabase...");
-    const data = await supabaseInsert("dialed_submissions", row);
+    const data = await supabaseInsert("pt_submissions", row);
     console.log("[submit-form] Supabase insert SUCCESS -id:", data.id);
 
     // ── EMAIL SENDING (non-critical — never fails the request) ──
@@ -224,7 +224,7 @@ module.exports = async (req, res) => {
       const template = buildEmail(type, data);
       const emailPromises = [];
 
-      // 1. Notification email to Henry
+      // 1. Notification email to the team
       if (template) {
         const toEmail = process.env.NOTIFICATION_EMAIL || "info@primetimemiami.com";
         console.log("[submit-form] Queuing notification email to:", toEmail);
@@ -255,7 +255,7 @@ module.exports = async (req, res) => {
           render(React.createElement(WelcomeEmail, { firstName }))
             .then(welcomeHtml =>
               getResend().emails.send({
-                from: "Henry at Prime Time Miami <inquiries@mail.primetimemiami.com>",
+                from: "Prime Time Miami <inquiries@mail.primetimemiami.com>",
                 to: data.email,
                 subject: "Welcome to the Private List",
                 html: welcomeHtml,
@@ -287,7 +287,7 @@ module.exports = async (req, res) => {
           }))
             .then(inquiryHtml =>
               getResend().emails.send({
-                from: "Henry at Prime Time Miami <inquiries@mail.primetimemiami.com>",
+                from: "Prime Time Miami <inquiries@mail.primetimemiami.com>",
                 to: data.email,
                 subject: `Your Inquiry: ${data.watch_name || "Watch Inquiry"}`,
                 html: inquiryHtml,

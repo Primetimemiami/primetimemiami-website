@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon-v2.ico?v=3" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=3" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
-    <link rel="shortcut icon" href="/favicon-v2.ico?v=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
+    <link rel="shortcut icon" href="/favicon.png?v=1" />
     <title>Available for Sourcing | Prime Time Miami - Miami Luxury Watch Concierge</title>
     <meta name="description" content="Browse luxury watches available for sourcing through Prime Time Miami, Miami's premier watch concierge. Rolex, Patek Philippe, Audemars Piguet, Richard Mille and more. Inquire to source.">
     <meta name="keywords" content="luxury watch sourcing, rolex, patek philippe, audemars piguet, richard mille, rare watch sourcing, watch concierge, prime time miami">
@@ -101,7 +99,7 @@
 
         <!-- SUBTITLE -->
         <p id="hero-sub" class="font-inter text-muted text-sm sm:text-base max-w-2xl opacity-0 leading-relaxed mb-5 sm:mb-6" style="letter-spacing: 0.15em;">
-            These are pieces I can source right now, but my network runs deeper. If you don't see what you're looking for, I can still find it.
+            These are pieces we can source right now, but our network runs deeper. References and years shown are representative &mdash; exact specs vary week to week, and if you don't see what you're looking for, we can still find it.
         </p>
 
         <!-- REQUEST CTA -->
@@ -266,9 +264,6 @@
                 <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
                     <i data-lucide="message-circle" class="w-5 h-5"></i>
                 </a>
-                <a href="mailto:info@primetimemiami.com" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
-                    <i data-lucide="mail" class="w-5 h-5"></i>
-                </a>
             </div>
             <span class="footer-line block mt-6 text-xs text-muted/60 font-space uppercase tracking-widest opacity-0">&copy; 2026 PRIME TIME MIAMI</span>
             <p class="footer-line opacity-0 text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-4 leading-relaxed" style="text-transform: none; font-style: italic;">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
@@ -423,7 +418,8 @@
                 try {
                     const res = await fetch('/api/get-inventory');
                     if (!res.ok) throw new Error('Failed to fetch');
-                    PIECES = interleaveByBrand((await res.json()).filter(p => p.image));
+                    const EXCLUDED_BRANDS = /omega|tudor|cartier/i;
+                    PIECES = interleaveByBrand((await res.json()).filter(p => p.image && !EXCLUDED_BRANDS.test(p.brand || '')));
                     if (skeleton) skeleton.classList.add('hidden');
                     if (grid) grid.classList.remove('hidden');
                     return PIECES;

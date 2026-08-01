@@ -73,6 +73,7 @@ module.exports = async (req, res) => {
             cursor = response.has_more ? response.next_cursor : undefined;
         } while (cursor);
 
+        const EXCLUDED_BRANDS = /omega|tudor|cartier/i;
         const pieces = allResults.map(page => {
             const p = page.properties;
 
@@ -129,10 +130,11 @@ module.exports = async (req, res) => {
             if (!piece) {
                 return res.status(404).json({ error: 'Piece not found' });
             }
+            if (EXCLUDED_BRANDS.test(piece.brand || '')) return res.status(404).json({ error: 'Piece not found' });
             return res.status(200).json(piece);
         }
 
-        return res.status(200).json(pieces);
+        return res.status(200).json(pieces.filter(p => !EXCLUDED_BRANDS.test(p.brand || '')));
 
     } catch (error) {
         console.error('Notion API error:', error);

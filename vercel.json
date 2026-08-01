@@ -1,10 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".",
-  "crons": [
-    {
-      "path": "/api/keep-alive",
-      "schedule": "0 8 * * *"
-    }
-  ]
+  "outputDirectory": "."
 }

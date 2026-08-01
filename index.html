@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon-v2.ico?v=3" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=3" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
-    <link rel="shortcut icon" href="/favicon-v2.ico?v=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
+    <link rel="shortcut icon" href="/favicon.png?v=1" />
     <title>Prime Time Miami | Miami Luxury Watch Concierge - Buy, Sell & Trade Rare Timepieces</title>
     <meta name="description" content="Prime Time Miami is a Miami-based luxury watch concierge service specializing in sourcing, selling, and trading rare and hard-to-find timepieces. Rolex, Patek Philippe, Audemars Piguet, Richard Mille & more. Verified provenance. Discreet service.">
     <meta name="keywords" content="miami luxury watches, miami watch dealer, buy rolex miami, luxury watch concierge miami, luxury watch concierge, buy rolex, sell patek philippe, trade audemars piguet, richard mille dealer, rare watches, watch sourcing, authenticated timepieces, luxury watch broker, pre-owned luxury watches, watch consignment, prime time miami">
@@ -42,10 +40,6 @@
         "url": "https://primetimemiami.com",
         "logo": "https://primetimemiami.com/images/logo.png",
         "image": "https://primetimemiami.com/images/trust-auth.webp",
-        "founder": {
-            "@type": "Person",
-            "name": "Prime Time Miami"
-        },
         "contactPoint": {
             "@type": "ContactPoint",
             "email": "info@primetimemiami.com",
@@ -86,7 +80,7 @@
             }
         ],
         "priceRange": "$$$",
-        "knowsAbout": ["Rolex", "Patek Philippe", "Audemars Piguet", "Richard Mille", "F.P. Journe", "Vacheron Constantin", "A. Lange & Söhne", "Omega", "Cartier", "IWC", "Panerai", "Hublot", "Tudor", "Breitling", "Jaeger-LeCoultre", "Blancpain", "Breguet", "Girard-Perregaux"],
+        "knowsAbout": ["Rolex", "Patek Philippe", "Audemars Piguet", "Richard Mille", "F.P. Journe", "Vacheron Constantin", "A. Lange & Söhne", "IWC", "Panerai", "Hublot", "Breitling", "Jaeger-LeCoultre", "Blancpain", "Breguet", "Girard-Perregaux"],
         "makesOffer": [
             {
                 "@type": "Offer",
@@ -133,6 +127,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
     <link rel="stylesheet" href="/dist/styles.css">
+    <style>
+    /* Prime Time accent: subtle orange, used sparingly */
+    :root { --pt-orange: #FF6B35; }
+    .stroke-orange { -webkit-text-stroke: 1.5px var(--pt-orange); color: transparent; }
+    .text-orange { color: var(--pt-orange); }
+    </style>
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -196,11 +196,11 @@
 
             <div class="relative z-10 text-center max-w-5xl mx-auto">
                 <h1 id="hero-title" class="font-space font-bold text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8">
-                    Acquire the <br/>
-                    <span class="stroke-text">Unobtainable</span>
+                    Wrist <br/>
+                    <span class="stroke-text stroke-orange">Curation</span>
                 </h1>
-                <p id="hero-sub" class="font-inter text-muted text-base sm:text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 sm:mb-12 font-light uppercase">
-                    Rare Rolex, Patek, AP, and the independents, sourced personally. Verified provenance. Discreet service.
+                <p id="hero-sub" class="font-inter text-muted text-base sm:text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 sm:mb-12 font-light normal-case" style="text-transform:none;">
+                    Here at Prime Time Miami we source the finest watches available from brands such as Rolex, Audemars Piguet, Patek Philippe and Richard Mille. Submit a sourcing request and we&rsquo;ll get back to you as soon as possible.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                     <button id="hero-btn" onclick="app.openModal('BUY')" class="shimmer-btn group relative overflow-hidden text-charcoal w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-transform hover:scale-105 text-center">
@@ -238,18 +238,17 @@
         <section id="about" class="border-b border-ivory/5 overflow-hidden relative" style="min-height: 80vh;">
             <!-- Image covers the right half on desktop/tablet landscape, full width on mobile/tablet portrait -->
             <div class="hidden lg:block absolute top-0 right-0 w-1/2 h-full overflow-hidden">
-                <img id="trust-img" src="images/trust-auth.webp" alt="Concierge Service" class="w-full h-full object-cover" loading="lazy" />
+                <img id="trust-img" src="images/richard-mille.webp" alt="Richard Mille luxury watch" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <!-- Text takes the left half on lg+, full width below -->
             <div class="relative z-10 lg:w-1/2 bg-[#0a0a0a] min-h-[60vh] lg:min-h-[80vh] flex items-center">
                 <div class="px-6 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-24 space-y-6 sm:space-y-8 max-w-xl mx-auto lg:mx-0">
                     <h2 id="trust-heading" class="reveal-trust font-space text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase leading-tight tracking-tight">
-                        Transparent Concierge. <br/>
-                        <span class="text-muted">Verified.</span> <br/>
-                        <span class="text-ivory">No BS.</span>
+                        Real Watches. <br/>
+                        <span class="text-orange">For True Collectors.</span>
                     </h2>
                     <p id="trust-desc" class="reveal-trust font-inter text-muted text-base sm:text-lg leading-relaxed tracking-wide">
-                        Pieces are sourced through verified partners and independently authenticated by trusted watch specialists before acquisition.
+                        Every piece is sourced through verified partners and independently authenticated by trusted watch specialists before acquisition. Available references and years change constantly &mdash; tell us what you&rsquo;re after and we&rsquo;ll find it.
                     </p>
                     <div id="trust-tags" class="reveal-trust pt-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-ivory/50 glass-subtle rounded-xl px-6 sm:px-8 py-5 sm:py-6 w-fit">
                         <span class="whitespace-nowrap">Global Sourcing</span>
@@ -262,7 +261,7 @@
             </div>
             <!-- Mobile + tablet portrait image below text -->
             <div class="lg:hidden h-[40vh] sm:h-[50vh] overflow-hidden">
-                <img src="images/trust-auth.webp" alt="Concierge Service" class="w-full h-full object-cover" loading="lazy" />
+                <img src="images/richard-mille.webp" alt="Richard Mille luxury watch" class="w-full h-full object-cover" loading="lazy" />
             </div>
         </section>
 
@@ -345,42 +344,26 @@
             </button>
         </section>
 
-        <!-- TESTIMONIALS - Rotating 3-Card Carousel -->
-        <section id="testimonials" class="relative py-10 sm:py-14 lg:py-16 border-b border-ivory/5 overflow-hidden" role="region" aria-roledescription="carousel" aria-label="Collector testimonials" tabindex="0">
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-
-                <!-- Section label -->
-                <p class="text-center text-[10px] sm:text-xs font-bold tracking-widest text-muted mb-8 sm:mb-10 font-space">
-                    What Collectors Are Saying
+        <!-- CTA SECTION -->
+        <section id="contact-cta" class="relative py-16 sm:py-20 lg:py-24 border-b border-ivory/5 overflow-hidden">
+            <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center">
+                <p class="text-[10px] sm:text-xs font-bold tracking-widest text-muted mb-4 font-space uppercase">Looking for something specific?</p>
+                <h2 class="font-space font-bold text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tight mb-6">
+                    Tell us what you&rsquo;re <span class="text-orange">after.</span>
+                </h2>
+                <p class="font-inter text-muted text-sm sm:text-base tracking-wide mb-10 max-w-xl mx-auto" style="text-transform:none;">
+                    Message us on WhatsApp or DM us on Instagram and we&rsquo;ll get back to you as soon as possible.
                 </p>
-
-                <!-- 3-Card Track -->
-                <div id="testimonial-track" class="testimonial-track" aria-live="polite">
-                    <div id="testimonial-inner" class="testimonial-inner">
-                        <!-- Cards injected by JS -->
-                    </div>
-                </div>
-
-                <!-- Navigation: arrows + dots -->
-                <div class="flex items-center justify-center gap-5 mt-8 sm:mt-10">
-                    <button onclick="app.testimonialPrev()" aria-label="Previous testimonial" class="w-10 h-10 rounded-full border border-ivory/15 flex items-center justify-center text-muted hover:text-ivory hover:border-ivory/40 transition-all duration-300">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
-                    </button>
-                    <div id="testimonial-dots" class="flex items-center gap-2"></div>
-                    <button onclick="app.testimonialNext()" aria-label="Next testimonial" class="w-10 h-10 rounded-full border border-ivory/15 flex items-center justify-center text-muted hover:text-ivory hover:border-ivory/40 transition-all duration-300">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
-                    </button>
-                </div>
-
-                <!-- Funnel CTA -->
-                <div class="text-center mt-10 sm:mt-12">
-                    <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="shimmer-btn group relative overflow-hidden inline-block text-charcoal px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-transform hover:scale-105">
-                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Start a Conversation</span>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                    <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="shimmer-btn group relative overflow-hidden inline-block text-charcoal px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-transform hover:scale-105 w-[260px] sm:w-auto text-center">
+                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Message on WhatsApp</span>
                         <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
                     </a>
-                    <p class="text-[10px] tracking-widest text-muted mt-8 font-inter">Tell me what you're looking for</p>
+                    <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden border border-ivory/40 bg-transparent text-ivory px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-all hover:scale-105 hover:border-ivory text-center inline-flex items-center justify-center w-[260px] sm:w-auto">
+                        <span class="relative z-10 group-hover:text-charcoal transition-colors duration-300">DM on Instagram</span>
+                        <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
+                    </a>
                 </div>
-
             </div>
         </section>
 
@@ -448,9 +431,6 @@
                         <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="WhatsApp">
                             <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
-                        <a href="mailto:info@primetimemiami.com" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="Email">
-                            <i data-lucide="mail" class="w-5 h-5"></i>
-                        </a>
                     </div>
                     <p class="text-center mt-6 text-sm font-space uppercase tracking-widest text-muted">&copy; 2026 Prime Time Miami</p>
                     <p class="text-center text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-4 leading-relaxed" style="text-transform: none; font-style: italic;">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
@@ -510,7 +490,6 @@
                 { id: '5',  name: 'F.P. Journe',                 ref: 'Chronomètre Bleu',  price: 'Inquire', image: 'images/ticker/watch-5.jpg' },
                 { id: '13', name: 'Richard Mille',               ref: 'RM 030 Blue',       price: 'Inquire', image: 'images/ticker/watch-13.jpeg' },
                 { id: '10', name: 'Patek Aquanaut',              ref: '5164A Travel Time', price: 'Inquire', image: 'images/ticker/watch-10.jpeg', sold: 'LAST SOURCED' },
-                { id: '3',  name: 'Cartier Crash',               ref: 'Paris Edition',     price: 'Inquire', image: 'images/ticker/watch-3.jpeg' },
                 { id: '12', name: 'Rolex Day-Date',              ref: 'Platinum Arabic',   price: 'Inquire', image: 'images/ticker/watch-12.jpeg' },
                 { id: '18', name: 'Vacheron Overseas Chrono',    ref: '5500V Blue',        price: 'Inquire', image: 'images/ticker/watch-18.jpg' },
                 { id: '8',  name: 'Greubel Forsey',              ref: 'Balancier S2',      price: 'Inquire', image: 'images/ticker/watch-8.jpg' },
@@ -518,7 +497,6 @@
                 { id: '2',  name: 'AP Royal Oak Mini Frosted',   ref: '67630BC',           price: 'Inquire', image: 'images/ticker/watch-2.jpeg', sold: 'LAST SOURCED' },
                 { id: '6',  name: 'F.P. Journe Octa Lune',       ref: 'Black Label',       price: 'Inquire', image: 'images/ticker/watch-6.jpg' },
                 { id: '9',  name: 'MB&F Aquapod',                ref: 'HM7 Titanium',     price: 'Inquire', image: 'images/ticker/watch-9.jpg' },
-                { id: '4',  name: 'Cartier Cloche',              ref: 'Privé Skeleton',    price: 'Inquire', image: 'images/ticker/watch-4.jpg' },
                 { id: '15', name: 'Richard Mille',               ref: 'RM 65-01 LeBron',   price: 'Inquire', image: 'images/ticker/watch-15.jpg' },
                 { id: '11', name: 'Patek Nautilus Tiffany',      ref: '5712/1A',           price: 'Inquire', image: 'images/ticker/watch-11.jpeg' },
                 { id: '7',  name: 'F.P. Journe Tourbillon',      ref: 'Souverain',         price: 'Inquire', image: 'images/ticker/watch-7.jpg' },
@@ -534,81 +512,28 @@
                 'F.P. Journe': ['Chronometre Bleu','Chronometre Souverain','Octa','Tourbillon Souverain','Centigraphe','Elegante','Other'],
                 'Vacheron Constantin': ['Overseas','Patrimony','Traditionnelle','Historiques','Fiftysix','Other'],
                 'A. Lange & Sohne': ['Lange 1','Saxonia','Zeitwerk','Datograph','1815','Odysseus','Other'],
-                'Omega': ['Speedmaster','Seamaster','Constellation','De Ville','Aqua Terra','Planet Ocean','Other'],
-                'Cartier': ['Santos','Tank','Ballon Bleu','Panthere','Pasha','Drive','Other'],
                 'IWC': ['Portugieser','Pilot','Aquatimer','Ingenieur','Portofino','Other'],
                 'Panerai': ['Luminor','Submersible','Radiomir','Due','Other'],
                 'Hublot': ['Big Bang','Classic Fusion','Spirit of Big Bang','Other'],
-                'Tudor': ['Black Bay','Pelagos','Ranger','1926','Other'],
                 'Breitling': ['Navitimer','Chronomat','Superocean','Avenger','Premier','Other'],
                 'Jaeger-LeCoultre': ['Reverso','Master','Polaris','Atmos','Other'],
                 'Blancpain': ['Fifty Fathoms','Villeret','Ladybird','Other'],
                 'Breguet': ['Classique','Marine','Tradition','Type XX','Other'],
                 'Girard-Perregaux': ['Laureato','1966','Bridges','Other'],
                 'Other': ['Other']
-            },
-            TESTIMONIALS: [
-                {
-                    quote: "Henry sourced my AP Royal Oak Offshore 26420Ti and a 41mm Celebration Dial. Both arrived exactly as described with full documentation. His attention to detail and communication throughout the process were unmatched.",
-                    name: "JAMES SCHMITT",
-                    role: "Verified Client",
-                    pfp: ""
-                },
-                {
-                    quote: "Picked up a Rolex OP 41 124300 green dial through Henry. Seamless from start to finish. He found the exact ref I wanted faster than anyone else I'd spoken to. Couldn't recommend him more.",
-                    name: "MIKE STEINMETZ",
-                    role: "Verified Client",
-                    pfp: ""
-                },
-                {
-                    quote: "I'd been hunting for a Daytona 126518 in yellow gold on Oysterflex for months with no luck. Henry delivered within 3 days, fully authenticated and in pristine condition. Absolute professional.",
-                    name: "DANIEL CARTER",
-                    role: "Verified Client",
-                    pfp: ""
-                }
-            ]
+            }
         };
 
         const app = {
             mobileMenuOpen: false,
-            testimonialIndex: 0,
-            testimonialTimer: null,
             tickerTween: null,
             footerTickerTween: null,
 
             init: () => {
                 app.renderTicker();
                 app.initTickerGSAP();
-                app.buildTestimonialCards();
-                app.renderTestimonial(0);
-                app.startTestimonialTimer();
                 app.initAnimations();
                 safeCreateIcons();
-
-                // Touch/swipe support for testimonials
-                let touchStartX = 0;
-                const track = document.getElementById('testimonial-track');
-                track.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
-                track.addEventListener('touchend', (e) => {
-                    const diff = e.changedTouches[0].clientX - touchStartX;
-                    if (Math.abs(diff) > 50) {
-                        diff < 0 ? app.testimonialNext() : app.testimonialPrev();
-                    }
-                }, { passive: true });
-
-                // Keyboard navigation for testimonial carousel
-                const section = document.getElementById('testimonials');
-                section.addEventListener('keydown', (e) => {
-                    if (e.key === 'ArrowLeft') { app.testimonialPrev(); e.preventDefault(); }
-                    if (e.key === 'ArrowRight') { app.testimonialNext(); e.preventDefault(); }
-                });
-
-                // Re-render on resize (mobile ↔ desktop layout switch)
-                let resizeTimeout;
-                window.addEventListener('resize', () => {
-                    clearTimeout(resizeTimeout);
-                    resizeTimeout = setTimeout(() => app.renderTestimonial(app.testimonialIndex), 150);
-                });
             },
 
             getWatchById: (id) => {
@@ -634,120 +559,6 @@
                     menu.style.pointerEvents = 'none';
                     document.body.style.overflow = '';
                 }
-            },
-
-            /* ── Rotating 3-Card Testimonial Carousel ── */
-            buildTestimonialCards: () => {
-                const inner = document.getElementById('testimonial-inner');
-                const starSvg = '<svg class="w-3.5 h-3.5 text-ivory/50" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
-                const stars = Array(5).fill(starSvg).join('');
-
-                inner.innerHTML = CONFIG.TESTIMONIALS.map((t, i) => `
-                    <div class="testimonial-card-wrap" data-index="${i}">
-                        <div class="t-card glass-strong rounded-2xl p-6 sm:p-8 transition-all duration-500">
-                            <div>
-                                <div class="flex items-center gap-1 mb-5">${stars}</div>
-                                <p class="font-inter text-ivory/90 text-sm sm:text-base leading-relaxed tracking-wide mb-6" style="text-transform: none;">${esc(t.quote)}</p>
-                            </div>
-                            <div class="flex items-center gap-3 mt-auto">
-                                ${t.pfp
-                                    ? `<img src="${esc(t.pfp)}" alt="${esc(t.name)}" class="w-10 h-10 rounded-full object-cover border border-ivory/15">`
-                                    : `<div class="w-10 h-10 rounded-full border border-ivory/15 bg-ivory/5 flex items-center justify-center"><span class="font-space font-bold text-[11px] tracking-wider text-ivory/60">${esc(t.name.split(' ').map(n => n[0]).join(''))}</span></div>`
-                                }
-                                <div>
-                                    <p class="font-space font-bold text-xs tracking-widest text-ivory">${esc(t.name)}</p>
-                                    <p class="font-inter text-[10px] tracking-widest text-muted">${esc(t.role)}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            },
-
-            getVisibleIndices: (centerIdx) => {
-                const total = CONFIG.TESTIMONIALS.length;
-                const prev = (centerIdx - 1 + total) % total;
-                const next = (centerIdx + 1) % total;
-                return [prev, centerIdx, next];
-            },
-
-            getCardByIndex: (idx) => {
-                return document.querySelector('.testimonial-card-wrap[data-index="' + idx + '"]');
-            },
-
-            renderTestimonial: (index) => {
-                app.testimonialIndex = index;
-                const total = CONFIG.TESTIMONIALS.length;
-                const visible = app.getVisibleIndices(index);
-                const inner = document.getElementById('testimonial-inner');
-                const isMobile = window.innerWidth < 1024;
-
-                // Reset all cards
-                document.querySelectorAll('.testimonial-card-wrap').forEach(w => {
-                    w.classList.remove('is-center');
-                    w.style.position = '';
-                    w.style.display = 'none';
-                });
-
-                if (isMobile) {
-                    // Mobile/tablet: show only center card
-                    const centerCard = app.getCardByIndex(index);
-                    if (centerCard) {
-                        centerCard.style.display = '';
-                        centerCard.classList.add('is-center');
-                    }
-                } else {
-                    // Desktop: show [prev, center, next] in order
-                    visible.forEach((idx, pos) => {
-                        const wrap = app.getCardByIndex(idx);
-                        if (wrap) {
-                            wrap.style.display = '';
-                            inner.appendChild(wrap);
-                            if (pos === 1) wrap.classList.add('is-center');
-                        }
-                    });
-                }
-
-                app.renderDots();
-            },
-
-            renderDots: () => {
-                const container = document.getElementById('testimonial-dots');
-                container.innerHTML = CONFIG.TESTIMONIALS.map((_, i) =>
-                    `<button onclick="app.testimonialGo(${i})" aria-label="Testimonial ${i+1}"
-                        class="w-2 h-2 rounded-full transition-all duration-300 ${i === app.testimonialIndex ? 'bg-ivory w-6' : 'bg-ivory/25 hover:bg-ivory/50'}"></button>`
-                ).join('');
-            },
-
-            testimonialNext: () => {
-                const next = (app.testimonialIndex + 1) % CONFIG.TESTIMONIALS.length;
-                app.renderTestimonial(next);
-                app.resetTestimonialTimer();
-            },
-
-            testimonialPrev: () => {
-                const prev = (app.testimonialIndex - 1 + CONFIG.TESTIMONIALS.length) % CONFIG.TESTIMONIALS.length;
-                app.renderTestimonial(prev);
-                app.resetTestimonialTimer();
-            },
-
-            testimonialGo: (index) => {
-                if (index === app.testimonialIndex) return;
-                app.renderTestimonial(index);
-                app.resetTestimonialTimer();
-            },
-
-            startTestimonialTimer: () => {
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-                app.testimonialTimer = setInterval(() => {
-                    const next = (app.testimonialIndex + 1) % CONFIG.TESTIMONIALS.length;
-                    app.renderTestimonial(next);
-                }, 6000);
-            },
-
-            resetTestimonialTimer: () => {
-                clearInterval(app.testimonialTimer);
-                app.startTestimonialTimer();
             },
 
             renderTicker: () => {
@@ -868,9 +679,9 @@
                     });
                 }
 
-                // ── Testimonials - scale + blur reveal ──
-                gsap.from("#testimonials .relative.z-10", {
-                    scrollTrigger: { trigger: "#testimonials", start: "top 80%", once: true },
+                // ── CTA section - scale + blur reveal ──
+                gsap.from("#contact-cta .relative.z-10", {
+                    scrollTrigger: { trigger: "#contact-cta", start: "top 80%", once: true },
                     y: 60, opacity: 0, scale: 0.96,
                     duration: 1.2,
                     ease: "expo.out",
@@ -903,23 +714,22 @@
                                     <p class="text-muted font-bold tracking-widest text-xs">${esc(data.ref)}</p>
                                 </div>
                                 <div class="border-t border-ivory/10 pt-4">
-                                    <p class="text-sm font-inter text-ivory/80 leading-relaxed mb-6">
-                                        This reference is available for concierge sourcing. Provide your details to inquire.
+                                    <p class="text-sm font-inter text-ivory/80 leading-relaxed mb-2">
+                                        Interested in this piece? Message us and we&rsquo;ll get back to you as soon as possible.
                                     </p>
-                                    <form onsubmit="event.preventDefault(); app.submitForm(this, 'WATCH_DETAIL', { watchName: '${esc(data.name)}', watchRef: '${esc(data.ref)}' });" class="space-y-4">
-                                        <div>
-                                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Full Name</label>
-                                            <input required type="text" name="fullName" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase">
-                                        </div>
-                                        <div>
-                                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Email</label>
-                                            <input required type="email" name="email" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors">
-                                        </div>
-                                        <button type="submit" class="shimmer-btn group relative overflow-hidden w-full text-charcoal py-4 font-bold font-space tracking-widest transition-transform hover:scale-[1.02]">
-                                            <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Submit Inquiry</span>
+                                    <p class="text-[11px] font-inter text-muted leading-relaxed mb-6" style="text-transform:none;">
+                                        Photos are representative &mdash; exact references and years we can source vary. DM us for current availability.
+                                    </p>
+                                    <div class="space-y-3">
+                                        <a href="https://wa.me/13059224975?text=${encodeURIComponent('Hi Prime Time Miami — I\'m interested in the ' + data.name + ' (' + data.ref + ')')}" target="_blank" rel="noopener noreferrer" class="shimmer-btn group relative overflow-hidden w-full text-charcoal py-4 font-bold font-space tracking-widest transition-transform hover:scale-[1.02] flex items-center justify-center text-xs uppercase">
+                                            <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Message on WhatsApp</span>
                                             <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                                        </button>
-                                    </form>
+                                        </a>
+                                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden w-full border border-ivory/40 text-ivory py-4 font-bold font-space tracking-widest text-xs uppercase transition-all hover:border-ivory flex items-center justify-center">
+                                            <span class="relative z-10 group-hover:text-charcoal transition-colors duration-300">DM on Instagram</span>
+                                            <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -959,6 +769,16 @@
                                         <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Reference Number (if known)</label>
                                         <input type="text" name="watchRef" placeholder="e.g. 126500LN" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40">
                                     </div>
+                                    ${type === 'SELL' ? `
+                                    <div>
+                                        <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Asking Price</label>
+                                        <input type="text" name="askingPrice" placeholder="How much are you looking to get?" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Reason for Selling</label>
+                                        <input type="text" name="reason" placeholder="Upgrading, funding a purchase, etc." class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40">
+                                    </div>
+                                    ` : ''}
                                     <div>
                                         <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Additional Details</label>
                                         <textarea rows="2" name="watchDetails" placeholder="Condition, box & papers, budget, etc." class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40"></textarea>
@@ -1057,6 +877,8 @@
                 const model = formData.get('watchModel') || '';
                 const ref = formData.get('watchRef') || '';
                 const details = formData.get('watchDetails') || '';
+                const askingPrice = formData.get('askingPrice') || '';
+                const reason = formData.get('reason') || '';
 
                 // Build watchDetails string from brand/model/ref + freeform
                 let watchDetailsStr = details;
@@ -1064,6 +886,8 @@
                     const parts = [brand, model, ref ? 'Ref: ' + ref : ''].filter(Boolean);
                     watchDetailsStr = parts.join(' - ') + (details ? ' | ' + details : '');
                 }
+                if (askingPrice) watchDetailsStr = (watchDetailsStr ? watchDetailsStr + ' | ' : '') + 'Asking price: ' + askingPrice;
+                if (reason) watchDetailsStr = (watchDetailsStr ? watchDetailsStr + ' | ' : '') + 'Reason for selling: ' + reason;
 
                 const payload = {
                     type,

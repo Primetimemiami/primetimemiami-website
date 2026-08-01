@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dialedbyhenry.com/sitemap.xml
+Sitemap: https://primetimemiami.com/sitemap.xml

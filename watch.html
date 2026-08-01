@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon-v2.ico?v=3" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=3" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
-    <link rel="shortcut icon" href="/favicon-v2.ico?v=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
+    <link rel="shortcut icon" href="/favicon.png?v=1" />
     <title>Watch Detail | Prime Time Miami</title>
     <meta name="description" content="View details and inquire about this authenticated luxury timepiece available for sourcing through Prime Time Miami.">
     <meta name="robots" content="index, follow">
@@ -121,9 +119,6 @@
             </a>
             <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
-            </a>
-            <a href="mailto:info@primetimemiami.com" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
-                <i data-lucide="mail" class="w-5 h-5"></i>
             </a>
         </div>
         <span class="block mt-6 text-xs text-muted/60 font-space uppercase tracking-widest">&copy; 2026 PRIME TIME MIAMI</span>
@@ -272,12 +267,23 @@
 
                         <!-- INQUIRE CTA -->
                         <div class="glass rounded-xl p-6 mb-8">
-                            <p class="text-ivory/70 text-xs font-inter tracking-wide mb-5 leading-relaxed">
-                                Interested in this piece? Inquire below and I'll get back to you with sourcing details, pricing, and availability.
+                            <p class="text-ivory/70 text-xs font-inter tracking-wide mb-2 leading-relaxed">
+                                Interested in this piece? Message us and we'll get back to you with sourcing details, pricing, and availability.
                             </p>
+                            <p class="text-muted text-[10px] font-inter tracking-wide mb-5 leading-relaxed">
+                                Exact references and years we can source vary &mdash; DM us for current availability.
+                            </p>
+                            <a id="wa-inquire-btn" href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer"
+                                class="block text-center w-full bg-ivory text-charcoal py-4 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors mb-3">
+                                Message on WhatsApp
+                            </a>
+                            <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer"
+                                class="block text-center w-full border border-ivory/40 text-ivory py-4 font-bold font-space uppercase tracking-widest hover:border-ivory transition-colors mb-3">
+                                DM on Instagram
+                            </a>
                             <button onclick="document.getElementById('inquiry-section').scrollIntoView({behavior:'smooth'})"
-                                class="w-full bg-ivory text-charcoal py-4 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors">
-                                Inquire to Source
+                                class="w-full border border-ivory/20 text-ivory/70 py-3 text-xs font-bold font-space uppercase tracking-widest hover:text-ivory hover:border-ivory/50 transition-colors">
+                                Or inquire via form
                             </button>
                         </div>
 
@@ -478,6 +484,13 @@
 
             currentWatch = await fetchWatch();
             renderWatchDetail(currentWatch);
+
+            // Prefill the WhatsApp inquiry link with this piece
+            const waBtn = document.getElementById('wa-inquire-btn');
+            if (waBtn && currentWatch) {
+                const msg = 'Hi Prime Time Miami — I\'m interested in the ' + (currentWatch.name || '') + (currentWatch.ref ? ' (Ref. ' + currentWatch.ref + ')' : '');
+                waBtn.href = 'https://wa.me/13059224975?text=' + encodeURIComponent(msg);
+            }
 
             // Meta Pixel: ViewContent when a watch listing is viewed
             if (currentWatch && typeof fbq === 'function') {
