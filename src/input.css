@@ -699,3 +699,6 @@ html, body { background: #000 !important; }
 .brutal-btn:active { transform: translate(4px, 4px); box-shadow: none; }
 .brutal-btn--solid { background: #fff; color: #000; box-shadow: 4px 4px 0px rgba(255,255,255,0.45); }
 .brutal-btn--solid:hover { box-shadow: 6px 6px 0px rgba(255,255,255,0.45); }
+
+/* text as written, not force-uppercased */
+body { text-transform: none !important; }

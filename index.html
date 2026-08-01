@@ -138,10 +138,9 @@
                 <path d="M18 6L6 18M6 6l12 12"/>
             </svg>
         </button>
-        <button onclick="app.toggleMobileMenu(); app.openModal('BUY')" class="shimmer-btn group relative overflow-hidden text-charcoal px-10 py-3.5 text-sm font-bold font-space uppercase tracking-widest transition-transform hover:scale-105">
-            <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">REQUEST A PIECE</span>
-            <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-        </button>
+        <button onclick="app.toggleMobileMenu(); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">
+                Request a Piece
+            </button>
         <a href="inventory.html" class="text-xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">
             Browse Pieces
         </a>
@@ -167,10 +166,9 @@
                     <a href="process.html" class="nav-link hover:text-muted transition-colors">
                         Process
                     </a>
-                    <a href="#" onclick="event.preventDefault(); app.openModal('BUY')" class="shimmer-btn group relative overflow-hidden text-charcoal px-5 py-2 text-xs font-bold font-space uppercase tracking-widest transition-transform hover:scale-105">
-                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">REQUEST A PIECE</span>
-                        <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                    </a>
+                    <a href="#" onclick="event.preventDefault(); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest text-center">
+                Request a Piece
+            </a>
                 </div>
                 <button id="mobile-menu-btn" onclick="app.toggleMobileMenu()" class="md:hidden text-ivory">
                     <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -190,10 +188,10 @@
                     Here at Prime Time Miami we source the finest watches available from brands such as Rolex, Audemars Piguet, Patek Philippe and Richard Mille. Submit a sourcing request and we&rsquo;ll get back to you as soon as possible.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                    <button id="hero-btn" onclick="app.openModal('BUY')" class="brutal-btn brutal-btn--solid w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest text-center">
-                        <span id="hero-btn-text">REQUEST A PIECE</span>
+                    <button id="hero-btn" onclick="app.openModal('BUY')" class="brutal-btn brutal-btn--solid w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">
+                        <span id="hero-btn-text">Request a Piece</span>
                     </button>
-                    <a href="inventory.html" class="brutal-btn w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest text-center inline-flex items-center justify-center">
+                    <a href="inventory.html" class="brutal-btn w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center inline-flex items-center justify-center">
                         Browse Pieces
                     </a>
                 </div>
@@ -327,14 +325,8 @@
                     Message us on WhatsApp or DM us on Instagram and we&rsquo;ll get back to you as soon as possible.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                    <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="shimmer-btn group relative overflow-hidden inline-block text-charcoal px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-transform hover:scale-105 w-[260px] sm:w-auto text-center">
-                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Message on WhatsApp</span>
-                        <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                    </a>
-                    <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden border border-ivory/40 bg-transparent text-ivory px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold uppercase tracking-widest transition-all hover:scale-105 hover:border-ivory text-center inline-flex items-center justify-center w-[260px] sm:w-auto">
-                        <span class="relative z-10 group-hover:text-charcoal transition-colors duration-300">DM on Instagram</span>
-                        <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                    </a>
+                    <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="brutal-btn brutal-btn--solid w-[260px] sm:w-auto px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">Message on WhatsApp</a>
+                    <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="brutal-btn w-[260px] sm:w-auto px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">DM on Instagram</a>
                 </div>
             </div>
         </section>
@@ -590,10 +582,9 @@
                                         <textarea rows="2" name="watchDetails" placeholder="Condition, box & papers, budget, etc." class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40"></textarea>
                                     </div>
                                 ` : ''}
-                                <button type="submit" class="shimmer-btn group relative overflow-hidden w-full text-charcoal py-4 font-bold font-space tracking-widest mt-4 transition-transform hover:scale-[1.02]">
-                                    <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Submit Request</span>
-                                    <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                                </button>
+                                <button type="submit" class="brutal-btn brutal-btn--solid w-full py-4 mt-4 text-sm font-space font-bold tracking-widest text-center">
+                Submit Request
+            </button>
                             </form>
                         </div>
                     `;
