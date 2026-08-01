@@ -156,8 +156,8 @@
         <!-- HERO SECTION -->
         <section class="relative h-screen min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex flex-col justify-center items-center px-4 overflow-hidden">
             <nav class="absolute top-0 left-0 w-full z-40 px-6 sm:px-10 md:px-16 py-5 sm:py-6 flex justify-between items-center">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Prime Time Miami" class="h-8 sm:h-10 w-auto object-contain">
+                <a href="index.html" class="nav-link text-xs lg:text-sm font-space font-medium tracking-widest hover:text-muted transition-colors">
+                    Home
                 </a>
                 <div id="nav-links" class="hidden md:flex space-x-4 lg:space-x-8 text-xs lg:text-sm font-space font-medium uppercase tracking-widest items-center">
                     <a href="about.html" class="nav-link hover:text-muted transition-colors">
@@ -180,9 +180,8 @@
             <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
 
             <div class="relative z-10 text-center max-w-5xl mx-auto">
-                <h1 id="hero-title" class="font-space font-bold text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8">
-                    Wrist <br/>
-                    <span class="stroke-text">Curation</span>
+                <h1 id="hero-title" class="mb-6 sm:mb-8">
+                    <img src="images/logo.png" alt="Prime Time Miami" class="mx-auto w-[88vw] max-w-[860px] h-auto" fetchpriority="high">
                 </h1>
                 <p id="hero-sub" class="no-caps font-inter text-muted text-base sm:text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 sm:mb-12 font-light">
                     Here at Prime Time Miami we source the finest watches available from brands such as Rolex, Audemars Piguet, Patek Philippe and Richard Mille. Submit a sourcing request and we&rsquo;ll get back to you as soon as possible.
@@ -469,7 +468,6 @@
                 const heroTl = gsap.timeline({ defaults: { ease: "expo.out" } });
                 heroTl
                     .from("#hero-title", { opacity: 0, y: 80, scale: 0.97, duration: 1.4, clearProps: "all" }, 0.2)
-                    .from("#hero-title .stroke-text", { opacity: 0, x: -40, duration: 1, ease: "power3.out", clearProps: "all" }, 0.6)
                     .from("#hero-sub", { opacity: 0, y: 30, duration: 0.9, clearProps: "all" }, "-=0.7")
                     .from("#hero-btn", { opacity: 0, duration: 0.8, clearProps: "all" }, "-=0.5")
                     .from(".animate-bounce", { opacity: 0, duration: 0.8, clearProps: "all" }, "-=0.3");
