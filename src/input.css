@@ -702,3 +702,6 @@ html, body { background: #000 !important; }
 
 /* text as written, not force-uppercased */
 body { text-transform: none !important; }
+
+/* nothing on this site is force-uppercased */
+* { text-transform: none !important; }

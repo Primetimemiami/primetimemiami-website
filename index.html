@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css">
+    <link rel="stylesheet" href="/dist/styles.css?v=2">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -253,10 +253,10 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">BUY</h3>
+                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Buy</h3>
                         <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Access our curated inventory.</p>
                         <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            TAP TO BROWSE
+                            Tap to browse
                             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
                         </span>
                     </div>
@@ -278,10 +278,10 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">SELL</h3>
+                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Sell</h3>
                         <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Competitive market offers.</p>
                         <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            TAP TO INQUIRE
+                            Tap to inquire
                             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
                         </span>
                     </div>
@@ -303,10 +303,10 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">TRADE</h3>
+                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Trade</h3>
                         <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Upgrade your rotation.</p>
                         <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            TAP TO INQUIRE
+                            Tap to inquire
                             <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
                         </span>
                     </div>
@@ -533,7 +533,8 @@
 
                 let html = '';
                 {
-                    const title = `Request to ${type}`;
+                    const typeLabels = { BUY: 'Buy', SELL: 'Sell', TRADE: 'Trade' };
+                    const title = `Request to ${typeLabels[type] || type}`;
                     html = `
                         <div id="form-view" class="p-5 sm:p-8">
                             <h2 class="text-2xl font-space font-bold tracking-tight mb-2">${title}</h2>
