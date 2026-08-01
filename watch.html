@@ -38,7 +38,7 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=4">
+    <link rel="stylesheet" href="/dist/styles.css?v=5">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -53,7 +53,7 @@
         <div class="hidden md:flex space-x-8 text-sm font-space font-medium uppercase tracking-widest items-center">
             <a href="about.html" class="nav-link hover:text-muted transition-colors">About</a>
             <a href="process.html" class="nav-link hover:text-muted transition-colors">Process</a>
-            <a href="inventory.html" class="bg-ivory text-charcoal px-5 py-2 text-xs font-bold font-space uppercase tracking-widest hover:bg-muted hover:text-white transition-colors">Back to Sourcing</a>
+            <a href="inventory.html" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest">Back to Sourcing</a>
         </div>
         <button onclick="document.getElementById('mobile-menu').style.opacity='1'; document.getElementById('mobile-menu').style.pointerEvents='auto'; document.body.style.overflow='hidden';" class="md:hidden text-ivory">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@
         </button>
         <a href="about.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">About</a>
         <a href="process.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">Process</a>
-        <a href="inventory.html" class="bg-ivory text-charcoal px-8 py-3 text-sm font-bold font-space uppercase tracking-widest hover:bg-muted hover:text-white transition-colors">Back to Sourcing</a>
+        <a href="inventory.html" class="brutal-btn brutal-btn--solid px-8 py-3 text-sm font-space font-bold tracking-widest">Back to Sourcing</a>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -172,7 +172,7 @@
                     <div class="text-center py-20">
                         <h2 class="font-space font-bold text-3xl tracking-tight mb-4">Piece Not Found</h2>
                         <p class="text-muted text-sm mb-8">This piece may no longer be available for sourcing.</p>
-                        <a href="inventory.html" class="inline-block bg-ivory text-charcoal px-8 py-4 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors">Browse All Pieces</a>
+                        <a href="inventory.html" class="brutal-btn brutal-btn--solid px-8 py-4 font-space font-bold tracking-widest">Browse All Pieces</a>
                     </div>
                 `;
                 return;

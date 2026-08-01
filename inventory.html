@@ -54,7 +54,7 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=4">
+    <link rel="stylesheet" href="/dist/styles.css?v=5">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -68,7 +68,7 @@
         <div class="hidden md:flex space-x-8 text-sm font-space font-medium uppercase tracking-widest items-center">
             <a href="about.html" class="nav-link hover:text-muted transition-colors">About</a>
             <a href="process.html" class="nav-link hover:text-muted transition-colors">Process</a>
-            <a href="index.html" class="bg-ivory text-charcoal px-5 py-2 text-xs font-bold font-space uppercase tracking-widest hover:bg-muted hover:text-white transition-colors">Back to Home</a>
+            <a href="index.html" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest">Back to Home</a>
         </div>
         <button onclick="document.getElementById('mobile-menu').style.opacity='1'; document.getElementById('mobile-menu').style.pointerEvents='auto'; document.body.style.overflow='hidden';" class="md:hidden text-ivory">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@
         </button>
         <a href="about.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">About</a>
         <a href="process.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">Process</a>
-        <a href="index.html" class="bg-ivory text-charcoal px-8 py-3 text-sm font-bold font-space uppercase tracking-widest hover:bg-muted hover:text-white transition-colors">Back to Home</a>
+        <a href="index.html" class="brutal-btn brutal-btn--solid px-8 py-3 text-sm font-space font-bold tracking-widest">Back to Home</a>
     </div>
 
     <!-- CONTENT -->
@@ -94,7 +94,7 @@
 
         <!-- HEADER -->
         <h1 id="hero-title" class="font-space font-bold text-3xl sm:text-5xl md:text-6xl lg:text-8xl tracking-tighter uppercase leading-[1.15] opacity-0 mb-6 sm:mb-8">
-            Available for <span class="text-muted">Sourcing</span>
+            Available for <span class="stroke-text">Sourcing</span>
         </h1>
 
         <!-- SUBTITLE -->
@@ -230,7 +230,7 @@
                 </div>
                 <h3 class="font-space font-bold text-lg tracking-tight mb-3">Temporarily Unavailable</h3>
                 <p class="text-muted text-sm font-inter mb-6" style="text-transform:none;">Our inventory is taking a moment to load. Please check back shortly.</p>
-                <button onclick="document.getElementById('error-state').classList.add('hidden'); document.getElementById('loading-skeleton').classList.remove('hidden'); fetchPieces().then(p => { if (p.length) { buildFilters(p); renderGrid(p); buildBackground(p); } })" class="bg-ivory text-charcoal px-6 py-3 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors text-xs">
+                <button onclick="document.getElementById('error-state').classList.add('hidden'); document.getElementById('loading-skeleton').classList.remove('hidden'); fetchPieces().then(p => { if (p.length) { buildFilters(p); renderGrid(p); buildBackground(p); } })" class="brutal-btn brutal-btn--solid px-6 py-3 font-space font-bold tracking-widest text-xs">
                     Try Again
                 </button>
             </div>
@@ -247,7 +247,7 @@
             <p class="text-muted text-sm sm:text-base font-inter tracking-wide mb-8 max-w-lg mx-auto">
                 I source watches globally through our network. Tell us what you're after and we'll find it.
             </p>
-            <button onclick="openSourceRequest()" class="bg-ivory text-charcoal px-8 py-4 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors">
+            <button onclick="openSourceRequest()" class="brutal-btn brutal-btn--solid px-8 py-4 font-space font-bold tracking-widest text-xs sm:text-sm">
                 Submit a Sourcing Request
             </button>
         </div>
