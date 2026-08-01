@@ -127,18 +127,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
     <link rel="stylesheet" href="/dist/styles.css">
-    <style>
-    /* Prime Time accent: subtle orange, used sparingly */
-    :root { --pt-orange: #FF6B35; }
-    .stroke-orange { -webkit-text-stroke: 1.5px var(--pt-orange); color: transparent; }
-    .text-orange { color: var(--pt-orange); }
-    </style>
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
 
     <!-- MOBILE MENU OVERLAY -->
     <div id="mobile-menu" class="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-7 transition-all duration-500 opacity-0 pointer-events-none">
@@ -160,9 +151,6 @@
         <a href="process.html" class="text-xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">
             Process
         </a>
-        <button onclick="app.toggleMobileMenu(); app.openModal('JOIN_LIST')" class="text-[11px] font-space font-medium tracking-widest text-muted/70 hover:text-ivory transition-colors uppercase pt-2">
-            Not ready? Join the private list &rarr;
-        </button>
     </div>
 
     <main>
@@ -197,9 +185,9 @@
             <div class="relative z-10 text-center max-w-5xl mx-auto">
                 <h1 id="hero-title" class="font-space font-bold text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8">
                     Wrist <br/>
-                    <span class="stroke-text stroke-orange">Curation</span>
+                    <span class="stroke-text">Curation</span>
                 </h1>
-                <p id="hero-sub" class="font-inter text-muted text-base sm:text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 sm:mb-12 font-light normal-case" style="text-transform:none;">
+                <p id="hero-sub" class="no-caps font-inter text-muted text-base sm:text-lg md:text-xl tracking-wide max-w-2xl mx-auto mb-8 sm:mb-12 font-light">
                     Here at Prime Time Miami we source the finest watches available from brands such as Rolex, Audemars Piguet, Patek Philippe and Richard Mille. Submit a sourcing request and we&rsquo;ll get back to you as soon as possible.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
@@ -214,9 +202,6 @@
                         <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
                     </a>
                 </div>
-                <button onclick="app.openModal('JOIN_LIST')" class="mt-6 sm:mt-8 text-[11px] sm:text-xs font-space font-medium tracking-widest text-muted/70 hover:text-ivory transition-colors duration-300 uppercase">
-                    Not ready? Join the private list &rarr;
-                </button>
             </div>
 
             <div class="absolute bottom-12 animate-bounce opacity-50">
@@ -226,14 +211,6 @@
             </div>
         </section>
 
-        <!-- TICKER SECTION -->
-        <div class="ticker-wrap w-full overflow-hidden py-6 relative z-20 border-y border-ivory/5" style="background:rgba(255,255,255,0.02);">
-            <div id="main-ticker" class="animate-ticker flex" style="width:max-content;">
-                <div id="ticker-content" class="flex items-center" style="flex-shrink:0;"></div>
-                <div id="ticker-content-clone" class="flex items-center" style="flex-shrink:0;"></div>
-            </div>
-        </div>
-
         <!-- TRUST SECTION -->
         <section id="about" class="border-b border-ivory/5 overflow-hidden relative" style="min-height: 80vh;">
             <!-- Image covers the right half on desktop/tablet landscape, full width on mobile/tablet portrait -->
@@ -241,14 +218,14 @@
                 <img id="trust-img" src="images/richard-mille.webp" alt="Richard Mille luxury watch" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <!-- Text takes the left half on lg+, full width below -->
-            <div class="relative z-10 lg:w-1/2 bg-[#0a0a0a] min-h-[60vh] lg:min-h-[80vh] flex items-center">
+            <div class="relative z-10 lg:w-1/2 bg-[#000000] min-h-[60vh] lg:min-h-[80vh] flex items-center">
                 <div class="px-6 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-24 space-y-6 sm:space-y-8 max-w-xl mx-auto lg:mx-0">
                     <h2 id="trust-heading" class="reveal-trust font-space text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase leading-tight tracking-tight">
                         Real Watches. <br/>
-                        <span class="text-orange">For True Collectors.</span>
+                        <span class="text-muted">For True Collectors.</span>
                     </h2>
-                    <p id="trust-desc" class="reveal-trust font-inter text-muted text-base sm:text-lg leading-relaxed tracking-wide">
-                        Every piece is sourced through verified partners and independently authenticated by trusted watch specialists before acquisition. Available references and years change constantly &mdash; tell us what you&rsquo;re after and we&rsquo;ll find it.
+                    <p id="trust-desc" class="no-caps reveal-trust font-inter text-muted text-base sm:text-lg leading-relaxed tracking-wide">
+                        Every piece is sourced through verified partners and independently authenticated by trusted watch specialists before acquisition. Available references and years change constantly. Tell us what you&rsquo;re after and we&rsquo;ll find it.
                     </p>
                     <div id="trust-tags" class="reveal-trust pt-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-ivory/50 glass-subtle rounded-xl px-6 sm:px-8 py-5 sm:py-6 w-fit">
                         <span class="whitespace-nowrap">Global Sourcing</span>
@@ -349,7 +326,7 @@
             <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center">
                 <p class="text-[10px] sm:text-xs font-bold tracking-widest text-muted mb-4 font-space uppercase">Looking for something specific?</p>
                 <h2 class="font-space font-bold text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tight mb-6">
-                    Tell us what you&rsquo;re <span class="text-orange">after.</span>
+                    Tell us what you&rsquo;re after.
                 </h2>
                 <p class="font-inter text-muted text-sm sm:text-base tracking-wide mb-10 max-w-xl mx-auto" style="text-transform:none;">
                     Message us on WhatsApp or DM us on Instagram and we&rsquo;ll get back to you as soon as possible.
@@ -368,74 +345,32 @@
         </section>
 
         <!-- FOOTER -->
-        <footer class="relative min-h-[50vh] sm:min-h-[60vh] flex flex-col justify-center items-center overflow-hidden py-16 sm:py-20">
-            <div class="absolute top-1/2 left-0 -translate-y-1/2 w-full select-none pointer-events-none opacity-5 overflow-hidden">
-                <div id="footer-ticker" class="animate-ticker flex" style="width: max-content;">
-                    <span class="text-[20vw] font-space font-bold uppercase leading-none whitespace-nowrap" style="flex-shrink:0;">
-                        Private List &bull; Private List &bull; Private List &bull; Private List &bull;&nbsp;
-                    </span>
-                    <span class="text-[20vw] font-space font-bold uppercase leading-none whitespace-nowrap" style="flex-shrink:0;">
-                        Private List &bull; Private List &bull; Private List &bull; Private List &bull;&nbsp;
-                    </span>
-                </div>
-            </div>
-
-            <div class="footer-reveal relative z-10 w-full max-w-xl px-5 sm:px-8 py-8 sm:py-10 text-center opacity-0 translate-y-5 rounded-2xl mx-4 sm:mx-auto" style="background:rgba(10,10,10,0.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.08)">
-                <h4 id="contact-title" class="font-space text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tight mb-3 sm:mb-4">
-                    Get Priority Access
-                </h4>
-                <p id="contact-text" class="font-inter text-muted text-sm sm:text-base mb-8 sm:mb-10 tracking-wide" style="text-transform:none;">
-                    Be the first to know when off-market pieces, rare references, and exclusive sourcing opportunities become available.
-                </p>
-
-                <form onsubmit="app.handleFooterSubmit(event)" class="flex flex-col gap-4 mb-12 sm:mb-16 max-w-sm mx-auto">
-                    <label for="footer-name" class="sr-only">Full Name</label>
-                    <input id="footer-name" type="text" name="fullName" placeholder="FULL NAME"
-                           class="w-full bg-transparent border-b border-ivory/30 py-3 px-2 text-ivory placeholder-muted/50 focus:border-ivory outline-none transition-colors font-space uppercase" />
-                    <label for="footer-email" class="sr-only">Email Address</label>
-                    <input id="footer-email" type="email" name="email" placeholder="EMAIL ADDRESS" required
-                           class="w-full bg-transparent border-b border-ivory/30 py-3 px-2 text-ivory placeholder-muted/50 focus:border-ivory outline-none transition-colors font-space" />
-                    <label for="footer-intent" class="sr-only">Intent</label>
-                    <select id="footer-intent" name="intent" onchange="this.classList.toggle('text-ivory',this.value!=='');this.classList.toggle('text-muted/50',this.value==='')"
-                            class="w-full bg-transparent border-b border-ivory/30 py-3 px-2 text-muted/50 focus:border-ivory outline-none transition-colors font-space text-xs uppercase tracking-widest appearance-none cursor-pointer">
-                        <option value="" disabled selected>I'M LOOKING TO...</option>
-                        <option value="buy" class="bg-charcoal text-ivory">Buy</option>
-                        <option value="sell" class="bg-charcoal text-ivory">Sell</option>
-                        <option value="trade" class="bg-charcoal text-ivory">Trade</option>
-                        <option value="browse" class="bg-charcoal text-ivory">Just Browsing</option>
-                    </select>
-                    <label for="footer-looking-for" class="sr-only">What are you looking for</label>
-                    <input id="footer-looking-for" type="text" name="lookingFor" placeholder="WHAT ARE YOU LOOKING FOR? (OPTIONAL)"
-                           class="w-full bg-transparent border-b border-ivory/30 py-3 px-2 text-ivory placeholder-muted/50 focus:border-ivory outline-none transition-colors font-space text-xs uppercase tracking-widest" />
-                    <label for="footer-budget" class="sr-only">Budget Range</label>
-                    <select id="footer-budget" name="budget" onchange="this.classList.toggle('text-ivory',this.value!=='');this.classList.toggle('text-muted/50',this.value==='')"
-                            class="w-full bg-transparent border-b border-ivory/30 py-3 px-2 text-muted/50 focus:border-ivory outline-none transition-colors font-space text-xs uppercase tracking-widest appearance-none cursor-pointer">
-                        <option value="" disabled selected>BUDGET RANGE (OPTIONAL)</option>
-                        <option value="under5k" class="bg-charcoal text-ivory">Under $5K</option>
-                        <option value="5k-15k" class="bg-charcoal text-ivory">$5K – $15K</option>
-                        <option value="15k-50k" class="bg-charcoal text-ivory">$15K – $50K</option>
-                        <option value="50k+" class="bg-charcoal text-ivory">$50K+</option>
-                    </select>
-                    <button type="submit" id="footer-btn"
-                            class="shimmer-btn group relative overflow-hidden w-full text-charcoal px-6 sm:px-8 py-3.5 font-bold font-space uppercase tracking-widest text-xs sm:text-sm mt-2 transition-transform hover:scale-[1.02]">
-                        <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Get Priority Access</span>
-                        <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                    </button>
-                </form>
-
-                <div class="w-full border-t border-ivory/10 pt-10 space-y-8">
-                    <div class="social-bar">
-                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="Instagram">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
-                        </a>
-                        <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="social-icon" data-tooltip="WhatsApp">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
-                        </a>
+        <footer class="relative border-t border-ivory/10 py-14 sm:py-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <a href="index.html" class="inline-block mb-10">
+                    <img src="images/logo.png" alt="Prime Time Miami" class="h-9 w-auto object-contain mx-auto">
+                </a>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mb-12">
+                    <div>
+                        <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Location</h4>
+                        <p class="no-caps font-inter text-sm text-muted">Miami, Florida</p>
                     </div>
-                    <p class="text-center mt-6 text-sm font-space uppercase tracking-widest text-muted">&copy; 2026 Prime Time Miami</p>
-                    <p class="text-center text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-4 leading-relaxed" style="text-transform: none; font-style: italic;">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
-                    <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy & Terms</a>
+                    <div>
+                        <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Contact</h4>
+                        <p class="no-caps font-inter text-sm">
+                            <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">+1 (305) 922-4975</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Social</h4>
+                        <p class="no-caps font-inter text-sm">
+                            <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">Instagram</a>
+                        </p>
+                    </div>
                 </div>
+                <p class="text-xs font-space uppercase tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
+                <p class="no-caps text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-3 leading-relaxed">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
+                <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
             </div>
         </footer>
     </main>
@@ -485,25 +420,6 @@
 
         const CONFIG = {
             APP_NAME: "Prime Time Miami",
-            TICKER_ITEMS: [
-                { id: '1',  name: 'AP Royal Oak Openworked',     ref: '15416CB',           price: 'Inquire', image: 'images/ticker/watch-1.jpeg' },
-                { id: '5',  name: 'F.P. Journe',                 ref: 'Chronomètre Bleu',  price: 'Inquire', image: 'images/ticker/watch-5.jpg' },
-                { id: '13', name: 'Richard Mille',               ref: 'RM 030 Blue',       price: 'Inquire', image: 'images/ticker/watch-13.jpeg' },
-                { id: '10', name: 'Patek Aquanaut',              ref: '5164A Travel Time', price: 'Inquire', image: 'images/ticker/watch-10.jpeg', sold: 'LAST SOURCED' },
-                { id: '12', name: 'Rolex Day-Date',              ref: 'Platinum Arabic',   price: 'Inquire', image: 'images/ticker/watch-12.jpeg' },
-                { id: '18', name: 'Vacheron Overseas Chrono',    ref: '5500V Blue',        price: 'Inquire', image: 'images/ticker/watch-18.jpg' },
-                { id: '8',  name: 'Greubel Forsey',              ref: 'Balancier S2',      price: 'Inquire', image: 'images/ticker/watch-8.jpg' },
-                { id: '14', name: 'Richard Mille',               ref: 'RM 35-03 Nadal',    price: 'Inquire', image: 'images/ticker/watch-14.jpg' },
-                { id: '2',  name: 'AP Royal Oak Mini Frosted',   ref: '67630BC',           price: 'Inquire', image: 'images/ticker/watch-2.jpeg', sold: 'LAST SOURCED' },
-                { id: '6',  name: 'F.P. Journe Octa Lune',       ref: 'Black Label',       price: 'Inquire', image: 'images/ticker/watch-6.jpg' },
-                { id: '9',  name: 'MB&F Aquapod',                ref: 'HM7 Titanium',     price: 'Inquire', image: 'images/ticker/watch-9.jpg' },
-                { id: '15', name: 'Richard Mille',               ref: 'RM 65-01 LeBron',   price: 'Inquire', image: 'images/ticker/watch-15.jpg' },
-                { id: '11', name: 'Patek Nautilus Tiffany',      ref: '5712/1A',           price: 'Inquire', image: 'images/ticker/watch-11.jpeg' },
-                { id: '7',  name: 'F.P. Journe Tourbillon',      ref: 'Souverain',         price: 'Inquire', image: 'images/ticker/watch-7.jpg' },
-                { id: '17', name: 'Rolex GMT-Master II',         ref: '126710BLNR Batman', price: 'Inquire', image: 'images/ticker/watch-17.jpg', sold: 'LAST SOURCED' },
-                { id: '16', name: 'Richard Mille',               ref: 'RM 67-02 Ogier',    price: 'Inquire', image: 'images/ticker/watch-16.jpg' },
-                { id: '19', name: 'Vacheron Overseas Perpetual', ref: '4300V Burgundy',    price: 'Inquire', image: 'images/ticker/watch-19.jpg' },
-            ],
             WATCH_BRANDS: {
                 'Rolex': ['Daytona','Submariner','GMT-Master II','Explorer','Explorer II','Datejust','Day-Date','Sky-Dweller','Yacht-Master','Sea-Dweller','Oyster Perpetual','Land-Dweller','Milgauss','Air-King','Cellini','Other'],
                 'Patek Philippe': ['Nautilus','Aquanaut','Calatrava','Grand Complications','Complications','Twenty~4','Golden Ellipse','Other'],
@@ -530,14 +446,8 @@
             footerTickerTween: null,
 
             init: () => {
-                app.renderTicker();
-                app.initTickerGSAP();
                 app.initAnimations();
                 safeCreateIcons();
-            },
-
-            getWatchById: (id) => {
-                return CONFIG.TICKER_ITEMS.find(item => item.id === id);
             },
 
             updateModels: (brand) => {
@@ -561,68 +471,9 @@
                 }
             },
 
-            renderTicker: () => {
-                const html = CONFIG.TICKER_ITEMS.map(item => `
-                    <button onclick="app.openModal('WATCH_DETAIL', app.getWatchById('${item.id}'))"
-                            class="group flex items-center space-x-5 mx-6 sm:mx-8 focus:outline-none flex-shrink-0">
-                        <div class="w-10 h-10 rounded-full overflow-hidden border border-ivory/20 flex-shrink-0 group-hover:border-ivory/60 transition-all duration-300 group-hover:scale-110 bg-white/5">
-                            <img src="${esc(item.image)}" alt="${esc(item.name)}" loading="lazy" decoding="async" class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex flex-col items-start">
-                            <span class="text-2xl sm:text-3xl font-space font-bold tracking-tight text-ivory/80 group-hover:text-ivory transition-colors duration-300 whitespace-nowrap">
-                                ${esc(item.name)}
-                            </span>
-                            <span class="text-muted text-[10px] font-bold tracking-widest group-hover:text-ivory/60 transition-colors duration-300 whitespace-nowrap">
-                                ${esc(item.ref)}
-                            </span>
-                        </div>
-                        ${item.sold
-                            ? `<span class="ml-3 text-[9px] font-space font-bold tracking-widest text-charcoal bg-ivory px-2 py-1 rounded-full whitespace-nowrap flex-shrink-0">${esc(item.sold)}</span>`
-                            : `<div class="w-1.5 h-1.5 rounded-full bg-ivory/20 group-hover:bg-ivory transition-colors duration-300 ml-2 flex-shrink-0"></div>`
-                        }
-                    </button>
-                `).join('');
-                document.getElementById('ticker-content').innerHTML = html;
-                document.getElementById('ticker-content-clone').innerHTML = html;
-            },
+            pauseTickers: () => {},
 
-
-            initTickerGSAP: () => {
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-                // Main watch ticker — GSAP driven for smooth, jank-free animation
-                const mainTicker = document.getElementById('main-ticker');
-                if (mainTicker) {
-                    // Use xPercent: -50 because the element has two identical halves
-                    app.tickerTween = gsap.to(mainTicker, {
-                        xPercent: -50,
-                        duration: 80,
-                        ease: "none",
-                        repeat: -1,
-                        force3D: true
-                    });
-                }
-                // Footer "Private List" ticker (slow & subtle)
-                const footerTicker = document.getElementById('footer-ticker');
-                if (footerTicker) {
-                    app.footerTickerTween = gsap.to(footerTicker, {
-                        xPercent: -50,
-                        duration: 120,
-                        ease: "none",
-                        repeat: -1,
-                        force3D: true
-                    });
-                }
-            },
-
-            pauseTickers: () => {
-                if (app.tickerTween) app.tickerTween.pause();
-                if (app.footerTickerTween) app.footerTickerTween.pause();
-            },
-
-            resumeTickers: () => {
-                if (app.tickerTween) app.tickerTween.resume();
-                if (app.footerTickerTween) app.footerTickerTween.resume();
-            },
+            resumeTickers: () => {},
 
             initAnimations: () => {
                 gsap.registerPlugin(ScrollTrigger);
@@ -663,7 +514,7 @@
                                     end: 'center 55%',
                                     scrub: 0.6,
                                 },
-                                backgroundColor: 'rgba(10,10,10,0.35)',
+                                backgroundColor: 'rgba(0,0,0,0.35)',
                             });
                             gsap.to(img, {
                                 scrollTrigger: {
@@ -687,14 +538,6 @@
                     ease: "expo.out",
                     clearProps: "all"
                 });
-
-                // ── Footer - dramatic entrance ──
-                gsap.to(".footer-reveal", {
-                    scrollTrigger: { trigger: "footer", start: "top 85%", once: true },
-                    y: 0, opacity: 1,
-                    duration: 1,
-                    ease: "back.out(1.4)"
-                });
             },
 
             openModal: (type, data = null) => {
@@ -702,40 +545,8 @@
                 const body = document.getElementById('modal-body');
 
                 let html = '';
-                if (type === 'WATCH_DETAIL' && data) {
-                    html = `
-                        <div id="form-view">
-                            <div class="w-full h-72 sm:h-96 overflow-hidden">
-                                <img src="${esc(data.image)}" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5 sm:p-8 space-y-6">
-                                <div>
-                                    <h2 class="text-3xl font-space font-bold tracking-tight mb-1">${esc(data.name)}</h2>
-                                    <p class="text-muted font-bold tracking-widest text-xs">${esc(data.ref)}</p>
-                                </div>
-                                <div class="border-t border-ivory/10 pt-4">
-                                    <p class="text-sm font-inter text-ivory/80 leading-relaxed mb-2">
-                                        Interested in this piece? Message us and we&rsquo;ll get back to you as soon as possible.
-                                    </p>
-                                    <p class="text-[11px] font-inter text-muted leading-relaxed mb-6" style="text-transform:none;">
-                                        Photos are representative &mdash; exact references and years we can source vary. DM us for current availability.
-                                    </p>
-                                    <div class="space-y-3">
-                                        <a href="https://wa.me/13059224975?text=${encodeURIComponent('Hi Prime Time Miami — I\'m interested in the ' + data.name + ' (' + data.ref + ')')}" target="_blank" rel="noopener noreferrer" class="shimmer-btn group relative overflow-hidden w-full text-charcoal py-4 font-bold font-space tracking-widest transition-transform hover:scale-[1.02] flex items-center justify-center text-xs uppercase">
-                                            <span class="relative z-10 group-hover:text-ivory transition-colors duration-300">Message on WhatsApp</span>
-                                            <div class="absolute inset-0 bg-charcoal transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                                        </a>
-                                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden w-full border border-ivory/40 text-ivory py-4 font-bold font-space tracking-widest text-xs uppercase transition-all hover:border-ivory flex items-center justify-center">
-                                            <span class="relative z-10 group-hover:text-charcoal transition-colors duration-300">DM on Instagram</span>
-                                            <div class="absolute inset-0 bg-ivory transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                } else {
-                    const title = type === 'JOIN_LIST' ? 'Private List Application' : `Request to ${type}`;
+                {
+                    const title = `Request to ${type}`;
                     html = `
                         <div id="form-view" class="p-5 sm:p-8">
                             <h2 class="text-2xl font-space font-bold tracking-tight mb-2">${title}</h2>
@@ -749,7 +560,7 @@
                                     <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Email</label>
                                     <input required type="email" name="email" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors">
                                 </div>
-                                ${type !== 'JOIN_LIST' ? `
+                                ${true ? `
                                     <div>
                                         <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Brand</label>
                                         <select name="watchBrand" required onchange="app.updateModels(this.value)"
@@ -935,59 +746,6 @@
                         btnLabel.textContent = 'Error - Try Again';
                         btn.disabled = false;
                     }
-                }
-            },
-
-            handleFooterSubmit: async (e) => {
-                e.preventDefault();
-                const form = e.target;
-                const btn = form.querySelector('button[type="submit"]');
-                const btnLabel = btn.querySelector('span') || btn;
-                const emailInput = form.querySelector('input[name="email"]');
-                const nameInput = form.querySelector('input[name="fullName"]');
-                const intentSelect = form.querySelector('select[name="intent"]');
-                const budgetSelect = form.querySelector('select[name="budget"]');
-                const lookingForInput = form.querySelector('input[name="lookingFor"]');
-                const originalText = btnLabel.textContent;
-
-                btnLabel.textContent = 'JOINING...';
-                btn.disabled = true;
-
-                const showJoined = () => {
-                    btnLabel.textContent = 'JOINED ✓';
-                    emailInput.value = '';
-                    if (nameInput) nameInput.value = '';
-                    if (intentSelect) intentSelect.selectedIndex = 0;
-                    if (budgetSelect) budgetSelect.selectedIndex = 0;
-                    if (lookingForInput) lookingForInput.value = '';
-                    setTimeout(() => { btnLabel.textContent = originalText; btn.disabled = false; }, 3000);
-                };
-
-                try {
-                    const payload = { type: 'JOIN_LIST', email: emailInput.value };
-                    if (nameInput && nameInput.value.trim()) payload.fullName = nameInput.value.trim();
-                    if (intentSelect && intentSelect.value) payload.intent = intentSelect.value;
-                    if (budgetSelect && budgetSelect.value) payload.budget = budgetSelect.value;
-                    if (lookingForInput && lookingForInput.value.trim()) payload.lookingFor = lookingForInput.value.trim();
-                    const res = await fetch('/api/submit-form', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!res.ok) throw new Error('Failed');
-                    showJoined();
-                    // Meta Pixel: Lead on successful email signup
-                    if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'JOIN_LIST' });
-                } catch (error) {
-                    console.error('Footer submit error:', error);
-                    // Local dev fallback
-                    if (window.location.protocol === 'file:' || (window.location.hostname === 'localhost' && error.message.includes('Failed to fetch'))) {
-                        showJoined();
-                        return;
-                    }
-                    btnLabel.textContent = 'ERROR - TRY AGAIN';
-                    setTimeout(() => { btnLabel.textContent = originalText; btn.disabled = false; }, 3000);
                 }
             }
         };

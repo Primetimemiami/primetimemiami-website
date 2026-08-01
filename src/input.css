@@ -678,3 +678,10 @@ body.page-exit {
     body { opacity: 1 !important; transition: none !important; }
     body.page-exit { opacity: 1 !important; }
 }
+
+/* ── Prime Time overrides ── */
+html, body { background: #000 !important; }
+.bg-charcoal { background-color: #000 !important; }
+.orb { display: none !important; }
+.shimmer-btn { background: #f0f0f0 !important; animation: none !important; }
+.no-caps { text-transform: none !important; }

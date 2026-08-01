@@ -112,18 +112,33 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="relative z-10 px-6 py-12 border-t border-ivory/10 text-center">
-        <div class="flex justify-center gap-8 sm:gap-12 mb-4">
-            <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
-                <i data-lucide="instagram" class="w-5 h-5"></i>
+    <footer class="relative border-t border-ivory/10 py-14 sm:py-16 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <a href="index.html" class="inline-block mb-10">
+                <img src="images/logo.png" alt="Prime Time Miami" class="h-9 w-auto object-contain mx-auto">
             </a>
-            <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
-            </a>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mb-12">
+                <div>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Location</h4>
+                    <p class="no-caps font-inter text-sm text-muted">Miami, Florida</p>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Contact</h4>
+                    <p class="no-caps font-inter text-sm">
+                        <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">+1 (305) 922-4975</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Social</h4>
+                    <p class="no-caps font-inter text-sm">
+                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <p class="text-xs font-space uppercase tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
+            <p class="no-caps text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-3 leading-relaxed">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
+            <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
         </div>
-        <span class="block mt-6 text-xs text-muted/60 font-space uppercase tracking-widest">&copy; 2026 PRIME TIME MIAMI</span>
-        <p class="text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-4 leading-relaxed" style="text-transform: none; font-style: italic;">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
-        <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy & Terms</a>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -271,7 +286,7 @@
                                 Interested in this piece? Message us and we'll get back to you with sourcing details, pricing, and availability.
                             </p>
                             <p class="text-muted text-[10px] font-inter tracking-wide mb-5 leading-relaxed">
-                                Exact references and years we can source vary &mdash; DM us for current availability.
+                                Exact references and years we can source vary. DM us for current availability.
                             </p>
                             <a id="wa-inquire-btn" href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer"
                                 class="block text-center w-full bg-ivory text-charcoal py-4 font-bold font-space uppercase tracking-widest hover:bg-white transition-colors mb-3">
@@ -488,7 +503,7 @@
             // Prefill the WhatsApp inquiry link with this piece
             const waBtn = document.getElementById('wa-inquire-btn');
             if (waBtn && currentWatch) {
-                const msg = 'Hi Prime Time Miami — I\'m interested in the ' + (currentWatch.name || '') + (currentWatch.ref ? ' (Ref. ' + currentWatch.ref + ')' : '');
+                const msg = 'Hi Prime Time Miami. I\'m interested in the ' + (currentWatch.name || '') + (currentWatch.ref ? ' (Ref. ' + currentWatch.ref + ')' : '');
                 waBtn.href = 'https://wa.me/13059224975?text=' + encodeURIComponent(msg);
             }
 
