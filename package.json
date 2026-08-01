@@ -1,0 +1,25 @@
+{
+  "name": "dialed-by-h-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/styles.css --minify",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@react-email/components": "^1.0.8",
+    "@react-email/render": "^2.0.4",
+    "@supabase/supabase-js": "^2.39.0",
+    "@vercel/analytics": "^2.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {
+    "@react-email/preview-server": "^5.2.8",
+    "@tailwindcss/cli": "^4.1.18",
+    "react-email": "^5.2.8",
+    "tailwindcss": "^4.1.18"
+  }
+}
