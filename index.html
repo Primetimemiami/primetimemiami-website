@@ -517,14 +517,7 @@
                     });
                 }
 
-                // ── CTA section - scale + blur reveal ──
-                gsap.from("#contact-cta .relative.z-10", {
-                    scrollTrigger: { trigger: "#contact-cta", start: "top 80%", once: true },
-                    y: 60, opacity: 0, scale: 0.96,
-                    duration: 1.2,
-                    ease: "expo.out",
-                    clearProps: "all"
-                });
+                // CTA reveal handled by the scroll-flow layer (word build)
             },
 
             openModal: (type, data = null) => {
@@ -806,6 +799,95 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     }
   } catch (e) { console.warn('particle wave skipped:', e); }
 }
+</script>
+<script src="/scripts/lenis.min.js"></script>
+<script>
+/* ── Scroll flow: smooth scroll + scrubbed transitions between sections ── */
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (typeof gsap === 'undefined') return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* Lenis smooth scrolling, driven by GSAP's ticker */
+  if (typeof Lenis === 'function') {
+    var lenis = new Lenis({ lerp: 0.11 });
+    window.__lenis = lenis;
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+  }
+
+  /* 1. Hero hands off: logo drifts up + fades, wave dissolves as you scroll */
+  var heroContent = document.querySelector('main section .relative.z-10');
+  if (heroContent) {
+    gsap.to(heroContent, {
+      scrollTrigger: { trigger: 'main section', start: 'top top', end: '85% top', scrub: 0.6 },
+      y: -90, opacity: 0, ease: 'none'
+    });
+  }
+  gsap.to('#pt-wave', {
+    scrollTrigger: { trigger: 'main', start: 'top top', end: '55% top', scrub: 0.6 },
+    opacity: 0.15, ease: 'none'
+  });
+
+  /* 2. Trust section: image parallax + copy slides in from the left */
+  var trustImg = document.querySelector('#about img');
+  if (trustImg) {
+    gsap.fromTo(trustImg, { yPercent: -10, scale: 1.12 }, {
+      scrollTrigger: { trigger: '#about', start: 'top bottom', end: 'bottom top', scrub: true },
+      yPercent: 10, scale: 1.12, ease: 'none'
+    });
+  }
+
+  /* 3. Buy / Sell / Trade: cards rise in with stagger, color bleeds in as you pass */
+  var cards = gsap.utils.toArray('.action-card');
+  if (cards.length) {
+    gsap.from(cards, {
+      scrollTrigger: { trigger: '#process', start: 'top 82%', once: true },
+      y: 90, opacity: 0, duration: 1.1, stagger: 0.14, ease: 'expo.out', clearProps: 'transform,opacity'
+    });
+    if (window.innerWidth >= 640) {
+      cards.forEach(function (card) {
+        var bgWrap = card.querySelector(':scope > div:first-child');
+        var overlay = bgWrap ? bgWrap.querySelector(':scope > div:first-child') : null;
+        var img = card.querySelector('img');
+        if (overlay && img) {
+          gsap.to(overlay, {
+            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 0.6 },
+            backgroundColor: 'rgba(0,0,0,0.45)', ease: 'none'
+          });
+          gsap.to(img, {
+            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 0.6 },
+            filter: 'grayscale(0.25)', ease: 'none'
+          });
+        }
+      });
+    }
+  }
+
+  /* 4. CTA: headline builds word by word */
+  var ctaH = document.querySelector('#contact-cta h2');
+  if (ctaH) {
+    var words = ctaH.textContent.trim().split(/\s+/);
+    ctaH.innerHTML = words.map(function (w) {
+      return '<span style="display:inline-block;overflow:hidden;vertical-align:bottom;"><span style="display:inline-block;">' + w + '</span></span>';
+    }).join(' ');
+    gsap.from(ctaH.querySelectorAll('span > span'), {
+      scrollTrigger: { trigger: '#contact-cta', start: 'top 78%', once: true },
+      yPercent: 110, duration: 0.9, stagger: 0.07, ease: 'expo.out'
+    });
+    gsap.from('#contact-cta p, #contact-cta .flex', {
+      scrollTrigger: { trigger: '#contact-cta', start: 'top 78%', once: true },
+      y: 30, opacity: 0, duration: 0.9, stagger: 0.12, delay: 0.25, ease: 'power2.out', clearProps: 'all'
+    });
+  }
+
+  /* 5. Footer: columns rise in sequence */
+  gsap.from('footer .max-w-5xl > *', {
+    scrollTrigger: { trigger: 'footer', start: 'top 88%', once: true },
+    y: 24, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power2.out', clearProps: 'all'
+  });
+})();
 </script>
 </body>
 </html>
