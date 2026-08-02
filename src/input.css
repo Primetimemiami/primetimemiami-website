@@ -765,10 +765,22 @@ body { text-transform: none !important; }
 #modal-body select option, #inquiry-form select option { background: #000; color: #fff; }
 #modal-body ::placeholder, #inquiry-form ::placeholder { color: rgba(255,255,255,0.28); }
 
-/* card hover: image goes FULL color, overlay nearly clears */
-.action-card:hover > div:first-child > div:first-child { background-color: rgba(0,0,0,0.05) !important; }
-.action-card:hover img { filter: grayscale(0) !important; }
-
-/* the color fades in smoothly on hover */
-.action-card img { transition: filter 0.7s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1) !important; }
-.action-card > div:first-child > div:first-child { transition: background-color 0.7s ease !important; }
+/* ── card hover: one owner, buttery. all states + transitions defined here ── */
+.action-card img {
+  filter: grayscale(1) !important;
+  transform: scale(1.02) !important;
+  transition: filter 1.1s cubic-bezier(0.22, 1, 0.36, 1), transform 1.6s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  will-change: transform, filter;
+  backface-visibility: hidden;
+}
+.action-card:hover img {
+  filter: grayscale(0) !important;
+  transform: scale(1.08) !important;
+}
+.action-card > div:first-child > div:first-child {
+  background-color: rgba(0, 0, 0, 0.82) !important;
+  transition: background-color 1.1s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+.action-card:hover > div:first-child > div:first-child {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
