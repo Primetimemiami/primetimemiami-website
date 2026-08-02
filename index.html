@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=5">
+    <link rel="stylesheet" href="/dist/styles.css?v=7">
     <style>
     .action-card img, #about img, #hero-title img { will-change: transform, filter; transform: translateZ(0); }
     </style>
@@ -179,8 +179,6 @@
                     </svg>
                 </button>
             </nav>
-            <canvas id="pt-wave" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
-            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
 
             <div class="relative z-10 text-center max-w-5xl mx-auto">
                 <h1 id="hero-title" class="mb-6 sm:mb-8">
@@ -243,7 +241,7 @@
             <a href="inventory.html"
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full block">
                 <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
+                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
                     <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available for purchase"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
@@ -268,7 +266,7 @@
             <button onclick="app.openModal('SELL')"
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full">
                 <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
+                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
                     <img src="images/pieces/piece-02.webp" alt="Rolex Daytona in box"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
@@ -293,7 +291,7 @@
             <button onclick="app.openModal('TRADE')"
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 border-ivory/10 overflow-hidden text-left w-full">
                 <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
+                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
                     <img src="images/pieces/piece-04.webp" alt="Rolex GMT-Master II Pepsi on jubilee bracelet"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
@@ -735,74 +733,6 @@
 
         window.addEventListener('DOMContentLoaded', app.init);
     </script>
-<script type="module">
-/* Hero particle wave (ported from a React/three.js component to vanilla) */
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  try {
-    const THREE = await import('/scripts/three.module.min.js');
-    const canvas = document.getElementById('pt-wave');
-    if (canvas) {
-      const hero = canvas.parentElement;
-      const camera = new THREE.PerspectiveCamera(75, 1, 0.01, 1000);
-      camera.position.set(0, 6, 5);
-      const scene = new THREE.Scene();
-      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      renderer.setClearColor(new THREE.Color(0x000000));
-
-      const gap = 0.3, amountX = 200, amountY = 200;
-      const num = amountX * amountY;
-      const positions = new Float32Array(num * 3);
-      const scales = new Float32Array(num);
-      let i = 0, j = 0;
-      for (let ix = 0; ix < amountX; ix++) {
-        for (let iy = 0; iy < amountY; iy++) {
-          positions[i] = ix * gap - (amountX * gap) / 2;
-          positions[i + 1] = 0;
-          positions[i + 2] = iy * gap - (amountX * gap) / 2;
-          scales[j] = 1;
-          i += 3; j++;
-        }
-      }
-      const geo = new THREE.BufferGeometry();
-      geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-      geo.setAttribute('scale', new THREE.BufferAttribute(scales, 1));
-      const mat = new THREE.ShaderMaterial({
-        transparent: true,
-        vertexShader: 'attribute float scale; uniform float uTime;' +
-          'void main() { vec3 p = position; float s = scale;' +
-          'p.y += (sin(p.x + uTime) * 0.5) + (cos(p.y + uTime) * 0.1) * 2.0;' +
-          'p.x += (sin(p.y + uTime) * 0.5);' +
-          's += (sin(p.x + uTime) * 0.5) + (cos(p.y + uTime) * 0.1) * 2.0;' +
-          'vec4 mv = modelViewMatrix * vec4(p, 1.0);' +
-          'gl_PointSize = s * 15.0 * (1.0 / -mv.z);' +
-          'gl_Position = projectionMatrix * mv; }',
-        fragmentShader: 'uniform vec3 uColor; void main() { gl_FragColor = vec4(uColor, 0.5); }',
-        uniforms: {
-          uTime: { value: 0 },
-          uColor: { value: new THREE.Vector3(1.0, 1.0, 1.0) }
-        }
-      });
-      scene.add(new THREE.Points(geo, mat));
-
-      const size = () => {
-        const w = hero.clientWidth, h = hero.clientHeight;
-        camera.aspect = w / h;
-        camera.updateProjectionMatrix();
-        renderer.setSize(w, h);
-      };
-      size();
-      window.addEventListener('resize', size);
-
-      renderer.setAnimationLoop(() => {
-        mat.uniforms.uTime.value += 0.05;
-        camera.lookAt(scene.position);
-        renderer.render(scene, camera);
-      });
-    }
-  } catch (e) { console.warn('particle wave skipped:', e); }
-}
-</script>
 <script src="/scripts/lenis.min.js"></script>
 <script>
 /* ── Scroll flow: smooth scroll + scrubbed transitions between sections ── */
@@ -828,19 +758,8 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       y: -90, opacity: 0, ease: 'none'
     });
   }
-  gsap.to('#pt-wave', {
-    scrollTrigger: { trigger: 'main', start: 'top top', end: '55% top', scrub: 1 },
-    opacity: 0.15, ease: 'none'
-  });
 
-  /* 2. Trust section: image parallax + copy slides in from the left */
-  var trustImg = document.querySelector('#about img');
-  if (trustImg) {
-    gsap.fromTo(trustImg, { yPercent: -10, scale: 1.12 }, {
-      scrollTrigger: { trigger: '#about', start: 'top bottom', end: 'bottom top', scrub: true },
-      yPercent: 10, scale: 1.12, ease: 'none'
-    });
-  }
+  /* Trust image intentionally static */
 
   /* 3. Buy / Sell / Trade: cards rise in with stagger, color bleeds in as you pass */
   var cards = gsap.utils.toArray('.action-card');
@@ -849,23 +768,6 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       scrollTrigger: { trigger: '#process', start: 'top 82%', once: true },
       y: 110, opacity: 0, duration: 1.5, stagger: 0.16, ease: 'expo.out', clearProps: 'transform,opacity'
     });
-    if (window.innerWidth >= 640) {
-      cards.forEach(function (card) {
-        var bgWrap = card.querySelector(':scope > div:first-child');
-        var overlay = bgWrap ? bgWrap.querySelector(':scope > div:first-child') : null;
-        var img = card.querySelector('img');
-        if (overlay && img) {
-          gsap.to(overlay, {
-            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 1.2 },
-            backgroundColor: 'rgba(0,0,0,0.45)', ease: 'none'
-          });
-          gsap.to(img, {
-            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 1.2 },
-            filter: 'grayscale(0.25)', ease: 'none'
-          });
-        }
-      });
-    }
   }
 
   /* 4. CTA: headline builds word by word */
@@ -873,7 +775,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   if (ctaH) {
     var words = ctaH.textContent.trim().split(/\s+/);
     ctaH.innerHTML = words.map(function (w) {
-      return '<span style="display:inline-block;overflow:hidden;vertical-align:bottom;"><span style="display:inline-block;">' + w + '</span></span>';
+      return '<span style="display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:0.14em;margin-bottom:-0.14em;"><span style="display:inline-block;">' + w + '</span></span>';
     }).join(' ');
     gsap.from(ctaH.querySelectorAll('span > span'), {
       scrollTrigger: { trigger: '#contact-cta', start: 'top 78%', once: true },
