@@ -471,9 +471,8 @@
                 const heroTl = gsap.timeline({ defaults: { ease: "expo.out" } });
                 heroTl
                     .from("#hero-title", { opacity: 0, y: 80, scale: 0.97, duration: 1.4, clearProps: "all" }, 0.2)
-                    .from("#hero-sub", { opacity: 0, y: 30, duration: 0.9, clearProps: "all" }, "-=0.7")
-                    .from("#hero-btn", { opacity: 0, duration: 0.8, clearProps: "all" }, "-=0.5")
-                    .from(".animate-bounce", { opacity: 0, duration: 0.8, clearProps: "all" }, "-=0.3");
+                    .from("#hero-sub", { opacity: 0, y: 30, duration: 0.9, clearProps: "all" }, "-=0.7");
+                // buttons render immediately - no entrance animation
 
                 // ── Ticker - always visible, no scroll trigger ──
 
