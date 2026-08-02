@@ -39,7 +39,7 @@
         "description": "Luxury watch concierge service specializing in sourcing, selling, and trading rare and hard-to-find timepieces including Rolex, Patek Philippe, Audemars Piguet, and Richard Mille.",
         "url": "https://primetimemiami.com",
         "logo": "https://primetimemiami.com/images/logo.png",
-        "image": "https://primetimemiami.com/images/trust-auth.webp",
+        "image": "https://primetimemiami.com/images/pieces/piece-05.webp",
         "contactPoint": {
             "@type": "ContactPoint",
             "email": "info@primetimemiami.com",
@@ -127,6 +127,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
     <link rel="stylesheet" href="/dist/styles.css?v=5">
+    <style>
+    .action-card img, #about img, #hero-title img { will-change: transform, filter; transform: translateZ(0); }
+    </style>
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -207,7 +210,7 @@
         <section id="about" class="border-b border-ivory/5 overflow-hidden relative" style="min-height: 80vh;">
             <!-- Image covers the right half on desktop/tablet landscape, full width on mobile/tablet portrait -->
             <div class="hidden lg:block absolute top-0 right-0 w-1/2 h-full overflow-hidden">
-                <img id="trust-img" src="images/richard-mille.webp" alt="Richard Mille luxury watch" class="w-full h-full object-cover" loading="lazy" />
+                <img id="trust-img" src="images/pieces/piece-05.webp" alt="Rolex GMT-Master II in box" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <!-- Text takes the left half on lg+, full width below -->
             <div class="relative z-10 lg:w-1/2 bg-[#000000] min-h-[60vh] lg:min-h-[80vh] flex items-center">
@@ -230,7 +233,7 @@
             </div>
             <!-- Mobile + tablet portrait image below text -->
             <div class="lg:hidden h-[40vh] sm:h-[50vh] overflow-hidden">
-                <img src="images/richard-mille.webp" alt="Richard Mille luxury watch" class="w-full h-full object-cover" loading="lazy" />
+                <img src="images/pieces/piece-05.webp" alt="Rolex GMT-Master II in box" class="w-full h-full object-cover" loading="lazy" />
             </div>
         </section>
 
@@ -241,7 +244,7 @@
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full block">
                 <div class="absolute inset-0 z-0">
                     <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
-                    <img src="images/buy-ap-royal-oak.webp" alt="Audemars Piguet Royal Oak luxury watch available for purchase"
+                    <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available for purchase"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
                 <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
@@ -266,7 +269,7 @@
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full">
                 <div class="absolute inset-0 z-0">
                     <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
-                    <img src="images/sell-rm-lemans.webp" alt="Richard Mille Le Mans luxury watch available for sale"
+                    <img src="images/pieces/piece-02.webp" alt="Rolex Daytona in box"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
                 <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
@@ -291,7 +294,7 @@
                     class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 border-ivory/10 overflow-hidden text-left w-full">
                 <div class="absolute inset-0 z-0">
                     <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/40 transition-colors duration-700 z-10"></div>
-                    <img src="images/trade-patek-aquanaut.webp" alt="Patek Philippe Aquanaut luxury watch available for trade"
+                    <img src="images/pieces/piece-04.webp" alt="Rolex GMT-Master II Pepsi on jubilee bracelet"
                          class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out grayscale group-hover:grayscale-0" loading="lazy">
                 </div>
                 <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
@@ -810,7 +813,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 
   /* Lenis smooth scrolling, driven by GSAP's ticker */
   if (typeof Lenis === 'function') {
-    var lenis = new Lenis({ lerp: 0.11 });
+    var lenis = new Lenis({ lerp: 0.075, wheelMultiplier: 0.9 });
     window.__lenis = lenis;
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
@@ -821,12 +824,12 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   var heroContent = document.querySelector('main section .relative.z-10');
   if (heroContent) {
     gsap.to(heroContent, {
-      scrollTrigger: { trigger: 'main section', start: 'top top', end: '85% top', scrub: 0.6 },
+      scrollTrigger: { trigger: 'main section', start: 'top top', end: '85% top', scrub: 1 },
       y: -90, opacity: 0, ease: 'none'
     });
   }
   gsap.to('#pt-wave', {
-    scrollTrigger: { trigger: 'main', start: 'top top', end: '55% top', scrub: 0.6 },
+    scrollTrigger: { trigger: 'main', start: 'top top', end: '55% top', scrub: 1 },
     opacity: 0.15, ease: 'none'
   });
 
@@ -844,7 +847,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   if (cards.length) {
     gsap.from(cards, {
       scrollTrigger: { trigger: '#process', start: 'top 82%', once: true },
-      y: 90, opacity: 0, duration: 1.1, stagger: 0.14, ease: 'expo.out', clearProps: 'transform,opacity'
+      y: 110, opacity: 0, duration: 1.5, stagger: 0.16, ease: 'expo.out', clearProps: 'transform,opacity'
     });
     if (window.innerWidth >= 640) {
       cards.forEach(function (card) {
@@ -853,11 +856,11 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         var img = card.querySelector('img');
         if (overlay && img) {
           gsap.to(overlay, {
-            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 0.6 },
+            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 1.2 },
             backgroundColor: 'rgba(0,0,0,0.45)', ease: 'none'
           });
           gsap.to(img, {
-            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 0.6 },
+            scrollTrigger: { trigger: '#process', start: 'top 65%', end: 'bottom 70%', scrub: 1.2 },
             filter: 'grayscale(0.25)', ease: 'none'
           });
         }
@@ -874,7 +877,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     }).join(' ');
     gsap.from(ctaH.querySelectorAll('span > span'), {
       scrollTrigger: { trigger: '#contact-cta', start: 'top 78%', once: true },
-      yPercent: 110, duration: 0.9, stagger: 0.07, ease: 'expo.out'
+      yPercent: 110, duration: 1.2, stagger: 0.085, ease: 'expo.out'
     });
     gsap.from('#contact-cta p, #contact-cta .flex', {
       scrollTrigger: { trigger: '#contact-cta', start: 'top 78%', once: true },
