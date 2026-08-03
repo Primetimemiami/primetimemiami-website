@@ -744,7 +744,7 @@ body { text-transform: none !important; }
   background-color: transparent !important;
   padding: 12px 2px !important;
   font-size: 16px;
-  background-image: linear-gradient(#fff, #fff);
+  background-image: linear-gradient(#E8622C, #E8622C);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 0% 2px;
@@ -757,7 +757,7 @@ body { text-transform: none !important; }
 }
 #modal-body select, #inquiry-form select {
   appearance: none; -webkit-appearance: none;
-  background-image: linear-gradient(#fff, #fff), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='7'><path d='M1 1l5 5 5-5' stroke='white' stroke-opacity='0.5' fill='none'/></svg>");
+  background-image: linear-gradient(#E8622C, #E8622C), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='7'><path d='M1 1l5 5 5-5' stroke='white' stroke-opacity='0.5' fill='none'/></svg>");
   background-position: left bottom, right 4px center;
   background-size: 0% 2px, 12px 7px;
 }
@@ -837,3 +837,15 @@ body { text-transform: none !important; }
 .pt-ig-nav:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 5px 5px 0px #fff; }
 .pt-ig-nav:active:not(:disabled) { transform: translate(3px, 3px); box-shadow: none; }
 .pt-ig-nav:disabled { opacity: 0.25; cursor: default; box-shadow: none; }
+
+/* ── the pop: burnt-orange piping (from the watch roll) ── */
+:root { --pt-orange: #E8622C; }
+.brutal-btn { box-shadow: 4px 4px 0px var(--pt-orange) !important; }
+.brutal-btn:hover { box-shadow: 6px 6px 0px var(--pt-orange) !important; }
+.brutal-btn:active { box-shadow: none !important; }
+.brutal-btn--solid { box-shadow: 4px 4px 0px var(--pt-orange) !important; }
+.brutal-btn--solid:hover { box-shadow: 6px 6px 0px var(--pt-orange) !important; }
+.pt-ig-nav { box-shadow: 3px 3px 0px var(--pt-orange); }
+.pt-ig-nav:hover:not(:disabled) { box-shadow: 5px 5px 0px var(--pt-orange); }
+.pt-kicker { color: var(--pt-orange); }
+.action-card span.font-space.font-bold.text-2xl { color: var(--pt-orange) !important; opacity: 0.9 !important; }
