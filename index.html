@@ -846,5 +846,30 @@
   });
 })();
 </script>
+<script>
+/* Live Instagram feed: hydrate the strip if the API is connected; otherwise the curated tiles stay */
+(function () {
+  var grid = document.querySelector('.pt-ig-grid');
+  if (!grid) return;
+  fetch('/api/instagram-feed')
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function (data) {
+      if (!data.posts || data.posts.length < 3) return;
+      var tiles = grid.querySelectorAll('.pt-ig-tile');
+      data.posts.slice(0, tiles.length).forEach(function (post, i) {
+        var tile = tiles[i];
+        var img = tile.querySelector('img');
+        var pre = new Image();
+        pre.onload = function () {
+          img.src = post.image;
+          img.alt = post.caption || 'Prime Time Miami on Instagram';
+          tile.href = post.permalink;
+        };
+        pre.src = post.image;
+      });
+    })
+    .catch(function () { /* keep curated tiles */ });
+})();
+</script>
 </body>
 </html>
