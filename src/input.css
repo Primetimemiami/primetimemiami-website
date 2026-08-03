@@ -792,13 +792,11 @@ body { text-transform: none !important; }
   scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  cursor: grab;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
   padding: 4px 12px;
 }
 .pt-ig-grid::-webkit-scrollbar { display: none; }
-.pt-ig-grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
 .pt-ig-tile {
   position: relative; display: block; overflow: hidden;
   flex: 0 0 auto;
@@ -825,3 +823,17 @@ body { text-transform: none !important; }
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .pt-ig-tile:hover .pt-ig-glyph { opacity: 1; transform: none; }
+
+/* ── IG rail arrows ── */
+.pt-ig-nav {
+  width: 46px; height: 46px; flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #000; color: #fff;
+  border: 2px solid #fff; border-radius: 0;
+  box-shadow: 3px 3px 0px #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.pt-ig-nav:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 5px 5px 0px #fff; }
+.pt-ig-nav:active:not(:disabled) { transform: translate(3px, 3px); box-shadow: none; }
+.pt-ig-nav:disabled { opacity: 0.25; cursor: default; box-shadow: none; }

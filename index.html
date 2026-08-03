@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=11">
+    <link rel="stylesheet" href="/dist/styles.css?v=12">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -336,7 +336,15 @@
                         <p class="text-[10px] sm:text-xs font-bold tracking-widest text-muted mb-3 font-space uppercase">Follow along</p>
                         <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="font-space font-bold text-2xl sm:text-4xl tracking-tight text-ivory hover:text-muted transition-colors">@primetime.miami</a>
                     </div>
-                    <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="brutal-btn px-6 py-3 text-xs font-space font-bold tracking-widest text-center w-fit">Follow on Instagram</a>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="brutal-btn px-6 py-3 text-xs font-space font-bold tracking-widest text-center w-fit">Follow on Instagram</a>
+                        <button type="button" id="ig-prev" aria-label="Previous posts" class="pt-ig-nav">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button type="button" id="ig-next" aria-label="More posts" class="pt-ig-nav">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="pt-ig-grid" data-lenis-prevent>
                     <a href="https://www.instagram.com/p/DUqqqc2j6IA/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
@@ -908,34 +916,25 @@
 })();
 </script>
 <script>
-/* IG rail: drag to scroll on desktop, native swipe on touch; clicks still work */
+/* IG rail: click-through paging via arrows (touch swipe still works on phones) */
 (function () {
   var rail = document.querySelector('.pt-ig-grid');
-  if (!rail) return;
-  var down = false, moved = false, startX = 0, startLeft = 0;
-  rail.addEventListener('pointerdown', function (e) {
-    if (e.pointerType !== 'mouse') return;
-    down = true; moved = false; startX = e.clientX; startLeft = rail.scrollLeft;
-    rail.classList.add('is-dragging');
-  });
-  window.addEventListener('pointermove', function (e) {
-    if (!down) return;
-    var dx = e.clientX - startX;
-    if (Math.abs(dx) > 6) moved = true;
-    rail.scrollLeft = startLeft - dx;
-  });
-  window.addEventListener('pointerup', function () {
-    down = false; rail.classList.remove('is-dragging');
-  });
-  rail.addEventListener('click', function (e) {
-    if (moved) { e.preventDefault(); moved = false; }
-  }, true);
-  rail.addEventListener('wheel', function (e) {
-    var delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
-    rail.scrollLeft += delta;
-    e.preventDefault();
-    e.stopPropagation();
-  }, { passive: false });
+  var prev = document.getElementById('ig-prev');
+  var next = document.getElementById('ig-next');
+  if (!rail || !prev || !next) return;
+  function step() {
+    var tile = rail.querySelector('.pt-ig-tile');
+    return tile ? (tile.offsetWidth + 10) * 3 : rail.clientWidth * 0.8;
+  }
+  function update() {
+    prev.disabled = rail.scrollLeft <= 4;
+    next.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 4;
+  }
+  prev.addEventListener('click', function () { rail.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  next.addEventListener('click', function () { rail.scrollBy({ left: step(), behavior: 'smooth' }); });
+  rail.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
 })();
 </script>
 </body>
