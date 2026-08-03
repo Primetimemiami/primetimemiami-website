@@ -789,7 +789,7 @@ body { text-transform: none !important; }
 .pt-ig-grid {
   display: flex; gap: 10px;
   overflow-x: auto; overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   cursor: grab;
@@ -799,7 +799,6 @@ body { text-transform: none !important; }
 }
 .pt-ig-grid::-webkit-scrollbar { display: none; }
 .pt-ig-grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
-.pt-ig-grid.is-dragging .pt-ig-tile { pointer-events: none; }
 .pt-ig-tile {
   position: relative; display: block; overflow: hidden;
   flex: 0 0 auto;

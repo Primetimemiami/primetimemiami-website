@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=10">
+    <link rel="stylesheet" href="/dist/styles.css?v=11">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -338,7 +338,7 @@
                     </div>
                     <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="brutal-btn px-6 py-3 text-xs font-space font-bold tracking-widest text-center w-fit">Follow on Instagram</a>
                 </div>
-                <div class="pt-ig-grid">
+                <div class="pt-ig-grid" data-lenis-prevent>
                     <a href="https://www.instagram.com/p/DUqqqc2j6IA/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
                         <img src="images/ig/ig-01.webp" alt="Patek 5905 — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
                         <span class="pt-ig-glyph">
@@ -930,6 +930,12 @@
   rail.addEventListener('click', function (e) {
     if (moved) { e.preventDefault(); moved = false; }
   }, true);
+  rail.addEventListener('wheel', function (e) {
+    var delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    rail.scrollLeft += delta;
+    e.preventDefault();
+    e.stopPropagation();
+  }, { passive: false });
 })();
 </script>
 </body>
