@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=14">
+    <link rel="stylesheet" href="/dist/styles.css?v=15">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -927,12 +927,30 @@
     var tile = rail.querySelector('.pt-ig-tile');
     return tile ? (tile.offsetWidth + 10) * 3 : rail.clientWidth * 0.8;
   }
+  var target = null;
+  function glide(delta) {
+    var max = rail.scrollWidth - rail.clientWidth;
+    var from = target !== null ? target : rail.scrollLeft;
+    target = Math.max(0, Math.min(max, from + delta));
+    if (typeof gsap !== 'undefined') {
+      gsap.killTweensOf(rail);
+      gsap.to(rail, {
+        scrollLeft: target,
+        duration: 1.1,
+        ease: 'power3.out',
+        overwrite: 'auto',
+        onComplete: function () { target = null; }
+      });
+    } else {
+      rail.scrollLeft = target; target = null;
+    }
+  }
   function update() {
     prev.disabled = rail.scrollLeft <= 4;
     next.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 4;
   }
-  prev.addEventListener('click', function () { rail.scrollBy({ left: -step(), behavior: 'smooth' }); });
-  next.addEventListener('click', function () { rail.scrollBy({ left: step(), behavior: 'smooth' }); });
+  prev.addEventListener('click', function () { glide(-step()); });
+  next.addEventListener('click', function () { glide(step()); });
   rail.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();

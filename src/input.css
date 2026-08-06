@@ -789,7 +789,6 @@ body { text-transform: none !important; }
 .pt-ig-grid {
   display: flex; gap: 10px;
   overflow-x: auto; overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
@@ -802,7 +801,6 @@ body { text-transform: none !important; }
   flex: 0 0 auto;
   width: clamp(220px, 23vw, 300px);
   aspect-ratio: 1;
-  scroll-snap-align: start;
   user-select: none; -webkit-user-drag: none;
 }
 .pt-ig-tile img {
