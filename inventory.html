@@ -5,252 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
     <link rel="shortcut icon" href="/favicon.png?v=1" />
-    <title>Available for Sourcing | Prime Time Miami - Miami Luxury Watch Concierge</title>
-    <meta name="description" content="Browse luxury watches available for sourcing through Prime Time Miami, Miami's premier watch concierge. Rolex, Patek Philippe, Audemars Piguet, Richard Mille and more. Inquire to source.">
-    <meta name="keywords" content="luxury watch sourcing, rolex, patek philippe, audemars piguet, richard mille, rare watch sourcing, watch concierge, prime time miami">
+    <title>Available for Sourcing | Prime Time Miami</title>
+    <meta name="description" content="Browse luxury watches available for sourcing through Prime Time Miami. Rolex, Patek Philippe, Audemars Piguet, Richard Mille and more. Inquire to source.">
     <meta name="author" content="Prime Time Miami">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Miami">
     <link rel="canonical" href="https://primetimemiami.com/inventory.html">
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://primetimemiami.com/inventory.html">
-    <meta property="og:title" content="Available for Sourcing | Prime Time Miami Miami">
-    <meta property="og:description" content="Browse rare luxury watches available for sourcing through Miami's premier Prime Time Miami concierge service.">
+    <meta property="og:title" content="Available for Sourcing | Prime Time Miami">
+    <meta property="og:description" content="Browse rare luxury watches available for sourcing through Prime Time Miami.">
     <meta property="og:image" content="https://primetimemiami.com/images/og-share.png">
     <meta property="og:site_name" content="Prime Time Miami">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Available for Sourcing | Prime Time Miami Miami">
-    <meta name="twitter:description" content="Browse rare luxury watches available for sourcing through Miami's premier Prime Time Miami concierge service.">
-    <meta name="twitter:image" content="https://primetimemiami.com/images/og-share.png">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Prime Time Miami - Pieces for Sourcing",
-        "description": "Browse rare and authenticated luxury watches available for concierge sourcing through Prime Time Miami.",
-        "url": "https://primetimemiami.com/inventory.html",
-        "provider": {
-            "@type": "Organization",
-            "name": "Prime Time Miami",
-            "url": "https://primetimemiami.com"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetimemiami.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Sourcing", "item": "https://primetimemiami.com/inventory.html" }
-        ]
-    }
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
-    <script src="/scripts/lucide.min.js"></script>
     <link rel="stylesheet" href="/dist/styles.css?v=19">
+    <style>
+    /* ── inventory: live-site layout, Prime Time black ── */
+    .inv-facets { border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14); padding: 18px 0 6px; }
+    .inv-facet-row { display: flex; flex-wrap: wrap; gap: 26px 34px; align-items: center; }
+    .inv-facet-btn {
+        background: none; border: none; padding: 6px 0; cursor: pointer;
+        color: #fff; font-weight: 600; font-size: 13px; letter-spacing: 0.18em;
+        display: inline-flex; align-items: center; gap: 10px;
+    }
+    .inv-facet-btn .pm { color: rgba(255,255,255,0.45); font-weight: 400; transition: transform 0.3s ease; display: inline-block; }
+    .inv-facet-btn.open .pm { transform: rotate(45deg); }
+    .inv-facet-btn:hover { color: rgba(255,255,255,0.7); }
+    .inv-sort { color: rgba(255,255,255,0.9); font-size: 13px; letter-spacing: 0.18em; font-weight: 600; padding: 12px 0 14px; }
+    .inv-sort select { background: transparent; border: none; color: #fff; font-size: 13px; letter-spacing: 0.12em; cursor: pointer; outline: none; }
+    .inv-sort select option { background: #000; }
+    .inv-panel { display: none; padding: 14px 0 16px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .inv-panel.open { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    .inv-opt { display: inline-flex; align-items: center; gap: 9px; cursor: pointer; color: rgba(255,255,255,0.75); font-size: 12px; letter-spacing: 0.1em; }
+    .inv-opt input { appearance: none; -webkit-appearance: none; width: 13px; height: 13px; border: 1px solid rgba(255,255,255,0.4); background: transparent; cursor: pointer; margin: 0; }
+    .inv-opt input:checked { background: #fff; }
+    .inv-count { color: rgba(255,255,255,0.45); font-size: 12px; letter-spacing: 0.22em; margin: 34px 0 26px; }
+    .inv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 34px 22px; }
+    .inv-card { display: block; text-decoration: none; color: #fff; }
+    .inv-card__img {
+        background: #0c0c0c; border: 1px solid rgba(255,255,255,0.07);
+        aspect-ratio: 1 / 1; overflow: hidden; display: flex; align-items: center; justify-content: center;
+    }
+    .inv-card__img img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.6s ease; }
+    .inv-card:hover .inv-card__img img { opacity: 0.85; }
+    .inv-card__meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 13px; }
+    .inv-card__name { font-weight: 600; font-size: 13px; letter-spacing: 0.14em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .inv-card__year { color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 0.14em; flex-shrink: 0; }
+    .inv-empty { color: rgba(255,255,255,0.5); letter-spacing: 0.14em; padding: 60px 0; text-align: center; }
+    </style>
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
-
-    <!-- Background removed for performance -->
 
     <!-- NAV -->
     <nav class="w-full z-40 px-6 sm:px-10 md:px-16 py-5 sm:py-6 flex justify-between items-center relative">
         <a href="index.html">
             <img src="images/logo.png" alt="Prime Time Miami" class="h-8 sm:h-10 w-auto object-contain">
         </a>
-        <div class="hidden md:flex space-x-8 text-sm font-space font-medium uppercase tracking-widest items-center">
+        <div class="hidden md:flex space-x-8 text-sm font-space font-medium tracking-widest items-center">
             <a href="about.html" class="nav-link hover:text-muted transition-colors">About</a>
             <a href="process.html" class="nav-link hover:text-muted transition-colors">Process</a>
             <a href="index.html" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest">Back to Home</a>
         </div>
         <button onclick="document.getElementById('mobile-menu').style.opacity='1'; document.getElementById('mobile-menu').style.pointerEvents='auto'; document.body.style.overflow='hidden';" class="md:hidden text-ivory">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/>
-            </svg>
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
         </button>
     </nav>
 
     <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 transition-all duration-500 opacity-0 pointer-events-none">
         <button onclick="document.getElementById('mobile-menu').style.opacity='0'; document.getElementById('mobile-menu').style.pointerEvents='none'; document.body.style.overflow='';" class="absolute top-4 right-6 text-ivory">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M18 6L6 18M6 6l12 12"/>
-            </svg>
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
-        <a href="about.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">About</a>
-        <a href="process.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">Process</a>
+        <a href="about.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
+        <a href="process.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
         <a href="index.html" class="brutal-btn brutal-btn--solid px-8 py-3 text-sm font-space font-bold tracking-widest">Back to Home</a>
     </div>
 
     <!-- CONTENT -->
-    <main class="relative z-10 max-w-7xl mx-auto px-6 pt-20 sm:pt-28 pb-12 sm:pb-16">
+    <main class="relative z-10 max-w-7xl mx-auto px-6 pt-14 sm:pt-20 pb-16 sm:pb-24">
 
-        <!-- HEADER -->
-        <h1 id="hero-title" class="font-space font-bold text-3xl sm:text-5xl md:text-6xl lg:text-8xl tracking-tighter uppercase leading-[1.15] opacity-0 mb-6 sm:mb-8">
+        <h1 class="font-space font-bold text-3xl sm:text-5xl md:text-6xl tracking-tighter leading-[1.1] mb-4">
             Available for <span class="stroke-text">Sourcing</span>
         </h1>
-
-        <!-- SUBTITLE -->
-        <p id="hero-sub" class="font-inter text-muted text-sm sm:text-base max-w-2xl opacity-0 leading-relaxed mb-5 sm:mb-6" style="letter-spacing: 0.15em;">
+        <p class="text-muted text-sm max-w-2xl leading-relaxed mb-10" style="letter-spacing:0.06em;">
             These are pieces we can source right now, but our network runs deeper. References and years shown are representative. Exact specs vary week to week, and if you don't see what you're looking for, we can still find it.
         </p>
 
-        <!-- REQUEST CTA -->
-        <button id="hero-cta" onclick="openSourceRequest()" class="inline-flex items-center gap-2 font-space text-[11px] sm:text-xs uppercase tracking-widest text-ivory/70 hover:text-ivory transition-colors opacity-0 mb-14 sm:mb-20 group cursor-pointer">
-            <span>Submit a sourcing request</span>
-            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-
-        <!-- FILTER SYSTEM -->
-        <div class="mb-10 sm:mb-14" id="filter-bar">
-            <!-- Brand pills - horizontal scroll on mobile, wrap on desktop, centered -->
-            <div class="flex sm:flex-wrap sm:justify-center gap-2 mb-5 overflow-x-auto no-scrollbar pb-1" id="brand-pills">
-                <button onclick="selectBrand('ALL')" class="brand-pill active shrink-0" data-brand="ALL">All</button>
-            </div>
-
-            <!-- Filter row - full width glass bar -->
-            <div class="glass-subtle rounded-xl px-4 sm:px-6 py-3 filter-bar-animate">
-                <!-- MOBILE: 2x2 grid + sort row -->
-                <div class="sm:hidden">
-                    <div class="grid grid-cols-2 gap-2 mb-2">
-                        <div class="filter-select-wrap">
-                            <select id="filter-model-m" onchange="syncFilter('filter-model', this.value); applyFilters()" class="w-full">
-                                <option value="ALL">Model</option>
-                            </select>
-                        </div>
-                        <div class="filter-select-wrap">
-                            <select id="filter-dial-m" onchange="syncFilter('filter-dial', this.value); applyFilters()" class="w-full">
-                                <option value="ALL">Dial Color</option>
-                            </select>
-                        </div>
-                        <div class="filter-select-wrap">
-                            <select id="filter-material-m" onchange="syncFilter('filter-material', this.value); applyFilters()" class="w-full">
-                                <option value="ALL">Case Material</option>
-                            </select>
-                        </div>
-                        <div class="filter-select-wrap">
-                            <select id="filter-condition-m" onchange="syncFilter('filter-condition', this.value); applyFilters()" class="w-full">
-                                <option value="ALL">Condition</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between pt-2 border-t border-ivory/5">
-                        <div class="filter-select-wrap">
-                            <select id="sort-by-m" onchange="syncFilter('sort-by', this.value); applyFilters()" class="w-full">
-                                <option value="default">Sort By</option>
-                                <option value="year-new">Newest</option>
-                                <option value="year-old">Oldest</option>
-                                <option value="model-az">Model A → Z</option>
-                            </select>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span id="result-count-m" class="text-[10px] font-space tracking-widest text-ivory/25 whitespace-nowrap"></span>
-                            <button onclick="resetFilters()" id="reset-btn-m" class="hidden text-[10px] font-space font-bold tracking-widest text-ivory/30 hover:text-ivory transition-colors whitespace-nowrap">
-                                ✕ Clear
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DESKTOP: single row, evenly distributed -->
-                <div class="hidden sm:flex items-center w-full">
-                    <div class="flex items-center flex-1 min-w-0">
-                        <div class="filter-select-wrap flex-1 flex justify-center min-w-0">
-                            <select id="filter-model" onchange="applyFilters()" class="text-center w-full">
-                                <option value="ALL">Model</option>
-                            </select>
-                        </div>
-                        <span class="text-ivory/10 shrink-0">|</span>
-                        <div class="filter-select-wrap flex-1 flex justify-center min-w-0">
-                            <select id="filter-dial" onchange="applyFilters()" class="text-center w-full">
-                                <option value="ALL">Dial Color</option>
-                            </select>
-                        </div>
-                        <span class="text-ivory/10 shrink-0">|</span>
-                        <div class="filter-select-wrap flex-1 flex justify-center min-w-0">
-                            <select id="filter-material" onchange="applyFilters()" class="text-center w-full">
-                                <option value="ALL">Case Material</option>
-                            </select>
-                        </div>
-                        <span class="text-ivory/10 shrink-0">|</span>
-                        <div class="filter-select-wrap flex-1 flex justify-center min-w-0">
-                            <select id="filter-condition" onchange="applyFilters()" class="text-center w-full">
-                                <option value="ALL">Condition</option>
-                            </select>
-                        </div>
-                        <span class="text-ivory/10 shrink-0">|</span>
-                        <div class="filter-select-wrap flex-1 flex justify-center min-w-0">
-                            <select id="sort-by" onchange="applyFilters()" class="text-center w-full">
-                                <option value="default">Sort By</option>
-                                <option value="year-new">Newest</option>
-                                <option value="year-old">Oldest</option>
-                                <option value="model-az">Model A → Z</option>
-                            </select>
-                        </div>
-                    </div>
-                    <span class="text-ivory/10 shrink-0 mx-3">|</span>
-                    <div class="flex items-center gap-3 shrink-0">
-                        <span id="result-count" class="text-[10px] font-space tracking-widest text-ivory/25 whitespace-nowrap"></span>
-                        <button onclick="resetFilters()" id="reset-btn" class="hidden text-[10px] font-space font-bold tracking-widest text-ivory/30 hover:text-ivory transition-colors whitespace-nowrap">
-                            ✕ Clear
-                        </button>
-                    </div>
-                </div>
+        <!-- FACETS -->
+        <div class="inv-facets">
+            <div class="inv-facet-row" id="facet-row"></div>
+            <div id="facet-panels"></div>
+            <div class="inv-sort">
+                <label>SORT:
+                    <select id="inv-sort">
+                        <option value="featured">FEATURED</option>
+                        <option value="brand">BRAND A–Z</option>
+                        <option value="newest">NEWEST</option>
+                    </select>
+                </label>
             </div>
         </div>
 
-        <!-- LOADING SKELETON -->
-        <div id="loading-skeleton" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7">
-            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-3/4"></div><div class="skeleton-line w-1/2"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-2/3"></div><div class="skeleton-line w-1/3"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-4/5"></div><div class="skeleton-line w-2/5"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-            <div class="skeleton-card hidden sm:block"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-3/5"></div><div class="skeleton-line w-1/2"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-            <div class="skeleton-card hidden sm:block"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-2/3"></div><div class="skeleton-line w-1/3"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-            <div class="skeleton-card hidden lg:block"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-line w-3/4"></div><div class="skeleton-line w-2/5"></div><div class="skeleton-line w-full" style="height:8px;margin-top:12px;"></div></div></div>
-        </div>
+        <div class="inv-count" id="inv-count"></div>
+        <div class="inv-grid" id="inv-grid"></div>
+        <div class="inv-empty hidden" id="inv-empty">NO PIECES MATCH THIS FILTER.</div>
 
-        <!-- WATCH GRID -->
-        <div id="watch-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 hidden" style="grid-auto-rows:1fr;">
-        </div>
-
-        <!-- ERROR STATE -->
-        <div id="error-state" class="hidden text-center py-20">
-            <div class="glass rounded-2xl p-10 sm:p-14 max-w-md mx-auto">
-                <div class="w-14 h-14 border border-ivory/20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-muted">
-                        <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                    </svg>
-                </div>
-                <h3 class="font-space font-bold text-lg tracking-tight mb-3">Temporarily Unavailable</h3>
-                <p class="text-muted text-sm font-inter mb-6" style="text-transform:none;">Our inventory is taking a moment to load. Please check back shortly.</p>
-                <button onclick="document.getElementById('error-state').classList.add('hidden'); document.getElementById('loading-skeleton').classList.remove('hidden'); fetchPieces().then(p => { if (p.length) { buildFilters(p); renderGrid(p); buildBackground(p); } })" class="brutal-btn brutal-btn--solid px-6 py-3 font-space font-bold tracking-widest text-xs">
-                    Try Again
-                </button>
-            </div>
-        </div>
-
-        <!-- EMPTY STATE -->
-        <div id="empty-state" class="hidden text-center py-20">
-            <p class="text-muted font-space tracking-widest text-sm">No pieces match this filter.</p>
-        </div>
-
-        <!-- CTA -->
-        <div class="mt-16 sm:mt-24 text-center glass rounded-2xl p-8 sm:p-12">
-            <h2 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-4">Don't See What You're Looking For?</h2>
-            <p class="text-muted text-sm sm:text-base font-inter tracking-wide mb-8 max-w-lg mx-auto">
-                I source watches globally through our network. Tell us what you're after and we'll find it.
-            </p>
-            <button onclick="openSourceRequest()" class="brutal-btn brutal-btn--solid px-8 py-4 font-space font-bold tracking-widest text-xs sm:text-sm">
-                Submit a Sourcing Request
-            </button>
-        </div>
     </main>
 
     <!-- FOOTER -->
@@ -261,17 +121,17 @@
             </a>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mb-12">
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Location</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Location</h4>
                     <p class="no-caps font-inter text-sm text-muted">Miami, Florida</p>
                 </div>
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Contact</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Contact</h4>
                     <p class="no-caps font-inter text-sm">
                         <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">+1 (305) 922-4975</a>
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Social</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Social</h4>
                     <p class="no-caps font-inter text-sm">
                         <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors" style="display:inline-flex;align-items:center;gap:7px;">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
@@ -279,734 +139,114 @@
                     </p>
                 </div>
             </div>
-            <p class="text-xs font-space uppercase tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
+            <p class="text-xs font-space tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
             <p class="no-caps text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-3 leading-relaxed">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
-            <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
+            <a href="privacy.html" class="text-[10px] text-muted/30 font-space tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
         </div>
     </footer>
 
-    <!-- INQUIRY MODAL -->
-    <div id="modal-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xl opacity-0" style="visibility:hidden; pointer-events:none;">
-        <div class="w-full max-w-lg glass-strong m-3 sm:m-4 relative shadow-2xl overflow-hidden rounded-2xl">
-            <button onclick="closeModal()"
-                    class="absolute top-3 right-3 z-30 w-9 h-9 flex items-center justify-center bg-charcoal/80 backdrop-blur-sm border border-ivory/20 rounded-full text-muted hover:text-ivory hover:bg-charcoal transition-all duration-200">
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path d="M18 6L6 18M6 6l12 12"/>
-                </svg>
-            </button>
-            <div id="modal-body" class="space-y-4"></div>
-        </div>
-    </div>
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" aria-label="Message Prime Time Miami on WhatsApp"
+       class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-[60] w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-110" style="background:#25D366;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.88a11.8 11.8 0 0 0 1.64 6l-1.74 6.36 6.51-1.71a11.86 11.86 0 0 0 5.48 1.4h.01c6.55 0 11.89-5.33 11.89-11.88 0-3.18-1.24-6.17-3.43-8.57Zm-8.47 18.3h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.86 1.01 1.03-3.77-.23-.39a9.82 9.82 0 0 1-1.51-5.26c0-5.43 4.43-9.86 9.87-9.86 2.63 0 5.1 1.03 6.96 2.89a9.79 9.79 0 0 1 2.89 6.98c0 5.44-4.43 9.87-9.87 9.87Zm5.41-7.39c-.3-.15-1.75-.86-2.02-.96s-.47-.15-.67.15-.77.96-.94 1.16-.35.22-.64.07a8.08 8.08 0 0 1-2.37-1.46 8.94 8.94 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.05 1.03-1.05 2.51 1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.75-.71 2-1.4.25-.69.25-1.27.17-1.39-.07-.12-.27-.2-.57-.35Z"/></svg>
+    </a>
 
-    <!-- SUCCESS OVERLAY -->
-    <div id="success-overlay" class="fixed inset-0 z-[60] flex items-center justify-center opacity-0" style="visibility:hidden; pointer-events:none;">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-xl"></div>
-        <div class="relative z-10 glass-strong rounded-2xl p-8 sm:p-12 max-w-sm mx-4 text-center">
-            <button onclick="closeSuccessOverlay()" class="absolute top-3 right-3 w-9 h-9 flex items-center justify-center bg-charcoal/80 backdrop-blur-sm border border-ivory/20 rounded-full text-muted hover:text-ivory hover:bg-charcoal transition-all duration-200">
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            </button>
-            <div class="w-16 h-16 border border-ivory rounded-full flex items-center justify-center mb-6 mx-auto">
-                <i data-lucide="check" class="w-8 h-8"></i>
-            </div>
-            <h3 class="text-xl font-space font-bold tracking-widest mb-2">Request Received</h3>
-            <p class="text-muted text-xs tracking-wide">We'll be in touch shortly.</p>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="/scripts/premium-ui.js"></script>
     <script>
-        let PIECES = [];
-        function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
-
-        /* ── NORMALIZATION RULES ── */
-        // Keyword → group. First match wins. Case-insensitive substring matching.
-        const DIAL_RULES = [
-            ['black',       'Black'],
-            ['blue',        'Blue'],
-            ['white',       'White'],
-            ['silver',      'Silver'],
-            ['grey',        'Grey'],
-            ['gray',        'Grey'],
-            ['slate',       'Grey'],
-            ['anthracite',  'Grey'],
-            ['green',       'Green'],
-            ['olive',       'Green'],
-            ['teal',        'Green'],
-            ['brown',       'Brown/Champagne'],
-            ['champagne',   'Brown/Champagne'],
-            ['chocolate',   'Brown/Champagne'],
-            ['salmon',      'Brown/Champagne'],
-            ['copper',      'Brown/Champagne'],
-            ['tan',         'Brown/Champagne'],
-            ['gold',        'Brown/Champagne'],
-            ['red',         'Red/Burgundy'],
-            ['burgundy',    'Red/Burgundy'],
-            ['wine',        'Red/Burgundy'],
-            ['ruby',        'Red/Burgundy'],
+    (function () {
+        var PIECES = [];
+        var FACETS = [
+            { id: 'brand', label: 'BRAND', get: function (p) { return p.brand; } },
+            { id: 'caseMaterial', label: 'CASE MATERIAL', get: function (p) { return p.caseMaterial; } },
+            { id: 'condition', label: 'CONDITION', get: function (p) { return p.condition; } },
+            { id: 'year', label: 'YEAR', get: function (p) { return p.year; } }
         ];
+        var selected = {};
 
-        const MATERIAL_RULES = [
-            ['steel',       'Steel'],
-            ['stainless',   'Steel'],
-            ['rose gold',   'Rose Gold'],
-            ['pink gold',   'Rose Gold'],
-            ['everose',     'Rose Gold'],
-            ['sedna',       'Rose Gold'],
-            ['white gold',  'White Gold'],
-            ['platinum',    'Platinum'],
-            ['titanium',    'Titanium'],
-            ['titalyt',     'Titanium'],
-            ['ceramic',     'Ceramic'],
-            ['carbon',      'Carbon'],
-            ['tpt',         'Carbon'],
-            ['yellow gold', 'Gold'],
-            ['gold',        'Gold'],
-        ];
+        function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
-        function normalize(value, rules) {
-            if (!value) return '';
-            const lower = value.toLowerCase();
-            for (const [keyword, group] of rules) {
-                if (lower.includes(keyword)) return group;
-            }
-            return 'Other';
-        }
-
-        // Normalize a raw model name into its family using WATCH_BRANDS
-        // e.g. "Royal Oak Offshore Chronograph" → "Royal Oak Offshore"
-        function normalizeModel(rawModel, brand, brandFamilies) {
-            if (!rawModel) return '';
-            // Find matching brand key (accent/case insensitive via Unicode NFD decomposition)
-            function stripAccents(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
-            const brandNorm = stripAccents(brand || '');
-            let families = null;
-            for (const key of Object.keys(brandFamilies)) {
-                if (stripAccents(key) === brandNorm) {
-                    families = brandFamilies[key];
-                    break;
-                }
-            }
-            if (!families) return rawModel;
-            const lower = rawModel.toLowerCase();
-            // Sort families by length descending so "Royal Oak Offshore" matches before "Royal Oak"
-            const sorted = families.filter(f => f !== 'Other').sort((a, b) => b.length - a.length);
-            for (const family of sorted) {
-                if (lower.includes(family.toLowerCase())) return family;
-            }
-            return 'Other';
-        }
-
-        function updateModelDropdown() {
-            let source = activeBrand === 'ALL' ? PIECES : PIECES.filter(w => w.brand === activeBrand);
-            const models = [...new Set(source.map(w => w._modelGroup).filter(v => v && v !== 'Other'))].sort();
-            if (source.some(w => w._modelGroup === 'Other')) models.push('Other');
-            populateDropdown(['filter-model', 'filter-model-m'], models, 'Model');
-        }
-
-        function interleaveByBrand(pieces) {
-            const byBrand = {};
-            pieces.forEach(p => {
-                const b = p.brand || 'Other';
-                if (!byBrand[b]) byBrand[b] = [];
-                byBrand[b].push(p);
-            });
-            const brands = Object.keys(byBrand);
-            const result = [];
-            let i = 0;
-            while (result.length < pieces.length) {
-                for (const b of brands) {
-                    if (i < byBrand[b].length) result.push(byBrand[b][i]);
-                }
-                i++;
-            }
-            return result;
-        }
-
-        async function fetchPieces(retries = 2) {
-            const skeleton = document.getElementById('loading-skeleton');
-            const grid = document.getElementById('watch-grid');
-            const errorState = document.getElementById('error-state');
-            for (let attempt = 0; attempt <= retries; attempt++) {
-                try {
-                    const res = await fetch('/api/get-inventory');
-                    if (!res.ok) throw new Error('Failed to fetch');
-                    const EXCLUDED_BRANDS = /omega|tudor|cartier/i;
-                    PIECES = interleaveByBrand((await res.json()).filter(p => p.image && !EXCLUDED_BRANDS.test(p.brand || '')));
-                    if (skeleton) skeleton.classList.add('hidden');
-                    if (grid) grid.classList.remove('hidden');
-                    return PIECES;
-                } catch (err) {
-                    if (attempt < retries) {
-                        await new Promise(r => setTimeout(r, 1500));
-                        continue;
-                    }
-                    console.error('Failed to fetch pieces from Notion:', err);
-                    if (skeleton) skeleton.classList.add('hidden');
-                    if (errorState) errorState.classList.remove('hidden');
-                    return [];
-                }
-            }
-        }
-
-        /* ── BLURRED BACKGROUND MOSAIC ── */
-        function buildBackground(pieces) {
-            const container = document.getElementById('bg-mosaic');
-            const withImages = pieces.filter(p => p.image);
-            if (!withImages.length) return;
-
-            // Place images in a scattered grid pattern
-            const count = Math.min(withImages.length, 20);
-            const shuffled = withImages.sort(() => Math.random() - 0.5).slice(0, count);
-            const cols = 5;
-            const rows = Math.ceil(count / cols);
-
-            shuffled.forEach((p, i) => {
-                const img = document.createElement('img');
-                img.src = p.image;
-                img.alt = '';
-                img.className = 'bg-img';
-                img.loading = 'lazy';
-                // Scatter across viewport
-                const col = i % cols;
-                const row = Math.floor(i / cols);
-                const x = (col / cols) * 100 + (Math.random() * 10 - 5);
-                const y = (row / rows) * 100 + (Math.random() * 10 - 5);
-                img.style.left = x + '%';
-                img.style.top = y + '%';
-                img.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
-                container.appendChild(img);
-            });
-        }
-
-        /* ── RENDER GRID ── */
-        function renderGrid(items) {
-            const grid = document.getElementById('watch-grid');
-            const empty = document.getElementById('empty-state');
-
-            if (items.length === 0) {
-                grid.innerHTML = '';
-                empty.classList.remove('hidden');
-                return;
-            }
-
-            empty.classList.add('hidden');
-            grid.innerHTML = items.map(w => {
-                const name = w.name || '';
-                const ref = w.ref || '';
-                const rawNick = w.nickname ? w.nickname.replace(/^"|"$/g, '') : '';
-                const nickname = rawNick ? ` "${rawNick}"` : '';
-                const details = w.details || '';
-                const image = w.image || '';
-                const condLabel = w.condition || '';
-                const setLabel = w.set || '';
-                const year = w.year || '';
-                const brand = (w.brand || '').toUpperCase();
-                const nm = (name + ' ' + details).toUpperCase();
-                const imgSize = brand === 'ROLEX' ? '100%' : brand.includes('AUDEMARS') ? '65%' : brand === 'TUDOR' && nm.includes('CARBON') ? '100%' : brand === 'TUDOR' ? '75%' : brand.includes('RICHARD') ? '135%' : '75%';
-                const imgOffset = brand.includes('RICHARD') ? 'transform:translateY(-10%);' : brand.includes('JOURNE') && !nm.includes('ELEGANTE') ? 'transform:translateY(14%);' : '';
-
-                return `
-                <a href="watch.html?id=${esc(w.id)}" class="watch-card group">
-                    <div class="card-img-wrap relative overflow-hidden rounded-t-2xl bg-[#111] flex items-center justify-center">
-                        ${image
-                            ? `<img src="${esc(image)}" alt="${esc(name)}" class="card-img" style="width:${imgSize};height:${imgSize};object-fit:contain;object-position:center;margin:auto;${imgOffset}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                               <div class="w-full h-full bg-gradient-to-b from-charcoal/30 to-charcoal/80 items-center justify-center absolute inset-0" style="display:none;">
-                                   <span class="text-muted/40 text-xs font-space tracking-widest">Image Coming Soon</span>
-                               </div>`
-                            : `<div class="w-full h-full bg-gradient-to-b from-charcoal/30 to-charcoal/80 flex items-center justify-center">
-                                <span class="text-muted/40 text-xs font-space tracking-widest">Image Coming Soon</span>
-                               </div>`
-                        }
-                        <div class="card-overlay absolute inset-0"></div>
-                        <!-- Info overlay at bottom -->
-                        <div class="absolute bottom-0 left-0 right-0 p-5">
-                            <div class="card-cta">
-                                <span class="inline-block glass-strong rounded-full px-5 py-2.5 text-[10px] font-space font-bold tracking-widest">
-                                    View Details →
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3 class="font-space font-bold text-base sm:text-lg tracking-tight leading-snug mb-1" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${esc(name)}${esc(nickname)}</h3>
-                        <p class="text-muted text-[11px] font-bold tracking-widest mb-2" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ref ? 'Ref. ' + esc(ref) : '&nbsp;'}</p>
-                        <p class="text-ivory/40 text-[11px] font-inter tracking-wide mb-3 line-clamp-2">${details ? esc(details) : '&nbsp;'}</p>
-                        <div class="flex items-center gap-2 flex-wrap">
-                            ${condLabel ? `<span class="text-[9px] font-space font-bold tracking-widest text-ivory/50 bg-ivory/5 px-2.5 py-1 rounded-full">${esc(condLabel)}</span>` : ''}
-                            ${setLabel ? `<span class="text-[9px] font-space tracking-widest text-ivory/35 bg-ivory/5 px-2.5 py-1 rounded-full">${esc(setLabel)}</span>` : ''}
-                            ${year ? `<span class="text-[9px] font-space tracking-widest text-ivory/30">${esc(year)}</span>` : ''}
-                        </div>
-                    </div>
-                </a>
-            `}).join('');
-
-            safeCreateIcons();
-        }
-
-        /* ── FILTERS ── */
-        function syncFilter(desktopId, value) {
-            const el = document.getElementById(desktopId);
-            if (el) el.value = value;
-        }
-
-        let activeBrand = 'ALL';
-
-        function stopFilterAnimations() {
-            document.querySelectorAll('.brand-pill:not(.active)').forEach(p => p.style.animation = 'none');
-            const bar = document.querySelector('.filter-bar-animate');
-            if (bar) bar.classList.remove('filter-bar-animate');
-        }
-
-        function selectBrand(brand) {
-            stopFilterAnimations();
-            activeBrand = brand;
-            document.querySelectorAll('.brand-pill').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.brand === brand);
-            });
-            // Reset model filter and cascade dropdown
-            ['filter-model', 'filter-model-m'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.value = 'ALL';
-            });
-            updateModelDropdown();
-            applyFilters();
-        }
-
-        function highlightActiveSelects() {
-            ['filter-model', 'filter-dial', 'filter-material', 'filter-condition', 'sort-by'].forEach(id => {
-                const el = document.getElementById(id);
-                if (!el) return;
-                el.classList.toggle('active-filter', el.value !== 'ALL' && el.value !== 'default');
-            });
-        }
-
-        function isFiltered() {
-            return activeBrand !== 'ALL' ||
-                document.getElementById('filter-model').value !== 'ALL' ||
-                document.getElementById('filter-dial').value !== 'ALL' ||
-                document.getElementById('filter-material').value !== 'ALL' ||
-                document.getElementById('filter-condition').value !== 'ALL' ||
-                document.getElementById('sort-by').value !== 'default';
-        }
-
-        function applyFilters() {
-            stopFilterAnimations();
-            let filtered = [...PIECES];
-
-            if (activeBrand !== 'ALL') filtered = filtered.filter(w => w.brand === activeBrand);
-
-            const model = document.getElementById('filter-model').value;
-            if (model !== 'ALL') filtered = filtered.filter(w => w._modelGroup === model);
-
-            const dial = document.getElementById('filter-dial').value;
-            if (dial !== 'ALL') filtered = filtered.filter(w => w._dialGroup === dial);
-
-            const mat = document.getElementById('filter-material').value;
-            if (mat !== 'ALL') filtered = filtered.filter(w => w._materialGroup === mat);
-
-            const cond = document.getElementById('filter-condition').value;
-            if (cond !== 'ALL') filtered = filtered.filter(w => w.condition === cond);
-
-            const sort = document.getElementById('sort-by').value;
-            if (sort === 'year-new') filtered.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
-            if (sort === 'year-old') filtered.sort((a, b) => (Number(a.year) || 0) - (Number(b.year) || 0));
-            if (sort === 'model-az') filtered.sort((a, b) => (a.model || '').localeCompare(b.model || ''));
-
-            const countText = filtered.length + ' piece' + (filtered.length !== 1 ? 's' : '');
-            ['result-count', 'result-count-m'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.textContent = countText;
-            });
-            const hasFilters = isFiltered();
-            ['reset-btn', 'reset-btn-m'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.classList.toggle('hidden', !hasFilters);
-            });
-            highlightActiveSelects();
-            renderGrid(filtered);
-
-            gsap.from('#watch-grid .watch-card', {
-                opacity: 0, y: 30, duration: 0.5, stagger: 0.04, ease: 'power2.out', clearProps: 'all'
-            });
-        }
-
-        function resetFilters() {
-            activeBrand = 'ALL';
-            document.querySelectorAll('.brand-pill').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.brand === 'ALL');
-            });
-            ['filter-model','filter-dial','filter-material','filter-condition'].forEach(id => {
-                const d = document.getElementById(id);
-                const m = document.getElementById(id + '-m');
-                if (d) d.value = 'ALL';
-                if (m) m.value = 'ALL';
-            });
-            const sb = document.getElementById('sort-by');
-            const sbm = document.getElementById('sort-by-m');
-            if (sb) sb.value = 'default';
-            if (sbm) sbm.value = 'default';
-            updateModelDropdown();
-            applyFilters();
-        }
-
-        /* ── MODALS ── */
-        function openModal() {
-            const overlay = document.getElementById('modal-overlay');
-            overlay.style.visibility = 'visible';
-            overlay.style.pointerEvents = 'auto';
-            gsap.to(overlay, { opacity: 1, duration: 0.4, ease: 'power2.out' });
-            gsap.fromTo(overlay.querySelector(':scope > div'),
-                { y: 20, opacity: 0, scale: 0.98 },
-                { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }
-            );
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const overlay = document.getElementById('modal-overlay');
-            gsap.to(overlay.querySelector(':scope > div'),
-                { y: 20, opacity: 0, scale: 0.98, duration: 0.3, ease: 'power2.in' }
-            );
-            gsap.to(overlay, {
-                opacity: 0, duration: 0.4, delay: 0.1,
-                onComplete: () => {
-                    overlay.style.visibility = 'hidden';
-                    overlay.style.pointerEvents = 'none';
-                    document.body.style.overflow = '';
-                }
-            });
-        }
-
-        const WATCH_BRANDS = {
-            'Rolex': ['Daytona','Submariner','GMT-Master II','Explorer','Explorer II','Datejust','Day-Date','Sky-Dweller','Yacht-Master','Sea-Dweller','Oyster Perpetual','Land-Dweller','Milgauss','Air-King','Cellini','Other'],
-            'Patek Philippe': ['Nautilus','Aquanaut','Calatrava','Grand Complications','Complications','Twenty~4','Golden Ellipse','Other'],
-            'Audemars Piguet': ['Royal Oak','Royal Oak Offshore','Royal Oak Concept','Code 11.59','Millenary','Other'],
-            'Richard Mille': ['RM 11','RM 35','RM 55','RM 67','RM 17','RM 27','RM 72','Other'],
-            'F.P. Journe': ['Chronometre Bleu','Chronometre Souverain','Octa','Tourbillon Souverain','Centigraphe','Elegante','Other'],
-            'Vacheron Constantin': ['Overseas','Patrimony','Traditionnelle','Historiques','Fiftysix','Other'],
-            'A. Lange & Sohne': ['Lange 1','Saxonia','Zeitwerk','Datograph','1815','Odysseus','Richard Lange','Cabaret','Other'],
-            'Omega': ['Speedmaster','Seamaster','Constellation','De Ville','Aqua Terra','Planet Ocean','Other'],
-            'Cartier': ['Santos','Tank','Ballon Bleu','Panthere','Pasha','Drive','Other'],
-            'IWC': ['Portugieser','Pilot','Aquatimer','Ingenieur','Portofino','Other'],
-            'Panerai': ['Luminor','Submersible','Radiomir','Due','Other'],
-            'Hublot': ['Big Bang','Classic Fusion','Spirit of Big Bang','Other'],
-            'Tudor': ['Black Bay','Pelagos','Ranger','1926','Other'],
-            'Breitling': ['Navitimer','Chronomat','Superocean','Avenger','Premier','Other'],
-            'Jaeger-LeCoultre': ['Reverso','Master','Polaris','Atmos','Other'],
-            'Blancpain': ['Fifty Fathoms','Villeret','Ladybird','Other'],
-            'Breguet': ['Classique','Marine','Tradition','Type XX','Other'],
-            'Girard-Perregaux': ['Laureato','1966','Bridges','Other'],
-            'Other': ['Other']
-        };
-
-        function updateModels(brand) {
-            const select = document.getElementById('model-select');
-            const models = WATCH_BRANDS[brand] || [];
-            select.innerHTML = '<option value="" class="bg-charcoal">Select Model</option>' +
-                models.map(m => '<option value="'+esc(m)+'" class="bg-charcoal">'+esc(m)+'</option>').join('');
-        }
-
-        function openSourceRequest() {
-            const body = document.getElementById('modal-body');
-            body.innerHTML = `
-                <div id="form-view" class="p-5 sm:p-8">
-                    <h2 class="text-2xl font-space font-bold tracking-tight mb-2">Sourcing Request</h2>
-                    <p class="text-xs text-muted mb-8 tracking-wide">Tell us what you're looking for and we'll source it.</p>
-                    <form onsubmit="event.preventDefault(); submitSourceRequest(this);" class="space-y-4">
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Full Name</label>
-                            <input required type="text" name="fullName" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Email</label>
-                            <input required type="email" name="email" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Brand</label>
-                            <select name="watchBrand" required onchange="updateModels(this.value)"
-                                class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer">
-                                <option value="" class="bg-charcoal">Select Brand</option>
-                                ${Object.keys(WATCH_BRANDS).map(b => '<option value="'+esc(b)+'" class="bg-charcoal">'+esc(b)+'</option>').join('')}
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Model</label>
-                            <select name="watchModel" required id="model-select"
-                                class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer">
-                                <option value="" class="bg-charcoal">Select Brand First</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Reference Number (if known)</label>
-                            <input type="text" name="watchRef" placeholder="e.g. 126500LN" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40">
-                        </div>
-                        <div class="pt-2 pb-1">
-                            <p class="text-[10px] font-bold tracking-widest text-muted mb-3">Your Preferences</p>
-                            <div class="grid grid-cols-2 gap-3">
-                                <div>
-                                    <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Preferred Year</label>
-                                    <select name="prefYear" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                        <option value="" class="bg-charcoal">Any Year</option>
-                                        <option value="2025" class="bg-charcoal">2025</option>
-                                        <option value="2024" class="bg-charcoal">2024</option>
-                                        <option value="2023" class="bg-charcoal">2023</option>
-                                        <option value="2022" class="bg-charcoal">2022</option>
-                                        <option value="2021" class="bg-charcoal">2021</option>
-                                        <option value="2020" class="bg-charcoal">2020</option>
-                                        <option value="2019 or older" class="bg-charcoal">2019 or Older</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Condition</label>
-                                    <select name="prefCondition" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                        <option value="" class="bg-charcoal">Any Condition</option>
-                                        <option value="Brand New" class="bg-charcoal">Brand New</option>
-                                        <option value="Like New" class="bg-charcoal">Like New</option>
-                                        <option value="Excellent" class="bg-charcoal">Excellent</option>
-                                        <option value="Very Good" class="bg-charcoal">Very Good</option>
-                                        <option value="Good" class="bg-charcoal">Good</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Set</label>
-                                    <select name="prefSet" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                        <option value="" class="bg-charcoal">Any Set</option>
-                                        <option value="Full Set" class="bg-charcoal">Full Set</option>
-                                        <option value="Partial Set" class="bg-charcoal">Partial Set</option>
-                                        <option value="Watch Only" class="bg-charcoal">Watch Only</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Price Range</label>
-                                    <select name="prefPrice" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                        <option value="" class="bg-charcoal">Any Budget</option>
-                                        <option value="Under $10K" class="bg-charcoal">Under $10K</option>
-                                        <option value="$10K - $25K" class="bg-charcoal">$10K - $25K</option>
-                                        <option value="$25K - $50K" class="bg-charcoal">$25K - $50K</option>
-                                        <option value="$50K - $100K" class="bg-charcoal">$50K - $100K</option>
-                                        <option value="$100K - $250K" class="bg-charcoal">$100K - $250K</option>
-                                        <option value="$250K+" class="bg-charcoal">$250K+</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Additional Details</label>
-                            <textarea rows="2" name="watchDetails" placeholder="Any other questions or details..." class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40"></textarea>
-                        </div>
-                        <button type="submit" class="brutal-btn brutal-btn--solid w-full py-4 font-bold font-space tracking-widest text-sm mt-4">
-                            Submit Sourcing Request
-                        </button>
-                    </form>
-                </div>
-            `;
-            safeCreateIcons();
-            openModal();
-        }
-
-        function showSuccess() {
-            // Close the form modal first
-            closeModal();
-            // Show centered success overlay
-            setTimeout(() => {
-                const overlay = document.getElementById('success-overlay');
-                overlay.style.visibility = 'visible';
-                overlay.style.pointerEvents = 'auto';
-                document.body.style.overflow = 'hidden';
-                gsap.to(overlay, { opacity: 1, duration: 0.4, ease: 'power2.out' });
-                gsap.fromTo(overlay.querySelector('.glass-strong'),
-                    { y: 20, opacity: 0, scale: 0.95 },
-                    { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }
-                );
-                safeCreateIcons();
-            }, 500);
-        }
-
-        function closeSuccessOverlay() {
-            const overlay = document.getElementById('success-overlay');
-            gsap.to(overlay.querySelector('.glass-strong'),
-                { y: 20, opacity: 0, scale: 0.95, duration: 0.3, ease: 'power2.in' }
-            );
-            gsap.to(overlay, {
-                opacity: 0, duration: 0.4, delay: 0.1,
-                onComplete: () => {
-                    overlay.style.visibility = 'hidden';
-                    overlay.style.pointerEvents = 'none';
-                    document.querySelectorAll('form').forEach(f => f.reset());
-                }
-            });
-        }
-
-        async function submitSourceRequest(formEl) {
-            const btn = formEl.querySelector('button[type="submit"]');
-            const formData = new FormData(formEl);
-            const brand = formData.get('watchBrand') || '';
-            const model = formData.get('watchModel') || '';
-            const ref = formData.get('watchRef') || '';
-            const details = formData.get('watchDetails') || '';
-
-            // Build preferences string
-            const prefs = [];
-            const prefYear = formData.get('prefYear');
-            const prefCondition = formData.get('prefCondition');
-            const prefSet = formData.get('prefSet');
-            const prefPrice = formData.get('prefPrice');
-            if (prefYear) prefs.push('Year: ' + prefYear);
-            if (prefCondition) prefs.push('Condition: ' + prefCondition);
-            if (prefSet) prefs.push('Set: ' + prefSet);
-            if (prefPrice) prefs.push('Budget: ' + prefPrice);
-            const prefsStr = prefs.length ? 'Preferences: ' + prefs.join(', ') : '';
-
-            let watchDetailsStr = '';
-            if (brand || model) {
-                const parts = [brand, model, ref ? 'Ref: ' + ref : ''].filter(Boolean);
-                watchDetailsStr = parts.join(' - ');
-            }
-            const allDetails = [watchDetailsStr, prefsStr, details].filter(Boolean).join(' | ');
-
-            const payload = {
-                type: 'BUY',
-                fullName: formData.get('fullName'),
-                email: formData.get('email'),
-                watchName: brand && model ? brand + ' ' + model : null,
-                watchRef: ref || null,
-                watchDetails: allDetails || null
-            };
-
-            if (btn) { btn.innerText = 'Processing...'; btn.disabled = true; }
-
-            try {
-                const res = await fetch('/api/submit-form', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+        function buildFacets() {
+            var row = document.getElementById('facet-row');
+            var panels = document.getElementById('facet-panels');
+            row.innerHTML = ''; panels.innerHTML = '';
+            FACETS.forEach(function (f) {
+                var opts = [];
+                PIECES.forEach(function (p) { var v = f.get(p); if (v && opts.indexOf(v) < 0) opts.push(v); });
+                if (opts.length < 2) return;
+                opts.sort();
+                var btn = document.createElement('button');
+                btn.className = 'inv-facet-btn';
+                btn.innerHTML = f.label + ' <span class="pm">+</span>';
+                btn.addEventListener('click', function () {
+                    var panel = document.getElementById('panel-' + f.id);
+                    var was = panel.classList.contains('open');
+                    document.querySelectorAll('.inv-panel').forEach(function (x) { x.classList.remove('open'); });
+                    document.querySelectorAll('.inv-facet-btn').forEach(function (x) { x.classList.remove('open'); });
+                    if (!was) { panel.classList.add('open'); btn.classList.add('open'); }
                 });
-                if (!res.ok) throw new Error('Submission failed');
-                showSuccess();
-            } catch (error) {
-                console.error('Submission error:', error);
-                if (window.location.protocol === 'file:' || (window.location.hostname === 'localhost' && error.message.includes('Failed to fetch'))) {
-                    showSuccess();
-                    return;
-                }
-                if (btn) { btn.innerText = 'Error - Try Again'; btn.disabled = false; }
-            }
-        }
-
-        /* ── POPULATE FILTER DROPDOWNS ── */
-        function populateDropdown(ids, values, defaultLabel) {
-            ids.forEach(id => {
-                const sel = document.getElementById(id);
-                if (!sel) return;
-                sel.innerHTML = `<option value="ALL">${defaultLabel}</option>`;
-                values.forEach(v => {
-                    const opt = document.createElement('option');
-                    opt.value = v; opt.textContent = v;
-                    sel.appendChild(opt);
+                row.appendChild(btn);
+                var panel = document.createElement('div');
+                panel.className = 'inv-panel'; panel.id = 'panel-' + f.id;
+                opts.forEach(function (o) {
+                    var lab = document.createElement('label');
+                    lab.className = 'inv-opt';
+                    var cb = document.createElement('input'); cb.type = 'checkbox'; cb.value = o;
+                    cb.addEventListener('change', function () {
+                        selected[f.id] = selected[f.id] || [];
+                        var i = selected[f.id].indexOf(o);
+                        if (cb.checked && i < 0) selected[f.id].push(o);
+                        if (!cb.checked && i >= 0) selected[f.id].splice(i, 1);
+                        render();
+                    });
+                    lab.appendChild(cb);
+                    lab.appendChild(document.createTextNode(' ' + o.toUpperCase()));
+                    panel.appendChild(lab);
                 });
+                panels.appendChild(panel);
             });
         }
 
-        /* ── INIT ── */
-        document.addEventListener('DOMContentLoaded', async () => {
-            safeCreateIcons();
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.from('nav', { opacity: 0, y: -30, duration: 1, ease: 'power3.out', clearProps: 'all' });
-            gsap.fromTo('#hero-title',
-                { opacity: 0, y: 80 },
-                { opacity: 1, y: 0, duration: 1.2, ease: 'expo.out', delay: 0.3,
-                  onComplete: () => { document.getElementById('hero-title').classList.remove('opacity-0'); gsap.set('#hero-title', { clearProps: 'opacity,transform' }); }
-                }
-            );
-            gsap.fromTo('#hero-sub',
-                { opacity: 0, y: 30 },
-                { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out', delay: 0.7,
-                  onComplete: () => { document.getElementById('hero-sub').classList.remove('opacity-0'); gsap.set('#hero-sub', { clearProps: 'opacity,transform' }); }
-                }
-            );
-            gsap.fromTo('#hero-cta',
-                { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 0.9,
-                  onComplete: () => { document.getElementById('hero-cta').classList.remove('opacity-0'); gsap.set('#hero-cta', { clearProps: 'opacity,transform' }); }
-                }
-            );
-
-            await fetchPieces();
-
-            // Normalize dial color, case material, and model into broader groups
-            PIECES.forEach(p => {
-                p._dialGroup = normalize(p.dialColor, DIAL_RULES);
-                p._materialGroup = normalize(p.caseMaterial, MATERIAL_RULES);
-                p._modelGroup = normalizeModel(p.model, p.brand, WATCH_BRANDS);
+        function filtered() {
+            var out = PIECES.filter(function (p) { return !p.sold; });
+            FACETS.forEach(function (f) {
+                var sel = selected[f.id];
+                if (sel && sel.length) out = out.filter(function (p) { return sel.indexOf(f.get(p)) >= 0; });
             });
+            var sort = document.getElementById('inv-sort').value;
+            if (sort === 'brand') out.sort(function (a, b) { return (a.brand + a.model).localeCompare(b.brand + b.model); });
+            else if (sort === 'newest') out = out.slice().reverse();
+            else out.sort(function (a, b) { return (b.featured === true) - (a.featured === true); });
+            return out;
+        }
 
-            // Build brand pills from data
-            const brands = [...new Set(PIECES.map(w => w.brand).filter(Boolean))].sort();
-            const pillContainer = document.getElementById('brand-pills');
-            brands.forEach(b => {
-                const btn = document.createElement('button');
-                btn.onclick = () => selectBrand(b);
-                btn.className = 'brand-pill shrink-0';
-                btn.dataset.brand = b;
-                btn.textContent = b;
-                pillContainer.appendChild(btn);
+        function render() {
+            var items = filtered();
+            var total = PIECES.filter(function (p) { return !p.sold; }).length;
+            document.getElementById('inv-count').textContent = items.length + ' OF ' + total + ' PIECES';
+            var grid = document.getElementById('inv-grid');
+            document.getElementById('inv-empty').classList.toggle('hidden', items.length > 0);
+            grid.innerHTML = items.map(function (p) {
+                var name = (p.brand + ' ' + p.model).toUpperCase();
+                return '<a class="inv-card" href="watch.html?id=' + encodeURIComponent(p.id) + '">' +
+                    '<div class="inv-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.brand + ' ' + p.model) + '" loading="lazy"></div>' +
+                    '<div class="inv-card__meta"><span class="inv-card__name">' + esc(name) + '</span>' +
+                    (p.year ? '<span class="inv-card__year">' + esc(p.year) + '</span>' : '') + '</div></a>';
+            }).join('');
+        }
+
+        document.getElementById('inv-sort').addEventListener('change', render);
+
+        fetch('/api/pieces')
+            .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
+            .catch(function () {
+                return fetch('/data/pieces.json').then(function (r) {
+                    if (!r.ok) throw new Error('load failed'); return r.json();
+                });
+            })
+            .then(function (data) { PIECES = data; buildFacets(); render(); })
+            .catch(function () {
+                document.getElementById('inv-count').textContent = 'INVENTORY UNAVAILABLE RIGHT NOW.';
             });
-
-            // Populate filter dropdowns from normalized data
-            updateModelDropdown();
-
-            const dialSet = [...new Set(PIECES.map(w => w._dialGroup).filter(Boolean))];
-            const dials = dialSet.filter(v => v !== 'Other').sort();
-            if (dialSet.includes('Other')) dials.push('Other');
-            populateDropdown(['filter-dial', 'filter-dial-m'], dials, 'Dial Color');
-
-            const matSet = [...new Set(PIECES.map(w => w._materialGroup).filter(Boolean))];
-            const materials = matSet.filter(v => v !== 'Other').sort();
-            if (matSet.includes('Other')) materials.push('Other');
-            populateDropdown(['filter-material', 'filter-material-m'], materials, 'Case Material');
-
-            const conditions = [...new Set(PIECES.map(w => w.condition).filter(Boolean))].sort();
-            populateDropdown(['filter-condition', 'filter-condition-m'], conditions, 'Condition');
-
-            renderGrid(PIECES);
-            const rc = document.getElementById('result-count');
-            if (rc) rc.textContent = PIECES.length + ' pieces';
-
-            gsap.from('#watch-grid .watch-card', {
-                opacity: 0, y: 30, duration: 0.5, stagger: 0.04, ease: 'power2.out', clearProps: 'all'
-            });
-
-            gsap.from('.glass.rounded-2xl', {
-                scrollTrigger: { trigger: '.glass.rounded-2xl', start: 'top 85%', once: true },
-                opacity: 0, y: 40, duration: 0.9, ease: 'power3.out', clearProps: 'all'
-            });
-
-            gsap.fromTo('.footer-line',
-                { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, duration: 0.6, stagger: 0.15, ease: 'power2.out',
-                  scrollTrigger: { trigger: 'footer', start: 'top 90%', once: true },
-                  onComplete: () => {
-                      document.querySelectorAll('.footer-line').forEach(el => {
-                          el.classList.remove('opacity-0');
-                          gsap.set(el, { clearProps: 'all' });
-                      });
-                  }
-                }
-            );
-        });
+    })();
     </script>
-<!-- FLOATING WHATSAPP (persistent, mobile + desktop) -->
-<a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer"
-   id="floating-wa"
-   aria-label="Message Prime Time Miami on WhatsApp"
-   class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-[60] w-14 h-14 sm:w-[58px] sm:h-[58px] rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-110 active:scale-95"
-   style="background:#25D366;">
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true">
-        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.88a11.8 11.8 0 0 0 1.64 6l-1.74 6.36 6.51-1.71a11.86 11.86 0 0 0 5.48 1.4h.01c6.55 0 11.89-5.33 11.89-11.88 0-3.18-1.24-6.17-3.43-8.57Zm-8.47 18.3h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.86 1.01 1.03-3.77-.23-.39a9.82 9.82 0 0 1-1.51-5.26c0-5.43 4.43-9.86 9.87-9.86 2.63 0 5.1 1.03 6.96 2.89a9.79 9.79 0 0 1 2.89 6.98c0 5.44-4.43 9.87-9.87 9.87Zm5.41-7.39c-.3-.15-1.75-.86-2.02-.96s-.47-.15-.67.15-.77.96-.94 1.16-.35.22-.64.07a8.08 8.08 0 0 1-2.37-1.46 8.94 8.94 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.05 1.03-1.05 2.51 1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.75-.71 2-1.4.25-.69.25-1.27.17-1.39-.07-.12-.27-.2-.57-.35Z"/>
-    </svg>
-</a>
 </body>
 </html>

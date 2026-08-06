@@ -5,111 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
     <link rel="shortcut icon" href="/favicon.png?v=1" />
-    <title>Watch Detail | Prime Time Miami</title>
-    <meta name="description" content="View details and inquire about this authenticated luxury timepiece available for sourcing through Prime Time Miami.">
+    <title>Piece | Prime Time Miami</title>
+    <meta name="description" content="View details and inquire about this authenticated luxury timepiece available through Prime Time Miami.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://primetimemiami.com/watch.html">
-
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://primetimemiami.com/watch.html">
-    <meta property="og:title" content="Watch Detail | Prime Time Miami">
-    <meta property="og:description" content="Authenticated luxury timepiece available for sourcing through Prime Time Miami concierge service.">
-    <meta property="og:image" content="https://primetimemiami.com/images/og-share.png">
-    <meta property="og:site_name" content="Prime Time Miami">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Watch Detail | Prime Time Miami">
-    <meta name="twitter:description" content="Authenticated luxury timepiece available for sourcing through Prime Time Miami.">
-    <meta name="twitter:image" content="https://primetimemiami.com/images/og-share.png">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetimemiami.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Sourcing", "item": "https://primetimemiami.com/inventory.html" },
-            { "@type": "ListItem", "position": 3, "name": "Watch Detail", "item": "https://primetimemiami.com/watch.html" }
-        ]
-    }
-    </script>
-    <script id="product-jsonld" type="application/ld+json">{}</script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
-    <script src="/scripts/lucide.min.js"></script>
     <link rel="stylesheet" href="/dist/styles.css?v=19">
+    <style>
+    /* ── piece page: live-site layout, Prime Time black ── */
+    .pc-back { display: inline-flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.55); font-size: 12px; letter-spacing: 0.2em; text-decoration: none; transition: color 0.3s ease; }
+    .pc-back:hover { color: #fff; }
+    .pc-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+    @media (max-width: 900px) { .pc-wrap { grid-template-columns: 1fr; } }
+    .pc-img { background: #0c0c0c; border: 1px solid rgba(255,255,255,0.07); aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .pc-img img { width: 100%; height: 100%; object-fit: cover; }
+    .pc-brand { color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.28em; font-weight: 600; margin-bottom: 18px; }
+    .pc-title { font-weight: 700; font-size: clamp(34px, 4.2vw, 58px); line-height: 1.02; letter-spacing: -0.01em; margin: 0 0 20px; }
+    .pc-ref { color: rgba(255,255,255,0.55); font-size: 13px; letter-spacing: 0.22em; margin-bottom: 16px; }
+    .pc-line { color: rgba(255,255,255,0.65); font-size: 13px; letter-spacing: 0.08em; margin-bottom: 26px; }
+    .pc-blurb { color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.9; letter-spacing: 0.04em; margin-bottom: 34px; max-width: 560px; }
+    .pc-inquire { border: 1px solid rgba(255,255,255,0.16); padding: 26px; margin-bottom: 22px; }
+    .pc-inquire p { color: rgba(255,255,255,0.65); font-size: 11px; letter-spacing: 0.12em; line-height: 1.9; margin: 0 0 20px; }
+    .pc-btn-wa { display: flex; align-items: center; justify-content: center; width: 100%; padding: 17px; background: #25D366; color: #fff; font-weight: 700; font-size: 12px; letter-spacing: 0.22em; text-decoration: none; margin-bottom: 12px; transition: opacity 0.3s ease; }
+    .pc-btn-wa:hover { opacity: 0.88; }
+    .pc-badges { display: flex; flex-wrap: wrap; gap: 12px; }
+    .pc-badge { border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.6); font-size: 10px; letter-spacing: 0.18em; padding: 12px 18px; }
+    .pc-specs { max-width: 1200px; margin: clamp(50px, 8vw, 100px) auto 0; }
+    .pc-specs h2 { font-weight: 700; font-size: clamp(26px, 3vw, 40px); letter-spacing: -0.01em; margin-bottom: 26px; }
+    .pc-spec-row { display: flex; justify-content: space-between; gap: 20px; padding: 20px 2px; border-top: 1px solid rgba(255,255,255,0.12); }
+    .pc-spec-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .pc-spec-row .k { color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 0.2em; }
+    .pc-spec-row .v { color: #fff; font-size: 13px; letter-spacing: 0.14em; text-align: right; }
+    .pc-missing { text-align: center; padding: 90px 20px; }
+    </style>
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
-    <!-- BLURRED BACKGROUND -->
-    <div id="bg-blur"></div>
-
     <!-- NAV -->
-    <nav class="relative z-10 w-full px-6 sm:px-10 md:px-16 py-5 sm:py-6 flex justify-between items-center">
+    <nav class="w-full z-40 px-6 sm:px-10 md:px-16 py-5 sm:py-6 flex justify-between items-center relative">
         <a href="index.html">
             <img src="images/logo.png" alt="Prime Time Miami" class="h-8 sm:h-10 w-auto object-contain">
         </a>
-        <div class="hidden md:flex space-x-8 text-sm font-space font-medium uppercase tracking-widest items-center">
+        <div class="hidden md:flex space-x-8 text-sm font-space font-medium tracking-widest items-center">
             <a href="about.html" class="nav-link hover:text-muted transition-colors">About</a>
             <a href="process.html" class="nav-link hover:text-muted transition-colors">Process</a>
             <a href="inventory.html" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest">Back to Sourcing</a>
         </div>
         <button onclick="document.getElementById('mobile-menu').style.opacity='1'; document.getElementById('mobile-menu').style.pointerEvents='auto'; document.body.style.overflow='hidden';" class="md:hidden text-ivory">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/>
-            </svg>
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
         </button>
     </nav>
 
     <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 transition-all duration-500 opacity-0 pointer-events-none">
         <button onclick="document.getElementById('mobile-menu').style.opacity='0'; document.getElementById('mobile-menu').style.pointerEvents='none'; document.body.style.overflow='';" class="absolute top-4 right-6 text-ivory">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M18 6L6 18M6 6l12 12"/>
-            </svg>
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
-        <a href="about.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">About</a>
-        <a href="process.html" class="text-2xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">Process</a>
+        <a href="about.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
+        <a href="process.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
         <a href="inventory.html" class="brutal-btn brutal-btn--solid px-8 py-3 text-sm font-space font-bold tracking-widest">Back to Sourcing</a>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main id="watch-detail" class="relative z-10 max-w-6xl mx-auto px-6 py-10 sm:py-16">
-        <!-- Loading state -->
-        <div id="loading-state" class="flex items-center justify-center py-32">
-            <div class="text-center">
-                <div class="w-10 h-10 border-2 border-ivory/20 border-t-ivory rounded-full animate-spin mx-auto mb-4"></div>
-                <p class="text-muted text-xs font-space tracking-widest">Loading piece details...</p>
+    <main class="relative z-10 max-w-7xl mx-auto px-6 pt-10 sm:pt-14 pb-16 sm:pb-24">
+        <a href="inventory.html" class="pc-back mb-10 sm:mb-14" style="display:inline-flex;">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+            BACK TO ALL PIECES
+        </a>
+
+        <div id="pc-content" class="hidden">
+            <div class="pc-wrap mt-8">
+                <div class="pc-img"><img id="pc-photo" src="" alt=""></div>
+                <div>
+                    <div class="pc-brand" id="pc-brand"></div>
+                    <h1 class="pc-title" id="pc-title"></h1>
+                    <div class="pc-ref" id="pc-ref"></div>
+                    <div class="pc-line" id="pc-line"></div>
+                    <p class="pc-blurb">Sourced for clients in Miami and nationwide. Independently authenticated, with fully insured shipping anywhere in the US.</p>
+                    <div class="pc-inquire">
+                        <p>INTERESTED IN THIS PIECE? MESSAGE US AND WE'LL GET BACK TO YOU WITH SOURCING DETAILS, PRICING, AND AVAILABILITY.</p>
+                        <a id="pc-wa" class="pc-btn-wa" href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer">MESSAGE ON WHATSAPP</a>
+                        <a class="brutal-btn brutal-btn--solid w-full py-4 font-space font-bold tracking-widest text-xs" style="display:flex;" href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer">DM ON INSTAGRAM</a>
+                    </div>
+                    <div class="pc-badges">
+                        <span class="pc-badge">AUTHENTICATED</span>
+                        <span class="pc-badge">INSURED NATIONWIDE</span>
+                        <span class="pc-badge">SECURE TRANSACTION</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="pc-specs">
+                <h2>Specifications</h2>
+                <div id="pc-spec-rows"></div>
+            </div>
+        </div>
+
+        <div id="pc-missing" class="pc-missing hidden">
+            <h2 class="font-space font-bold text-3xl tracking-tight mb-4">Piece not found</h2>
+            <p class="text-muted text-sm mb-8">It may have just been delivered. Tell us what you're after and we'll source it.</p>
+            <a href="inventory.html" class="brutal-btn brutal-btn--solid px-8 py-4 font-space font-bold tracking-widest text-xs sm:text-sm">Browse All Pieces</a>
         </div>
     </main>
-
-    <!-- ZOOM LIGHTBOX -->
-    <div id="zoom-overlay" class="fixed inset-0 z-50 opacity-0" style="visibility:hidden; pointer-events:none; background:rgba(0,0,0,0.92); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);">
-        <button id="zoom-close" class="absolute top-5 right-5 z-10 w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-full text-white/70 hover:text-white hover:bg-white/20 transition-all duration-200 cursor-pointer">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
-        </button>
-        <div id="zoom-hint" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-white/40 text-[10px] font-space tracking-widest pointer-events-none transition-opacity duration-500">Scroll or pinch to zoom</div>
-        <div id="zoom-container" class="w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" style="touch-action:none;">
-            <img id="zoom-img" src="" alt="" style="position:absolute;transform-origin:0 0;will-change:transform;">
-        </div>
-    </div>
-
-    <!-- SUCCESS OVERLAY -->
-    <div id="success-overlay" class="fixed inset-0 z-50 flex items-center justify-center opacity-0" style="visibility:hidden; pointer-events:none;">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-xl"></div>
-        <div class="relative z-10 glass-strong rounded-2xl p-8 sm:p-12 max-w-sm mx-4 text-center">
-            <button onclick="closeSuccessOverlay()" class="absolute top-3 right-3 w-9 h-9 flex items-center justify-center bg-charcoal/80 backdrop-blur-sm border border-ivory/20 rounded-full text-muted hover:text-ivory hover:bg-charcoal transition-all duration-200">
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            </button>
-            <div class="w-16 h-16 border border-ivory rounded-full flex items-center justify-center mb-6 mx-auto">
-                <i data-lucide="check" class="w-8 h-8"></i>
-            </div>
-            <h3 class="text-xl font-space font-bold tracking-widest mb-2">Inquiry Received</h3>
-            <p class="text-muted text-xs tracking-wide">We'll be in touch shortly.</p>
-        </div>
-    </div>
 
     <!-- FOOTER -->
     <footer class="relative border-t border-ivory/10 py-14 sm:py-16 px-6">
@@ -119,17 +114,17 @@
             </a>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mb-12">
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Location</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Location</h4>
                     <p class="no-caps font-inter text-sm text-muted">Miami, Florida</p>
                 </div>
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Contact</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Contact</h4>
                     <p class="no-caps font-inter text-sm">
                         <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors">+1 (305) 922-4975</a>
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-space font-bold text-xs tracking-[0.25em] uppercase mb-4">Social</h4>
+                    <h4 class="font-space font-bold text-xs tracking-[0.25em] mb-4">Social</h4>
                     <p class="no-caps font-inter text-sm">
                         <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-ivory transition-colors" style="display:inline-flex;align-items:center;gap:7px;">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
@@ -137,675 +132,48 @@
                     </p>
                 </div>
             </div>
-            <p class="text-xs font-space uppercase tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
+            <p class="text-xs font-space tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
             <p class="no-caps text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-3 leading-relaxed">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
-            <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
+            <a href="privacy.html" class="text-[10px] text-muted/30 font-space tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="/scripts/premium-ui.js"></script>
     <script>
-        let currentWatch = null;
-
-        function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
-
-        async function fetchWatch() {
-            const params = new URLSearchParams(window.location.search);
-            const id = params.get('id');
-            if (!id) return null;
-            try {
-                const res = await fetch(`/api/get-inventory?id=${id}`);
-                if (!res.ok) return null;
-                return await res.json();
-            } catch (err) {
-                console.error('Failed to fetch watch:', err);
-                return null;
-            }
-        }
-
-        function renderWatchDetail(watch) {
-            const main = document.getElementById('watch-detail');
-            const loading = document.getElementById('loading-state');
-
-            if (!watch) {
-                main.innerHTML = `
-                    <div class="text-center py-20">
-                        <h2 class="font-space font-bold text-3xl tracking-tight mb-4">Piece Not Found</h2>
-                        <p class="text-muted text-sm mb-8">This piece may no longer be available for sourcing.</p>
-                        <a href="inventory.html" class="brutal-btn brutal-btn--solid px-8 py-4 font-space font-bold tracking-widest">Browse All Pieces</a>
-                    </div>
-                `;
-                return;
-            }
-
-            // Set background blur
-            if (watch.image) {
-                const bgBlur = document.getElementById('bg-blur');
-                bgBlur.innerHTML = `<img src="${esc(watch.image)}" alt="">`;
-            }
-
-            // Update page title
-            const displayName = watch.name + (watch.nickname ? ' "' + watch.nickname + '"' : '');
-            document.title = `${displayName} | Prime Time Miami`;
-            const safeDisplayName = esc(displayName);
-
-            // Inject Product structured data
-            const productLD = {
-                "@context": "https://schema.org",
-                "@type": "Product",
-                "name": displayName,
-                "brand": { "@type": "Brand", "name": watch.brand },
-                "description": `${watch.brand} ${displayName} available for sourcing through Prime Time Miami luxury watch concierge.`,
-                "url": window.location.href,
-                "offers": {
-                    "@type": "Offer",
-                    "availability": "https://schema.org/InStock",
-                    "seller": { "@type": "Organization", "name": "Prime Time Miami", "url": "https://primetimemiami.com" }
-                }
-            };
-            if (watch.image) productLD.image = watch.image;
-            if (watch.ref) productLD.sku = watch.ref;
-            if (watch.condition) productLD.itemCondition = watch.condition === 'New/Unworn' ? 'https://schema.org/NewCondition' : 'https://schema.org/UsedCondition';
-            document.getElementById('product-jsonld').textContent = JSON.stringify(productLD);
-
-            // Build specs
-            const specEntries = [
-                ['Brand', watch.brand],
-                ['Model', watch.model],
-                ['Reference', watch.ref],
-                ['Nickname', watch.nickname],
-                ['Year', watch.year],
-                ['Case Material', watch.caseMaterial],
-                ['Case Size', watch.caseSize],
-                ['Dial Color', watch.dialColor],
-                ['Bracelet / Strap', watch.bracelet],
-                ['Condition', watch.condition],
-                ['Set', watch.set]
-            ].filter(([, val]) => val);
-
-            const detailBrand = (watch.brand || '').toUpperCase();
-            const detailNm = (displayName + ' ' + (watch.details || '') + ' ' + (watch.caseMaterial || '')).toUpperCase();
-            const detailImgSize = detailBrand === 'ROLEX' ? '100%' : detailBrand.includes('AUDEMARS') ? '65%' : detailBrand === 'TUDOR' && detailNm.includes('CARBON') ? '100%' : detailBrand === 'TUDOR' ? '75%' : detailBrand.includes('RICHARD') ? '135%' : '75%';
-            const detailImgOffset = detailBrand.includes('RICHARD') ? 'transform:translateY(-10%);' : detailBrand.includes('JOURNE') && !detailNm.includes('ELEGANTE') ? 'transform:translateY(14%);' : '';
-
-            const specsHTML = specEntries.map(([key, val]) => `
-                <div class="flex justify-between items-start py-3.5 border-b border-ivory/5 last:border-0">
-                    <span class="text-muted text-[11px] font-bold tracking-widest">${esc(key)}</span>
-                    <span class="text-ivory text-[11px] font-space tracking-wide text-right max-w-[55%]">${esc(val)}</span>
-                </div>
-            `).join('');
-
-            main.innerHTML = `
-                <!-- BREADCRUMB -->
-                <div class="mb-8">
-                    <a href="inventory.html" class="text-muted text-xs font-space tracking-widest hover:text-ivory transition-colors inline-flex items-center gap-2">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
-                        Back to All Pieces
-                    </a>
-                </div>
-
-                <!-- TWO COLUMN LAYOUT -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-                    <!-- LEFT: IMAGE -->
-                    <div class="relative">
-                        ${watch.image
-                            ? `<div class="glass rounded-2xl overflow-hidden bg-[#111] aspect-square flex items-center justify-center relative cursor-zoom-in group" onclick="openZoom('${esc(watch.image).replace(/'/g, "\\'")}', '${esc(displayName).replace(/'/g, "\\'")}')">
-                                <img src="${esc(watch.image)}" alt="${safeDisplayName}" class="detail-img" style="width:${detailImgSize};height:${detailImgSize};object-fit:contain;object-position:center;margin:auto;${detailImgOffset}" onerror="this.style.display='none'; this.parentElement.querySelector('.img-fallback').style.display='flex'; this.parentElement.style.cursor='default'; this.parentElement.onclick=null;">
-                                <div class="img-fallback absolute inset-0 items-center justify-center" style="display:none;">
-                                    <span class="text-muted/40 text-sm font-space tracking-widest">Image Coming Soon</span>
-                                </div>
-                                <div class="absolute bottom-4 right-4 w-9 h-9 flex items-center justify-center bg-black/50 backdrop-blur-sm rounded-full text-white/50 group-hover:text-white/80 transition-all duration-200 pointer-events-none">
-                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                                </div>
-                               </div>`
-                            : `<div class="glass rounded-2xl overflow-hidden aspect-square flex items-center justify-center bg-[#111]">
-                                <span class="text-muted/40 text-sm font-space tracking-widest">Image Coming Soon</span>
-                               </div>`
-                        }
-                        ${watch.condition
-                            ? `<div class="absolute top-4 right-4">
-                                <span class="glass-strong rounded-full px-4 py-2 text-[10px] font-space font-bold tracking-widest">${esc(watch.condition)}</span>
-                               </div>`
-                            : ''
-                        }
-                    </div>
-
-                    <!-- RIGHT: INFO -->
-                    <div class="flex flex-col">
-                        <div class="mb-6">
-                            <p class="text-muted text-[11px] font-bold tracking-[0.2em] mb-2">${esc(watch.brand)}</p>
-                            <h1 class="font-space font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter leading-[0.95] mb-3">${safeDisplayName}</h1>
-                            ${watch.ref ? `<p class="text-muted text-sm font-bold tracking-widest">Ref. ${esc(watch.ref)}</p>` : ''}
-                        </div>
-
-                        ${watch.details ? `<p class="text-ivory/60 text-sm font-inter leading-relaxed tracking-wide mb-8">${esc(watch.details)}</p>` : ''}
-
-                        <!-- INQUIRE CTA -->
-                        <div class="glass rounded-xl p-6 mb-8">
-                            <p class="text-ivory/70 text-xs font-inter tracking-wide mb-2 leading-relaxed">
-                                Interested in this piece? Message us and we'll get back to you with sourcing details, pricing, and availability.
-                            </p>
-                            <p class="text-muted text-[10px] font-inter tracking-wide mb-5 leading-relaxed">
-                                Exact references and years we can source vary. DM us for current availability.
-                            </p>
-                            <a id="wa-inquire-btn" href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer"
-                                class="brutal-btn brutal-btn--solid w-full py-4 font-bold font-space tracking-widest mb-4 text-sm">
-                                Message on WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer"
-                                class="brutal-btn w-full py-4 font-bold font-space tracking-widest mb-4 text-sm">
-                                DM on Instagram
-                            </a>
-                            <button onclick="document.getElementById('inquiry-section').scrollIntoView({behavior:'smooth'})"
-                                class="w-full border border-ivory/20 text-ivory/70 py-3 text-xs font-bold font-space tracking-widest hover:text-ivory hover:border-ivory/50 transition-colors">
-                                Or inquire via form
-                            </button>
-                        </div>
-
-                        <!-- TRUST BADGES -->
-                        <div class="flex flex-wrap gap-3 mb-8">
-                            <div class="glass-subtle rounded-lg px-4 py-2.5 flex items-center gap-2">
-                                <i data-lucide="shield-check" class="w-4 h-4 text-ivory"></i>
-                                <span class="text-[10px] font-bold tracking-widest text-ivory/50">Authenticated</span>
-                            </div>
-                            <div class="glass-subtle rounded-lg px-4 py-2.5 flex items-center gap-2">
-                                <i data-lucide="package" class="w-4 h-4 text-ivory"></i>
-                                <span class="text-[10px] font-bold tracking-widest text-ivory/50">Insured Shipping</span>
-                            </div>
-                            <div class="glass-subtle rounded-lg px-4 py-2.5 flex items-center gap-2">
-                                <i data-lucide="lock" class="w-4 h-4 text-ivory"></i>
-                                <span class="text-[10px] font-bold tracking-widest text-ivory/50">Secure Transaction</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SPECIFICATIONS -->
-                <div class="mt-16 sm:mt-20">
-                    <h2 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-8">Specifications</h2>
-                    <div class="glass rounded-xl p-6 sm:p-8">
-                        ${specsHTML}
-                    </div>
-                </div>
-
-                <!-- INQUIRY FORM -->
-                <div id="inquiry-section" class="mt-16 sm:mt-20 scroll-mt-8">
-                    <h2 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-4">Inquire About This Piece</h2>
-                    <p class="text-muted text-sm font-inter tracking-wide mb-8 max-w-lg">
-                        Provide your details and I'll reach out with sourcing information, pricing, and next steps.
-                    </p>
-                    <div class="glass rounded-xl p-6 sm:p-8 max-w-xl">
-                        <form id="inquiry-form" onsubmit="event.preventDefault(); submitInquiry(this);" class="space-y-5">
-                            <div>
-                                <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Full Name</label>
-                                <input required type="text" name="fullName" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase">
-                            </div>
-                            <div>
-                                <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Email</label>
-                                <input required type="email" name="email" class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors">
-                            </div>
-                            <div class="pt-2 pb-1">
-                                <p class="text-[10px] font-bold tracking-widest text-muted mb-3">Your Preferences</p>
-                                <div class="grid grid-cols-2 gap-3">
-                                    <div>
-                                        <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Preferred Year</label>
-                                        <select name="prefYear" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                            <option value="" class="bg-charcoal">Any Year</option>
-                                            <option value="2025" class="bg-charcoal">2025</option>
-                                            <option value="2024" class="bg-charcoal">2024</option>
-                                            <option value="2023" class="bg-charcoal">2023</option>
-                                            <option value="2022" class="bg-charcoal">2022</option>
-                                            <option value="2021" class="bg-charcoal">2021</option>
-                                            <option value="2020" class="bg-charcoal">2020</option>
-                                            <option value="2019 or older" class="bg-charcoal">2019 or Older</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Condition</label>
-                                        <select name="prefCondition" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                            <option value="" class="bg-charcoal">Any Condition</option>
-                                            <option value="Brand New" class="bg-charcoal">Brand New</option>
-                                            <option value="Like New" class="bg-charcoal">Like New</option>
-                                            <option value="Excellent" class="bg-charcoal">Excellent</option>
-                                            <option value="Very Good" class="bg-charcoal">Very Good</option>
-                                            <option value="Good" class="bg-charcoal">Good</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Set</label>
-                                        <select name="prefSet" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                            <option value="" class="bg-charcoal">Any Set</option>
-                                            <option value="Full Set" class="bg-charcoal">Full Set</option>
-                                            <option value="Partial Set" class="bg-charcoal">Partial Set</option>
-                                            <option value="Watch Only" class="bg-charcoal">Watch Only</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-[9px] font-bold tracking-widest text-muted/60 mb-1.5">Price Range</label>
-                                        <select name="prefPrice" class="w-full bg-charcoal border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase appearance-none cursor-pointer text-xs">
-                                            <option value="" class="bg-charcoal">Any Budget</option>
-                                            <option value="Under $10K" class="bg-charcoal">Under $10K</option>
-                                            <option value="$10K - $25K" class="bg-charcoal">$10K - $25K</option>
-                                            <option value="$25K - $50K" class="bg-charcoal">$25K - $50K</option>
-                                            <option value="$50K - $100K" class="bg-charcoal">$50K - $100K</option>
-                                            <option value="$100K - $250K" class="bg-charcoal">$100K - $250K</option>
-                                            <option value="$250K+" class="bg-charcoal">$250K+</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="block text-[10px] font-bold tracking-widest text-muted mb-2">Message (Optional)</label>
-                                <textarea rows="3" name="message" placeholder="Any other questions or details..." class="w-full bg-transparent border border-ivory/20 p-3 text-ivory focus:border-ivory outline-none transition-colors uppercase placeholder-muted/40"></textarea>
-                            </div>
-                            <button type="submit" class="brutal-btn brutal-btn--solid w-full py-4 font-bold font-space tracking-widest text-sm">
-                                Submit Inquiry
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            `;
-
-            safeCreateIcons();
-        }
-
-        async function submitInquiry(formEl) {
-            const watch = currentWatch;
-            const btn = formEl.querySelector('button[type="submit"]');
-            const formData = new FormData(formEl);
-
-            const displayName = watch ? watch.name + (watch.nickname ? ' "' + watch.nickname + '"' : '') : '';
-
-            // Build preferences string
-            const prefs = [];
-            const prefYear = formData.get('prefYear');
-            const prefCondition = formData.get('prefCondition');
-            const prefSet = formData.get('prefSet');
-            const prefPrice = formData.get('prefPrice');
-            if (prefYear) prefs.push('Year: ' + prefYear);
-            if (prefCondition) prefs.push('Condition: ' + prefCondition);
-            if (prefSet) prefs.push('Set: ' + prefSet);
-            if (prefPrice) prefs.push('Budget: ' + prefPrice);
-
-            const message = formData.get('message') || '';
-            const prefsStr = prefs.length ? 'Preferences: ' + prefs.join(', ') : '';
-            const details = [prefsStr, message].filter(Boolean).join(' | ');
-
-            const payload = {
-                type: 'WATCH_DETAIL',
-                fullName: formData.get('fullName'),
-                email: formData.get('email'),
-                watchName: displayName || null,
-                watchRef: watch ? watch.ref : null,
-                watchDetails: details || null,
-                watchImage: watch ? watch.image : null,
-                watchBrand: watch ? watch.brand : null
-            };
-
-            if (btn) { btn.innerText = 'Processing...'; btn.disabled = true; }
-
-            try {
-                const res = await fetch('/api/submit-form', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+    (function () {
+        var id = new URLSearchParams(location.search).get('id');
+        function show(el) { document.getElementById(el).classList.remove('hidden'); }
+        fetch('/api/pieces')
+            .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
+            .catch(function () {
+                return fetch('/data/pieces.json').then(function (r) {
+                    if (!r.ok) throw new Error('load failed'); return r.json();
                 });
-                if (!res.ok) throw new Error('Submission failed');
-                showSuccess();
-            } catch (error) {
-                console.error('Submission error:', error);
-                if (window.location.protocol === 'file:' || (window.location.hostname === 'localhost' && error.message.includes('Failed to fetch'))) {
-                    showSuccess();
-                    return;
-                }
-                if (btn) { btn.innerText = 'Error - Try Again'; btn.disabled = false; }
-            }
-        }
-
-        function showSuccess() {
-            const overlay = document.getElementById('success-overlay');
-            overlay.style.visibility = 'visible';
-            overlay.style.pointerEvents = 'auto';
-            document.body.style.overflow = 'hidden';
-            gsap.to(overlay, { opacity: 1, duration: 0.4, ease: 'power2.out' });
-            gsap.fromTo(overlay.querySelector('.glass-strong'),
-                { y: 20, opacity: 0, scale: 0.95 },
-                { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }
-            );
-            safeCreateIcons();
-        }
-
-        function closeSuccessOverlay() {
-            const overlay = document.getElementById('success-overlay');
-            gsap.to(overlay.querySelector('.glass-strong'),
-                { y: 20, opacity: 0, scale: 0.95, duration: 0.3, ease: 'power2.in' }
-            );
-            gsap.to(overlay, {
-                opacity: 0, duration: 0.4, delay: 0.1,
-                onComplete: () => {
-                    overlay.style.visibility = 'hidden';
-                    overlay.style.pointerEvents = 'none';
-                    document.querySelectorAll('form').forEach(f => f.reset());
-                }
-            });
-        }
-
-        // INIT
-        document.addEventListener('DOMContentLoaded', async () => {
-            safeCreateIcons();
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.from('nav', { opacity: 0, y: -20, duration: 0.8, ease: 'power2.out', clearProps: 'all' });
-
-            currentWatch = await fetchWatch();
-            renderWatchDetail(currentWatch);
-
-            // Prefill the WhatsApp inquiry link with this piece
-            const waBtn = document.getElementById('wa-inquire-btn');
-            if (waBtn && currentWatch) {
-                const msg = 'Hi Prime Time Miami. I\'m interested in the ' + (currentWatch.name || '') + (currentWatch.ref ? ' (Ref. ' + currentWatch.ref + ')' : '');
-                waBtn.href = 'https://wa.me/13059224975?text=' + encodeURIComponent(msg);
-            }
-
-            // Meta Pixel: ViewContent when a watch listing is viewed
-            if (currentWatch && typeof fbq === 'function') {
-                fbq('track', 'ViewContent', {
-                    content_name: currentWatch.name || '',
-                    content_category: 'Watch',
-                    content_ids: [currentWatch.ref || ''],
-                    content_type: 'product'
-                });
-            }
-
-            // Animate content in
-            setTimeout(() => {
-                const breadcrumb = document.querySelector('#watch-detail > div:first-child');
-                if (breadcrumb) gsap.from(breadcrumb, { opacity: 0, y: 10, duration: 0.5, ease: 'power2.out', clearProps: 'all' });
-
-                const cols = document.querySelectorAll('#watch-detail .grid > div');
-                if (cols.length) {
-                    gsap.from(cols[0], { opacity: 0, x: -30, duration: 0.8, ease: 'power3.out', delay: 0.1, clearProps: 'all' });
-                    gsap.from(cols[1], { opacity: 0, x: 30, duration: 0.8, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
-                }
-
-                // Specs section
-                const specsSection = document.querySelector('#watch-detail > div:nth-child(3)');
-                if (specsSection) {
-                    gsap.from(specsSection, {
-                        scrollTrigger: { trigger: specsSection, start: 'top 85%', once: true },
-                        opacity: 0, y: 30, duration: 0.7, ease: 'power2.out', clearProps: 'all'
-                    });
-                }
-
-                // Inquiry section
-                const inquirySection = document.getElementById('inquiry-section');
-                if (inquirySection) {
-                    gsap.from(inquirySection, {
-                        scrollTrigger: { trigger: inquirySection, start: 'top 85%', once: true },
-                        opacity: 0, y: 30, duration: 0.7, ease: 'power2.out', clearProps: 'all'
-                    });
-                }
-            }, 50);
-        });
-
-        // ── ZOOM LIGHTBOX ──
-        (function() {
-            const overlay = document.getElementById('zoom-overlay');
-            const container = document.getElementById('zoom-container');
-            const img = document.getElementById('zoom-img');
-            const hint = document.getElementById('zoom-hint');
-            const closeBtn = document.getElementById('zoom-close');
-
-            let scale = 1, minScale = 1, maxScale = 5;
-            let posX = 0, posY = 0;
-            let isDragging = false, dragStartX = 0, dragStartY = 0, startPosX = 0, startPosY = 0;
-            let imgW = 0, imgH = 0, containerW = 0, containerH = 0;
-            let hintTimer = null;
-
-            function updateTransform() {
-                img.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
-            }
-
-            function clampPosition() {
-                const scaledW = imgW * scale;
-                const scaledH = imgH * scale;
-                if (scaledW <= containerW) {
-                    posX = (containerW - scaledW) / 2;
-                } else {
-                    posX = Math.min(0, Math.max(containerW - scaledW, posX));
-                }
-                if (scaledH <= containerH) {
-                    posY = (containerH - scaledH) / 2;
-                } else {
-                    posY = Math.min(0, Math.max(containerH - scaledH, posY));
-                }
-            }
-
-            function fitImage() {
-                containerW = container.clientWidth;
-                containerH = container.clientHeight;
-                const ratio = Math.min(containerW / imgW, containerH / imgH) * 0.85;
-                minScale = ratio;
-                scale = ratio;
-                posX = (containerW - imgW * scale) / 2;
-                posY = (containerH - imgH * scale) / 2;
-                updateTransform();
-            }
-
-            window.openZoom = function(src, alt) {
-                img.src = src;
-                img.alt = alt || '';
-                const scrollbarW = window.innerWidth - document.documentElement.clientWidth;
-                document.body.style.paddingRight = scrollbarW + 'px';
-                overlay.style.visibility = 'visible';
-                overlay.style.pointerEvents = 'auto';
-                document.body.style.overflow = 'hidden';
-                gsap.to(overlay, { opacity: 1, duration: 0.3, ease: 'power2.out' });
-
-                // Show hint, fade after 2s
-                hint.style.opacity = '1';
-                clearTimeout(hintTimer);
-                hintTimer = setTimeout(() => { gsap.to(hint, { opacity: 0, duration: 0.5 }); }, 2500);
-
-                // Delay fitImage until overlay is visible and has layout dimensions
-                function tryFit() {
-                    containerW = container.clientWidth;
-                    containerH = container.clientHeight;
-                    if (containerW > 0 && containerH > 0 && imgW > 0 && imgH > 0) {
-                        fitImage();
-                    } else {
-                        requestAnimationFrame(tryFit);
-                    }
-                }
-
-                if (img.complete && img.naturalWidth) {
-                    imgW = img.naturalWidth; imgH = img.naturalHeight;
-                    requestAnimationFrame(tryFit);
-                } else {
-                    img.onload = function() {
-                        imgW = img.naturalWidth; imgH = img.naturalHeight;
-                        requestAnimationFrame(tryFit);
-                    };
-                }
-            };
-
-            function closeZoom() {
-                gsap.to(overlay, {
-                    opacity: 0, duration: 0.25,
-                    onComplete: () => {
-                        overlay.style.visibility = 'hidden';
-                        overlay.style.pointerEvents = 'none';
-                        document.body.style.overflow = '';
-                        document.body.style.paddingRight = '';
-                        img.src = '';
-                        scale = 1; posX = 0; posY = 0;
-                    }
-                });
-            }
-
-            closeBtn.addEventListener('click', closeZoom);
-            overlay.addEventListener('click', (e) => {
-                if (e.target === container || e.target === overlay) closeZoom();
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && overlay.style.visibility === 'visible') closeZoom();
-            });
-
-            // Mouse wheel zoom
-            container.addEventListener('wheel', (e) => {
-                e.preventDefault();
-                const rect = container.getBoundingClientRect();
-                const mx = e.clientX - rect.left;
-                const my = e.clientY - rect.top;
-
-                const prevScale = scale;
-                const delta = e.deltaY > 0 ? 0.9 : 1.1;
-                scale = Math.min(maxScale, Math.max(minScale, scale * delta));
-
-                // Zoom toward cursor
-                posX = mx - (mx - posX) * (scale / prevScale);
-                posY = my - (my - posY) * (scale / prevScale);
-                clampPosition();
-                updateTransform();
-
-                // Hide hint on first zoom
-                gsap.to(hint, { opacity: 0, duration: 0.3 });
-            }, { passive: false });
-
-            // Mouse drag
-            container.addEventListener('mousedown', (e) => {
-                if (e.button !== 0) return;
-                isDragging = true;
-                dragStartX = e.clientX; dragStartY = e.clientY;
-                startPosX = posX; startPosY = posY;
-                e.preventDefault();
-            });
-            window.addEventListener('mousemove', (e) => {
-                if (!isDragging) return;
-                posX = startPosX + (e.clientX - dragStartX);
-                posY = startPosY + (e.clientY - dragStartY);
-                clampPosition();
-                updateTransform();
-            });
-            window.addEventListener('mouseup', () => { isDragging = false; });
-
-            // Touch: pinch zoom + drag
-            let touches = [];
-            let lastDist = 0;
-            let lastCenter = { x: 0, y: 0 };
-
-            container.addEventListener('touchstart', (e) => {
-                touches = Array.from(e.touches);
-                if (touches.length === 1) {
-                    isDragging = true;
-                    dragStartX = touches[0].clientX; dragStartY = touches[0].clientY;
-                    startPosX = posX; startPosY = posY;
-                } else if (touches.length === 2) {
-                    isDragging = false;
-                    lastDist = Math.hypot(touches[1].clientX - touches[0].clientX, touches[1].clientY - touches[0].clientY);
-                    lastCenter = { x: (touches[0].clientX + touches[1].clientX) / 2, y: (touches[0].clientY + touches[1].clientY) / 2 };
-                }
-                gsap.to(hint, { opacity: 0, duration: 0.3 });
-            }, { passive: true });
-
-            container.addEventListener('touchmove', (e) => {
-                e.preventDefault();
-                const t = Array.from(e.touches);
-                if (t.length === 1 && isDragging) {
-                    posX = startPosX + (t[0].clientX - dragStartX);
-                    posY = startPosY + (t[0].clientY - dragStartY);
-                    clampPosition();
-                    updateTransform();
-                } else if (t.length === 2) {
-                    const dist = Math.hypot(t[1].clientX - t[0].clientX, t[1].clientY - t[0].clientY);
-                    const center = { x: (t[0].clientX + t[1].clientX) / 2, y: (t[0].clientY + t[1].clientY) / 2 };
-                    const rect = container.getBoundingClientRect();
-                    const mx = center.x - rect.left;
-                    const my = center.y - rect.top;
-
-                    const prevScale = scale;
-                    scale = Math.min(maxScale, Math.max(minScale, scale * (dist / lastDist)));
-
-                    posX = mx - (mx - posX) * (scale / prevScale);
-                    posY = my - (my - posY) * (scale / prevScale);
-
-                    // Also pan with two fingers
-                    posX += center.x - lastCenter.x;
-                    posY += center.y - lastCenter.y;
-
-                    clampPosition();
-                    updateTransform();
-                    lastDist = dist;
-                    lastCenter = center;
-                }
-            }, { passive: false });
-
-            container.addEventListener('touchend', () => { isDragging = false; });
-
-            // Double-tap to toggle zoom
-            let lastTap = 0;
-            container.addEventListener('touchend', (e) => {
-                const now = Date.now();
-                if (now - lastTap < 300 && e.changedTouches.length === 1) {
-                    const rect = container.getBoundingClientRect();
-                    const mx = e.changedTouches[0].clientX - rect.left;
-                    const my = e.changedTouches[0].clientY - rect.top;
-
-                    if (scale > minScale * 1.1) {
-                        // Zoom out to fit
-                        scale = minScale;
-                        posX = (containerW - imgW * scale) / 2;
-                        posY = (containerH - imgH * scale) / 2;
-                    } else {
-                        // Zoom in 2.5x centered on tap
-                        const prevScale = scale;
-                        scale = Math.min(maxScale, minScale * 2.5);
-                        posX = mx - (mx - posX) * (scale / prevScale);
-                        posY = my - (my - posY) * (scale / prevScale);
-                        clampPosition();
-                    }
-                    updateTransform();
-                }
-                lastTap = now;
-            });
-
-            // Double-click to toggle zoom (desktop)
-            container.addEventListener('dblclick', (e) => {
-                const rect = container.getBoundingClientRect();
-                const mx = e.clientX - rect.left;
-                const my = e.clientY - rect.top;
-
-                if (scale > minScale * 1.1) {
-                    scale = minScale;
-                    posX = (containerW - imgW * scale) / 2;
-                    posY = (containerH - imgH * scale) / 2;
-                } else {
-                    const prevScale = scale;
-                    scale = Math.min(maxScale, minScale * 2.5);
-                    posX = mx - (mx - posX) * (scale / prevScale);
-                    posY = my - (my - posY) * (scale / prevScale);
-                    clampPosition();
-                }
-                updateTransform();
-            });
-
-            // Resize handler
-            window.addEventListener('resize', () => {
-                if (overlay.style.visibility === 'visible' && imgW) fitImage();
-            });
-        })();
+            })
+            .then(function (data) {
+                var p = data.find(function (x) { return x.id === id; });
+                if (!p) { show('pc-missing'); return; }
+                var name = p.brand + ' ' + p.model;
+                document.title = name + ' | Prime Time Miami';
+                document.getElementById('pc-photo').src = p.image;
+                document.getElementById('pc-photo').alt = name;
+                document.getElementById('pc-brand').textContent = p.brand.toUpperCase();
+                document.getElementById('pc-title').textContent = p.model.toUpperCase();
+                document.getElementById('pc-ref').textContent = p.ref ? 'REF. ' + p.ref.toUpperCase() : '';
+                var line = [p.caseMaterial, p.dialColor ? p.dialColor + ' dial' : ''].filter(Boolean).join(' · ');
+                document.getElementById('pc-line').textContent = line;
+                var msg = 'Hi Prime Time Miami — I’m interested in the ' + name + (p.ref ? ' (Ref. ' + p.ref + ')' : '');
+                document.getElementById('pc-wa').href = 'https://wa.me/13059224975?text=' + encodeURIComponent(msg);
+                var specs = [
+                    ['BRAND', p.brand], ['MODEL', p.model], ['REFERENCE', p.ref], ['YEAR', p.year],
+                    ['CASE MATERIAL', p.caseMaterial], ['DIAL COLOR', p.dialColor], ['CONDITION', p.condition]
+                ].filter(function (s) { return s[1]; });
+                document.getElementById('pc-spec-rows').innerHTML = specs.map(function (s) {
+                    return '<div class="pc-spec-row"><span class="k">' + s[0] + '</span><span class="v">' + String(s[1]).toUpperCase() + '</span></div>';
+                }).join('');
+                show('pc-content');
+            })
+            .catch(function () { show('pc-missing'); });
+    })();
     </script>
-<!-- FLOATING WHATSAPP (persistent, mobile + desktop) -->
-<a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer"
-   id="floating-wa"
-   aria-label="Message Prime Time Miami on WhatsApp"
-   class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-[60] w-14 h-14 sm:w-[58px] sm:h-[58px] rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-110 active:scale-95"
-   style="background:#25D366;">
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true">
-        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.88a11.8 11.8 0 0 0 1.64 6l-1.74 6.36 6.51-1.71a11.86 11.86 0 0 0 5.48 1.4h.01c6.55 0 11.89-5.33 11.89-11.88 0-3.18-1.24-6.17-3.43-8.57Zm-8.47 18.3h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.86 1.01 1.03-3.77-.23-.39a9.82 9.82 0 0 1-1.51-5.26c0-5.43 4.43-9.86 9.87-9.86 2.63 0 5.1 1.03 6.96 2.89a9.79 9.79 0 0 1 2.89 6.98c0 5.44-4.43 9.87-9.87 9.87Zm5.41-7.39c-.3-.15-1.75-.86-2.02-.96s-.47-.15-.67.15-.77.96-.94 1.16-.35.22-.64.07a8.08 8.08 0 0 1-2.37-1.46 8.94 8.94 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.05 1.03-1.05 2.51 1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.75-.71 2-1.4.25-.69.25-1.27.17-1.39-.07-.12-.27-.2-.57-.35Z"/>
-    </svg>
-</a>
 </body>
 </html>
