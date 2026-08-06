@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=15">
+    <link rel="stylesheet" href="/dist/styles.css?v=16">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
     <!-- AMBIENT ORBS -->
@@ -194,10 +194,22 @@
                 </div>
             </div>
 
-            <div class="absolute bottom-12 animate-bounce opacity-50">
-                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                </svg>
+            <div class="pt-strip" aria-label="Prime Time Miami lifestyle photos">
+                <button type="button" class="pt-strip__shot" data-full="images/life/life-01-full.webp" aria-label="View photo: Richard Mille RM 011 and RM 030 in hand">
+                    <img src="images/life/life-01.webp" alt="Richard Mille RM 011 and RM 030 in hand" draggable="false">
+                </button>
+                <button type="button" class="pt-strip__shot" data-full="images/life/life-02-full.webp" aria-label="View photo: Rolex Daytona on a Porsche seat">
+                    <img src="images/life/life-02.webp" alt="Rolex Daytona on a Porsche seat" draggable="false">
+                </button>
+                <button type="button" class="pt-strip__shot" data-full="images/life/life-03-full.webp" aria-label="View photo: Rolex Daytona, Patek Nautilus and AP Royal Oak stack">
+                    <img src="images/life/life-03.webp" alt="Rolex Daytona, Patek Nautilus and AP Royal Oak stack" draggable="false">
+                </button>
+                <button type="button" class="pt-strip__shot" data-full="images/life/life-04-full.webp" aria-label="View photo: Patek Philippe 5905 at dinner">
+                    <img src="images/life/life-04.webp" alt="Patek Philippe 5905 at dinner" draggable="false">
+                </button>
+                <button type="button" class="pt-strip__shot" data-full="images/life/life-05-full.webp" aria-label="View photo: AP Code 11.59 over Miami water">
+                    <img src="images/life/life-05.webp" alt="AP Code 11.59 over Miami water" draggable="false">
+                </button>
             </div>
         </section>
 
@@ -954,6 +966,45 @@
   rail.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();
+})();
+</script>
+<div id="pt-lightbox" aria-hidden="true">
+    <button type="button" id="pt-lightbox-close" aria-label="Close">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <img src="" alt="">
+</div>
+<script>
+/* film strip lightbox */
+(function () {
+  var box = document.getElementById('pt-lightbox');
+  var img = box.querySelector('img');
+  var closeBtn = document.getElementById('pt-lightbox-close');
+  function open(src, alt) {
+    img.src = src; img.alt = alt || '';
+    box.classList.add('is-open');
+    box.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (window.__lenis) window.__lenis.stop();
+    if (typeof gsap !== 'undefined') {
+      gsap.fromTo(img, { opacity: 0, scale: 0.96, y: 14 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: 'power3.out' });
+    }
+  }
+  function close() {
+    box.classList.remove('is-open');
+    box.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (window.__lenis) window.__lenis.start();
+  }
+  document.querySelectorAll('.pt-strip__shot').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.querySelector('img');
+      open(b.getAttribute('data-full'), t ? t.alt : '');
+    });
+  });
+  box.addEventListener('click', function (e) { if (e.target === box || e.target === img) close(); });
+  closeBtn.addEventListener('click', close);
+  window.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
 })();
 </script>
 </body>
