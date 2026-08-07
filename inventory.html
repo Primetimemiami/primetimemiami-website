@@ -22,6 +22,18 @@
     <link rel="stylesheet" href="/dist/styles.css?v=19">
     <style>
     /* ── inventory: live-site layout, Prime Time black ── */
+
+    .inv-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
+    .inv-pill {
+        background: none; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.75);
+        font-size: 12px; letter-spacing: 0.14em; font-weight: 600; padding: 10px 18px; cursor: pointer;
+        transition: all 0.25s ease;
+    }
+    .inv-pill:hover { border-color: rgba(255,255,255,0.6); color: #fff; }
+    .inv-pill.active { background: #fff; color: #000; border-color: #fff; }
+    .inv-facet-btn.disabled { opacity: 0.3; cursor: default; }
+    .inv-hint { color: rgba(255,255,255,0.4); font-size: 11px; letter-spacing: 0.12em; padding: 14px 0 16px; }
+    
     .inv-facets { border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14); padding: 18px 0 6px; }
     .inv-facet-row { display: flex; flex-wrap: wrap; gap: 26px 34px; align-items: center; }
     .inv-facet-btn {
@@ -92,6 +104,9 @@
             These are pieces we can source right now, but our network runs deeper. References and years shown are representative. Exact specs vary week to week, and if you don't see what you're looking for, we can still find it.
         </p>
 
+        <!-- BRAND PILLS -->
+        <div class="inv-pills" id="inv-pills"></div>
+
         <!-- FACETS -->
         <div class="inv-facets">
             <div class="inv-facet-row" id="facet-row"></div>
@@ -154,74 +169,127 @@
     <script>
     (function () {
         var PIECES = [];
-        var FACETS = [
-            { id: 'brand', label: 'BRAND', get: function (p) { return p.brand; } },
-            { id: 'caseMaterial', label: 'CASE MATERIAL', get: function (p) { return p.caseMaterial; } },
-            { id: 'condition', label: 'CONDITION', get: function (p) { return p.condition; } },
-            { id: 'year', label: 'YEAR', get: function (p) { return p.year; } }
-        ];
+        var activeBrand = 'ALL';
         var selected = {};
 
-        function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+        /* model families per brand — longest match wins, like the DBH site */
+        var FAMILIES = {
+            'Rolex': ['Land-Dweller','Sky-Dweller','Sea-Dweller','Deepsea','Oyster Perpetual','Yacht-Master II','Yacht-Master','GMT-Master II','Explorer II','Explorer','Submariner','Daytona','Datejust','Day-Date','Air-King','Milgauss','Cellini','1908'],
+            'Patek Philippe': ['Grand Complications','Golden Ellipse','Complications','Nautilus','Aquanaut','Calatrava','Gondolo','Cubitus','Twenty'],
+            'Audemars Piguet': ['Royal Oak Offshore','Royal Oak Concept','Royal Oak Mini','Royal Oak','Code 11.59','Millenary']
+        };
+        function family(p) {
+            var n = (p.model || '').toUpperCase();
+            if (p.brand === 'Richard Mille') {
+                var m = n.match(/RM[\s-]*([0-9]{1,3}(?:-[0-9]{1,2})?)/);
+                return m ? 'RM ' + m[1] : 'Other';
+            }
+            var fams = FAMILIES[p.brand] || [];
+            for (var i = 0; i < fams.length; i++) {
+                if (n.indexOf(fams[i].toUpperCase()) >= 0) return fams[i] === 'Twenty' ? 'Twenty~4' : fams[i];
+            }
+            return 'Other';
+        }
 
+        function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+        function live() { return PIECES.filter(function (p) { return !p.sold; }); }
+
+        /* ── brand pills ── */
+        function buildPills() {
+            var brands = [];
+            live().forEach(function (p) { if (p.brand && brands.indexOf(p.brand) < 0) brands.push(p.brand); });
+            brands.sort();
+            var row = document.getElementById('inv-pills');
+            row.innerHTML = '';
+            ['ALL'].concat(brands).forEach(function (b) {
+                var btn = document.createElement('button');
+                btn.className = 'inv-pill' + (activeBrand === b ? ' active' : '');
+                btn.textContent = b === 'ALL' ? 'ALL' : b.toUpperCase();
+                btn.addEventListener('click', function () {
+                    activeBrand = b;
+                    selected = {};          // brand change resets every filter
+                    buildPills(); buildFacets(); render();
+                });
+                row.appendChild(btn);
+            });
+        }
+
+        /* ── facets: MODEL unlocks after a brand is chosen ── */
+        function scope() {
+            return live().filter(function (p) { return activeBrand === 'ALL' || p.brand === activeBrand; });
+        }
+        var FACETS = [
+            { id: 'model', label: 'MODEL', get: function (p) { return p._family; }, needsBrand: true },
+            { id: 'year', label: 'YEAR', get: function (p) { return p.year; } }
+        ];
+        function closePanels() {
+            document.querySelectorAll('.inv-panel').forEach(function (x) { x.classList.remove('open'); });
+            document.querySelectorAll('.inv-facet-btn').forEach(function (x) { x.classList.remove('open'); });
+        }
         function buildFacets() {
             var row = document.getElementById('facet-row');
             var panels = document.getElementById('facet-panels');
             row.innerHTML = ''; panels.innerHTML = '';
             FACETS.forEach(function (f) {
+                var locked = f.needsBrand && activeBrand === 'ALL';
                 var opts = [];
-                PIECES.forEach(function (p) { var v = f.get(p); if (v && opts.indexOf(v) < 0) opts.push(v); });
-                if (opts.length < 2) return;
-                opts.sort();
+                if (!locked) {
+                    scope().forEach(function (p) { var v = f.get(p); if (v && opts.indexOf(v) < 0) opts.push(v); });
+                    opts.sort();
+                }
+                if (!locked && opts.length < 2) return;
                 var btn = document.createElement('button');
-                btn.className = 'inv-facet-btn';
+                btn.className = 'inv-facet-btn' + (locked ? ' disabled' : '');
                 btn.innerHTML = f.label + ' <span class="pm">+</span>';
                 btn.addEventListener('click', function () {
                     var panel = document.getElementById('panel-' + f.id);
                     var was = panel.classList.contains('open');
-                    document.querySelectorAll('.inv-panel').forEach(function (x) { x.classList.remove('open'); });
-                    document.querySelectorAll('.inv-facet-btn').forEach(function (x) { x.classList.remove('open'); });
+                    closePanels();
                     if (!was) { panel.classList.add('open'); btn.classList.add('open'); }
                 });
                 row.appendChild(btn);
                 var panel = document.createElement('div');
                 panel.className = 'inv-panel'; panel.id = 'panel-' + f.id;
-                opts.forEach(function (o) {
-                    var lab = document.createElement('label');
-                    lab.className = 'inv-opt';
-                    var cb = document.createElement('input'); cb.type = 'checkbox'; cb.value = o;
-                    cb.addEventListener('change', function () {
-                        selected[f.id] = selected[f.id] || [];
-                        var i = selected[f.id].indexOf(o);
-                        if (cb.checked && i < 0) selected[f.id].push(o);
-                        if (!cb.checked && i >= 0) selected[f.id].splice(i, 1);
-                        render();
+                if (locked) {
+                    panel.innerHTML = '<span class="inv-hint">SELECT A BRAND FIRST TO FILTER BY MODEL</span>';
+                } else {
+                    opts.forEach(function (o) {
+                        var lab = document.createElement('label');
+                        lab.className = 'inv-opt';
+                        var cb = document.createElement('input'); cb.type = 'checkbox'; cb.value = o;
+                        cb.checked = (selected[f.id] || []).indexOf(o) >= 0;
+                        cb.addEventListener('change', function () {
+                            selected[f.id] = selected[f.id] || [];
+                            var i = selected[f.id].indexOf(o);
+                            if (cb.checked && i < 0) selected[f.id].push(o);
+                            if (!cb.checked && i >= 0) selected[f.id].splice(i, 1);
+                            render();
+                        });
+                        lab.appendChild(cb);
+                        lab.appendChild(document.createTextNode(' ' + String(o).toUpperCase()));
+                        panel.appendChild(lab);
                     });
-                    lab.appendChild(cb);
-                    lab.appendChild(document.createTextNode(' ' + o.toUpperCase()));
-                    panel.appendChild(lab);
-                });
+                }
                 panels.appendChild(panel);
             });
         }
 
         function filtered() {
-            var out = PIECES.filter(function (p) { return !p.sold; });
+            var out = scope();
             FACETS.forEach(function (f) {
                 var sel = selected[f.id];
                 if (sel && sel.length) out = out.filter(function (p) { return sel.indexOf(f.get(p)) >= 0; });
             });
             var sort = document.getElementById('inv-sort').value;
             if (sort === 'brand') out.sort(function (a, b) { return (a.brand + a.model).localeCompare(b.brand + b.model); });
-            else if (sort === 'newest') out = out.slice().reverse();
+            else if (sort === 'newest') out.sort(function (a, b) { return (b.year || '').localeCompare(a.year || ''); });
             else out.sort(function (a, b) { return (b.featured === true) - (a.featured === true); });
             return out;
         }
 
         function render() {
             var items = filtered();
-            var total = PIECES.filter(function (p) { return !p.sold; }).length;
-            document.getElementById('inv-count').textContent = items.length + ' OF ' + total + ' PIECES';
+            document.getElementById('inv-count').textContent = items.length + ' OF ' + scope().length + ' PIECES';
             var grid = document.getElementById('inv-grid');
             document.getElementById('inv-empty').classList.toggle('hidden', items.length > 0);
             grid.innerHTML = items.map(function (p) {
@@ -244,7 +312,11 @@
                     if (!r.ok) throw new Error('load failed'); return r.json();
                 });
             })
-            .then(function (data) { PIECES = data; buildFacets(); render(); })
+            .then(function (data) {
+                PIECES = data;
+                PIECES.forEach(function (p) { p._family = family(p); });
+                buildPills(); buildFacets(); render();
+            })
             .catch(function () {
                 document.getElementById('inv-count').textContent = 'INVENTORY UNAVAILABLE RIGHT NOW.';
             });
