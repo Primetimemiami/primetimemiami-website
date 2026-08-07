@@ -55,8 +55,8 @@
         <h1 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-6">Inventory Admin</h1>
 
         <div class="ad-banner hidden" id="ad-offline">
-            The inventory backend isn't connected yet — it goes live with the Supabase setup at launch.
-            This is a preview of the dashboard; the public site currently shows the starter inventory.
+            TEST MODE — the real backend connects with the Supabase setup at launch.
+            Password for testing: <b>primetime305</b>. Changes save in this browser only and show up on the local site.
         </div>
 
         <!-- LOGIN -->
@@ -111,20 +111,69 @@
         var token = localStorage.getItem('pt_admin_token') || '';
         var editingId = null;
         var uploadedUrl = '';
+        var demo = false;
+        var DEMO_PW = 'primetime305';
         var $ = function (id) { return document.getElementById(id); };
 
+        /* ── TEST MODE: full dashboard against localStorage until the real backend exists ── */
+        function demoRead() {
+            var raw = localStorage.getItem('pt_demo_pieces');
+            if (raw) return Promise.resolve(JSON.parse(raw));
+            return fetch('/data/pieces.json').then(function (r) { return r.json(); }).then(function (seed) {
+                localStorage.setItem('pt_demo_pieces', JSON.stringify(seed));
+                return seed;
+            });
+        }
+        function demoWrite(rows) { localStorage.setItem('pt_demo_pieces', JSON.stringify(rows)); }
+        function demoPost(body) {
+            if (body.action === 'login') {
+                if (body.password === DEMO_PW) return Promise.resolve({ ok: true, status: 200, data: { token: 'demo' } });
+                return Promise.resolve({ ok: false, status: 401, data: { error: 'Wrong password (test password: primetime305)' } });
+            }
+            if (body.action === 'list') {
+                return demoRead().then(function (rows) {
+                    return { ok: true, status: 200, data: { pieces: rows.map(function (p) {
+                        return { id: p.id, brand: p.brand, model: p.model, ref: p.ref, year: p.year,
+                                 case_material: p.caseMaterial, dial_color: p.dialColor, condition: p.condition,
+                                 description: p.description, image: p.image, featured: p.featured, sold: p.sold };
+                    }) } };
+                });
+            }
+            if (body.action === 'upload') {
+                return Promise.resolve({ ok: true, status: 200, data: { url: 'data:' + (body.contentType || 'image/jpeg') + ';base64,' + body.dataBase64 } });
+            }
+            if (body.action === 'save') {
+                return demoRead().then(function (rows) {
+                    var i = rows.findIndex(function (r) { return r.id === body.piece.id; });
+                    if (i >= 0) rows[i] = body.piece; else rows.push(body.piece);
+                    demoWrite(rows);
+                    return { ok: true, status: 200, data: { ok: true } };
+                });
+            }
+            if (body.action === 'delete') {
+                return demoRead().then(function (rows) {
+                    demoWrite(rows.filter(function (r) { return r.id !== body.id; }));
+                    return { ok: true, status: 200, data: { ok: true } };
+                });
+            }
+            return Promise.resolve({ ok: false, status: 400, data: { error: 'Unknown action' } });
+        }
+
         function post(body) {
+            if (demo) return demoPost(body);
             return fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
-                .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, data: j }; }); });
+                .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, data: j }; }); })
+                .catch(function () { demo = true; return demoPost(body); });
         }
         function msg(id, text, ok) {
             var el = $(id); el.textContent = text; el.className = 'ad-msg ' + (ok ? 'ok' : 'err');
         }
 
-        // status check: configured backend or preview mode
-        post({ action: 'status' }).then(function (r) {
-            if (!r.ok || !r.data.configured) $('ad-offline').classList.remove('hidden');
-        }).catch(function () { $('ad-offline').classList.remove('hidden'); });
+        // status check: real backend or test mode
+        fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'status' }) })
+            .then(function (r) { return r.json(); })
+            .then(function (j) { if (!j.configured) { demo = true; $('ad-offline').classList.remove('hidden'); } })
+            .catch(function () { demo = true; $('ad-offline').classList.remove('hidden'); });
 
         function showDash() {
             $('ad-login').classList.add('hidden');
@@ -231,7 +280,7 @@
             msg('ad-save-msg', 'Saving…', true);
             post({ action: 'save', token: token, piece: piece }).then(function (r) {
                 if (r.ok) {
-                    msg('ad-save-msg', 'Saved. Live on the site within a minute.', true);
+                    msg('ad-save-msg', demo ? 'Saved (test mode — visible on the local site).' : 'Saved. Live on the site within a minute.', true);
                     editingId = null; uploadedUrl = '';
                     ['f-brand','f-model','f-ref','f-year','f-case','f-dial','f-desc'].forEach(function (i) { $(i).value = ''; });
                     $('f-cond').value = ''; $('f-featured').checked = false; $('f-sold').checked = false;
