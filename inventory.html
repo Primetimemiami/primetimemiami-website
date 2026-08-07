@@ -281,10 +281,24 @@
                 if (sel && sel.length) out = out.filter(function (p) { return sel.indexOf(f.get(p)) >= 0; });
             });
             var sort = document.getElementById('inv-sort').value;
-            if (sort === 'brand') out.sort(function (a, b) { return (a.brand + a.model).localeCompare(b.brand + b.model); });
-            else if (sort === 'newest') out.sort(function (a, b) { return (b.year || '').localeCompare(a.year || ''); });
-            else out.sort(function (a, b) { return (b.featured === true) - (a.featured === true); });
-            return out;
+            if (sort === 'brand') { out.sort(function (a, b) { return (a.brand + a.model).localeCompare(b.brand + b.model); }); return out; }
+            if (sort === 'newest') { out.sort(function (a, b) { return (b.year || '').localeCompare(a.year || ''); }); return out; }
+            /* FEATURED: featured pieces first, then brands interleaved round-robin (shuffled within brand) so the grid mixes */
+            var featured = out.filter(function (p) { return p.featured; });
+            var rest = out.filter(function (p) { return !p.featured; });
+            var byBrand = {};
+            rest.forEach(function (p) { (byBrand[p.brand] = byBrand[p.brand] || []).push(p); });
+            Object.keys(byBrand).forEach(function (b) {
+                var arr = byBrand[b];
+                for (var i = arr.length - 1; i > 0; i--) { var j = (Math.random() * (i + 1)) | 0; var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp; }
+            });
+            var brands = Object.keys(byBrand);
+            var mixed = [], i = 0;
+            while (mixed.length < rest.length) {
+                brands.forEach(function (b) { if (i < byBrand[b].length) mixed.push(byBrand[b][i]); });
+                i++;
+            }
+            return featured.concat(mixed);
         }
 
         function render() {
