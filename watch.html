@@ -79,6 +79,7 @@
                     <h1 class="pc-title" id="pc-title"></h1>
                     <div class="pc-ref" id="pc-ref"></div>
                     <div class="pc-line" id="pc-line"></div>
+                    <p class="pc-blurb hidden" id="pc-desc"></p>
                     <p class="pc-blurb">Sourced for clients in Miami and nationwide. Independently authenticated, with fully insured shipping anywhere in the US.</p>
                     <div class="pc-inquire">
                         <p>INTERESTED IN THIS PIECE? MESSAGE US AND WE'LL GET BACK TO YOU WITH SOURCING DETAILS, PRICING, AND AVAILABILITY.</p>
@@ -145,7 +146,7 @@
         fetch('/api/pieces')
             .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
             .catch(function () {
-                var demo = localStorage.getItem('pt_demo_pieces');
+                var demo = localStorage.getItem('pt_demo_pieces_v2');
                 if (demo) return JSON.parse(demo);
                 return fetch('/data/pieces.json').then(function (r) {
                     if (!r.ok) throw new Error('load failed'); return r.json();
@@ -161,6 +162,7 @@
                 document.getElementById('pc-brand').textContent = p.brand.toUpperCase();
                 document.getElementById('pc-title').textContent = p.model.toUpperCase();
                 document.getElementById('pc-ref').textContent = p.ref ? 'REF. ' + p.ref.toUpperCase() : '';
+                if (p.description) { var d = document.getElementById('pc-desc'); d.textContent = p.description; d.classList.remove('hidden'); }
                 var line = [p.caseMaterial, p.dialColor ? p.dialColor + ' dial' : ''].filter(Boolean).join(' · ');
                 document.getElementById('pc-line').textContent = line;
                 var msg = 'Hi Prime Time Miami — I’m interested in the ' + name + (p.ref ? ' (Ref. ' + p.ref + ')' : '');

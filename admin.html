@@ -117,14 +117,14 @@
 
         /* ── TEST MODE: full dashboard against localStorage until the real backend exists ── */
         function demoRead() {
-            var raw = localStorage.getItem('pt_demo_pieces');
+            var raw = localStorage.getItem('pt_demo_pieces_v2');
             if (raw) return Promise.resolve(JSON.parse(raw));
             return fetch('/data/pieces.json').then(function (r) { return r.json(); }).then(function (seed) {
-                localStorage.setItem('pt_demo_pieces', JSON.stringify(seed));
+                localStorage.setItem('pt_demo_pieces_v2', JSON.stringify(seed));
                 return seed;
             });
         }
-        function demoWrite(rows) { localStorage.setItem('pt_demo_pieces', JSON.stringify(rows)); }
+        function demoWrite(rows) { localStorage.setItem('pt_demo_pieces_v2', JSON.stringify(rows)); }
         function demoPost(body) {
             if (body.action === 'login') {
                 if (body.password === DEMO_PW) return Promise.resolve({ ok: true, status: 200, data: { token: 'demo' } });
