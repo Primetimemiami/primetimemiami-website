@@ -901,3 +901,40 @@ body { text-transform: none !important; }
 .pt-strip__shot--ig { display: block; }
 .pt-strip__shot .pt-ig-glyph { position: absolute; top: 8px; right: 8px; color: #fff; opacity: 0; transform: translateY(3px); transition: opacity 0.4s ease, transform 0.4s ease; }
 .pt-strip__shot:hover .pt-ig-glyph { opacity: 1; transform: none; }
+
+/* ── Buy / Sell / Trade: editorial cards (WA-style layout, PT tone) ── */
+.pt-bst {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.9fr) repeat(3, 1fr);
+  gap: clamp(22px, 3vw, 52px);
+  align-items: center;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: clamp(64px, 9vw, 130px) clamp(24px, 4vw, 64px);
+}
+@media (max-width: 1023px) { .pt-bst { grid-template-columns: 1fr 1fr; } .pt-bst__intro { grid-column: 1 / -1; } }
+@media (max-width: 600px) { .pt-bst { grid-template-columns: 1fr; } }
+.pt-bst__intro h2 { font-size: clamp(34px, 3.6vw, 58px); line-height: 1.04; letter-spacing: -0.01em; margin: 0; }
+.pt-bst__intro p { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.9; letter-spacing: 0.03em; margin: 26px 0 0; max-width: 330px; }
+.pt-bst__card {
+  position: relative; display: block; padding: 0; border: 1px solid rgba(255,255,255,0.08);
+  background: #0c0c0c; aspect-ratio: 0.69; overflow: hidden; cursor: pointer; text-align: left;
+}
+.pt-bst__card img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: brightness(0.78);
+  transition: filter 1.2s cubic-bezier(0.45, 0.05, 0.15, 1);
+}
+.pt-bst__card:hover img { filter: brightness(1); }
+.pt-bst__card::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent 38%);
+  pointer-events: none;
+}
+.pt-bst__label {
+  position: absolute; left: 22px; bottom: 20px; z-index: 2;
+  color: #fff; font-weight: 600; font-size: clamp(17px, 1.5vw, 22px); letter-spacing: 0.01em;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.pt-bst__label .ar { display: inline-block; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+.pt-bst__card:hover .pt-bst__label .ar { transform: translateX(7px); }

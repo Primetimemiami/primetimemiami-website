@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=20">
+    <link rel="stylesheet" href="/dist/styles.css?v=21">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -228,82 +228,25 @@
         </section>
 
         <!-- ACTIONS SECTION (BUY / SELL / TRADE) -->
-        <section id="process" class="grid grid-cols-1 sm:grid-cols-3 overflow-hidden">
-            <!-- BUY -->
-            <a href="inventory.html"
-                    class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full block">
-                <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
-                    <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available for purchase"
-                         class="w-full h-full object-cover grayscale group-hover:grayscale-0" loading="lazy">
+        <section id="process" class="border-b border-ivory/5">
+            <div class="pt-bst">
+                <div class="pt-bst__intro">
+                    <h2 class="font-space font-bold">Buy, Sell<br><span class="stroke-text">and Trade.</span></h2>
+                    <p class="no-caps">Whether you're hunting a grail or moving a piece from your collection, we handle both sides of the deal. Every piece independently authenticated, fully insured, and handled with discretion.</p>
                 </div>
-                <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
-                    <div class="flex justify-between items-start w-full">
-                        <span class="font-space font-bold text-2xl opacity-50 group-hover:opacity-100 transition-opacity">01</span>
-                        <div class="w-12 h-12 border border-ivory/30 rounded-full flex items-center justify-center group-hover:bg-ivory group-hover:border-ivory transition-all duration-500">
-                            <i data-lucide="arrow-up-right" class="text-ivory group-hover:text-charcoal transition-colors"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Buy</h3>
-                        <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Access our curated inventory.</p>
-                        <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            Tap to browse
-                            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <!-- SELL -->
-            <button onclick="app.openModal('SELL')"
-                    class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 sm:border-r border-ivory/10 overflow-hidden text-left w-full">
-                <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
-                    <img src="images/pieces/piece-02.webp" alt="Rolex Daytona in box"
-                         class="w-full h-full object-cover grayscale group-hover:grayscale-0" loading="lazy">
-                </div>
-                <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
-                    <div class="flex justify-between items-start w-full">
-                        <span class="font-space font-bold text-2xl opacity-50 group-hover:opacity-100 transition-opacity">02</span>
-                        <div class="w-12 h-12 border border-ivory/30 rounded-full flex items-center justify-center group-hover:bg-ivory group-hover:border-ivory transition-all duration-500">
-                            <i data-lucide="arrow-up-right" class="text-ivory group-hover:text-charcoal transition-colors"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Sell</h3>
-                        <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Competitive market offers.</p>
-                        <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            Tap to inquire
-                            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
-                        </span>
-                    </div>
-                </div>
-            </button>
-            <!-- TRADE -->
-            <button onclick="app.openModal('TRADE')"
-                    class="action-card group relative h-[300px] sm:h-[500px] lg:h-[700px] border-b sm:border-b-0 border-ivory/10 overflow-hidden text-left w-full">
-                <div class="absolute inset-0 z-0">
-                    <div class="absolute inset-0 bg-charcoal/85 group-hover:bg-charcoal/10 transition-colors duration-700 z-10"></div>
-                    <img src="images/pieces/piece-04.webp" alt="Rolex GMT-Master II Pepsi on jubilee bracelet"
-                         class="w-full h-full object-cover grayscale group-hover:grayscale-0" loading="lazy">
-                </div>
-                <div class="relative z-20 h-full flex flex-col justify-between p-6 sm:p-10 glass-hover">
-                    <div class="flex justify-between items-start w-full">
-                        <span class="font-space font-bold text-2xl opacity-50 group-hover:opacity-100 transition-opacity">03</span>
-                        <div class="w-12 h-12 border border-ivory/30 rounded-full flex items-center justify-center group-hover:bg-ivory group-hover:border-ivory transition-all duration-500">
-                            <i data-lucide="arrow-up-right" class="text-ivory group-hover:text-charcoal transition-colors"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="font-space text-4xl sm:text-5xl font-bold tracking-tighter mb-3 sm:mb-4 text-ivory group-hover:translate-x-2 transition-transform duration-500">Trade</h3>
-                        <p class="font-inter text-xs font-bold tracking-widest text-muted group-hover:text-ivory transition-colors">Upgrade your rotation.</p>
-                        <span class="sm:hidden inline-flex items-center gap-2 mt-3 text-[10px] font-space font-bold tracking-widest text-ivory/70 border border-ivory/20 rounded-full px-4 py-1.5">
-                            Tap to inquire
-                            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
-                        </span>
-                    </div>
-                </div>
-            </button>
+                <a href="inventory.html" class="action-card pt-bst__card">
+                    <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available to buy" loading="lazy">
+                    <span class="pt-bst__label">Buy a Watch <span class="ar">&rarr;</span></span>
+                </a>
+                <button type="button" data-modal="sell" onclick="app.openModal('SELL')" class="action-card pt-bst__card">
+                    <img src="images/pieces/piece-02.webp" alt="Rolex Daytona in box, sell your watch" loading="lazy">
+                    <span class="pt-bst__label">Sell Your Watch <span class="ar">&rarr;</span></span>
+                </button>
+                <button type="button" data-modal="trade" onclick="app.openModal('TRADE')" class="action-card pt-bst__card">
+                    <img src="images/pieces/piece-04.webp" alt="Rolex GMT-Master II Pepsi, trade your watch" loading="lazy">
+                    <span class="pt-bst__label">Trade Your Watch <span class="ar">&rarr;</span></span>
+                </button>
+            </div>
         </section>
 
         <!-- TRUST SECTION -->
@@ -776,19 +719,6 @@
 
   /* Trust image intentionally static */
 
-  /* Buy / Sell / Trade: slide in cleanly from the sides as you reach them */
-  var cards = gsap.utils.toArray('.action-card');
-  if (cards.length === 3) {
-    var dirs = [{ x: -110, y: 0 }, { x: 0, y: 110 }, { x: 110, y: 0 }];
-    cards.forEach(function (card, i) {
-      gsap.from(card, {
-        scrollTrigger: { trigger: '#process', start: 'top 78%', once: true },
-        x: dirs[i].x, y: dirs[i].y, opacity: 0,
-        duration: 1.4, delay: i * 0.12, ease: 'expo.out',
-        clearProps: 'transform,opacity'
-      });
-    });
-  }
 
   /* 4. CTA: headline builds word by word */
   var ctaH = document.querySelector('#contact-cta h2');
