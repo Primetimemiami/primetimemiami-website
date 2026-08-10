@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=19">
+    <link rel="stylesheet" href="/dist/styles.css?v=20">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -185,22 +185,45 @@
                 </div>
             </div>
 
-            <div class="pt-strip" aria-label="Prime Time Miami lifestyle photos">
-                <button type="button" class="pt-strip__shot" data-full="images/life/life-01-full.webp" aria-label="View photo: Richard Mille RM 011 and RM 030 in hand">
-                    <img src="images/life/life-01.webp" alt="Richard Mille RM 011 and RM 030 in hand" draggable="false">
-                </button>
-                <button type="button" class="pt-strip__shot" data-full="images/life/life-02-full.webp" aria-label="View photo: Rolex Daytona on a Porsche seat">
-                    <img src="images/life/life-02.webp" alt="Rolex Daytona on a Porsche seat" draggable="false">
-                </button>
-                <button type="button" class="pt-strip__shot" data-full="images/life/life-03-full.webp" aria-label="View photo: Rolex Daytona, Patek Nautilus and AP Royal Oak stack">
-                    <img src="images/life/life-03.webp" alt="Rolex Daytona, Patek Nautilus and AP Royal Oak stack" draggable="false">
-                </button>
-                <button type="button" class="pt-strip__shot" data-full="images/life/life-04-full.webp" aria-label="View photo: Patek Philippe 5905 at dinner">
-                    <img src="images/life/life-04.webp" alt="Patek Philippe 5905 at dinner" draggable="false">
-                </button>
-                <button type="button" class="pt-strip__shot" data-full="images/life/life-05-full.webp" aria-label="View photo: AP Code 11.59 over Miami water">
-                    <img src="images/life/life-05.webp" alt="AP Code 11.59 over Miami water" draggable="false">
-                </button>
+            <div class="pt-strip" aria-label="Prime Time Miami photos and Instagram">
+                <div class="pt-strip__marquee">
+                    <div class="pt-strip__track">
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-01-full.webp" aria-label="View photo: Richard Mille RM 011 and RM 030 in hand"><img src="images/life/life-01.webp" alt="Richard Mille RM 011 and RM 030 in hand" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DUqqqc2j6IA/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Patek 5905 on Instagram"><img src="images/ig/ig-01.webp" alt="Patek 5905" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-02-full.webp" aria-label="View photo: Rolex Daytona on a Porsche seat"><img src="images/life/life-02.webp" alt="Rolex Daytona on a Porsche seat" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DNQn386tXxx/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Prime Time Miami on Instagram"><img src="images/ig/ig-02.webp" alt="Prime Time Miami" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-03-full.webp" aria-label="View photo: Rolex Daytona, Patek Nautilus and AP Royal Oak stack"><img src="images/life/life-03.webp" alt="Rolex Daytona, Patek Nautilus and AP Royal Oak stack" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DNVwmZnNH37/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Best AP offshore? on Instagram"><img src="images/ig/ig-03.webp" alt="Best AP offshore?" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-04-full.webp" aria-label="View photo: Patek Philippe 5905 at dinner"><img src="images/life/life-04.webp" alt="Patek Philippe 5905 at dinner" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DXhlFwKiSux/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Offshore on Instagram"><img src="images/ig/ig-04.webp" alt="Offshore" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-05-full.webp" aria-label="View photo: AP Code 11.59 over Miami water"><img src="images/life/life-05.webp" alt="AP Code 11.59 over Miami water" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DWmH2ebkZfS/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Bruce Wayne. on Instagram"><img src="images/ig/ig-05.webp" alt="Bruce Wayne." draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWjrk8uCWCx/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Ultra-thin Tourbillon Ref. 26510OR on Instagram"><img src="images/ig/ig-06.webp" alt="Ultra-thin Tourbillon Ref. 26510OR" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWhEc0bkeQP/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Eisenkiesel Day-Date 40 on Instagram"><img src="images/ig/ig-07.webp" alt="Eisenkiesel Day-Date 40" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWUzi4hD1-_/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Miami on Instagram"><img src="images/ig/ig-08.webp" alt="Miami" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DVtpDajjwpI/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Rolex Sprite on Instagram"><img src="images/ig/ig-09.webp" alt="Rolex Sprite" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DU6KYBsGIkr/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Meals & entertainment on Instagram"><img src="images/ig/ig-010.webp" alt="Meals & entertainment" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DUbWRh5j6PB/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Valentines on Instagram"><img src="images/ig/ig-011.webp" alt="Valentines" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DOgfELwDXqn/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Rolex Datejust 41 on Instagram"><img src="images/ig/ig-012.webp" alt="Rolex Datejust 41" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-01-full.webp" aria-label="View photo: Richard Mille RM 011 and RM 030 in hand"><img src="images/life/life-01.webp" alt="Richard Mille RM 011 and RM 030 in hand" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DUqqqc2j6IA/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Patek 5905 on Instagram"><img src="images/ig/ig-01.webp" alt="Patek 5905" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-02-full.webp" aria-label="View photo: Rolex Daytona on a Porsche seat"><img src="images/life/life-02.webp" alt="Rolex Daytona on a Porsche seat" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DNQn386tXxx/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Prime Time Miami on Instagram"><img src="images/ig/ig-02.webp" alt="Prime Time Miami" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-03-full.webp" aria-label="View photo: Rolex Daytona, Patek Nautilus and AP Royal Oak stack"><img src="images/life/life-03.webp" alt="Rolex Daytona, Patek Nautilus and AP Royal Oak stack" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DNVwmZnNH37/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Best AP offshore? on Instagram"><img src="images/ig/ig-03.webp" alt="Best AP offshore?" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-04-full.webp" aria-label="View photo: Patek Philippe 5905 at dinner"><img src="images/life/life-04.webp" alt="Patek Philippe 5905 at dinner" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DXhlFwKiSux/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Offshore on Instagram"><img src="images/ig/ig-04.webp" alt="Offshore" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <button type="button" class="pt-strip__shot" data-full="images/life/life-05-full.webp" aria-label="View photo: AP Code 11.59 over Miami water"><img src="images/life/life-05.webp" alt="AP Code 11.59 over Miami water" draggable="false"></button>
+                    <a href="https://www.instagram.com/p/DWmH2ebkZfS/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Bruce Wayne. on Instagram"><img src="images/ig/ig-05.webp" alt="Bruce Wayne." draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWjrk8uCWCx/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Ultra-thin Tourbillon Ref. 26510OR on Instagram"><img src="images/ig/ig-06.webp" alt="Ultra-thin Tourbillon Ref. 26510OR" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWhEc0bkeQP/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Eisenkiesel Day-Date 40 on Instagram"><img src="images/ig/ig-07.webp" alt="Eisenkiesel Day-Date 40" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DWUzi4hD1-_/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Miami on Instagram"><img src="images/ig/ig-08.webp" alt="Miami" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DVtpDajjwpI/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Rolex Sprite on Instagram"><img src="images/ig/ig-09.webp" alt="Rolex Sprite" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DU6KYBsGIkr/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Meals & entertainment on Instagram"><img src="images/ig/ig-010.webp" alt="Meals & entertainment" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DUbWRh5j6PB/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Valentines on Instagram"><img src="images/ig/ig-011.webp" alt="Valentines" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    <a href="https://www.instagram.com/p/DOgfELwDXqn/" target="_blank" rel="noopener noreferrer" class="pt-strip__shot pt-strip__shot--ig" aria-label="Rolex Datejust 41 on Instagram"><img src="images/ig/ig-012.webp" alt="Rolex Datejust 41" draggable="false"><span class="pt-ig-glyph"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -328,102 +351,6 @@
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                     <a href="https://wa.me/13059224975" target="_blank" rel="noopener noreferrer" class="brutal-btn brutal-btn--solid w-[260px] sm:w-auto px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">Message on WhatsApp</a>
                     <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="brutal-btn w-[260px] sm:w-auto px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">DM on Instagram</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- INSTAGRAM STRIP -->
-        <section id="instagram" class="relative py-16 sm:py-20 border-b border-ivory/5 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8 sm:mb-10">
-                    <div>
-                        <p class="text-[10px] sm:text-xs font-bold tracking-widest text-muted mb-3 font-space uppercase">Follow along</p>
-                        <a href="https://www.instagram.com/primetime.miami/" target="_blank" rel="noopener noreferrer" class="font-space font-bold text-2xl sm:text-4xl tracking-tight text-ivory hover:text-muted transition-colors">@primetime.miami</a>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        
-                    </div>
-                </div>
-                <div class="pt-ig-wrap"><button type="button" id="ig-prev" aria-label="Previous posts" class="pt-ig-nav pt-ig-nav--overlay">
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
-                        </button>
-                        <button type="button" id="ig-next" aria-label="More posts" class="pt-ig-nav pt-ig-nav--overlay">
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                <div class="pt-ig-grid" data-lenis-prevent>
-                    <a href="https://www.instagram.com/p/DUqqqc2j6IA/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-01.webp" alt="Patek 5905 — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DNQn386tXxx/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-02.webp" alt="Prime Time Miami — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DNVwmZnNH37/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-03.webp" alt="Best AP offshore? — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DXhlFwKiSux/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-04.webp" alt="Offshore — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DWmH2ebkZfS/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-05.webp" alt="Bruce Wayne. — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DWjrk8uCWCx/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-06.webp" alt="Ultra-thin Tourbillon Ref. 26510OR — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DWhEc0bkeQP/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-07.webp" alt="Eisenkiesel Day-Date 40 — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DWUzi4hD1-_/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-08.webp" alt="Miami — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DVtpDajjwpI/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-09.webp" alt="Rolex Sprite — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DU6KYBsGIkr/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-010.webp" alt="Meals & entertainment — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DUbWRh5j6PB/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-011.webp" alt="Valentines — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/p/DOgfELwDXqn/" target="_blank" rel="noopener noreferrer" class="pt-ig-tile" draggable="false">
-                        <img src="images/ig/ig-012.webp" alt="Rolex Datejust 41 — Prime Time Miami on Instagram" loading="lazy" decoding="async" draggable="false">
-                        <span class="pt-ig-glyph">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
-                        </span>
-                    </a>
-                </div>
                 </div>
             </div>
         </section>
@@ -846,23 +773,20 @@
     gsap.ticker.lagSmoothing(0);
   }
 
-  /* 1. Hero hands off: logo drifts up + fades, wave dissolves as you scroll */
-  var heroContent = document.querySelector('main section .relative.z-10');
-  if (heroContent) {
-    gsap.to(heroContent, {
-      scrollTrigger: { trigger: 'main section', start: 'top top', end: '85% top', scrub: 1 },
-      y: -90, opacity: 0, ease: 'none'
-    });
-  }
 
   /* Trust image intentionally static */
 
-  /* 3. Buy / Sell / Trade: cards rise in with stagger, color bleeds in as you pass */
+  /* Buy / Sell / Trade: slide in cleanly from the sides as you reach them */
   var cards = gsap.utils.toArray('.action-card');
-  if (cards.length) {
-    gsap.from(cards, {
-      scrollTrigger: { trigger: '#process', start: 'top 82%', once: true },
-      y: 110, opacity: 0, duration: 1.5, stagger: 0.16, ease: 'expo.out', clearProps: 'transform,opacity'
+  if (cards.length === 3) {
+    var dirs = [{ x: -110, y: 0 }, { x: 0, y: 110 }, { x: 110, y: 0 }];
+    cards.forEach(function (card, i) {
+      gsap.from(card, {
+        scrollTrigger: { trigger: '#process', start: 'top 78%', once: true },
+        x: dirs[i].x, y: dirs[i].y, opacity: 0,
+        duration: 1.4, delay: i * 0.12, ease: 'expo.out',
+        clearProps: 'transform,opacity'
+      });
     });
   }
 
@@ -884,80 +808,10 @@
   }
 
   /* 5. Footer: columns rise in sequence */
-  gsap.from('#instagram .pt-ig-tile', {
-    scrollTrigger: { trigger: '#instagram', start: 'top 80%', once: true },
-    y: 40, opacity: 0, duration: 0.9, stagger: 0.08, ease: 'expo.out', clearProps: 'all'
-  });
-
   gsap.from('footer .max-w-5xl > *', {
     scrollTrigger: { trigger: 'footer', start: 'top 88%', once: true },
     y: 24, opacity: 0, duration: 0.7, stagger: 0.08, ease: 'power2.out', clearProps: 'all'
   });
-})();
-</script>
-<script>
-/* Live Instagram feed: hydrate the strip if the API is connected; otherwise the curated tiles stay */
-(function () {
-  var grid = document.querySelector('.pt-ig-grid');
-  if (!grid) return;
-  fetch('/api/instagram-feed')
-    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function (data) {
-      if (!data.posts || data.posts.length < 3) return;
-      var tiles = grid.querySelectorAll('.pt-ig-tile');
-      data.posts.slice(0, tiles.length).forEach(function (post, i) {
-        var tile = tiles[i];
-        var img = tile.querySelector('img');
-        var pre = new Image();
-        pre.onload = function () {
-          img.src = post.image;
-          img.alt = post.caption || 'Prime Time Miami on Instagram';
-          tile.href = post.permalink;
-        };
-        pre.src = post.image;
-      });
-    })
-    .catch(function () { /* keep curated tiles */ });
-})();
-</script>
-<script>
-/* IG rail: click-through paging via arrows (touch swipe still works on phones) */
-(function () {
-  var rail = document.querySelector('.pt-ig-grid');
-  var prev = document.getElementById('ig-prev');
-  var next = document.getElementById('ig-next');
-  if (!rail || !prev || !next) return;
-  function step() {
-    var tile = rail.querySelector('.pt-ig-tile');
-    return tile ? (tile.offsetWidth + 10) * 3 : rail.clientWidth * 0.8;
-  }
-  var target = null;
-  function glide(delta) {
-    var max = rail.scrollWidth - rail.clientWidth;
-    var from = target !== null ? target : rail.scrollLeft;
-    target = Math.max(0, Math.min(max, from + delta));
-    if (typeof gsap !== 'undefined') {
-      gsap.killTweensOf(rail);
-      gsap.to(rail, {
-        scrollLeft: target,
-        duration: 1.1,
-        ease: 'power3.out',
-        overwrite: 'auto',
-        onComplete: function () { target = null; }
-      });
-    } else {
-      rail.scrollLeft = target; target = null;
-    }
-  }
-  function update() {
-    prev.disabled = rail.scrollLeft <= 4;
-    next.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 4;
-  }
-  prev.addEventListener('click', function () { glide(-step()); });
-  next.addEventListener('click', function () { glide(step()); });
-  rail.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
-  update();
 })();
 </script>
 <div id="pt-lightbox" aria-hidden="true">
@@ -973,6 +827,7 @@
   var img = box.querySelector('img');
   var closeBtn = document.getElementById('pt-lightbox-close');
   function open(src, alt) {
+    if (!src) return;
     img.src = src; img.alt = alt || '';
     box.classList.add('is-open');
     box.setAttribute('aria-hidden', 'false');
@@ -988,7 +843,7 @@
     document.body.style.overflow = '';
     if (window.__lenis) window.__lenis.start();
   }
-  document.querySelectorAll('.pt-strip__shot').forEach(function (b) {
+  document.querySelectorAll('.pt-strip__shot[data-full]').forEach(function (b) {
     b.addEventListener('click', function () {
       var t = b.querySelector('img');
       open(b.getAttribute('data-full'), t ? t.alt : '');

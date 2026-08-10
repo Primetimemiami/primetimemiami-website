@@ -881,3 +881,23 @@ body { text-transform: none !important; }
   cursor: pointer; transition: all 0.2s ease-in-out;
 }
 #pt-lightbox-close:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0px #fff; }
+
+/* ── hero strip as auto-drifting marquee ── */
+.pt-strip { padding: 0; }
+.pt-strip__marquee {
+  overflow: hidden; width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+.pt-strip__track {
+  display: flex; align-items: flex-end; gap: clamp(10px, 1.2vw, 18px);
+  width: max-content; padding: 14px 0 6px;
+  animation: ptStripDrift 70s linear infinite;
+}
+.pt-strip__marquee:hover .pt-strip__track { animation-play-state: paused; }
+@keyframes ptStripDrift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .pt-strip__track { animation: none; } }
+.pt-strip__shot { position: relative; }
+.pt-strip__shot--ig { display: block; }
+.pt-strip__shot .pt-ig-glyph { position: absolute; top: 8px; right: 8px; color: #fff; opacity: 0; transform: translateY(3px); transition: opacity 0.4s ease, transform 0.4s ease; }
+.pt-strip__shot:hover .pt-ig-glyph { opacity: 1; transform: none; }
