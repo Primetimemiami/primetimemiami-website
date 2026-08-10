@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=21">
+    <link rel="stylesheet" href="/dist/styles.css?v=22">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -239,7 +239,7 @@
                     <span class="pt-bst__label">Buy a Watch <span class="ar">&rarr;</span></span>
                 </a>
                 <button type="button" data-modal="sell" onclick="app.openModal('SELL')" class="action-card pt-bst__card">
-                    <img src="images/pieces/piece-02.webp" alt="Rolex Daytona in box, sell your watch" loading="lazy">
+                    <img src="images/pieces/piece-13.webp" alt="Patek Philippe Nautilus in box, sell your watch" loading="lazy">
                     <span class="pt-bst__label">Sell Your Watch <span class="ar">&rarr;</span></span>
                 </button>
                 <button type="button" data-modal="trade" onclick="app.openModal('TRADE')" class="action-card pt-bst__card">
@@ -249,34 +249,11 @@
             </div>
         </section>
 
-        <!-- TRUST SECTION -->
-        <section id="about" class="border-b border-ivory/5 overflow-hidden relative" style="min-height: 80vh;">
-            <!-- Image covers the right half on desktop/tablet landscape, full width on mobile/tablet portrait -->
-            <div class="hidden lg:block absolute top-0 right-0 w-1/2 h-full overflow-hidden">
-                <img id="trust-img" src="images/pieces/piece-13.webp" alt="Patek Philippe Nautilus Travel Time in box" class="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <!-- Text takes the left half on lg+, full width below -->
-            <div class="relative z-10 lg:w-1/2 bg-[#000000] min-h-[60vh] lg:min-h-[80vh] flex items-center">
-                <div class="px-6 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-24 space-y-6 sm:space-y-8 max-w-xl mx-auto lg:mx-0">
-                    <h2 id="trust-heading" class="reveal-trust font-space text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase leading-tight tracking-tight">
-                        Real Watches. <br/>
-                        <span class="stroke-text">For True Collectors.</span>
-                    </h2>
-                    <p id="trust-desc" class="no-caps reveal-trust font-inter text-muted text-base sm:text-lg leading-relaxed tracking-wide">
-                        Every piece is sourced through verified partners and independently authenticated by trusted watch specialists before acquisition. Available references and years change constantly. Tell us what you&rsquo;re after and we&rsquo;ll find it.
-                    </p>
-                    <div id="trust-tags" class="reveal-trust pt-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-ivory/50 glass-subtle rounded-xl px-6 sm:px-8 py-5 sm:py-6 w-fit">
-                        <span class="whitespace-nowrap">Global Sourcing</span>
-                        <span class="hidden sm:inline tag-bullet text-ivory/20">&bull;</span>
-                        <span class="whitespace-nowrap">Independent Authentication</span>
-                        <span class="hidden sm:inline tag-bullet text-ivory/20">&bull;</span>
-                        <span class="whitespace-nowrap">Insured Delivery</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile + tablet portrait image below text -->
-            <div class="lg:hidden h-[40vh] sm:h-[50vh] overflow-hidden">
-                <img src="images/pieces/piece-13.webp" alt="Patek Philippe Nautilus Travel Time in box" class="w-full h-full object-cover" loading="lazy" />
+        <!-- FEATURED WATCHES (auto-rotates weekly, one per brand) -->
+        <section id="featured" class="border-b border-ivory/5">
+            <div class="pt-feat">
+                <h2 class="pt-feat__title font-space font-bold">Featured <span class="stroke-text">Watches</span></h2>
+                <div class="pt-feat__grid" id="pt-feat-grid"></div>
             </div>
         </section>
 
@@ -808,6 +785,41 @@
   });
   v.addEventListener('ended', function () { v.currentTime = 0; v.play(); });
   v.load();
+})();
+</script>
+<script>
+/* Featured watches: one per brand from the live inventory, rotates weekly */
+(function () {
+  var grid = document.getElementById('pt-feat-grid');
+  if (!grid) return;
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  fetch('/api/pieces')
+    .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
+    .catch(function () {
+      var demo = localStorage.getItem('pt_demo_pieces_v2');
+      if (demo) return JSON.parse(demo);
+      return fetch('/data/pieces.json').then(function (r) { return r.json(); });
+    })
+    .then(function (pieces) {
+      var week = Math.floor(Date.now() / 604800000);
+      var brands = ['Rolex', 'Audemars Piguet', 'Patek Philippe', 'Richard Mille'];
+      var picks = [];
+      brands.forEach(function (b, bi) {
+        var pool = pieces.filter(function (p) { return p.brand === b && !p.sold && p.image; });
+        if (pool.length) picks.push(pool[(week + bi) % pool.length]);
+      });
+      if (picks.length < 3) { document.getElementById('featured').style.display = 'none'; return; }
+      grid.innerHTML = picks.map(function (p) {
+        var sub = [p.ref ? 'Ref. ' + p.ref : '', p.year].filter(Boolean).join(' · ');
+        return '<a class="pt-feat__card" href="watch.html?id=' + encodeURIComponent(p.id) + '">' +
+          '<div class="pt-feat__img"><img src="' + esc(p.image) + '" alt="' + esc(p.brand + ' ' + p.model) + '" loading="lazy"></div>' +
+          '<span class="pt-feat__brand">' + esc(p.brand).toUpperCase() + '</span>' +
+          '<span class="pt-feat__name">' + esc(p.model) + '</span>' +
+          (sub ? '<span class="pt-feat__sub">' + esc(sub) + '</span>' : '') +
+          '</a>';
+      }).join('');
+    })
+    .catch(function () { document.getElementById('featured').style.display = 'none'; });
 })();
 </script>
 </body>
