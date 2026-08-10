@@ -129,53 +129,38 @@
     <link rel="stylesheet" href="/dist/styles.css?v=19">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
-    <!-- AMBIENT ORBS -->
 
-    <!-- MOBILE MENU OVERLAY -->
-    <div id="mobile-menu" class="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-7 transition-all duration-500 opacity-0 pointer-events-none">
-        <button onclick="app.toggleMobileMenu()" class="absolute top-4 right-6 text-ivory">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M18 6L6 18M6 6l12 12"/>
-            </svg>
-        </button>
-        <button onclick="app.toggleMobileMenu(); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">
-                Request a Piece
-            </button>
-        <a href="inventory.html" class="text-xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">
-            Browse Pieces
-        </a>
-        <a href="about.html" class="text-xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">
-            About
-        </a>
-        <a href="process.html" class="text-xl font-space font-bold uppercase tracking-widest hover:text-muted transition-colors">
-            Process
-        </a>
+    <!-- FLOATING MENU -->
+    <button id="pt-menu-btn" aria-label="Menu" class="fixed flex items-center justify-center text-ivory transition-transform duration-300 hover:scale-110" style="top:20px;right:24px;z-index:70;width:48px;height:48px;background:rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(6px);">
+        <svg id="pt-menu-open-ic" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+        <svg id="pt-menu-close-ic" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="pt-menu" class="fixed inset-0 flex flex-col items-center justify-center space-y-8" style="z-index:65;background:rgba(0,0,0,0.96);opacity:0;pointer-events:none;transition:opacity 0.45s ease;">
+        <a href="inventory.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Browse Pieces</a>
+        <a href="about.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
+        <a href="process.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
+        <button onclick="ptMenu(false); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-10 py-4 text-sm font-space font-bold tracking-widest">Request a Piece</button>
     </div>
+    <script>
+    function ptMenu(open) {
+        var m = document.getElementById('pt-menu');
+        var isOpen = (typeof open === 'boolean') ? open : m.style.opacity !== '1';
+        m.style.opacity = isOpen ? '1' : '0';
+        m.style.pointerEvents = isOpen ? 'auto' : 'none';
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+        document.getElementById('pt-menu-open-ic').classList.toggle('hidden', isOpen);
+        document.getElementById('pt-menu-close-ic').classList.toggle('hidden', !isOpen);
+        if (window.__lenis) { isOpen ? window.__lenis.stop() : window.__lenis.start(); }
+    }
+    document.getElementById('pt-menu-btn').addEventListener('click', function () { ptMenu(); });
+    window.addEventListener('keydown', function (e) { if (e.key === 'Escape') ptMenu(false); });
+    </script>
+
+    <!-- AMBIENT ORBS -->
 
     <main>
         <!-- HERO SECTION -->
         <section class="relative h-screen min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex flex-col justify-center items-center px-4 overflow-hidden">
-            <nav class="absolute top-0 left-0 w-full z-40 px-6 sm:px-10 md:px-16 py-5 sm:py-6 flex justify-between items-center">
-                <a href="index.html" class="nav-link text-xs lg:text-sm font-space font-medium tracking-widest hover:text-muted transition-colors">
-                    Home
-                </a>
-                <div id="nav-links" class="hidden md:flex space-x-4 lg:space-x-8 text-xs lg:text-sm font-space font-medium uppercase tracking-widest items-center">
-                    <a href="about.html" class="nav-link hover:text-muted transition-colors">
-                        About
-                    </a>
-                    <a href="process.html" class="nav-link hover:text-muted transition-colors">
-                        Process
-                    </a>
-                    <a href="#" onclick="event.preventDefault(); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-5 py-2 text-xs font-space font-bold tracking-widest text-center">
-                Request a Piece
-            </a>
-                </div>
-                <button id="mobile-menu-btn" onclick="app.toggleMobileMenu()" class="md:hidden text-ivory">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/>
-                    </svg>
-                </button>
-            </nav>
 
             <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
                 <video id="hero-video" class="w-full h-full object-cover" muted playsinline preload="auto" style="opacity:0; transition: opacity 1.4s ease; filter: saturate(0.72) contrast(1.06) brightness(0.88);"></video>
