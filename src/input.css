@@ -1000,3 +1000,16 @@ body { text-transform: none !important; }
 @media (min-width: 768px) { .pt-tcol--2 { display: block; } }
 @media (min-width: 1024px) { .pt-tcol--3 { display: block; } }
 @media (prefers-reduced-motion: reduce) { .pt-tcol__track { animation: none; } }
+
+/* ── desktop: inline nav, no burger; mobile: burger only ── */
+#pt-desknav {
+  position: fixed; top: 22px; right: 26px; z-index: 70;
+  display: flex; align-items: center; gap: 26px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
+  padding: 8px 14px;
+  background: rgba(0,0,0,0.35); backdrop-filter: blur(6px);
+}
+#pt-desknav a { color: #fff; text-decoration: none; transition: opacity 0.25s ease; }
+#pt-desknav a:hover { opacity: 0.6; }
+@media (max-width: 767px) { #pt-desknav { display: none; } }
+@media (min-width: 768px) { #pt-menu-btn { display: none !important; } }

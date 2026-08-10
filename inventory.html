@@ -19,7 +19,7 @@
     <meta property="og:image" content="https://primetimemiami.com/images/og-share.png">
     <meta property="og:site_name" content="Prime Time Miami">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/styles.css?v=29">
+    <link rel="stylesheet" href="/dist/styles.css?v=30">
     <style>
     /* ── inventory: live-site layout, Prime Time black ── */
 
@@ -321,7 +321,7 @@
             fetch('/api/pieces')
                 .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
                 .catch(function () {
-                    var demo = localStorage.getItem('pt_demo_pieces_v3');
+                    var demo = localStorage.getItem('pt_demo_pieces_v4');
                     if (demo) return JSON.parse(demo);
                     return fetch('/data/pieces.json').then(function (r) {
                         if (!r.ok) throw new Error('load failed'); return r.json();
@@ -338,7 +338,7 @@
         }
         loadPieces();
         /* admin saved in another tab -> refresh instantly */
-        window.addEventListener('storage', function (e) { if (e.key === 'pt_demo_pieces_v3') loadPieces(); });
+        window.addEventListener('storage', function (e) { if (e.key === 'pt_demo_pieces_v4') loadPieces(); });
     })();
     </script>
     <script src="/scripts/premium-ui.js"></script>

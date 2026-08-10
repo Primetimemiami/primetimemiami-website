@@ -7,7 +7,7 @@
     <title>Inventory Admin | Prime Time Miami</title>
     <meta name="robots" content="noindex, nofollow">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/styles.css?v=29">
+    <link rel="stylesheet" href="/dist/styles.css?v=30">
     <style>
     body { background: #000; color: #fff; }
     .ad-wrap { max-width: 1080px; margin: 0 auto; padding: 40px 20px 100px; }
@@ -119,14 +119,14 @@
 
         /* ── TEST MODE: full dashboard against localStorage until the real backend exists ── */
         function demoRead() {
-            var raw = localStorage.getItem('pt_demo_pieces_v3');
+            var raw = localStorage.getItem('pt_demo_pieces_v4');
             if (raw) return Promise.resolve(JSON.parse(raw));
             return fetch('/data/pieces.json').then(function (r) { return r.json(); }).then(function (seed) {
-                localStorage.setItem('pt_demo_pieces_v3', JSON.stringify(seed));
+                localStorage.setItem('pt_demo_pieces_v4', JSON.stringify(seed));
                 return seed;
             });
         }
-        function demoWrite(rows) { localStorage.setItem('pt_demo_pieces_v3', JSON.stringify(rows)); }
+        function demoWrite(rows) { localStorage.setItem('pt_demo_pieces_v4', JSON.stringify(rows)); }
         function demoPost(body) {
             if (body.action === 'login') {
                 if (body.password === DEMO_PW) return Promise.resolve({ ok: true, status: 200, data: { token: 'demo' } });
