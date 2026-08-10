@@ -978,3 +978,20 @@ body { text-transform: none !important; }
 .pt-bst__card:hover img { filter: brightness(0.96); }
 .pt-bst__label .ar { transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
 .pt-bst__card:hover .pt-bst__label .ar { transform: translateX(5px); }
+
+/* ── testimonials: live-DBH vertical marquee, PT black ── */
+.pt-tcols { display: flex; justify-content: center; gap: 24px; margin-top: 36px; max-height: 680px; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+.pt-tcol__track { display: flex; flex-direction: column; gap: 24px; padding-bottom: 24px; animation: ptTScroll var(--dur, 15s) linear infinite; }
+@keyframes ptTScroll { to { transform: translateY(-50%); } }
+.pt-tcard { width: 320px; max-width: 82vw; padding: 26px; background: #0c0c0c; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 14px 34px rgba(0,0,0,0.4); }
+.pt-tcard p { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,0.78); margin: 0; }
+.pt-tcard__who { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.pt-tcard__pfp { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); flex-shrink: 0; }
+.pt-tcard__name { font-size: 11px; letter-spacing: 0.12em; color: #fff; font-weight: 600; }
+.pt-tcard__role { font-size: 10px; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-top: 2px; }
+.pt-tcol--2, .pt-tcol--3 { display: none; }
+@media (min-width: 768px) { .pt-tcol--2 { display: block; } }
+@media (min-width: 1024px) { .pt-tcol--3 { display: block; } }
+@media (prefers-reduced-motion: reduce) { .pt-tcol__track { animation: none; } }
