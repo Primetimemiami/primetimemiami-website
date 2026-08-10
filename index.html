@@ -177,6 +177,14 @@
                 </button>
             </nav>
 
+            <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+                <video id="hero-video" class="w-full h-full object-cover" muted playsinline preload="auto" style="opacity:0; transition: opacity 1.4s ease;">
+                    <source src="images/hero-loop.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0" style="background:rgba(0,0,0,0.18);"></div>
+                <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-b from-transparent to-black"></div>
+            </div>
+
             <div class="relative z-10 text-center max-w-5xl mx-auto">
                 <h1 id="hero-title" class="mb-6 sm:mb-8">
                     <img src="images/logo.png" alt="Prime Time Miami" class="mx-auto h-auto" style="width:min(59vw,580px)" fetchpriority="high">
@@ -1006,6 +1014,30 @@
   box.addEventListener('click', function (e) { if (e.target === box || e.target === img) close(); });
   closeBtn.addEventListener('click', close);
   window.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+<script>
+/* hero video: fade in, fade out at the end of each pass, loop forever */
+(function () {
+  var v = document.getElementById('hero-video');
+  if (!v) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.remove(); return; }
+  var LEVEL = 0.7, FADE = 1.2;
+  function fadeIn() { v.style.opacity = LEVEL; }
+  v.addEventListener('canplay', function () {
+    v.play().then(fadeIn).catch(function () {
+      var kick = function () { v.play().then(fadeIn); window.removeEventListener('click', kick); window.removeEventListener('touchstart', kick); };
+      window.addEventListener('click', kick); window.addEventListener('touchstart', kick);
+    });
+  }, { once: true });
+  v.addEventListener('timeupdate', function () {
+    if (!v.duration) return;
+    var left = v.duration - v.currentTime;
+    if (left < FADE) v.style.opacity = 0;
+    else if (v.currentTime < FADE) v.style.opacity = LEVEL;
+  });
+  v.addEventListener('ended', function () { v.currentTime = 0; v.play(); });
+  v.load();
 })();
 </script>
 </body>
