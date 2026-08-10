@@ -178,9 +178,7 @@
             </nav>
 
             <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-                <video id="hero-video" class="w-full h-full object-cover" muted playsinline preload="auto" style="opacity:0; transition: opacity 1.4s ease;">
-                    <source src="images/hero-loop.mp4" type="video/mp4">
-                </video>
+                <video id="hero-video" class="w-full h-full object-cover" muted playsinline preload="auto" style="opacity:0; transition: opacity 1.4s ease;"></video>
                 <div class="absolute inset-0" style="background:rgba(0,0,0,0.18);"></div>
                 <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-b from-transparent to-black"></div>
             </div>
@@ -1022,6 +1020,8 @@
   var v = document.getElementById('hero-video');
   if (!v) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.remove(); return; }
+  /* landscape screens get the sharp 1920-wide crop; portrait gets the vertical cut */
+  v.src = (window.innerWidth > window.innerHeight) ? 'images/hero-loop-wide.mp4' : 'images/hero-loop.mp4';
   var LEVEL = 0.7, FADE = 1.2;
   function fadeIn() { v.style.opacity = LEVEL; }
   v.addEventListener('canplay', function () {
