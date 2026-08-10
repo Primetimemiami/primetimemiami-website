@@ -62,9 +62,9 @@
   "ref": "",
   "year": "",
   "caseMaterial": "White Gold",
-  "dialColor": "Pavé Diamond",
+  "dialColor": "Pav\u00e9 Diamond",
   "condition": "Full Set",
-  "description": "Cosmograph Daytona with the factory pavé diamond dial.",
+  "description": "Cosmograph Daytona with the factory pav\u00e9 diamond dial.",
   "image": "images/pieces/piece-07.webp",
   "featured": true,
   "sold": false
@@ -106,7 +106,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 41mm · Leather Strap",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 41mm \u00b7 Leather Strap",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-15210st-oo-a348kb-01-dae0c3.webp",
   "featured": false,
   "sold": false
@@ -120,7 +120,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 41mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-eeedee.webp",
   "featured": false,
   "sold": false
@@ -134,7 +134,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Stainless Steel · Grey dial",
+  "description": "Stainless Steel \u00b7 Grey dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-ffdec6.webp",
   "featured": false,
   "sold": false
@@ -148,7 +148,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial",
+  "description": "18K Rose Gold \u00b7 Black dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-7dab45.webp",
   "featured": false,
   "sold": false
@@ -162,7 +162,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 38mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-77410or-oo-a344cr-01-237378.webp",
   "featured": false,
   "sold": false
@@ -176,7 +176,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Green dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-e23d6b.webp",
   "featured": false,
   "sold": false
@@ -190,7 +190,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Green dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-834ca8.webp",
   "featured": false,
   "sold": false
@@ -204,7 +204,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Lacquered Purple",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Lacquered Purple dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Lacquered Purple dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-77918c.webp",
   "featured": false,
   "sold": false
@@ -218,7 +218,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silver Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silver Grey dial · 38mm",
+  "description": "18K Rose Gold \u00b7 Silver Grey dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-d15913.webp",
   "featured": false,
   "sold": false
@@ -232,7 +232,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Sapphire",
   "condition": "Brand New",
-  "description": "Stainless Steel · Sapphire dial",
+  "description": "Stainless Steel \u00b7 Sapphire dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-7a2e36.webp",
   "featured": false,
   "sold": false
@@ -260,7 +260,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 41mm",
+  "description": "18K White Gold \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-e80e2c.webp",
   "featured": false,
   "sold": false
@@ -274,7 +274,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "18K White Gold · Beige dial · 41mm",
+  "description": "18K White Gold \u00b7 Beige dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-1a4f1b.webp",
   "featured": false,
   "sold": false
@@ -288,7 +288,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Sapphire",
   "condition": "Brand New",
-  "description": "18K White Gold · Sapphire dial · 41mm",
+  "description": "18K White Gold \u00b7 Sapphire dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-7b59a7.webp",
   "featured": false,
   "sold": false
@@ -302,7 +302,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Sapphire",
   "condition": "Brand New",
-  "description": "18K White Gold · Sapphire dial",
+  "description": "18K White Gold \u00b7 Sapphire dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-6955ed.webp",
   "featured": false,
   "sold": false
@@ -316,7 +316,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Turquoise",
   "condition": "Brand New",
-  "description": "18K White Gold · Turquoise dial · 41mm",
+  "description": "18K White Gold \u00b7 Turquoise dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-2224fe.webp",
   "featured": false,
   "sold": false
@@ -330,7 +330,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Tuscany Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Tuscany Blue dial",
+  "description": "18K White Gold \u00b7 Tuscany Blue dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-code-11-59-11-59-540432.webp",
   "featured": false,
   "sold": false
@@ -344,7 +344,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 41mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 41mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-03-ce350f.webp",
   "featured": false,
   "sold": false
@@ -358,7 +358,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 41mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 41mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-06-db97bd.webp",
   "featured": false,
   "sold": false
@@ -372,7 +372,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 41mm · Leather Strap",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 41mm \u00b7 Leather Strap",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510or-oo-d002cr-02-153c57.webp",
   "featured": false,
   "sold": false
@@ -386,7 +386,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 41mm · Rose Gold Bracelet",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 41mm \u00b7 Rose Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510or-oo-1320or-03-fd69a6.webp",
   "featured": false,
   "sold": false
@@ -400,7 +400,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Gray",
   "condition": "Brand New",
-  "description": "Stainless Steel · Gray dial · 41mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Gray dial \u00b7 41mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-10-faecb9.webp",
   "featured": false,
   "sold": false
@@ -414,7 +414,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 34mm",
+  "description": "Stainless Steel \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77450st-oo-1361st-02-4f2844.webp",
   "featured": false,
   "sold": false
@@ -428,7 +428,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 34mm",
+  "description": "Stainless Steel \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77350st-oo-1261st-01-ee43e2.webp",
   "featured": false,
   "sold": false
@@ -456,7 +456,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 33mm",
+  "description": "Stainless Steel \u00b7 33mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-67651sr-zz-1261sr-01-5e0f89.webp",
   "featured": false,
   "sold": false
@@ -484,7 +484,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Titanium · 39mm",
+  "description": "Titanium \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-16204xt-oo-1240xt-01-ecce9c.webp",
   "featured": false,
   "sold": false
@@ -498,7 +498,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Titanium · 41mm",
+  "description": "Titanium \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26685xt-oo-1320xt-01-590295.webp",
   "featured": false,
   "sold": false
@@ -512,7 +512,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 41mm",
+  "description": "Stainless Steel \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-08-4f3068.webp",
   "featured": false,
   "sold": false
@@ -582,7 +582,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial",
+  "description": "950 Platinum \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26586ip-oo-1240ip-01-9a0a25.webp",
   "featured": false,
   "sold": false
@@ -596,7 +596,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 33mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 33mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-67650st-oo-1261st-01-8401ab.webp",
   "featured": false,
   "sold": false
@@ -610,7 +610,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 41mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-07-13e11a.webp",
   "featured": false,
   "sold": false
@@ -624,7 +624,7 @@
   "caseMaterial": "",
   "dialColor": "Black Rainbow",
   "condition": "Brand New",
-  "description": "Black Rainbow dial · 34mm",
+  "description": "Black Rainbow dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77350ce-oo-1266ce-02-a-2382c7.webp",
   "featured": false,
   "sold": false
@@ -638,7 +638,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 37mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15550st-oo-1356st-06-6f0ddc.webp",
   "featured": false,
   "sold": false
@@ -652,7 +652,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 37mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15551st-zz-1356st-04-ece34a.webp",
   "featured": false,
   "sold": false
@@ -680,7 +680,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial",
+  "description": "Stainless Steel \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26450st-oo-1356st-01-b-9f8364.webp",
   "featured": false,
   "sold": false
@@ -694,7 +694,7 @@
   "caseMaterial": "",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Blue dial · 41mm",
+  "description": "Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26674cd-oo-1225cd-01-c0aae6.webp",
   "featured": false,
   "sold": false
@@ -708,7 +708,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 37mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15550st-oo-1356st-08-6e85a5.webp",
   "featured": false,
   "sold": false
@@ -722,7 +722,7 @@
   "caseMaterial": "",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Blue dial · 41mm",
+  "description": "Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26579cb-oo-1225cb-01-282456.webp",
   "featured": false,
   "sold": false
@@ -736,7 +736,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 34mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77451st-zz-1361st-01-bc959e.webp",
   "featured": false,
   "sold": false
@@ -750,7 +750,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Titanium · Blue dial",
+  "description": "Titanium \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26730ti-oo-1320ti-02-e4ab79.webp",
   "featured": false,
   "sold": false
@@ -764,7 +764,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 39mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-16202st-oo-1240st-01-3f9f26.webp",
   "featured": false,
   "sold": false
@@ -778,7 +778,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silver/White (Panda)",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silver/White (Panda) dial · 41mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Silver/White (Panda) dial \u00b7 41mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-chronograph-26240st-oo-1320st-05-711b84.webp",
   "featured": false,
   "sold": false
@@ -792,7 +792,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 41mm · Rose Gold Bracelet",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 41mm \u00b7 Rose Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-chronograph-26240or-oo-1320or-05-00b5dc.webp",
   "featured": false,
   "sold": false
@@ -806,7 +806,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 41mm · Leather Strap",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 41mm \u00b7 Leather Strap",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-chronograph-26240or-oo-d002cr-02-7b5cb4.webp",
   "featured": false,
   "sold": false
@@ -820,7 +820,7 @@
   "caseMaterial": "Black Ceramic",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Black Ceramic · Black dial · 41mm · Ceramic Bracelet",
+  "description": "Black Ceramic \u00b7 Black dial \u00b7 41mm \u00b7 Ceramic Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-chronograph-26240ce-oo-1225ce-02-b317b5.webp",
   "featured": false,
   "sold": false
@@ -834,7 +834,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial",
+  "description": "Stainless Steel \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-chronograph-26240st-oo-1320st-01-4b6656.webp",
   "featured": false,
   "sold": false
@@ -848,7 +848,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Titanium · 44mm",
+  "description": "Titanium \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-concept-26587ti-oo-d067ca-01-5d5716.webp",
   "featured": false,
   "sold": false
@@ -890,7 +890,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial",
+  "description": "Stainless Steel \u00b7 Green dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240st-oo-1320st-08-a4d132.webp",
   "featured": false,
   "sold": false
@@ -904,7 +904,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 41mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510st-oo-1320st-09-ef3ccb.webp",
   "featured": false,
   "sold": false
@@ -918,7 +918,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial",
+  "description": "Stainless Steel \u00b7 Green dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240st-oo-1320st-04-3a39f9.webp",
   "featured": false,
   "sold": false
@@ -932,7 +932,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Titanium · Green dial · 41mm",
+  "description": "Titanium \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26534ti-oo-1220ti-01-239d47.webp",
   "featured": false,
   "sold": false
@@ -946,7 +946,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Stainless Steel · Grey dial · 37mm",
+  "description": "Stainless Steel \u00b7 Grey dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15550st-oo-1356st-07-03a13b.webp",
   "featured": false,
   "sold": false
@@ -960,7 +960,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 39mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 39mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-jumbo-extra-thin-16202st-oo-1240st-02-61f00b.webp",
   "featured": false,
   "sold": false
@@ -974,7 +974,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Blue dial · 39mm · Yellow Gold Bracelet",
+  "description": "18K Yellow Gold \u00b7 Blue dial \u00b7 39mm \u00b7 Yellow Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-jumbo-extra-thin-16202ba-oo-1240ba-02-b7aa4b.webp",
   "featured": false,
   "sold": false
@@ -988,7 +988,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 39mm · White Gold Bracelet",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 39mm \u00b7 White Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-jumbo-extra-thin-16202bc-oo-1240bc-02-4cebf7.webp",
   "featured": false,
   "sold": false
@@ -1002,7 +1002,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silver/Steel",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silver/Steel dial · 29mm · Rose Gold Bracelet",
+  "description": "18K Rose Gold \u00b7 Silver/Steel dial \u00b7 29mm \u00b7 Rose Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-mini-frosted-gold-67630or-gg-1312or-01-3db349.webp",
   "featured": false,
   "sold": false
@@ -1030,7 +1030,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 41mm",
+  "description": "Stainless Steel \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26420so-oo-a029ve-01-dcd9c5.webp",
   "featured": false,
   "sold": false
@@ -1142,7 +1142,7 @@
   "caseMaterial": "",
   "dialColor": "Black Black",
   "condition": "Brand New",
-  "description": "Black Black dial · 42mm",
+  "description": "Black Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238ce-oo-1300ce-01-26d2a0.webp",
   "featured": false,
   "sold": false
@@ -1156,7 +1156,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 42mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-15720st-oo-a355ca-01-9012dc.webp",
   "featured": false,
   "sold": false
@@ -1170,7 +1170,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 42mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-15720st-oo-a010ca-01-1a1eb9.webp",
   "featured": false,
   "sold": false
@@ -1184,7 +1184,7 @@
   "caseMaterial": "",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Black dial · 42mm",
+  "description": "Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238ce-oo-1300ce-02-8284ac.webp",
   "featured": false,
   "sold": false
@@ -1198,7 +1198,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Black Khaki",
   "condition": "Brand New",
-  "description": "Titanium · Black Khaki dial · 43mm",
+  "description": "Titanium \u00b7 Black Khaki dial \u00b7 43mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26420io-oo-a402ca-01-923ef7.webp",
   "featured": false,
   "sold": false
@@ -1212,7 +1212,7 @@
   "caseMaterial": "",
   "dialColor": "Black Openworked",
   "condition": "Brand New",
-  "description": "Black Openworked dial · 44mm",
+  "description": "Black Openworked dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26407ce-oo-a030ca-01-613a0e.webp",
   "featured": false,
   "sold": false
@@ -1226,7 +1226,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 42mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238st-oo-2000st-01-f4de6c.webp",
   "featured": false,
   "sold": false
@@ -1240,7 +1240,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 42mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-15720st-oo-a403ca-01-31f148.webp",
   "featured": false,
   "sold": false
@@ -1254,7 +1254,7 @@
   "caseMaterial": "",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "Champagne dial · 44mm",
+  "description": "Champagne dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26400so-oo-a054ca-01-16dfb5.webp",
   "featured": false,
   "sold": false
@@ -1268,7 +1268,7 @@
   "caseMaterial": "Steel & Ceramic",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Steel & Ceramic · Black dial · 43mm · Rubber Strap",
+  "description": "Steel & Ceramic \u00b7 Black dial \u00b7 43mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-chronograph-26420so-oo-a600ca-01-920773.webp",
   "featured": false,
   "sold": false
@@ -1282,7 +1282,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 42mm · Rubber Strap",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 42mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-diver-15720st-oo-a027ca-01-5e0489.webp",
   "featured": false,
   "sold": false
@@ -1296,7 +1296,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Titanium · Grey dial · 42mm",
+  "description": "Titanium \u00b7 Grey dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238ti-oo-a001ve-01-622c5b.webp",
   "featured": false,
   "sold": false
@@ -1310,7 +1310,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Titanium · Grey dial · 43mm",
+  "description": "Titanium \u00b7 Grey dial \u00b7 43mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26420io-oo-a009ca-01-59cec6.webp",
   "featured": false,
   "sold": false
@@ -1324,7 +1324,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Titanium · Grey dial · 44mm",
+  "description": "Titanium \u00b7 Grey dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26400io-oo-a004ca-02-926da3.webp",
   "featured": false,
   "sold": false
@@ -1338,7 +1338,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238ok-oo-a002ca-01-4663d2.webp",
   "featured": false,
   "sold": false
@@ -1352,7 +1352,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 44mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26420ro-oo-a002ca-01-3482e5.webp",
   "featured": false,
   "sold": false
@@ -1366,7 +1366,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 37mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26231or-zz-a085ca-01-74a341.webp",
   "featured": false,
   "sold": false
@@ -1380,7 +1380,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26238or-oo-2000or-01-ab4ea1.webp",
   "featured": false,
   "sold": false
@@ -1394,7 +1394,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Grey dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Grey dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-15711oi-oo-a006ca-01-3691e8.webp",
   "featured": false,
   "sold": false
@@ -1408,7 +1408,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Ivory",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Ivory dial · 37mm",
+  "description": "18K Rose Gold \u00b7 Ivory dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-77605ok-oo-a101ca-01-3019f2.webp",
   "featured": false,
   "sold": false
@@ -1422,7 +1422,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silver dial · 37mm",
+  "description": "Stainless Steel \u00b7 Silver dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26231st-zz-d010ca-01-a-738d90.webp",
   "featured": false,
   "sold": false
@@ -1450,7 +1450,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial",
+  "description": "18K White Gold \u00b7 Black dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26424bc-zz-d002ca-01-e2bc08.webp",
   "featured": false,
   "sold": false
@@ -1464,7 +1464,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black Black dial · 43mm",
+  "description": "18K Yellow Gold \u00b7 Black Black dial \u00b7 43mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-offshore-26420ce-oo-a127cr-01-972dd0.webp",
   "featured": false,
   "sold": false
@@ -1478,7 +1478,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 41mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 41mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-perpetual-calendar-26674st-oo-1320st-01-a5d6e7.webp",
   "featured": false,
   "sold": false
@@ -1492,7 +1492,7 @@
   "caseMaterial": "18K Sand Gold",
   "dialColor": "Smoked Brown",
   "condition": "Brand New",
-  "description": "18K Sand Gold · Smoked Brown dial · 41mm · Sand Gold Bracelet",
+  "description": "18K Sand Gold \u00b7 Smoked Brown dial \u00b7 41mm \u00b7 Sand Gold Bracelet",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-perpetual-calendar-26674sg-oo-1320sg-01-f8bfa2.webp",
   "featured": false,
   "sold": false
@@ -1506,7 +1506,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 37mm",
+  "description": "18K Rose Gold \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15467or-oo-1256or-01-bc6382.webp",
   "featured": false,
   "sold": false
@@ -1548,7 +1548,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 41mm",
+  "description": "18K Rose Gold \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26333or-zz-1220or-01-d5fa81.webp",
   "featured": false,
   "sold": false
@@ -1562,7 +1562,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510or-oo-1320or-02-0f05ed.webp",
   "featured": false,
   "sold": false
@@ -1576,7 +1576,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 39mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15202or-oo-1240or-01-65760b.webp",
   "featured": false,
   "sold": false
@@ -1590,7 +1590,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240or-oo-d315cr-02-bbe342.webp",
   "featured": false,
   "sold": false
@@ -1604,7 +1604,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510or-oo-d315cr-02-5a4869.webp",
   "featured": false,
   "sold": false
@@ -1618,7 +1618,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240or-oo-d315cr-01-c6c253.webp",
   "featured": false,
   "sold": false
@@ -1632,7 +1632,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Diamond dial",
+  "description": "18K Rose Gold \u00b7 Diamond dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-67630or-oo-1312or-01-b-57c019.webp",
   "featured": false,
   "sold": false
@@ -1646,7 +1646,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Diamond dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15413or-yy-1220or-01-723497.webp",
   "featured": false,
   "sold": false
@@ -1660,7 +1660,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Green dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240or-oo-1320or-04-61de47.webp",
   "featured": false,
   "sold": false
@@ -1674,7 +1674,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Green dial · 37mm",
+  "description": "18K Rose Gold \u00b7 Green dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15551or-zz-1356or-06-e42a96.webp",
   "featured": false,
   "sold": false
@@ -1688,7 +1688,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Grey dial",
+  "description": "18K Rose Gold \u00b7 Grey dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26450or-oo-1356or-01-b-af183a.webp",
   "featured": false,
   "sold": false
@@ -1702,7 +1702,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Grey dial · 38mm",
+  "description": "18K Rose Gold \u00b7 Grey dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26730or-oo-1320or-05-ddc7c0.webp",
   "featured": false,
   "sold": false
@@ -1716,7 +1716,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Pink",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Pink dial · 34mm",
+  "description": "18K Rose Gold \u00b7 Pink dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77450or-oo-1361or-01-b565e9.webp",
   "featured": false,
   "sold": false
@@ -1730,7 +1730,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silver dial",
+  "description": "18K Rose Gold \u00b7 Silver dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26574or-oo-1220or-01-767f46.webp",
   "featured": false,
   "sold": false
@@ -1744,7 +1744,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "Titanium · Salmon dial · 41mm",
+  "description": "Titanium \u00b7 Salmon dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26531ti-oo-1220ti-01-3db22a.webp",
   "featured": false,
   "sold": false
@@ -1758,7 +1758,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 34mm",
+  "description": "18K White Gold \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-77450bc-gg-1361bc-01-ef57e7.webp",
   "featured": false,
   "sold": false
@@ -1786,7 +1786,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 41mm",
+  "description": "18K White Gold \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15468bc-yg-1259bc-01-b-7fb346.webp",
   "featured": false,
   "sold": false
@@ -1800,7 +1800,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 37mm",
+  "description": "18K White Gold \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26660bc-zz-1356bc-01-87dd4a.webp",
   "featured": false,
   "sold": false
@@ -1814,7 +1814,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 39mm",
+  "description": "18K White Gold \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-16204bc-oo-1240bc-01-7ed3e7.webp",
   "featured": false,
   "sold": false
@@ -1828,7 +1828,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 41mm",
+  "description": "18K White Gold \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26532ic-ee-1220ti-01-1c143a.webp",
   "featured": false,
   "sold": false
@@ -1842,7 +1842,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 37mm",
+  "description": "18K White Gold \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15466bc-gg-1259bc-01-49b1c7.webp",
   "featured": false,
   "sold": false
@@ -1856,7 +1856,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 37mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15551bc-zz-1356bc-01-ea23a4.webp",
   "featured": false,
   "sold": false
@@ -1870,7 +1870,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240bc-oo-1320bc-04-e2c4a4.webp",
   "featured": false,
   "sold": false
@@ -1884,7 +1884,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15510bc-oo-1320bc-04-a395db.webp",
   "featured": false,
   "sold": false
@@ -1898,7 +1898,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Burgundy",
   "condition": "Brand New",
-  "description": "18K White Gold · Burgundy dial · 41mm",
+  "description": "18K White Gold \u00b7 Burgundy dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26598bc-zz-1220bc-01-95c9fe.webp",
   "featured": false,
   "sold": false
@@ -1912,7 +1912,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "18K White Gold · Diamond dial · 41mm",
+  "description": "18K White Gold \u00b7 Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15413bc-yy-1220bc-01-df28d8.webp",
   "featured": false,
   "sold": false
@@ -1926,7 +1926,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K White Gold · Grey dial · 38mm",
+  "description": "18K White Gold \u00b7 Grey dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26317bc-oo-1256bc-01-f74562.webp",
   "featured": false,
   "sold": false
@@ -1940,7 +1940,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K White Gold · Grey dial · 41mm",
+  "description": "18K White Gold \u00b7 Grey dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26239bc-gg-1224bc-01-34febd.webp",
   "featured": false,
   "sold": false
@@ -1954,7 +1954,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Purple",
   "condition": "Brand New",
-  "description": "18K White Gold · Purple dial · 41mm",
+  "description": "18K White Gold \u00b7 Purple dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26331bc-gg-1224bc-01-8e45e2.webp",
   "featured": false,
   "sold": false
@@ -1982,7 +1982,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 37mm",
+  "description": "18K Yellow Gold \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15550ba-gg-1356ba-01-1be6c3.webp",
   "featured": false,
   "sold": false
@@ -2010,7 +2010,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 39mm",
+  "description": "18K Yellow Gold \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-16204ba-oo-1240ba-01-7f2d90.webp",
   "featured": false,
   "sold": false
@@ -2038,7 +2038,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial",
+  "description": "18K Yellow Gold \u00b7 Champagne dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26586ba-oo-1240ba-99-324c20.webp",
   "featured": false,
   "sold": false
@@ -2052,7 +2052,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial",
+  "description": "18K Yellow Gold \u00b7 Green dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15553ba-oo-1356ba-04-c580d4.webp",
   "featured": false,
   "sold": false
@@ -2066,7 +2066,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial",
+  "description": "18K Yellow Gold \u00b7 Green dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15513ba-oo-1320ba-01-22a5e8.webp",
   "featured": false,
   "sold": false
@@ -2080,7 +2080,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Smoked",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Smoked dial · 41mm",
+  "description": "18K Yellow Gold \u00b7 Smoked dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-26240ba-oo-1320ba-02-f5d93d.webp",
   "featured": false,
   "sold": false
@@ -2094,7 +2094,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Stone",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Stone dial",
+  "description": "18K Yellow Gold \u00b7 Stone dial",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-67630ba-oo-1312ba-03-b-b75dd9.webp",
   "featured": false,
   "sold": false
@@ -2108,7 +2108,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Turquoise Stone",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Turquoise Stone dial · 37mm",
+  "description": "18K Yellow Gold \u00b7 Turquoise Stone dial \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-audemars-piguet-royal-oak-15550ba-oo-1356ba-01-918d19.webp",
   "featured": false,
   "sold": false
@@ -2116,13 +2116,13 @@
  {
   "id": "dbh-patek-philippe-annual-calendar-4946g-001-a7999e",
   "brand": "Patek Philippe",
-  "model": "Annual Calendar Moon Phases 4946G — Blue-Grey Denim",
+  "model": "Annual Calendar Moon Phases 4946G \u2014 Blue-Grey Denim",
   "ref": "4946G-001",
   "year": "2026",
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 38mm · Calfskin",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 38mm \u00b7 Calfskin",
   "image": "images/pieces/dbh/dbh-patek-philippe-annual-calendar-4946g-001-a7999e.webp",
   "featured": false,
   "sold": false
@@ -2136,7 +2136,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Black Gradient dial · 42.2mm · Composite",
+  "description": "18K White Gold \u00b7 Blue-Black Gradient dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-5168g-001-182123.webp",
   "featured": false,
   "sold": false
@@ -2150,7 +2150,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 40mm · Composite",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 40mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-5167a-001-158ace.webp",
   "featured": false,
   "sold": false
@@ -2164,7 +2164,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Khaki Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Khaki Green dial · 42.2mm · Composite",
+  "description": "18K White Gold \u00b7 Khaki Green dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-5168g-010-1dcc2d.webp",
   "featured": false,
   "sold": false
@@ -2178,7 +2178,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 40mm · Composite",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 40mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-5167r-001-0dffc2.webp",
   "featured": false,
   "sold": false
@@ -2192,7 +2192,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial",
+  "description": "Stainless Steel \u00b7 Black dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-5164a-001-6e5968.webp",
   "featured": false,
   "sold": false
@@ -2206,7 +2206,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Black Gradient dial · 42.2mm · Composite",
+  "description": "18K White Gold \u00b7 Blue-Black Gradient dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-chronograph-5968g-001-a9247f.webp",
   "featured": false,
   "sold": false
@@ -2220,7 +2220,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown-Orange Gradient",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown-Orange Gradient dial · 42.2mm · Composite",
+  "description": "18K Rose Gold \u00b7 Brown-Orange Gradient dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-chronograph-5968r-001-dc5517.webp",
   "featured": false,
   "sold": false
@@ -2234,7 +2234,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue-Black Gradient dial · 42.2mm · Composite",
+  "description": "Stainless Steel \u00b7 Blue-Black Gradient dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-chronograph-5968a-001-ffc6b1.webp",
   "featured": false,
   "sold": false
@@ -2248,7 +2248,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Khaki Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Khaki Green dial · 42.2mm · Composite",
+  "description": "18K White Gold \u00b7 Khaki Green dial \u00b7 42.2mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-chronograph-5968g-010-7bf8fe.webp",
   "featured": false,
   "sold": false
@@ -2262,7 +2262,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Misty Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Misty Blue dial · 38mm · Composite",
+  "description": "Stainless Steel \u00b7 Misty Blue dial \u00b7 38mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-7811-1a-011-4a5647.webp",
   "featured": false,
   "sold": false
@@ -2276,7 +2276,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 38mm · Composite",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 38mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-5261r-001-5482d0.webp",
   "featured": false,
   "sold": false
@@ -2290,7 +2290,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 38.8mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 38.8mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-5267-200a-001-acc5e7.webp",
   "featured": false,
   "sold": false
@@ -2304,7 +2304,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 36mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-5067a-025-fb3c8e.webp",
   "featured": false,
   "sold": false
@@ -2318,7 +2318,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 38.8mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 38.8mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-5267-200a-011-772e11.webp",
   "featured": false,
   "sold": false
@@ -2332,7 +2332,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Stainless Steel · White dial",
+  "description": "Stainless Steel \u00b7 White dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-luce-5267-200a-010-c9c8b2.webp",
   "featured": false,
   "sold": false
@@ -2346,7 +2346,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 40.8mm · Composite",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 40.8mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-travel-time-5164g-001-e9da0f.webp",
   "featured": false,
   "sold": false
@@ -2360,7 +2360,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 40.8mm · Composite",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 40.8mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-aquanaut-travel-time-5164r-001-7cf8a5.webp",
   "featured": false,
   "sold": false
@@ -2374,7 +2374,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Charcoal Gray",
   "condition": "Brand New",
-  "description": "18K White Gold · Charcoal Gray dial · 40mm · Calfskin",
+  "description": "18K White Gold \u00b7 Charcoal Gray dial \u00b7 40mm \u00b7 Calfskin",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5226g-001-4098dc.webp",
   "featured": false,
   "sold": false
@@ -2388,7 +2388,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Gray",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Gray dial · 40mm · Calfskin",
+  "description": "18K White Gold \u00b7 Blue-Gray dial \u00b7 40mm \u00b7 Calfskin",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-6007g-011-780135.webp",
   "featured": false,
   "sold": false
@@ -2402,7 +2402,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 36mm · Alligator Leather",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 36mm \u00b7 Alligator Leather",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5027r-001-8d8195.webp",
   "featured": false,
   "sold": false
@@ -2410,13 +2410,13 @@
  {
   "id": "dbh-patek-philippe-calatrava-5227g-015-98f4c1",
   "brand": "Patek Philippe",
-  "model": "Calatrava 5227G — Salmon Rose-Gilt Dial",
+  "model": "Calatrava 5227G \u2014 Salmon Rose-Gilt Dial",
   "ref": "5227G-015",
   "year": "2026",
   "caseMaterial": "18K White Gold",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "18K White Gold · Salmon dial · 39mm · Alligator Leather",
+  "description": "18K White Gold \u00b7 Salmon dial \u00b7 39mm \u00b7 Alligator Leather",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5227g-015-98f4c1.webp",
   "featured": false,
   "sold": false
@@ -2430,7 +2430,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "950 Platinum · Salmon dial",
+  "description": "950 Platinum \u00b7 Salmon dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-6196p-001-009c17.webp",
   "featured": false,
   "sold": false
@@ -2444,7 +2444,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 40mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-6007a-001-a2b2fa.webp",
   "featured": false,
   "sold": false
@@ -2458,7 +2458,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "Stainless Steel · Grey dial",
+  "description": "Stainless Steel \u00b7 Grey dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-7234a-001-43a0d6.webp",
   "featured": false,
   "sold": false
@@ -2472,7 +2472,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Ivory",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Ivory dial",
+  "description": "18K Rose Gold \u00b7 Ivory dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5227r-001-e6299f.webp",
   "featured": false,
   "sold": false
@@ -2486,7 +2486,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial",
+  "description": "18K White Gold \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5328g-001-a14480.webp",
   "featured": false,
   "sold": false
@@ -2500,7 +2500,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K White Gold · Grey dial",
+  "description": "18K White Gold \u00b7 Grey dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-6119g-001-fc0f59.webp",
   "featured": false,
   "sold": false
@@ -2514,7 +2514,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Ice Blue dial · 35mm",
+  "description": "18K White Gold \u00b7 Ice Blue dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-7200-50g-012-a8978e.webp",
   "featured": false,
   "sold": false
@@ -2528,7 +2528,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Ivory",
   "condition": "Brand New",
-  "description": "18K White Gold · Ivory dial",
+  "description": "18K White Gold \u00b7 Ivory dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-5524g-010-5f6894.webp",
   "featured": false,
   "sold": false
@@ -2542,7 +2542,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Sand Beige",
   "condition": "Brand New",
-  "description": "18K White Gold · Sand Beige dial · 35mm",
+  "description": "18K White Gold \u00b7 Sand Beige dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-calatrava-7200-50g-001-fed5a5.webp",
   "featured": false,
   "sold": false
@@ -2556,7 +2556,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 47mm · Rubber Strap",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 47mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-patek-philippe-celestial-6105g-001-bf1a28.webp",
   "featured": false,
   "sold": false
@@ -2570,7 +2570,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silver dial · 38mm",
+  "description": "18K Rose Gold \u00b7 Silver dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-7150-250r-001-47cb28.webp",
   "featured": false,
   "sold": false
@@ -2584,7 +2584,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "950 Platinum · 39.5mm",
+  "description": "950 Platinum \u00b7 39.5mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5131-1p-001-37cfef.webp",
   "featured": false,
   "sold": false
@@ -2598,7 +2598,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 40.5mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 40.5mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5961p-001-533f26.webp",
   "featured": false,
   "sold": false
@@ -2612,7 +2612,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 42mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5905p-001-439e58.webp",
   "featured": false,
   "sold": false
@@ -2626,7 +2626,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "950 Platinum · Green dial · 40mm",
+  "description": "950 Platinum \u00b7 Green dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5930p-001-104424.webp",
   "featured": false,
   "sold": false
@@ -2640,7 +2640,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 38mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-4947-1a-001-7fec35.webp",
   "featured": false,
   "sold": false
@@ -2654,7 +2654,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 42mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5905-1a-001-d485ae.webp",
   "featured": false,
   "sold": false
@@ -2668,7 +2668,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Opaline Salmon",
   "condition": "Brand New",
-  "description": "Stainless Steel · Opaline Salmon dial · 41mm",
+  "description": "Stainless Steel \u00b7 Opaline Salmon dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5935a-001-147b32.webp",
   "featured": false,
   "sold": false
@@ -2682,7 +2682,7 @@
   "caseMaterial": "",
   "dialColor": "Opaline Salmon",
   "condition": "Brand New",
-  "description": "Opaline Salmon dial · 41mm",
+  "description": "Opaline Salmon dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5935a-001-ef8a17.webp",
   "featured": false,
   "sold": false
@@ -2710,7 +2710,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 38mm",
+  "description": "18K Rose Gold \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-4946r-001-2f9ad0.webp",
   "featured": false,
   "sold": false
@@ -2724,7 +2724,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Beige dial · 38.5mm",
+  "description": "18K Rose Gold \u00b7 Beige dial \u00b7 38.5mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5396r-016-add048.webp",
   "featured": false,
   "sold": false
@@ -2738,7 +2738,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5224r-001-9455d8.webp",
   "featured": false,
   "sold": false
@@ -2752,7 +2752,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Diamond dial · 38mm",
+  "description": "18K Rose Gold \u00b7 Diamond dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5396r-015-6fcb67.webp",
   "featured": false,
   "sold": false
@@ -2766,7 +2766,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Olive Green dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Olive Green dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5205r-011-46cbd1.webp",
   "featured": false,
   "sold": false
@@ -2780,7 +2780,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · White dial · 38mm",
+  "description": "18K Rose Gold \u00b7 White dial \u00b7 38mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-4947r-001-62f202.webp",
   "featured": false,
   "sold": false
@@ -2794,7 +2794,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · White dial",
+  "description": "18K Rose Gold \u00b7 White dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-7130r-013-a113b7.webp",
   "featured": false,
   "sold": false
@@ -2808,7 +2808,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silver Opaline",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silver Opaline dial · 40mm",
+  "description": "Stainless Steel \u00b7 Silver Opaline dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5212a-001-888481.webp",
   "featured": false,
   "sold": false
@@ -2822,7 +2822,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 38.5mm",
+  "description": "18K White Gold \u00b7 38.5mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5231g-001-75b1be.webp",
   "featured": false,
   "sold": false
@@ -2836,7 +2836,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 36mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-7130g-016-ca3a64.webp",
   "featured": false,
   "sold": false
@@ -2850,7 +2850,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5172g-001-1b4e74.webp",
   "featured": false,
   "sold": false
@@ -2864,7 +2864,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 39mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5330g-001-777176.webp",
   "featured": false,
   "sold": false
@@ -2878,7 +2878,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5205g-013-483935.webp",
   "featured": false,
   "sold": false
@@ -2892,7 +2892,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial",
+  "description": "18K White Gold \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5396g-017-4262ff.webp",
   "featured": false,
   "sold": false
@@ -2906,7 +2906,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial",
+  "description": "18K White Gold \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5930g-010-09470c.webp",
   "featured": false,
   "sold": false
@@ -2920,7 +2920,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Gray",
   "condition": "Brand New",
-  "description": "18K White Gold · Gray dial",
+  "description": "18K White Gold \u00b7 Gray dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5924g-001-c4eb45.webp",
   "featured": false,
   "sold": false
@@ -2934,7 +2934,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Green dial · 42mm",
+  "description": "18K White Gold \u00b7 Green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5924g-010-5a4e5c.webp",
   "featured": false,
   "sold": false
@@ -2948,7 +2948,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K White Gold · Grey dial · 41mm",
+  "description": "18K White Gold \u00b7 Grey dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5326g-001-c84a52.webp",
   "featured": false,
   "sold": false
@@ -2962,7 +2962,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Red",
   "condition": "Brand New",
-  "description": "18K White Gold · Red dial",
+  "description": "18K White Gold \u00b7 Red dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5930g-011-cce404.webp",
   "featured": false,
   "sold": false
@@ -2976,7 +2976,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "18K White Gold · Silver dial",
+  "description": "18K White Gold \u00b7 Silver dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-5396g-011-4a116c.webp",
   "featured": false,
   "sold": false
@@ -2990,7 +2990,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Red",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Red dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 Red dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-complications-7129j-001-13ba1b.webp",
   "featured": false,
   "sold": false
@@ -3004,7 +3004,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 45mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 45mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-5822p-001-2de485.webp",
   "featured": false,
   "sold": false
@@ -3018,7 +3018,7 @@
   "caseMaterial": "",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Blue dial · 45mm",
+  "description": "Blue dial \u00b7 45mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-5821-1ar-001-412465.webp",
   "featured": false,
   "sold": false
@@ -3032,7 +3032,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 45mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 45mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-5821-1a-001-945e6b.webp",
   "featured": false,
   "sold": false
@@ -3046,7 +3046,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Skeleton",
   "condition": "Brand New",
-  "description": "950 Platinum · Skeleton dial · 45mm · Composite",
+  "description": "950 Platinum \u00b7 Skeleton dial \u00b7 45mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-perpetual-calendar-skeleton-5840p-001-2310c6.webp",
   "featured": false,
   "sold": false
@@ -3060,7 +3060,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-7128-1r-001-e23676.webp",
   "featured": false,
   "sold": false
@@ -3074,7 +3074,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-cubitus-7128-1g-001-e035b7.webp",
   "featured": false,
   "sold": false
@@ -3088,7 +3088,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Olive Green dial · 31mm",
+  "description": "18K White Gold \u00b7 Olive Green dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-golden-ellipse-3738-100g-014-fb3fa1.webp",
   "featured": false,
   "sold": false
@@ -3102,7 +3102,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Olive Green dial",
+  "description": "18K White Gold \u00b7 Olive Green dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-golden-ellipse-5738g-001-d316af.webp",
   "featured": false,
   "sold": false
@@ -3130,7 +3130,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 41mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270p-016-3d9497.webp",
   "featured": false,
   "sold": false
@@ -3144,7 +3144,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 44mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-6104p-010-95acaf.webp",
   "featured": false,
   "sold": false
@@ -3158,7 +3158,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 44mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-6104-13p-010-e07ae3.webp",
   "featured": false,
   "sold": false
@@ -3172,7 +3172,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 40mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5370p-011-ae189b.webp",
   "featured": false,
   "sold": false
@@ -3186,7 +3186,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "950 Platinum · Green dial · 41mm",
+  "description": "950 Platinum \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270p-014-c621fa.webp",
   "featured": false,
   "sold": false
@@ -3200,7 +3200,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "950 Platinum · Grey dial · 41mm",
+  "description": "950 Platinum \u00b7 Grey dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270p-015-948370.webp",
   "featured": false,
   "sold": false
@@ -3214,7 +3214,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Red",
   "condition": "Brand New",
-  "description": "950 Platinum · Red dial · 41mm",
+  "description": "950 Platinum \u00b7 Red dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270p-017-f26c03.webp",
   "featured": false,
   "sold": false
@@ -3228,7 +3228,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "950 Platinum · Salmon dial · 41mm",
+  "description": "950 Platinum \u00b7 Salmon dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5308p-010-a66cd0.webp",
   "featured": false,
   "sold": false
@@ -3242,7 +3242,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "950 Platinum · Salmon dial · 41mm",
+  "description": "950 Platinum \u00b7 Salmon dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270p-001-18f12d.webp",
   "featured": false,
   "sold": false
@@ -3256,7 +3256,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 44mm",
+  "description": "18K Rose Gold \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5520rg-001-87f5a3.webp",
   "featured": false,
   "sold": false
@@ -3284,7 +3284,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270-1r-001-390a47.webp",
   "featured": false,
   "sold": false
@@ -3298,7 +3298,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 44mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5102pr-001-2d1f88.webp",
   "featured": false,
   "sold": false
@@ -3312,7 +3312,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Enamel",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Enamel dial · 41mm",
+  "description": "18K Rose Gold \u00b7 Enamel dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5370r-001-799b4e.webp",
   "featured": false,
   "sold": false
@@ -3326,7 +3326,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5322g-001-facb92.webp",
   "featured": false,
   "sold": false
@@ -3340,7 +3340,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5308g-001-2404de.webp",
   "featured": false,
   "sold": false
@@ -3354,7 +3354,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Green dial · 41mm",
+  "description": "18K White Gold \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5322g-010-bb194e.webp",
   "featured": false,
   "sold": false
@@ -3368,7 +3368,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "18K White Gold · Salmon dial · 40mm",
+  "description": "18K White Gold \u00b7 Salmon dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5320g-011-749ecd.webp",
   "featured": false,
   "sold": false
@@ -3382,7 +3382,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 41mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-grand-complications-5270j-001-9879b7.webp",
   "featured": false,
   "sold": false
@@ -3396,7 +3396,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 41mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-in-line-perpetual-calendar-5236p-001-9dbd97.webp",
   "featured": false,
   "sold": false
@@ -3410,7 +3410,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Salmon",
   "condition": "Brand New",
-  "description": "950 Platinum · Salmon dial",
+  "description": "950 Platinum \u00b7 Salmon dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-in-line-perpetual-calendar-5236p-010-961d88.webp",
   "featured": false,
   "sold": false
@@ -3424,7 +3424,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Silvery",
   "condition": "Brand New",
-  "description": "950 Platinum · Silvery dial · 41mm",
+  "description": "950 Platinum \u00b7 Silvery dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-in-line-perpetual-calendar-5236p-011-54ee41.webp",
   "featured": false,
   "sold": false
@@ -3432,13 +3432,13 @@
  {
   "id": "dbh-patek-philippe-minute-repeater-7047g-001-00db5f",
   "brand": "Patek Philippe",
-  "model": "Minute Repeater 7047G — Navy Carbon Dial",
+  "model": "Minute Repeater 7047G \u2014 Navy Carbon Dial",
   "ref": "7047G-001",
   "year": "2026",
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 38mm · Composite",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 38mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-minute-repeater-7047g-001-00db5f.webp",
   "featured": false,
   "sold": false
@@ -3446,13 +3446,13 @@
  {
   "id": "dbh-patek-philippe-minute-repeater-perpetual-calendar-5374-400p-001-843a4d",
   "brand": "Patek Philippe",
-  "model": "Minute Repeater Perpetual Calendar 5374/400P — Paraiba",
+  "model": "Minute Repeater Perpetual Calendar 5374/400P \u2014 Paraiba",
   "ref": "5374/400P-001",
   "year": "2026",
   "caseMaterial": "950 Platinum",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "950 Platinum · Silver dial · 42mm · Alligator Leather",
+  "description": "950 Platinum \u00b7 Silver dial \u00b7 42mm \u00b7 Alligator Leather",
   "image": "images/pieces/dbh/dbh-patek-philippe-minute-repeater-perpetual-calendar-5374-400p-001-843a4d.webp",
   "featured": false,
   "sold": false
@@ -3466,7 +3466,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown Gradient",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown Gradient dial · 40mm · Rose Gold Bracelet",
+  "description": "18K Rose Gold \u00b7 Brown Gradient dial \u00b7 40mm \u00b7 Rose Gold Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5712-1r-001-48d833.webp",
   "featured": false,
   "sold": false
@@ -3480,7 +3480,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Black Gradient dial · 41mm · White Gold Bracelet",
+  "description": "18K White Gold \u00b7 Blue-Black Gradient dial \u00b7 41mm \u00b7 White Gold Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5811-1g-001-314c20.webp",
   "featured": false,
   "sold": false
@@ -3502,13 +3502,13 @@
  {
   "id": "dbh-patek-philippe-nautilus-5610-1p-001-79e8d9",
   "brand": "Patek Philippe",
-  "model": "Nautilus 5610/1P — 50 Years of Nautilus, Platinum",
+  "model": "Nautilus 5610/1P \u2014 50 Years of Nautilus, Platinum",
   "ref": "5610/1P-001",
   "year": "2026",
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 38mm · Platinum Bracelet",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 38mm \u00b7 Platinum Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5610-1p-001-79e8d9.webp",
   "featured": false,
   "sold": false
@@ -3516,13 +3516,13 @@
  {
   "id": "dbh-patek-philippe-nautilus-5810g-001-fce8c5",
   "brand": "Patek Philippe",
-  "model": "Nautilus 5810G — 50 Years of Nautilus, White Gold",
+  "model": "Nautilus 5810G \u2014 50 Years of Nautilus, White Gold",
   "ref": "5810G-001",
   "year": "2026",
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm · Composite",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5810g-001-fce8c5.webp",
   "featured": false,
   "sold": false
@@ -3536,7 +3536,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue-Black Gradient dial · 40.5mm · Composite",
+  "description": "Stainless Steel \u00b7 Blue-Black Gradient dial \u00b7 40.5mm \u00b7 Composite",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-annual-calendar-5726a-001-3806ba.webp",
   "featured": false,
   "sold": false
@@ -3550,7 +3550,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Olive Green dial · 40.5mm · Stainless Steel Bracelet",
+  "description": "Stainless Steel \u00b7 Olive Green dial \u00b7 40.5mm \u00b7 Stainless Steel Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-annual-calendar-5726-1a-014-ca4301.webp",
   "featured": false,
   "sold": false
@@ -3564,7 +3564,7 @@
   "caseMaterial": "",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Blue dial · 35mm",
+  "description": "Blue dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1200a-001-daed44.webp",
   "featured": false,
   "sold": false
@@ -3578,7 +3578,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 35mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1a-001-0b58cb.webp",
   "featured": false,
   "sold": false
@@ -3592,7 +3592,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial",
+  "description": "Stainless Steel \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5990-1a-011-2c080a.webp",
   "featured": false,
   "sold": false
@@ -3606,7 +3606,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial",
+  "description": "Stainless Steel \u00b7 Blue dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5712-1a-001-559b38.webp",
   "featured": false,
   "sold": false
@@ -3634,7 +3634,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 40mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5712-1a-001-618d9d.webp",
   "featured": false,
   "sold": false
@@ -3648,7 +3648,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Black Gradient dial · 40.5mm · White Gold Bracelet",
+  "description": "18K White Gold \u00b7 Blue-Black Gradient dial \u00b7 40.5mm \u00b7 White Gold Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-chronograph-5980-60g-001-7413a8.webp",
   "featured": false,
   "sold": false
@@ -3662,7 +3662,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue-Black Gradient",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue-Black Gradient dial · 40mm · White Gold Bracelet",
+  "description": "18K White Gold \u00b7 Blue-Black Gradient dial \u00b7 40mm \u00b7 White Gold Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-perpetual-calendar-5740-1g-001-8bf870.webp",
   "featured": false,
   "sold": false
@@ -3676,7 +3676,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 32mm",
+  "description": "18K Rose Gold \u00b7 32mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7010-1r-013-79715f.webp",
   "featured": false,
   "sold": false
@@ -3690,7 +3690,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 35mm",
+  "description": "18K Rose Gold \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1200r-010-903974.webp",
   "featured": false,
   "sold": false
@@ -3704,7 +3704,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 40mm",
+  "description": "18K Rose Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5711-1r-001-2d9c3b.webp",
   "featured": false,
   "sold": false
@@ -3732,7 +3732,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial",
+  "description": "18K Rose Gold \u00b7 Black dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5980-1r-001-fad98e.webp",
   "featured": false,
   "sold": false
@@ -3746,7 +3746,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Champagne Golden",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Champagne Golden dial · 35mm",
+  "description": "18K Rose Gold \u00b7 Champagne Golden dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1r-010-1c4cab.webp",
   "featured": false,
   "sold": false
@@ -3760,7 +3760,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Purple",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Purple dial",
+  "description": "18K Rose Gold \u00b7 Purple dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7010r-013-1870ee.webp",
   "featured": false,
   "sold": false
@@ -3774,7 +3774,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silvery Opaline",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silvery Opaline dial",
+  "description": "18K Rose Gold \u00b7 Silvery Opaline dial",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1r-001-792292.webp",
   "featured": false,
   "sold": false
@@ -3788,7 +3788,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silvery Opaline",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silvery Opaline dial · 35mm",
+  "description": "Stainless Steel \u00b7 Silvery Opaline dial \u00b7 35mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-7118-1a-010-375d9e.webp",
   "featured": false,
   "sold": false
@@ -3802,7 +3802,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black-Brown Gradient",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black-Brown Gradient dial · 40.5mm · Rose Gold Bracelet",
+  "description": "18K Rose Gold \u00b7 Black-Brown Gradient dial \u00b7 40.5mm \u00b7 Rose Gold Bracelet",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-travel-time-chronograph-5990-1r-001-43930b.webp",
   "featured": false,
   "sold": false
@@ -3816,7 +3816,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 41mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5810-1g-001-ec773e.webp",
   "featured": false,
   "sold": false
@@ -3830,7 +3830,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "18K White Gold · Diamond dial · 41mm",
+  "description": "18K White Gold \u00b7 Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-nautilus-5811-1460g-001-4c1c4c.webp",
   "featured": false,
   "sold": false
@@ -3838,13 +3838,13 @@
  {
   "id": "dbh-patek-philippe-split-seconds-chronograph-perpetual-calendar-5204g-010-3f4d3a",
   "brand": "Patek Philippe",
-  "model": "Split-Seconds Chronograph Perpetual Calendar 5204G — Navy",
+  "model": "Split-Seconds Chronograph Perpetual Calendar 5204G \u2014 Navy",
   "ref": "5204G-010",
   "year": "2026",
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm · Alligator Leather",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm \u00b7 Alligator Leather",
   "image": "images/pieces/dbh/dbh-patek-philippe-split-seconds-chronograph-perpetual-calendar-5204g-010-3f4d3a.webp",
   "featured": false,
   "sold": false
@@ -3852,13 +3852,13 @@
  {
   "id": "dbh-patek-philippe-the-crow-and-the-fox-5249r-001-28192e",
   "brand": "Patek Philippe",
-  "model": "The Crow and the Fox 5249R — Automaton",
+  "model": "The Crow and the Fox 5249R \u2014 Automaton",
   "ref": "5249R-001",
   "year": "2026",
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Engraved Gold",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Engraved Gold dial · 43mm · Alligator Leather",
+  "description": "18K Rose Gold \u00b7 Engraved Gold dial \u00b7 43mm \u00b7 Alligator Leather",
   "image": "images/pieces/dbh/dbh-patek-philippe-the-crow-and-the-fox-5249r-001-28192e.webp",
   "featured": false,
   "sold": false
@@ -3872,7 +3872,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 25mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 25mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-twenty-4-4910-1200a-001-5e0d31.webp",
   "featured": false,
   "sold": false
@@ -3886,7 +3886,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Olive Green dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Olive Green dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-twenty-4-7340-1r-010-af8bfb.webp",
   "featured": false,
   "sold": false
@@ -3900,7 +3900,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Purple",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Purple dial · 25mm",
+  "description": "18K Rose Gold \u00b7 Purple dial \u00b7 25mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-twenty-4-4910-1201r-010-ae853e.webp",
   "featured": false,
   "sold": false
@@ -3914,7 +3914,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Silver dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Silver dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-patek-philippe-twenty-4-7340-1r-001-151fcc.webp",
   "featured": false,
   "sold": false
@@ -3984,7 +3984,7 @@
   "caseMaterial": "Aluminum Alloy",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Aluminum Alloy · Skeleton dial · 39.7mm · Fabric Strap",
+  "description": "Aluminum Alloy \u00b7 Skeleton dial \u00b7 39.7mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-035-rm035-dbdd5b.webp",
   "featured": false,
   "sold": false
@@ -4138,7 +4138,7 @@
   "caseMaterial": "Carbon TPT",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Carbon TPT · Skeleton dial · 38.4mm · Fabric Strap",
+  "description": "Carbon TPT \u00b7 Skeleton dial \u00b7 38.4mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-27-04-rm27-04-a02406.webp",
   "featured": false,
   "sold": false
@@ -4152,7 +4152,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "18K Rose Gold · Skeleton dial · 42.7mm · Rubber Strap",
+  "description": "18K Rose Gold \u00b7 Skeleton dial \u00b7 42.7mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-30-01-rm30-01-16bf7d.webp",
   "featured": false,
   "sold": false
@@ -4180,7 +4180,7 @@
   "caseMaterial": "Carbon TPT",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Carbon TPT · Skeleton dial · 42.7mm · Fabric Strap",
+  "description": "Carbon TPT \u00b7 Skeleton dial \u00b7 42.7mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-35-02-rm35-02-a54210.webp",
   "featured": false,
   "sold": false
@@ -4194,7 +4194,7 @@
   "caseMaterial": "Carbon TPT",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Carbon TPT · Skeleton dial · 42.7mm · Rubber Strap",
+  "description": "Carbon TPT \u00b7 Skeleton dial \u00b7 42.7mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-35-03-rm35-03-17a1d9.webp",
   "featured": false,
   "sold": false
@@ -4264,7 +4264,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "18K White Gold · Skeleton dial · 38.7mm · Rubber Strap",
+  "description": "18K White Gold \u00b7 Skeleton dial \u00b7 38.7mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-67-01-rm67-01-302d5b.webp",
   "featured": false,
   "sold": false
@@ -4278,7 +4278,7 @@
   "caseMaterial": "White Quartz TPT",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "White Quartz TPT · Skeleton dial · 38.7mm · Fabric Strap",
+  "description": "White Quartz TPT \u00b7 Skeleton dial \u00b7 38.7mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-67-02-rm67-02-58fddd.webp",
   "featured": false,
   "sold": false
@@ -4292,7 +4292,7 @@
   "caseMaterial": "Red Quartz TPT",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Red Quartz TPT · Skeleton dial · 38.7mm · Fabric Strap",
+  "description": "Red Quartz TPT \u00b7 Skeleton dial \u00b7 38.7mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-67-02-rm67-02-412177.webp",
   "featured": false,
   "sold": false
@@ -4306,7 +4306,7 @@
   "caseMaterial": "Carbon TPT",
   "dialColor": "Skeleton/Multicolor",
   "condition": "Excellent",
-  "description": "Carbon TPT · Skeleton/Multicolor dial · 38.7mm · Fabric Strap",
+  "description": "Carbon TPT \u00b7 Skeleton/Multicolor dial \u00b7 38.7mm \u00b7 Fabric Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-67-02-rm67-02-66c79f.webp",
   "featured": false,
   "sold": false
@@ -4320,7 +4320,7 @@
   "caseMaterial": "Black Ceramic",
   "dialColor": "Skeleton",
   "condition": "Excellent",
-  "description": "Black Ceramic · Skeleton dial · 38.4mm · Rubber Strap",
+  "description": "Black Ceramic \u00b7 Skeleton dial \u00b7 38.4mm \u00b7 Rubber Strap",
   "image": "images/pieces/dbh/dbh-richard-mille-rm-72-01-rm72-01-26a656.webp",
   "featured": false,
   "sold": false
@@ -4334,7 +4334,7 @@
   "caseMaterial": "18ct White Gold",
   "dialColor": "Silver/Steel",
   "condition": "Brand New",
-  "description": "18ct White Gold · Silver/Steel dial · 40mm · Oysterflex",
+  "description": "18ct White Gold \u00b7 Silver/Steel dial \u00b7 40mm \u00b7 Oysterflex",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126519ln-0bcfb2.webp",
   "featured": false,
   "sold": false
@@ -4348,7 +4348,7 @@
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "Turquoise Green",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · Turquoise Green dial · 40mm · Oyster",
+  "description": "18ct Yellow Gold \u00b7 Turquoise Green dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126508-bce19f.webp",
   "featured": false,
   "sold": false
@@ -4362,7 +4362,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Oystersteel · White dial · 40mm · Oyster",
+  "description": "Oystersteel \u00b7 White dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126500ln-88892d.webp",
   "featured": false,
   "sold": false
@@ -4376,7 +4376,7 @@
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "Turquoise Green",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · Turquoise Green dial · 40mm · Oysterflex",
+  "description": "18ct Yellow Gold \u00b7 Turquoise Green dial \u00b7 40mm \u00b7 Oysterflex",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126518ln-ac3c13.webp",
   "featured": false,
   "sold": false
@@ -4384,13 +4384,13 @@
  {
   "id": "dbh-rolex-cosmograph-daytona-126502-0001-ee7d65",
   "brand": "Rolex",
-  "model": "Cosmograph Daytona — Rolesium, White Enamel Dial",
+  "model": "Cosmograph Daytona \u2014 Rolesium, White Enamel Dial",
   "ref": "126502-0001",
   "year": "2026",
   "caseMaterial": "Oystersteel & Platinum",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Oystersteel & Platinum · White dial · 40mm · Oyster",
+  "description": "Oystersteel & Platinum \u00b7 White dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126502-0001-ee7d65.webp",
   "featured": false,
   "sold": false
@@ -4404,7 +4404,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Arabic",
   "condition": "Brand New",
-  "description": "950 Platinum · Arabic dial · 40mm",
+  "description": "950 Platinum \u00b7 Arabic dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116506-5479d4.webp",
   "featured": false,
   "sold": false
@@ -4418,7 +4418,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue Baguette Diamond",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue Baguette Diamond dial · 40mm",
+  "description": "950 Platinum \u00b7 Blue Baguette Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116506-0f85e4.webp",
   "featured": false,
   "sold": false
@@ -4432,7 +4432,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Pave Diamond",
   "condition": "Brand New",
-  "description": "950 Platinum · Pave Diamond dial · 40mm",
+  "description": "950 Platinum \u00b7 Pave Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116576tbr-15b4e4.webp",
   "featured": false,
   "sold": false
@@ -4446,7 +4446,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Oyster",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126500ln-84498c.webp",
   "featured": false,
   "sold": false
@@ -4460,7 +4460,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 40mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116500ln-80c475.webp",
   "featured": false,
   "sold": false
@@ -4474,7 +4474,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black Index",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black Index dial · 40mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black Index dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126503-6704ba.webp",
   "featured": false,
   "sold": false
@@ -4488,7 +4488,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 40mm · Oyster",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126506-7fd074.webp",
   "featured": false,
   "sold": false
@@ -4502,7 +4502,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 40mm",
+  "description": "18K Rose Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126515ln-a54d57.webp",
   "featured": false,
   "sold": false
@@ -4516,7 +4516,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 40mm",
+  "description": "18K Rose Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116515ln-f92a5b.webp",
   "featured": false,
   "sold": false
@@ -4530,7 +4530,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black and Sundust",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black and Sundust dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Black and Sundust dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126515ln-21cb25.webp",
   "featured": false,
   "sold": false
@@ -4544,7 +4544,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126505-7695af.webp",
   "featured": false,
   "sold": false
@@ -4558,7 +4558,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126505-1705c4.webp",
   "featured": false,
   "sold": false
@@ -4572,7 +4572,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126525ln-327549.webp",
   "featured": false,
   "sold": false
@@ -4586,7 +4586,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Chocolate dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Chocolate dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116515ln-3e10f2.webp",
   "featured": false,
   "sold": false
@@ -4600,7 +4600,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Chocolate dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Chocolate dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126505-f3d801.webp",
   "featured": false,
   "sold": false
@@ -4614,7 +4614,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Chocolate dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Chocolate dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126515ln-5ef6ea.webp",
   "featured": false,
   "sold": false
@@ -4628,7 +4628,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Meteorite",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Meteorite dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Meteorite dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116515ln-9ddeb0.webp",
   "featured": false,
   "sold": false
@@ -4642,7 +4642,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Pave Diamond",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Pave Diamond dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Pave Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126595rbow-e09e62.webp",
   "featured": false,
   "sold": false
@@ -4656,7 +4656,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Sundust",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Sundust dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Sundust dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126505-cc0bdd.webp",
   "featured": false,
   "sold": false
@@ -4670,7 +4670,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 40mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126599tru-d5e23a.webp",
   "featured": false,
   "sold": false
@@ -4684,7 +4684,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 40mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116519ln-11d7e6.webp",
   "featured": false,
   "sold": false
@@ -4698,7 +4698,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black Diamond",
   "condition": "Brand New",
-  "description": "18K White Gold · Black Diamond dial · 40mm",
+  "description": "18K White Gold \u00b7 Black Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126509-15d960.webp",
   "featured": false,
   "sold": false
@@ -4712,7 +4712,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116509-d71fd9.webp",
   "featured": false,
   "sold": false
@@ -4726,7 +4726,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Meteorite",
   "condition": "Brand New",
-  "description": "18K White Gold · Meteorite dial · 40mm",
+  "description": "18K White Gold \u00b7 Meteorite dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116509-e9c4ae.webp",
   "featured": false,
   "sold": false
@@ -4740,7 +4740,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Silver Sheen Obsidian",
   "condition": "Brand New",
-  "description": "18K White Gold · Silver Sheen Obsidian dial · 40mm",
+  "description": "18K White Gold \u00b7 Silver Sheen Obsidian dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126599tsa-0bf335.webp",
   "featured": false,
   "sold": false
@@ -4754,7 +4754,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White Grand Feu Enamel",
   "condition": "Brand New",
-  "description": "Stainless Steel · White Grand Feu Enamel dial · 40mm",
+  "description": "Stainless Steel \u00b7 White Grand Feu Enamel dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126502-1756b3.webp",
   "featured": false,
   "sold": false
@@ -4768,7 +4768,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White Panda",
   "condition": "Brand New",
-  "description": "Stainless Steel · White Panda dial · 40mm",
+  "description": "Stainless Steel \u00b7 White Panda dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116500ln-db1808.webp",
   "featured": false,
   "sold": false
@@ -4782,7 +4782,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 40mm",
+  "description": "18K Yellow Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116598tbr-6c8c31.webp",
   "featured": false,
   "sold": false
@@ -4796,7 +4796,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial · 40mm",
+  "description": "18K Yellow Gold \u00b7 Green dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116508-e2d5ec.webp",
   "featured": false,
   "sold": false
@@ -4810,7 +4810,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Turquoise",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Turquoise dial · 40mm",
+  "description": "18K Yellow Gold \u00b7 Turquoise dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-126538tbr-b8b67f.webp",
   "featured": false,
   "sold": false
@@ -4824,7 +4824,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 40mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-cosmograph-daytona-116518ln-2b4dfc.webp",
   "featured": false,
   "sold": false
@@ -4838,7 +4838,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 41mm",
+  "description": "Stainless Steel \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126331-bc51b3.webp",
   "featured": false,
   "sold": false
@@ -4866,7 +4866,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Mother of Pearl Diamond",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Mother of Pearl Diamond dial · 28mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Mother of Pearl Diamond dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-28-279173-792f8f.webp",
   "featured": false,
   "sold": false
@@ -4880,7 +4880,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pink Diamond",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pink Diamond dial · 28mm",
+  "description": "Stainless Steel \u00b7 Pink Diamond dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-28-279174-5a04d1.webp",
   "featured": false,
   "sold": false
@@ -4894,7 +4894,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Olive Green dial · 28mm",
+  "description": "18K Rose Gold \u00b7 Olive Green dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-28-279175-c1e4ce.webp",
   "featured": false,
   "sold": false
@@ -4908,7 +4908,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial · 28mm",
+  "description": "18K Yellow Gold \u00b7 Champagne dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-28-279138rbr-c99796.webp",
   "featured": false,
   "sold": false
@@ -4922,7 +4922,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Silver Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Silver Diamond dial · 31mm",
+  "description": "18K Yellow Gold \u00b7 Silver Diamond dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-28-279178-efc59c.webp",
   "featured": false,
   "sold": false
@@ -4936,7 +4936,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 31mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278274-b7d9f8.webp",
   "featured": false,
   "sold": false
@@ -4950,7 +4950,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 31mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278274-1b87b1.webp",
   "featured": false,
   "sold": false
@@ -4964,7 +4964,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Mother of Pearl Diamond",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Mother of Pearl Diamond dial · 31mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Mother of Pearl Diamond dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278273-319fe7.webp",
   "featured": false,
   "sold": false
@@ -4978,7 +4978,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Mother of Pearl Diamond",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Mother of Pearl Diamond dial · 31mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Mother of Pearl Diamond dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278383rbr-a51345.webp",
   "featured": false,
   "sold": false
@@ -4992,7 +4992,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pink",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pink dial · 31mm",
+  "description": "Stainless Steel \u00b7 Pink dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278274-6b75d0.webp",
   "featured": false,
   "sold": false
@@ -5006,7 +5006,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pink Diamond",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pink Diamond dial · 31mm",
+  "description": "Stainless Steel \u00b7 Pink Diamond dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278274-6f88a0.webp",
   "featured": false,
   "sold": false
@@ -5020,7 +5020,7 @@
   "caseMaterial": "",
   "dialColor": "Purple",
   "condition": "Brand New",
-  "description": "Purple dial · 31mm",
+  "description": "Purple dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278381rbr-58a5cd.webp",
   "featured": false,
   "sold": false
@@ -5034,7 +5034,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Chocolate dial · 31mm",
+  "description": "18K Rose Gold \u00b7 Chocolate dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278275-836d4f.webp",
   "featured": false,
   "sold": false
@@ -5048,7 +5048,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Red",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Red dial · 31mm",
+  "description": "18K Yellow Gold \u00b7 Red dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-31-278288rbr-ac5e2b.webp",
   "featured": false,
   "sold": false
@@ -5062,7 +5062,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 36mm",
+  "description": "Stainless Steel \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126234-74bee0.webp",
   "featured": false,
   "sold": false
@@ -5076,7 +5076,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 36mm",
+  "description": "Stainless Steel \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126231-9636ef.webp",
   "featured": false,
   "sold": false
@@ -5090,7 +5090,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 36mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126200-883dfb.webp",
   "featured": false,
   "sold": false
@@ -5104,7 +5104,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Olive Green Palm Motif",
   "condition": "Brand New",
-  "description": "Stainless Steel · Olive Green Palm Motif dial · 36mm",
+  "description": "Stainless Steel \u00b7 Olive Green Palm Motif dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126234-18553a.webp",
   "featured": false,
   "sold": false
@@ -5118,7 +5118,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Olive Green dial · 31mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Olive Green dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126283rbr-989909.webp",
   "featured": false,
   "sold": false
@@ -5132,7 +5132,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White Roman",
   "condition": "Brand New",
-  "description": "Stainless Steel · White Roman dial · 36mm",
+  "description": "Stainless Steel \u00b7 White Roman dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-36-126233-219bea.webp",
   "featured": false,
   "sold": false
@@ -5146,7 +5146,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Slate (Wimbledon)",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Slate (Wimbledon) dial · 41mm · Jubilee",
+  "description": "Oystersteel & White Gold \u00b7 Slate (Wimbledon) dial \u00b7 41mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126334-bb7f1a.webp",
   "featured": false,
   "sold": false
@@ -5160,7 +5160,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 41mm",
+  "description": "Stainless Steel \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126303-b8d2cb.webp",
   "featured": false,
   "sold": false
@@ -5168,13 +5168,13 @@
  {
   "id": "dbh-rolex-datejust-41-126334-0033-d5a061",
   "brand": "Rolex",
-  "model": "Datejust 41 — Green Ombré, Jubilee",
+  "model": "Datejust 41 \u2014 Green Ombr\u00e9, Jubilee",
   "ref": "126334-0033",
   "year": "2026",
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Green dial · 41mm · Jubilee",
+  "description": "Oystersteel & White Gold \u00b7 Green dial \u00b7 41mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126334-0033-d5a061.webp",
   "featured": false,
   "sold": false
@@ -5182,13 +5182,13 @@
  {
   "id": "dbh-rolex-datejust-41-126334-0033-3c96bc",
   "brand": "Rolex",
-  "model": "Datejust 41 — Green Ombré, Oyster",
+  "model": "Datejust 41 \u2014 Green Ombr\u00e9, Oyster",
   "ref": "126334-0033",
   "year": "2026",
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Green dial · 41mm · Oyster",
+  "description": "Oystersteel & White Gold \u00b7 Green dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126334-0033-3c96bc.webp",
   "featured": false,
   "sold": false
@@ -5202,7 +5202,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Blue dial · 41mm · Jubilee",
+  "description": "Oystersteel & White Gold \u00b7 Blue dial \u00b7 41mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126334-5b9b9a.webp",
   "featured": false,
   "sold": false
@@ -5216,7 +5216,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Green dial · 41mm · Jubilee",
+  "description": "Oystersteel & White Gold \u00b7 Green dial \u00b7 41mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126334-dbc3f1.webp",
   "featured": false,
   "sold": false
@@ -5230,7 +5230,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue Roman",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue Roman dial · 41mm",
+  "description": "Stainless Steel \u00b7 Blue Roman dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126300-87ab7e.webp",
   "featured": false,
   "sold": false
@@ -5244,7 +5244,7 @@
   "caseMaterial": "",
   "dialColor": "Chocolate Diamond",
   "condition": "Brand New",
-  "description": "Chocolate Diamond dial · 41mm",
+  "description": "Chocolate Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126331-0c39c5.webp",
   "featured": false,
   "sold": false
@@ -5258,7 +5258,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Chocolate Diamond",
   "condition": "Brand New",
-  "description": "Stainless Steel · Chocolate Diamond dial · 41mm",
+  "description": "Stainless Steel \u00b7 Chocolate Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126301-ed44f0.webp",
   "featured": false,
   "sold": false
@@ -5272,7 +5272,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "Stainless Steel · Diamond dial · 41mm",
+  "description": "Stainless Steel \u00b7 Diamond dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-datejust-41-126281rbr-fa80d3.webp",
   "featured": false,
   "sold": false
@@ -5286,7 +5286,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 36mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128236-a98a73.webp",
   "featured": false,
   "sold": false
@@ -5300,7 +5300,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 36mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128396tbr-b82d6a.webp",
   "featured": false,
   "sold": false
@@ -5314,7 +5314,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue Diamond",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue Diamond dial · 36mm",
+  "description": "950 Platinum \u00b7 Ice Blue Diamond dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128236-183fba.webp",
   "featured": false,
   "sold": false
@@ -5328,7 +5328,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Pink Opal",
   "condition": "Brand New",
-  "description": "950 Platinum · Pink Opal dial · 36mm",
+  "description": "950 Platinum \u00b7 Pink Opal dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128396tbr-43b4ca.webp",
   "featured": false,
   "sold": false
@@ -5342,7 +5342,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Pave",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Pave dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Pave dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128345rbr-886251.webp",
   "featured": false,
   "sold": false
@@ -5356,7 +5356,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 36mm",
+  "description": "18K White Gold \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128239-a5ac67.webp",
   "featured": false,
   "sold": false
@@ -5370,7 +5370,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Pink Opal",
   "condition": "Brand New",
-  "description": "18K White Gold · Pink Opal dial",
+  "description": "18K White Gold \u00b7 Pink Opal dial",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128239-ffac71.webp",
   "featured": false,
   "sold": false
@@ -5384,7 +5384,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 36mm",
+  "description": "18K Yellow Gold \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-7585ba.webp",
   "featured": false,
   "sold": false
@@ -5398,7 +5398,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 36mm",
+  "description": "18K Yellow Gold \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-d06e87.webp",
   "featured": false,
   "sold": false
@@ -5412,7 +5412,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 Champagne dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-6b9ae6.webp",
   "featured": false,
   "sold": false
@@ -5426,7 +5426,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green Diamond Baguette",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green Diamond Baguette dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 Green Diamond Baguette dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-566b1f.webp",
   "featured": false,
   "sold": false
@@ -5440,7 +5440,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green Diamond dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 Green Diamond dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-dd655f.webp",
   "featured": false,
   "sold": false
@@ -5454,7 +5454,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Malachite Roman Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Malachite Roman Diamond dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 Malachite Roman Diamond dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-be74ab.webp",
   "featured": false,
   "sold": false
@@ -5468,7 +5468,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White Roman Numerals",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White Roman Numerals dial · 36mm",
+  "description": "18K Yellow Gold \u00b7 White Roman Numerals dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-36-128238-7762fa.webp",
   "featured": false,
   "sold": false
@@ -5476,13 +5476,13 @@
  {
   "id": "dbh-rolex-day-date-40-228235-532b27",
   "brand": "Rolex",
-  "model": "Day-Date 40 — Jubilee Gold, Green Dial, Diamonds",
+  "model": "Day-Date 40 \u2014 Jubilee Gold, Green Dial, Diamonds",
   "ref": "228235",
   "year": "2026",
   "caseMaterial": "Jubilee Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Jubilee Gold · Green dial · 40mm · President",
+  "description": "Jubilee Gold \u00b7 Green dial \u00b7 40mm \u00b7 President",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228235-532b27.webp",
   "featured": false,
   "sold": false
@@ -5496,7 +5496,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 40mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228206-696bfc.webp",
   "featured": false,
   "sold": false
@@ -5504,13 +5504,13 @@
  {
   "id": "dbh-rolex-day-date-40-228236-8ce8e9",
   "brand": "Rolex",
-  "model": "Day-Date 40 950 Platinum Pavé Diamond Dial",
+  "model": "Day-Date 40 950 Platinum Pav\u00e9 Diamond Dial",
   "ref": "228236",
   "year": "2023",
   "caseMaterial": "950 Platinum",
-  "dialColor": "Pavé Diamond",
+  "dialColor": "Pav\u00e9 Diamond",
   "condition": "Brand New",
-  "description": "950 Platinum · Pavé Diamond dial · 40mm",
+  "description": "950 Platinum \u00b7 Pav\u00e9 Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228236-8ce8e9.webp",
   "featured": false,
   "sold": false
@@ -5524,7 +5524,7 @@
   "caseMaterial": "",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "Diamond dial · 40mm",
+  "description": "Diamond dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228235jg-71ce1a.webp",
   "featured": false,
   "sold": false
@@ -5532,13 +5532,13 @@
  {
   "id": "dbh-rolex-day-date-40-228235-3d8e78",
   "brand": "Rolex",
-  "model": "Day-Date 40 Ombré",
+  "model": "Day-Date 40 Ombr\u00e9",
   "ref": "228235",
   "year": "2026",
   "caseMaterial": "18ct Everose Gold",
-  "dialColor": "Ombré",
+  "dialColor": "Ombr\u00e9",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Ombré dial · 40mm · President",
+  "description": "18ct Everose Gold \u00b7 Ombr\u00e9 dial \u00b7 40mm \u00b7 President",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228235-3d8e78.webp",
   "featured": false,
   "sold": false
@@ -5552,7 +5552,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 40mm",
+  "description": "18K Rose Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228345rbr-1e1dad.webp",
   "featured": false,
   "sold": false
@@ -5566,7 +5566,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black Diamond Baguette",
   "condition": "Brand New",
-  "description": "18K White Gold · Black Diamond Baguette dial · 40mm",
+  "description": "18K White Gold \u00b7 Black Diamond Baguette dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228349rbr-05c3c6.webp",
   "featured": false,
   "sold": false
@@ -5580,7 +5580,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 36mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228239-9c01e8.webp",
   "featured": false,
   "sold": false
@@ -5594,7 +5594,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 36mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228239-2a88a6.webp",
   "featured": false,
   "sold": false
@@ -5608,7 +5608,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228239-9f25f7.webp",
   "featured": false,
   "sold": false
@@ -5622,7 +5622,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Olive Green",
   "condition": "Brand New",
-  "description": "18K White Gold · Olive Green dial · 40mm",
+  "description": "18K White Gold \u00b7 Olive Green dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228349rbr-bfc2d0.webp",
   "featured": false,
   "sold": false
@@ -5636,7 +5636,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial",
+  "description": "18K Yellow Gold \u00b7 Green dial",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228348rbr-679ffd.webp",
   "featured": false,
   "sold": false
@@ -5650,7 +5650,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Blue dial · 40mm",
+  "description": "950 Platinum \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-40-228206-cfc49f.webp",
   "featured": false,
   "sold": false
@@ -5664,7 +5664,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Diamond",
   "condition": "Brand New",
-  "description": "950 Platinum · Diamond dial",
+  "description": "950 Platinum \u00b7 Diamond dial",
   "image": "images/pieces/dbh/dbh-rolex-day-date-18946-929056.webp",
   "featured": false,
   "sold": false
@@ -5678,7 +5678,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "18K White Gold · Silver dial · 36mm",
+  "description": "18K White Gold \u00b7 Silver dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-day-date-218239-2c9ea5.webp",
   "featured": false,
   "sold": false
@@ -5692,7 +5692,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Titanium · Black dial",
+  "description": "Titanium \u00b7 Black dial",
   "image": "images/pieces/dbh/dbh-rolex-deepsea-126067-fe09db.webp",
   "featured": false,
   "sold": false
@@ -5706,7 +5706,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 36mm · Oyster",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 36mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-explorer-124270-c4336b.webp",
   "featured": false,
   "sold": false
@@ -5720,7 +5720,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 40mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-224270-6fb06a.webp",
   "featured": false,
   "sold": false
@@ -5734,7 +5734,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "White (Polar)",
   "condition": "Brand New",
-  "description": "Oystersteel · White (Polar) dial · 42mm · Oyster",
+  "description": "Oystersteel \u00b7 White (Polar) dial \u00b7 42mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-explorer-ii-226570-02c1c3.webp",
   "featured": false,
   "sold": false
@@ -5748,7 +5748,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 42mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-explorer-ii-216570-91e52b.webp",
   "featured": false,
   "sold": false
@@ -5762,7 +5762,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Jubilee",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126710blnr-22c629.webp",
   "featured": false,
   "sold": false
@@ -5776,7 +5776,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Jubilee",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126710blro-1a6797.webp",
   "featured": false,
   "sold": false
@@ -5790,7 +5790,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Jubilee",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126720vtnr-8b7e3f.webp",
   "featured": false,
   "sold": false
@@ -5804,7 +5804,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Oyster",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126710blnr-633b07.webp",
   "featured": false,
   "sold": false
@@ -5818,7 +5818,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 40mm · Oyster",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126710grnr-ac0dff.webp",
   "featured": false,
   "sold": false
@@ -5832,7 +5832,7 @@
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Black dial · 40mm · Oysterflex",
+  "description": "18ct Everose Gold \u00b7 Black dial \u00b7 40mm \u00b7 Oysterflex",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126715chnr-7fca89.webp",
   "featured": false,
   "sold": false
@@ -5860,7 +5860,7 @@
   "caseMaterial": "",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Black dial · 40mm",
+  "description": "Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126711chnr-8b102a.webp",
   "featured": false,
   "sold": false
@@ -5874,7 +5874,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black dial · 40mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126713grnr-eb4951.webp",
   "featured": false,
   "sold": false
@@ -5888,7 +5888,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K White Gold · 40mm",
+  "description": "18K White Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126729vtnr-b0439b.webp",
   "featured": false,
   "sold": false
@@ -5902,7 +5902,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · 40mm",
+  "description": "18K Yellow Gold \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126718grnr-8a36fd.webp",
   "featured": false,
   "sold": false
@@ -5916,7 +5916,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 40mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-gmt-master-ii-126718grnr-84ef7b.webp",
   "featured": false,
   "sold": false
@@ -5930,7 +5930,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Black dial · 42mm · Oyster",
+  "description": "Oystersteel & White Gold \u00b7 Black dial \u00b7 42mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127334-a25dfa.webp",
   "featured": false,
   "sold": false
@@ -5944,7 +5944,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 40mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127386tbr-090e16.webp",
   "featured": false,
   "sold": false
@@ -5958,7 +5958,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 36mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127286tbr-f54764.webp",
   "featured": false,
   "sold": false
@@ -5972,7 +5972,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 36mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127236-adc400.webp",
   "featured": false,
   "sold": false
@@ -5986,7 +5986,7 @@
   "caseMaterial": "950 Platinum",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "950 Platinum · Ice Blue dial · 40mm",
+  "description": "950 Platinum \u00b7 Ice Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127336-2217c4.webp",
   "featured": false,
   "sold": false
@@ -6000,7 +6000,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "Stainless Steel · Intense White dial · 36mm",
+  "description": "Stainless Steel \u00b7 Intense White dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127234-8ac86a.webp",
   "featured": false,
   "sold": false
@@ -6014,7 +6014,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Intense White dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Intense White dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127285tbr-59083c.webp",
   "featured": false,
   "sold": false
@@ -6028,7 +6028,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Intense White dial · 40mm",
+  "description": "18K Rose Gold \u00b7 Intense White dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127385tbr-677e36.webp",
   "featured": false,
   "sold": false
@@ -6042,7 +6042,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Intense White dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Intense White dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127335-a461d0.webp",
   "featured": false,
   "sold": false
@@ -6056,7 +6056,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Intense White dial · 36mm",
+  "description": "18K Rose Gold \u00b7 Intense White dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-land-dweller-127235-08dcf2.webp",
   "featured": false,
   "sold": false
@@ -6064,13 +6064,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-28-276245rbr-0002-c7a09e",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 28 — Everose, Diamond Bezel, Brown MOP Dial",
+  "model": "Oyster Perpetual 28 \u2014 Everose, Diamond Bezel, Brown MOP Dial",
   "ref": "276245RBR-0002",
   "year": "2026",
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Brown dial · 28mm · Oyster",
+  "description": "18ct Everose Gold \u00b7 Brown dial \u00b7 28mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276245rbr-0002-c7a09e.webp",
   "featured": false,
   "sold": false
@@ -6078,13 +6078,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-28-276205-0002-f77a58",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 28 — Everose, White Dial (Blue Accents)",
+  "model": "Oyster Perpetual 28 \u2014 Everose, White Dial (Blue Accents)",
   "ref": "276205-0002",
   "year": "2026",
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · White dial · 28mm · Oyster",
+  "description": "18ct Everose Gold \u00b7 White dial \u00b7 28mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276205-0002-f77a58.webp",
   "featured": false,
   "sold": false
@@ -6092,13 +6092,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-28-276248rbr-857465",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 28 — Yellow Gold, Diamond Bezel, Turquoise Dial",
+  "model": "Oyster Perpetual 28 \u2014 Yellow Gold, Diamond Bezel, Turquoise Dial",
   "ref": "276248RBR",
   "year": "2026",
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "Turquoise",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · Turquoise dial · 28mm · Oyster",
+  "description": "18ct Yellow Gold \u00b7 Turquoise dial \u00b7 28mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276248rbr-857465.webp",
   "featured": false,
   "sold": false
@@ -6112,7 +6112,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "Stainless Steel · Beige dial · 28mm",
+  "description": "Stainless Steel \u00b7 Beige dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-bfeb4d.webp",
   "featured": false,
   "sold": false
@@ -6126,7 +6126,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 28mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-16d899.webp",
   "featured": false,
   "sold": false
@@ -6140,7 +6140,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 28mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-cd843d.webp",
   "featured": false,
   "sold": false
@@ -6154,7 +6154,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Lavender",
   "condition": "Brand New",
-  "description": "Stainless Steel · Lavender dial · 28mm",
+  "description": "Stainless Steel \u00b7 Lavender dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-ace938.webp",
   "featured": false,
   "sold": false
@@ -6168,7 +6168,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pink",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pink dial · 28mm",
+  "description": "Stainless Steel \u00b7 Pink dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-5eca14.webp",
   "featured": false,
   "sold": false
@@ -6182,7 +6182,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pistachio",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pistachio dial · 28mm",
+  "description": "Stainless Steel \u00b7 Pistachio dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276200-bd422c.webp",
   "featured": false,
   "sold": false
@@ -6196,7 +6196,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 28mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276205-a55516.webp",
   "featured": false,
   "sold": false
@@ -6210,7 +6210,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Brown",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Brown dial · 28mm",
+  "description": "18K Rose Gold \u00b7 Brown dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276245rbr-6cdd3f.webp",
   "featured": false,
   "sold": false
@@ -6224,7 +6224,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Mother of Pearl Diamond",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Mother of Pearl Diamond dial · 28mm",
+  "description": "18K Rose Gold \u00b7 Mother of Pearl Diamond dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276245rbr-07c86e.webp",
   "featured": false,
   "sold": false
@@ -6238,7 +6238,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Rose Gold · White dial · 28mm",
+  "description": "18K Rose Gold \u00b7 White dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276205-8cdeee.webp",
   "featured": false,
   "sold": false
@@ -6252,7 +6252,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 28mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276208-4d86c6.webp",
   "featured": false,
   "sold": false
@@ -6266,7 +6266,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial · 28mm",
+  "description": "18K Yellow Gold \u00b7 Green dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276208-9aa48f.webp",
   "featured": false,
   "sold": false
@@ -6280,7 +6280,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "RBR Mother Of Pearl Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · RBR Mother Of Pearl Diamond dial · 28mm",
+  "description": "18K Yellow Gold \u00b7 RBR Mother Of Pearl Diamond dial \u00b7 28mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-28-276248rbr-53b88b.webp",
   "featured": false,
   "sold": false
@@ -6294,7 +6294,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "Stainless Steel · Beige dial · 31mm",
+  "description": "Stainless Steel \u00b7 Beige dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277200-600ccd.webp",
   "featured": false,
   "sold": false
@@ -6308,7 +6308,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 31mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277200-f501d4.webp",
   "featured": false,
   "sold": false
@@ -6322,7 +6322,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 31mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277200-b93197.webp",
   "featured": false,
   "sold": false
@@ -6336,7 +6336,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Lavender",
   "condition": "Brand New",
-  "description": "Stainless Steel · Lavender dial · 31mm",
+  "description": "Stainless Steel \u00b7 Lavender dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277200-36c9f4.webp",
   "featured": false,
   "sold": false
@@ -6350,7 +6350,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Slate",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Slate dial · 31mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Slate dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277203-d65fda.webp",
   "featured": false,
   "sold": false
@@ -6364,7 +6364,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pistachio",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pistachio dial · 31mm",
+  "description": "Stainless Steel \u00b7 Pistachio dial \u00b7 31mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-31-277200-1f965c.webp",
   "featured": false,
   "sold": false
@@ -6372,13 +6372,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-34-124205-0001-9d6ea2",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 34 — Everose, Black Dial",
+  "model": "Oyster Perpetual 34 \u2014 Everose, Black Dial",
   "ref": "124205-0001",
   "year": "2026",
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Black dial · 34mm · Oyster",
+  "description": "18ct Everose Gold \u00b7 Black dial \u00b7 34mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124205-0001-9d6ea2.webp",
   "featured": false,
   "sold": false
@@ -6386,13 +6386,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-34-124205-0002-eb8db9",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 34 — Everose, Blue Dial",
+  "model": "Oyster Perpetual 34 \u2014 Everose, Blue Dial",
   "ref": "124205-0002",
   "year": "2026",
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Blue dial · 34mm · Oyster",
+  "description": "18ct Everose Gold \u00b7 Blue dial \u00b7 34mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124205-0002-eb8db9.webp",
   "featured": false,
   "sold": false
@@ -6400,13 +6400,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-34-124208-0001-df5c09",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 34 — Yellow Gold, Black Dial",
+  "model": "Oyster Perpetual 34 \u2014 Yellow Gold, Black Dial",
   "ref": "124208-0001",
   "year": "2026",
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · Black dial · 34mm · Oyster",
+  "description": "18ct Yellow Gold \u00b7 Black dial \u00b7 34mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124208-0001-df5c09.webp",
   "featured": false,
   "sold": false
@@ -6414,13 +6414,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-34-124208-0002-54f8f4",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 34 — Yellow Gold, White Dial (Green Accents)",
+  "model": "Oyster Perpetual 34 \u2014 Yellow Gold, White Dial (Green Accents)",
   "ref": "124208-0002",
   "year": "2026",
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · White dial · 34mm · Oyster",
+  "description": "18ct Yellow Gold \u00b7 White dial \u00b7 34mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124208-0002-54f8f4.webp",
   "featured": false,
   "sold": false
@@ -6434,7 +6434,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "Stainless Steel · Beige dial · 34mm",
+  "description": "Stainless Steel \u00b7 Beige dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-227a43.webp",
   "featured": false,
   "sold": false
@@ -6448,7 +6448,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 34mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-da871f.webp",
   "featured": false,
   "sold": false
@@ -6462,7 +6462,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 34mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-a23a21.webp",
   "featured": false,
   "sold": false
@@ -6476,7 +6476,7 @@
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "RBR Brown Stone Diamond",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · RBR Brown Stone Diamond dial · 34mm",
+  "description": "18ct Everose Gold \u00b7 RBR Brown Stone Diamond dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124245rbr-1da89e.webp",
   "featured": false,
   "sold": false
@@ -6490,7 +6490,7 @@
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "RBR Mother Of Pearl Diamond",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · RBR Mother Of Pearl Diamond dial · 34mm",
+  "description": "18ct Everose Gold \u00b7 RBR Mother Of Pearl Diamond dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124245rbr-d544da.webp",
   "featured": false,
   "sold": false
@@ -6504,7 +6504,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Lavender",
   "condition": "Brand New",
-  "description": "Stainless Steel · Lavender dial · 34mm",
+  "description": "Stainless Steel \u00b7 Lavender dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-fff19b.webp",
   "featured": false,
   "sold": false
@@ -6518,7 +6518,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pink",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pink dial · 34mm",
+  "description": "Stainless Steel \u00b7 Pink dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-8e5bdc.webp",
   "featured": false,
   "sold": false
@@ -6532,7 +6532,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pistachio",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pistachio dial · 34mm",
+  "description": "Stainless Steel \u00b7 Pistachio dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124200-14f3b4.webp",
   "featured": false,
   "sold": false
@@ -6546,7 +6546,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Black dial · 34mm",
+  "description": "18K Rose Gold \u00b7 Black dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124205-cfa018.webp",
   "featured": false,
   "sold": false
@@ -6560,7 +6560,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue Stone",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue Stone dial · 34mm",
+  "description": "18K Rose Gold \u00b7 Blue Stone dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124205-c4e52b.webp",
   "featured": false,
   "sold": false
@@ -6574,7 +6574,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 34mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124208-37d011.webp",
   "featured": false,
   "sold": false
@@ -6588,7 +6588,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "RBR Mother Of Pearl Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · RBR Mother Of Pearl Diamond dial · 34mm",
+  "description": "18K Yellow Gold \u00b7 RBR Mother Of Pearl Diamond dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124248rbr-4d8ca3.webp",
   "featured": false,
   "sold": false
@@ -6602,7 +6602,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "RBR Turquoise Blue Diamond",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · RBR Turquoise Blue Diamond dial · 34mm",
+  "description": "18K Yellow Gold \u00b7 RBR Turquoise Blue Diamond dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124248rbr-a58bdd.webp",
   "featured": false,
   "sold": false
@@ -6616,7 +6616,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 34mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 34mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-34-124208-d18c02.webp",
   "featured": false,
   "sold": false
@@ -6624,13 +6624,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-36-126000-0016-9e513f",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 36 — Jubilee Motif Dial (Centenary)",
+  "model": "Oyster Perpetual 36 \u2014 Jubilee Motif Dial (Centenary)",
   "ref": "126000-0016",
   "year": "2026",
   "caseMaterial": "Oystersteel",
   "dialColor": "Multicolour (Jubilee Motif)",
   "condition": "Brand New",
-  "description": "Oystersteel · Multicolour (Jubilee Motif) dial · 36mm · Oyster",
+  "description": "Oystersteel \u00b7 Multicolour (Jubilee Motif) dial \u00b7 36mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-0016-9e513f.webp",
   "featured": false,
   "sold": false
@@ -6644,7 +6644,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "Stainless Steel · Beige dial · 36mm",
+  "description": "Stainless Steel \u00b7 Beige dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-56f1f8.webp",
   "featured": false,
   "sold": false
@@ -6658,7 +6658,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 36mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-25c28f.webp",
   "featured": false,
   "sold": false
@@ -6672,7 +6672,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Candy Pink",
   "condition": "Brand New",
-  "description": "Stainless Steel · Candy Pink dial · 36mm",
+  "description": "Stainless Steel \u00b7 Candy Pink dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-722b67.webp",
   "featured": false,
   "sold": false
@@ -6686,7 +6686,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Lavender",
   "condition": "Brand New",
-  "description": "Stainless Steel · Lavender dial · 36mm",
+  "description": "Stainless Steel \u00b7 Lavender dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-421374.webp",
   "featured": false,
   "sold": false
@@ -6700,7 +6700,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Slate",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Slate dial · 36mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Slate dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126003-89b17c.webp",
   "featured": false,
   "sold": false
@@ -6714,7 +6714,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Pistachio",
   "condition": "Brand New",
-  "description": "Stainless Steel · Pistachio dial · 36mm",
+  "description": "Stainless Steel \u00b7 Pistachio dial \u00b7 36mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-36-126000-fe5e3f.webp",
   "featured": false,
   "sold": false
@@ -6728,7 +6728,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Pistachio",
   "condition": "Brand New",
-  "description": "Oystersteel · Pistachio dial · 41mm · Oyster",
+  "description": "Oystersteel \u00b7 Pistachio dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-148b20.webp",
   "featured": false,
   "sold": false
@@ -6742,7 +6742,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Yellow",
   "condition": "Brand New",
-  "description": "Stainless Steel · Yellow dial · 41mm",
+  "description": "Stainless Steel \u00b7 Yellow dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-124300-3eacb3.webp",
   "featured": false,
   "sold": false
@@ -6750,13 +6750,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-41-134300-d040b7",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 41 — Jubilee Motif Dial (Centenary)",
+  "model": "Oyster Perpetual 41 \u2014 Jubilee Motif Dial (Centenary)",
   "ref": "134300",
   "year": "2026",
   "caseMaterial": "Oystersteel",
   "dialColor": "Multicolour (Jubilee Motif)",
   "condition": "Brand New",
-  "description": "Oystersteel · Multicolour (Jubilee Motif) dial · 41mm · Oyster",
+  "description": "Oystersteel \u00b7 Multicolour (Jubilee Motif) dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-d040b7.webp",
   "featured": false,
   "sold": false
@@ -6764,13 +6764,13 @@
  {
   "id": "dbh-rolex-oyster-perpetual-41-134303-0001-d8ba00",
   "brand": "Rolex",
-  "model": "Oyster Perpetual 41 — Two-Tone Yellow Gold, Slate '100 Years'",
+  "model": "Oyster Perpetual 41 \u2014 Two-Tone Yellow Gold, Slate '100 Years'",
   "ref": "134303-0001",
   "year": "2026",
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Slate",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Slate dial · 41mm · Oyster",
+  "description": "Oystersteel & Yellow Gold \u00b7 Slate dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134303-0001-d8ba00.webp",
   "featured": false,
   "sold": false
@@ -6784,7 +6784,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Beige",
   "condition": "Brand New",
-  "description": "Stainless Steel · Beige dial · 41mm",
+  "description": "Stainless Steel \u00b7 Beige dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-32de46.webp",
   "featured": false,
   "sold": false
@@ -6798,7 +6798,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 41mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-124300-c084fc.webp",
   "featured": false,
   "sold": false
@@ -6812,7 +6812,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 41mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-1f8931.webp",
   "featured": false,
   "sold": false
@@ -6826,7 +6826,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Oystersteel · Green dial · 41mm · Oyster",
+  "description": "Oystersteel \u00b7 Green dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-3872fc.webp",
   "featured": false,
   "sold": false
@@ -6840,7 +6840,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 41mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-124300-782b64.webp",
   "featured": false,
   "sold": false
@@ -6854,7 +6854,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Lavender",
   "condition": "Brand New",
-  "description": "Stainless Steel · Lavender dial · 41mm",
+  "description": "Stainless Steel \u00b7 Lavender dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-e6c9f8.webp",
   "featured": false,
   "sold": false
@@ -6868,7 +6868,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Oystersteel · Blue dial · 41mm · Oyster",
+  "description": "Oystersteel \u00b7 Blue dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-058ba3.webp",
   "featured": false,
   "sold": false
@@ -6882,7 +6882,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Slate",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Slate dial · 41mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Slate dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134303-2eb7df.webp",
   "featured": false,
   "sold": false
@@ -6896,7 +6896,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silver dial · 41mm",
+  "description": "Stainless Steel \u00b7 Silver dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-134300-3535e2.webp",
   "featured": false,
   "sold": false
@@ -6910,7 +6910,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Silver",
   "condition": "Brand New",
-  "description": "Stainless Steel · Silver dial · 41mm",
+  "description": "Stainless Steel \u00b7 Silver dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-124300-7e71c1.webp",
   "featured": false,
   "sold": false
@@ -6924,7 +6924,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Turquoise",
   "condition": "Brand New",
-  "description": "Stainless Steel · Turquoise dial · 41mm",
+  "description": "Stainless Steel \u00b7 Turquoise dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-oyster-perpetual-41-124300-1fcb1f.webp",
   "featured": false,
   "sold": false
@@ -6938,7 +6938,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Ice Blue",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Ice Blue dial · 39mm",
+  "description": "18K Yellow Gold \u00b7 Ice Blue dial \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-rolex-1908-250a22.webp",
   "featured": false,
   "sold": false
@@ -6952,7 +6952,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Intense White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Intense White dial · 39mm",
+  "description": "18K Yellow Gold \u00b7 Intense White dial \u00b7 39mm",
   "image": "images/pieces/dbh/dbh-rolex-1908-40a80f.webp",
   "featured": false,
   "sold": false
@@ -6966,7 +6966,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 44mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-136660-c20198.webp",
   "featured": false,
   "sold": false
@@ -6980,7 +6980,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 44mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-126660-60c552.webp",
   "featured": false,
   "sold": false
@@ -6994,7 +6994,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 43mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 43mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-126600-2d7180.webp",
   "featured": false,
   "sold": false
@@ -7008,7 +7008,7 @@
   "caseMaterial": "",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Black dial · 44mm",
+  "description": "Black dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-126660-afc13b.webp",
   "featured": false,
   "sold": false
@@ -7022,7 +7022,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 44mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-136660-daa600.webp",
   "featured": false,
   "sold": false
@@ -7036,7 +7036,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black dial · 43mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black dial \u00b7 43mm",
   "image": "images/pieces/dbh/dbh-rolex-sea-dweller-126603-ffdb82.webp",
   "featured": false,
   "sold": false
@@ -7050,7 +7050,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 42mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326934-f6c73d.webp",
   "featured": false,
   "sold": false
@@ -7064,7 +7064,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 42mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326934-c71d98.webp",
   "featured": false,
   "sold": false
@@ -7078,7 +7078,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Blue dial · 42mm · Oyster",
+  "description": "Oystersteel & White Gold \u00b7 Blue dial \u00b7 42mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336934-b3faaf.webp",
   "featured": false,
   "sold": false
@@ -7092,7 +7092,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Stainless Steel · Blue dial · 42mm",
+  "description": "Stainless Steel \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326934-8def1d.webp",
   "featured": false,
   "sold": false
@@ -7106,7 +7106,7 @@
   "caseMaterial": "Oystersteel & White Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Oystersteel & White Gold · Green dial · 42mm · Jubilee",
+  "description": "Oystersteel & White Gold \u00b7 Green dial \u00b7 42mm \u00b7 Jubilee",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336934-f91bc8.webp",
   "featured": false,
   "sold": false
@@ -7120,7 +7120,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black dial · 42mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336933-f5ea79.webp",
   "featured": false,
   "sold": false
@@ -7134,7 +7134,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black dial · 42mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336933-50e44a.webp",
   "featured": false,
   "sold": false
@@ -7148,7 +7148,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Black dial · 42mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326933-fcbccb.webp",
   "featured": false,
   "sold": false
@@ -7162,7 +7162,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Champagne dial · 42mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Champagne dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336933-c61d58.webp",
   "featured": false,
   "sold": false
@@ -7176,7 +7176,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · White dial · 42mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 White dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326933-5de7d0.webp",
   "featured": false,
   "sold": false
@@ -7190,7 +7190,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "18K Rose Gold · 42mm",
+  "description": "18K Rose Gold \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326235-60faed.webp",
   "featured": false,
   "sold": false
@@ -7204,7 +7204,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Blue dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336935-8977fa.webp",
   "featured": false,
   "sold": false
@@ -7218,7 +7218,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue-green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue-green dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Blue-green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336935-ede6aa.webp",
   "featured": false,
   "sold": false
@@ -7232,7 +7232,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Blue-green",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Blue-green dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Blue-green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336935-c56bfd.webp",
   "featured": false,
   "sold": false
@@ -7246,7 +7246,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Chocolate dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Chocolate dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336235-a18ac4.webp",
   "featured": false,
   "sold": false
@@ -7260,7 +7260,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Grey dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Grey dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336935-1e2732.webp",
   "featured": false,
   "sold": false
@@ -7274,7 +7274,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Grey",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Grey dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Grey dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326935-2bc89e.webp",
   "featured": false,
   "sold": false
@@ -7288,7 +7288,7 @@
   "caseMaterial": "18K Rose Gold",
   "dialColor": "Rhodium",
   "condition": "Brand New",
-  "description": "18K Rose Gold · Rhodium dial · 42mm",
+  "description": "18K Rose Gold \u00b7 Rhodium dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336235-caacd1.webp",
   "featured": false,
   "sold": false
@@ -7302,7 +7302,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Stainless Steel · White dial · 42mm",
+  "description": "Stainless Steel \u00b7 White dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326934-060566.webp",
   "featured": false,
   "sold": false
@@ -7316,7 +7316,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 42mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336239-8ce1a9.webp",
   "featured": false,
   "sold": false
@@ -7330,7 +7330,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Meteorite",
   "condition": "Brand New",
-  "description": "18K White Gold · Meteorite dial · 42mm",
+  "description": "18K White Gold \u00b7 Meteorite dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336959tbr-6fe592.webp",
   "featured": false,
   "sold": false
@@ -7344,7 +7344,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326238-80a602.webp",
   "featured": false,
   "sold": false
@@ -7358,7 +7358,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326938-ed9065.webp",
   "featured": false,
   "sold": false
@@ -7372,7 +7372,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336238-56e1c5.webp",
   "featured": false,
   "sold": false
@@ -7386,7 +7386,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Champagne dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336938-fae33d.webp",
   "featured": false,
   "sold": false
@@ -7400,7 +7400,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Champagne dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326938-9ed285.webp",
   "featured": false,
   "sold": false
@@ -7414,7 +7414,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Champagne",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Champagne dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Champagne dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326938-281da0.webp",
   "featured": false,
   "sold": false
@@ -7428,7 +7428,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336238-b7b42c.webp",
   "featured": false,
   "sold": false
@@ -7442,7 +7442,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336938-cf76d0.webp",
   "featured": false,
   "sold": false
@@ -7456,7 +7456,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Green dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 Green dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-336938-ca5ee8.webp",
   "featured": false,
   "sold": false
@@ -7470,7 +7470,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 42mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-sky-dweller-326938-06b751.webp",
   "featured": false,
   "sold": false
@@ -7478,13 +7478,13 @@
  {
   "id": "dbh-rolex-submariner-126610lv-e2a0c3",
   "brand": "Rolex",
-  "model": "Submariner Black Dial",
+  "model": "Submariner \"Starbucks\"",
   "ref": "126610LV",
   "year": "2021",
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 41mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126610lv-e2a0c3.webp",
   "featured": false,
   "sold": false
@@ -7492,13 +7492,13 @@
  {
   "id": "dbh-rolex-submariner-126610lv-61e3cb",
   "brand": "Rolex",
-  "model": "Submariner Black Dial",
+  "model": "Submariner \"Starbucks\"",
   "ref": "126610LV",
   "year": "2024",
   "caseMaterial": "Stainless Steel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Stainless Steel · Black dial · 41mm",
+  "description": "Stainless Steel \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126610lv-61e3cb.webp",
   "featured": false,
   "sold": false
@@ -7512,7 +7512,7 @@
   "caseMaterial": "Oystersteel",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Oystersteel · Black dial · 41mm · Oyster",
+  "description": "Oystersteel \u00b7 Black dial \u00b7 41mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-submariner-date-126610ln-8d7ed5.webp",
   "featured": false,
   "sold": false
@@ -7526,7 +7526,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "Green",
   "condition": "Brand New",
-  "description": "Stainless Steel · Green dial · 40mm",
+  "description": "Stainless Steel \u00b7 Green dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-116610lv-5fac3f.webp",
   "featured": false,
   "sold": false
@@ -7540,7 +7540,7 @@
   "caseMaterial": "Oystersteel & Yellow Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "Oystersteel & Yellow Gold · Blue dial · 41mm",
+  "description": "Oystersteel & Yellow Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126613lb-3c73f9.webp",
   "featured": false,
   "sold": false
@@ -7554,7 +7554,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 41mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126619lb-94167d.webp",
   "featured": false,
   "sold": false
@@ -7568,7 +7568,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-116619lb-078390.webp",
   "featured": false,
   "sold": false
@@ -7582,7 +7582,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K White Gold · Blue dial · 40mm",
+  "description": "18K White Gold \u00b7 Blue dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-116659sabr-209065.webp",
   "featured": false,
   "sold": false
@@ -7596,7 +7596,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 41mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126618ln-44feb4.webp",
   "featured": false,
   "sold": false
@@ -7610,7 +7610,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Black dial · 40mm",
+  "description": "18K Yellow Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-116618ln-38d9c8.webp",
   "featured": false,
   "sold": false
@@ -7624,7 +7624,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "Blue",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · Blue dial · 41mm",
+  "description": "18K Yellow Gold \u00b7 Blue dial \u00b7 41mm",
   "image": "images/pieces/dbh/dbh-rolex-submariner-126618lb-de4e4a.webp",
   "featured": false,
   "sold": false
@@ -7638,7 +7638,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "",
   "condition": "Brand New",
-  "description": "Stainless Steel · 37mm",
+  "description": "Stainless Steel \u00b7 37mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-37-268622-5d0feb.webp",
   "featured": false,
   "sold": false
@@ -7652,7 +7652,7 @@
   "caseMaterial": "Oystersteel & Platinum",
   "dialColor": "Dark Rhodium",
   "condition": "Brand New",
-  "description": "Oystersteel & Platinum · Dark Rhodium dial · 40mm · Oyster",
+  "description": "Oystersteel & Platinum \u00b7 Dark Rhodium dial \u00b7 40mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-40-126622-c18646.webp",
   "featured": false,
   "sold": false
@@ -7666,7 +7666,7 @@
   "caseMaterial": "",
   "dialColor": "Chocolate",
   "condition": "Brand New",
-  "description": "Chocolate dial · 40mm",
+  "description": "Chocolate dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-40-126621-81c800.webp",
   "featured": false,
   "sold": false
@@ -7680,7 +7680,7 @@
   "caseMaterial": "18ct Everose Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18ct Everose Gold · Black dial · 40mm · Oysterflex",
+  "description": "18ct Everose Gold \u00b7 Black dial \u00b7 40mm \u00b7 Oysterflex",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-40-126655-56fc96.webp",
   "featured": false,
   "sold": false
@@ -7694,7 +7694,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 40mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 40mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-40-126679sabr-12d718.webp",
   "featured": false,
   "sold": false
@@ -7708,7 +7708,7 @@
   "caseMaterial": "Titanium",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "Titanium · Black dial · 42mm",
+  "description": "Titanium \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-42-226627-4c1b00.webp",
   "featured": false,
   "sold": false
@@ -7722,7 +7722,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Black",
   "condition": "Brand New",
-  "description": "18K White Gold · Black dial · 42mm",
+  "description": "18K White Gold \u00b7 Black dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-42-226659-175880.webp",
   "featured": false,
   "sold": false
@@ -7736,7 +7736,7 @@
   "caseMaterial": "18K White Gold",
   "dialColor": "Pave Diamond",
   "condition": "Brand New",
-  "description": "18K White Gold · Pave Diamond dial · 42mm",
+  "description": "18K White Gold \u00b7 Pave Diamond dial \u00b7 42mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-42-226679tbr-ecf2ec.webp",
   "featured": false,
   "sold": false
@@ -7744,13 +7744,13 @@
  {
   "id": "dbh-rolex-yacht-master-ii-126680-0001-0974a7",
   "brand": "Rolex",
-  "model": "Yacht-Master II — Steel, White Dial",
+  "model": "Yacht-Master II \u2014 Steel, White Dial",
   "ref": "126680-0001",
   "year": "2026",
   "caseMaterial": "Oystersteel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Oystersteel · White dial · 44mm · Oyster",
+  "description": "Oystersteel \u00b7 White dial \u00b7 44mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-126680-0001-0974a7.webp",
   "featured": false,
   "sold": false
@@ -7758,13 +7758,13 @@
  {
   "id": "dbh-rolex-yacht-master-ii-126688-0001-2863bc",
   "brand": "Rolex",
-  "model": "Yacht-Master II — Yellow Gold, White Dial",
+  "model": "Yacht-Master II \u2014 Yellow Gold, White Dial",
   "ref": "126688-0001",
   "year": "2026",
   "caseMaterial": "18ct Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18ct Yellow Gold · White dial · 44mm · Oyster",
+  "description": "18ct Yellow Gold \u00b7 White dial \u00b7 44mm \u00b7 Oyster",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-126688-0001-2863bc.webp",
   "featured": false,
   "sold": false
@@ -7778,7 +7778,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Stainless Steel · White dial · 44mm",
+  "description": "Stainless Steel \u00b7 White dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-126680-2252bd.webp",
   "featured": false,
   "sold": false
@@ -7792,7 +7792,7 @@
   "caseMaterial": "Stainless Steel",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "Stainless Steel · White dial · 44mm",
+  "description": "Stainless Steel \u00b7 White dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-116680-d325cb.webp",
   "featured": false,
   "sold": false
@@ -7806,7 +7806,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 44mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-126688-744222.webp",
   "featured": false,
   "sold": false
@@ -7820,7 +7820,7 @@
   "caseMaterial": "18K Yellow Gold",
   "dialColor": "White",
   "condition": "Brand New",
-  "description": "18K Yellow Gold · White dial · 44mm",
+  "description": "18K Yellow Gold \u00b7 White dial \u00b7 44mm",
   "image": "images/pieces/dbh/dbh-rolex-yacht-master-ii-116688-012aaa.webp",
   "featured": false,
   "sold": false

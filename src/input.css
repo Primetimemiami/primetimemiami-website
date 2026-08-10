@@ -922,10 +922,8 @@ body { text-transform: none !important; }
 }
 .pt-bst__card img {
   width: 100%; height: 100%; object-fit: cover; display: block;
-  filter: brightness(0.78);
-  transition: filter 1.2s cubic-bezier(0.45, 0.05, 0.15, 1);
+  filter: brightness(0.86);
 }
-.pt-bst__card:hover img { filter: brightness(1); }
 .pt-bst__card::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.55), transparent 38%);
@@ -936,8 +934,7 @@ body { text-transform: none !important; }
   color: #fff; font-weight: 600; font-size: clamp(17px, 1.5vw, 22px); letter-spacing: 0.01em;
   display: inline-flex; align-items: center; gap: 10px;
 }
-.pt-bst__label .ar { display: inline-block; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
-.pt-bst__card:hover .pt-bst__label .ar { transform: translateX(7px); }
+.pt-bst__label .ar { display: inline-block; }
 
 /* ── Featured Watches ── */
 .pt-feat { max-width: 1420px; margin: 0 auto; padding: clamp(64px, 9vw, 120px) clamp(24px, 4vw, 64px); }
@@ -955,3 +952,6 @@ body { text-transform: none !important; }
 .pt-feat__brand { color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.26em; font-weight: 600; margin-bottom: 10px; }
 .pt-feat__name { font-weight: 700; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.35; letter-spacing: 0.01em; max-width: 300px; }
 .pt-feat__sub { color: rgba(255,255,255,0.45); font-size: 12px; letter-spacing: 0.14em; margin-top: 8px; }
+
+/* featured titles: equal card heights */
+.pt-feat__name { min-height: 2.8em; display: flex; align-items: flex-start; justify-content: center; }

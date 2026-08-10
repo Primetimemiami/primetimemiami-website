@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/scripts/lucide.min.js"></script>
-    <link rel="stylesheet" href="/dist/styles.css?v=22">
+    <link rel="stylesheet" href="/dist/styles.css?v=23">
 </head>
 <body class="min-h-screen bg-charcoal text-ivory selection:bg-ivory selection:text-charcoal font-inter">
 
@@ -234,15 +234,15 @@
                     <h2 class="font-space font-bold">Buy, Sell<br><span class="stroke-text">and Trade.</span></h2>
                     <p class="no-caps">Whether you're hunting a grail or moving a piece from your collection, we handle both sides of the deal. Every piece independently authenticated, fully insured, and handled with discretion.</p>
                 </div>
-                <a href="inventory.html" class="action-card pt-bst__card">
+                <a href="inventory.html" class="pt-bst__card">
                     <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available to buy" loading="lazy">
                     <span class="pt-bst__label">Buy a Watch <span class="ar">&rarr;</span></span>
                 </a>
-                <button type="button" data-modal="sell" onclick="app.openModal('SELL')" class="action-card pt-bst__card">
+                <button type="button" data-modal="sell" onclick="app.openModal('SELL')" class="pt-bst__card">
                     <img src="images/pieces/piece-13.webp" alt="Patek Philippe Nautilus in box, sell your watch" loading="lazy">
                     <span class="pt-bst__label">Sell Your Watch <span class="ar">&rarr;</span></span>
                 </button>
-                <button type="button" data-modal="trade" onclick="app.openModal('TRADE')" class="action-card pt-bst__card">
+                <button type="button" data-modal="trade" onclick="app.openModal('TRADE')" class="pt-bst__card">
                     <img src="images/pieces/piece-04.webp" alt="Rolex GMT-Master II Pepsi, trade your watch" loading="lazy">
                     <span class="pt-bst__label">Trade Your Watch <span class="ar">&rarr;</span></span>
                 </button>
@@ -796,7 +796,7 @@
   fetch('/api/pieces')
     .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
     .catch(function () {
-      var demo = localStorage.getItem('pt_demo_pieces_v2');
+      var demo = localStorage.getItem('pt_demo_pieces_v3');
       if (demo) return JSON.parse(demo);
       return fetch('/data/pieces.json').then(function (r) { return r.json(); });
     })
@@ -805,7 +805,7 @@
       var brands = ['Rolex', 'Audemars Piguet', 'Patek Philippe', 'Richard Mille'];
       var picks = [];
       brands.forEach(function (b, bi) {
-        var pool = pieces.filter(function (p) { return p.brand === b && !p.sold && p.image; });
+        var pool = pieces.filter(function (p) { return p.brand === b && !p.sold && p.image && p.model.length >= 8 && p.model.length <= 26; });
         if (pool.length) picks.push(pool[(week + bi) % pool.length]);
       });
       if (picks.length < 3) { document.getElementById('featured').style.display = 'none'; return; }
