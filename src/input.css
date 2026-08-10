@@ -890,9 +890,14 @@ body { text-transform: none !important; }
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
 .pt-strip__track {
-  display: flex; align-items: flex-end; gap: clamp(10px, 1.2vw, 18px);
+  display: flex; align-items: flex-end;
   width: max-content; padding: 14px 0 6px;
   animation: ptStripDrift 70s linear infinite;
+}
+.pt-strip__set {
+  display: flex; align-items: flex-end;
+  gap: clamp(10px, 1.2vw, 18px);
+  padding-right: clamp(10px, 1.2vw, 18px);
 }
 .pt-strip__marquee:hover .pt-strip__track { animation-play-state: paused; }
 @keyframes ptStripDrift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -959,8 +964,8 @@ body { text-transform: none !important; }
 /* ── film grain over the hero video ── */
 .pt-grain {
   position: absolute; inset: -100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 0 0 0 0 0.5 1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.22;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.62' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 0 0 0.35 0.6 0.85 1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.3;
   pointer-events: none;
   animation: ptGrain 0.9s steps(4) infinite;
 }
