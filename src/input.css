@@ -1006,8 +1006,6 @@ body { text-transform: none !important; }
   position: fixed; top: 22px; right: 26px; z-index: 70;
   display: flex; align-items: center; gap: 26px;
   font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
-  padding: 8px 14px;
-  background: rgba(0,0,0,0.35); backdrop-filter: blur(6px);
 }
 #pt-desknav a { color: #fff; text-decoration: none; transition: opacity 0.25s ease; }
 #pt-desknav a:hover { opacity: 0.6; }
