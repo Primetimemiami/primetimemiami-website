@@ -101,6 +101,8 @@
             </div>
 
             <h2 class="font-space font-bold text-lg tracking-tight mt-12 mb-2">Current pieces</h2>
+            <input class="ad-input" id="ad-search" placeholder="Search brand, model, ref, year..." style="margin:6px 0 4px;">
+            <div class="ad-msg" id="ad-count" style="margin:6px 0 0;color:rgba(255,255,255,0.4);"></div>
             <div class="ad-list" id="ad-list"></div>
         </div>
     </div>
@@ -195,32 +197,44 @@
             localStorage.removeItem('pt_admin_token'); location.reload();
         });
 
+        var allRows = [];
+        function renderList() {
+            var q = ($('ad-search').value || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+            var rows = allRows.filter(function (p) {
+                if (!q.length) return true;
+                var hay = [p.brand, p.model, p.ref, p.year, p.condition].join(' ').toLowerCase();
+                return q.every(function (term) { return hay.indexOf(term) >= 0; });
+            });
+            $('ad-count').textContent = rows.length + ' OF ' + allRows.length + ' PIECES';
+            $('ad-list').innerHTML = rows.map(function (p) {
+                return '<div class="ad-item">' +
+                    '<img src="' + (p.image || '') + '" alt="" loading="lazy">' +
+                    '<div><div class="nm">' + p.brand + ' ' + p.model + '</div>' +
+                    '<div class="sub">' + [p.ref, p.year, p.condition].filter(Boolean).join(' · ') + '</div></div>' +
+                    (p.featured ? '<span class="ad-tag">FEATURED</span>' : '') +
+                    (p.sold ? '<span class="ad-tag">SOLD</span>' : '') +
+                    '<div class="sp">' +
+                    '<button class="ad-mini" data-edit="' + p.id + '">EDIT</button>' +
+                    '<button class="ad-mini danger" data-del="' + p.id + '">DELETE</button>' +
+                    '</div></div>';
+            }).join('') || '<div class="ad-item"><div class="sub">' + (allRows.length ? 'No pieces match this search.' : 'No pieces yet — add the first one above.') + '</div></div>';
+            $('ad-list').querySelectorAll('[data-edit]').forEach(function (b) {
+                b.addEventListener('click', function () { startEdit(allRows.find(function (p) { return p.id === b.getAttribute('data-edit'); })); });
+            });
+            $('ad-list').querySelectorAll('[data-del]').forEach(function (b) {
+                b.addEventListener('click', function () {
+                    if (!confirm('Delete this piece from the site?')) return;
+                    post({ action: 'delete', token: token, id: b.getAttribute('data-del') }).then(loadList);
+                });
+            });
+        }
+        $('ad-search') && $('ad-search').addEventListener('input', renderList);
         function loadList() {
             post({ action: 'list', token: token }).then(function (r) {
                 if (r.status === 401) { localStorage.removeItem('pt_admin_token'); location.reload(); return; }
                 if (!r.ok) return;
-                var rows = r.data.pieces || [];
-                $('ad-list').innerHTML = rows.map(function (p) {
-                    return '<div class="ad-item">' +
-                        '<img src="' + (p.image || '') + '" alt="">' +
-                        '<div><div class="nm">' + p.brand + ' ' + p.model + '</div>' +
-                        '<div class="sub">' + [p.ref, p.year, p.condition].filter(Boolean).join(' · ') + '</div></div>' +
-                        (p.featured ? '<span class="ad-tag">FEATURED</span>' : '') +
-                        (p.sold ? '<span class="ad-tag">SOLD</span>' : '') +
-                        '<div class="sp">' +
-                        '<button class="ad-mini" data-edit="' + p.id + '">EDIT</button>' +
-                        '<button class="ad-mini danger" data-del="' + p.id + '">DELETE</button>' +
-                        '</div></div>';
-                }).join('') || '<div class="ad-item"><div class="sub">No pieces yet — add the first one above.</div></div>';
-                $('ad-list').querySelectorAll('[data-edit]').forEach(function (b) {
-                    b.addEventListener('click', function () { startEdit(rows.find(function (p) { return p.id === b.getAttribute('data-edit'); })); });
-                });
-                $('ad-list').querySelectorAll('[data-del]').forEach(function (b) {
-                    b.addEventListener('click', function () {
-                        if (!confirm('Delete this piece from the site?')) return;
-                        post({ action: 'delete', token: token, id: b.getAttribute('data-del') }).then(loadList);
-                    });
-                });
+                allRows = r.data.pieces || [];
+                renderList();
             });
         }
 

@@ -317,23 +317,28 @@
 
         document.getElementById('inv-sort').addEventListener('change', render);
 
-        fetch('/api/pieces')
-            .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
-            .catch(function () {
-                var demo = localStorage.getItem('pt_demo_pieces_v3');
-                if (demo) return JSON.parse(demo);
-                return fetch('/data/pieces.json').then(function (r) {
-                    if (!r.ok) throw new Error('load failed'); return r.json();
+        function loadPieces() {
+            fetch('/api/pieces')
+                .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
+                .catch(function () {
+                    var demo = localStorage.getItem('pt_demo_pieces_v3');
+                    if (demo) return JSON.parse(demo);
+                    return fetch('/data/pieces.json').then(function (r) {
+                        if (!r.ok) throw new Error('load failed'); return r.json();
+                    });
+                })
+                .then(function (data) {
+                    PIECES = data;
+                    PIECES.forEach(function (p) { p._family = family(p); });
+                    buildPills(); buildFacets(); render();
+                })
+                .catch(function () {
+                    document.getElementById('inv-count').textContent = 'INVENTORY UNAVAILABLE RIGHT NOW.';
                 });
-            })
-            .then(function (data) {
-                PIECES = data;
-                PIECES.forEach(function (p) { p._family = family(p); });
-                buildPills(); buildFacets(); render();
-            })
-            .catch(function () {
-                document.getElementById('inv-count').textContent = 'INVENTORY UNAVAILABLE RIGHT NOW.';
-            });
+        }
+        loadPieces();
+        /* admin saved in another tab -> refresh instantly */
+        window.addEventListener('storage', function (e) { if (e.key === 'pt_demo_pieces_v3') loadPieces(); });
     })();
     </script>
     <script src="/scripts/premium-ui.js"></script>
