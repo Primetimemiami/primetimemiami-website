@@ -226,7 +226,7 @@ module.exports = async (req, res) => {
 
       // 1. Notification email to the team
       if (template) {
-        const toEmail = process.env.NOTIFICATION_EMAIL || "info@primetimemiami.com";
+        const toEmail = process.env.NOTIFICATION_EMAIL || "sales@primetimemiami.com";
         console.log("[submit-form] Queuing notification email to:", toEmail);
 
         emailPromises.push(
