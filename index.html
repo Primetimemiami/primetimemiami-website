@@ -132,9 +132,9 @@
 
     <!-- FLOATING NAV (desktop links / mobile burger) -->
     <nav id="pt-desknav" aria-label="Main">
-        <a href="inventory.html">Browse Pieces</a>
-        <a href="about.html">About</a>
-        <a href="process.html">Process</a>
+        <a href="/inventory">Browse Pieces</a>
+        <a href="/about">About</a>
+        <a href="/process">Process</a>
         <a href="#" onclick="event.preventDefault(); app.openModal('BUY')">Request a Piece</a>
     </nav>
     <!-- FLOATING MENU -->
@@ -143,9 +143,9 @@
         <svg id="pt-menu-close-ic" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <div id="pt-menu" class="fixed inset-0 flex flex-col items-center justify-center space-y-8" style="z-index:65;background:rgba(0,0,0,0.96);opacity:0;pointer-events:none;transition:opacity 0.45s ease;">
-        <a href="inventory.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Browse Pieces</a>
-        <a href="about.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
-        <a href="process.html" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
+        <a href="/inventory" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Browse Pieces</a>
+        <a href="/about" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
+        <a href="/process" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
         <button onclick="ptMenu(false); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-10 py-4 text-sm font-space font-bold tracking-widest">Request a Piece</button>
     </div>
     <script>
@@ -186,7 +186,7 @@
                     <button id="hero-btn" onclick="app.openModal('BUY')" class="brutal-btn brutal-btn--solid w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center">
                         <span id="hero-btn-text">Request a Piece</span>
                     </button>
-                    <a href="inventory.html" class="brutal-btn w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center inline-flex items-center justify-center">
+                    <a href="/inventory" class="brutal-btn w-[260px] sm:w-[300px] py-3.5 sm:py-4 text-xs sm:text-sm font-space font-bold tracking-widest text-center inline-flex items-center justify-center">
                         Browse Pieces
                     </a>
                 </div>
@@ -245,7 +245,7 @@
                     <h2 class="font-space font-bold">Buy, Sell<br><span class="stroke-text">and Trade.</span></h2>
                     <p class="no-caps">Whether you're hunting a grail or moving a piece from your collection, we handle both sides of the deal. Every piece independently authenticated, fully insured, and handled with discretion.</p>
                 </div>
-                <a href="inventory.html" class="pt-bst__card">
+                <a href="/inventory" class="pt-bst__card">
                     <img src="images/pieces/piece-01.webp" alt="Rolex Submariner and GMT-Master II in boxes, available to buy" loading="lazy">
                     <span class="pt-bst__label">Buy a Watch <span class="ar">&rarr;</span></span>
                 </a>
@@ -432,7 +432,7 @@
         <!-- FOOTER -->
         <footer class="relative border-t border-ivory/10 py-14 sm:py-16 px-6">
             <div class="max-w-5xl mx-auto text-center">
-                <a href="index.html" class="inline-block mb-10">
+                <a href="/" class="inline-block mb-10">
                     <img src="images/logo.png" alt="Prime Time Miami" class="h-9 w-auto object-contain mx-auto">
                 </a>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mb-12">
@@ -457,7 +457,7 @@
                 </div>
                 <p class="text-xs font-space uppercase tracking-widest text-muted mb-4">&copy; 2026 Prime Time Miami</p>
                 <p class="no-caps text-[10px] text-muted/30 font-inter max-w-lg mx-auto mb-3 leading-relaxed">Prime Time Miami is an independent sourcing firm and is not an authorized dealer for any watch brand. All brand names, logos, and trademarks referenced on this site belong to their respective owners and are used for identification purposes only.</p>
-                <a href="privacy.html" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
+                <a href="/privacy" class="text-[10px] text-muted/30 font-space uppercase tracking-widest hover:text-muted transition-colors">Privacy &amp; Terms</a>
             </div>
         </footer>
     </main>
@@ -977,7 +977,7 @@
       if (picks.length < 3) { document.getElementById('featured').style.display = 'none'; return; }
       grid.innerHTML = picks.map(function (p) {
         var sub = [p.ref ? 'Ref. ' + p.ref : '', p.year].filter(Boolean).join(' · ');
-        return '<a class="pt-feat__card" href="watch.html?id=' + encodeURIComponent(p.id) + '">' +
+        return '<a class="pt-feat__card" href="/watch?id=' + encodeURIComponent(p.id) + '">' +
           '<div class="pt-feat__img"><img src="' + esc(p.image) + '" alt="' + esc(p.brand + ' ' + p.model) + '" loading="lazy"></div>' +
           '<span class="pt-feat__brand">' + esc(p.brand).toUpperCase() + '</span>' +
           '<span class="pt-feat__name">' + esc(p.model) + '</span>' +
