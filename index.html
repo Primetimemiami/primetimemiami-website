@@ -952,7 +952,7 @@
   fetch('/api/pieces')
     .then(function (r) { if (!r.ok) throw new Error('api'); return r.json(); })
     .catch(function () {
-      var demo = localStorage.getItem('pt_demo_pieces_v4');
+      var demo = localStorage.getItem('pt_demo_pieces_v5');
       if (demo) return JSON.parse(demo);
       return fetch('/data/pieces.json').then(function (r) { return r.json(); });
     })
@@ -989,7 +989,7 @@
     .catch(function () { document.getElementById('featured').style.display = 'none'; });
   }
   loadFeatured();
-  window.addEventListener('storage', function (e) { if (e.key === 'pt_demo_pieces_v4') loadFeatured(); });
+  window.addEventListener('storage', function (e) { if (e.key === 'pt_demo_pieces_v5') loadFeatured(); });
 })();
 </script>
 </body>
