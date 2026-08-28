@@ -231,7 +231,7 @@ module.exports = async (req, res) => {
 
         emailPromises.push(
           getResend().emails.send({
-            from: "Prime Time Miami <inquiries@mail.primetimemiami.com>",
+            from: "Prime Time Miami <sales@primetimemiami.com>",
             to: toEmail,
             subject: template.subject,
             html: template.body,
@@ -255,7 +255,7 @@ module.exports = async (req, res) => {
           render(React.createElement(WelcomeEmail, { firstName }))
             .then(welcomeHtml =>
               getResend().emails.send({
-                from: "Prime Time Miami <inquiries@mail.primetimemiami.com>",
+                from: "Prime Time Miami <sales@primetimemiami.com>",
                 to: data.email,
                 subject: "Welcome to the Private List",
                 html: welcomeHtml,
@@ -287,7 +287,7 @@ module.exports = async (req, res) => {
           }))
             .then(inquiryHtml =>
               getResend().emails.send({
-                from: "Prime Time Miami <inquiries@mail.primetimemiami.com>",
+                from: "Prime Time Miami <sales@primetimemiami.com>",
                 to: data.email,
                 subject: `Your Inquiry: ${data.watch_name || "Watch Inquiry"}`,
                 html: inquiryHtml,
