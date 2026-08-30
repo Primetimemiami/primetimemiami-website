@@ -1006,3 +1006,9 @@ body { text-transform: none !important; }
 #pt-desknav a:hover { opacity: 0.6; }
 @media (max-width: 767px) { #pt-desknav { display: none; } }
 @media (min-width: 768px) { #pt-menu-btn { display: none !important; } }
+
+/* short viewports: shrink the strip so it never crowds the hero content */
+@media (max-height: 740px) {
+  .pt-strip { bottom: 32px; }
+  .pt-strip__shot { width: clamp(48px, 7vw, 92px); }
+}
