@@ -1,8 +1,41 @@
 const { Resend } = require("resend");
-const { render } = require("@react-email/render");
-const React = require("react");
-const { WelcomeEmail } = require("./emails/welcome.js");
-const { InquiryEmail } = require("./emails/inquiry.js");
+
+// Customer-facing emails (self-contained HTML, dark to survive Gmail dark mode)
+function customerEmail(heading, bodyHtml) {
+  return `
+    <div style="background: #0a0a0a; padding: 40px 16px;">
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 520px; margin: 0 auto; padding: 36px 28px; color: #f2f1ec; background: #111111; border: 1px solid #2a2a2a;">
+        <div style="border-bottom: 1px solid #2a2a2a; padding-bottom: 16px; margin-bottom: 26px;">
+          <strong style="font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #f2f1ec;">PRIME TIME MIAMI</strong>
+        </div>
+        <h2 style="font-size: 19px; font-weight: 700; margin: 0 0 18px; color: #f2f1ec;">${heading}</h2>
+        ${bodyHtml}
+        <div style="border-top: 1px solid #2a2a2a; margin-top: 30px; padding-top: 14px; font-size: 12px; color: #8a8a84;">
+          Prime Time Miami · Miami Luxury Watch Dealer<br>
+          <a href="https://primetimemiami.com" style="color: #8a8a84;">primetimemiami.com</a> · <a href="https://www.instagram.com/primetime.miami/" style="color: #8a8a84;">@primetime.miami</a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function buildWelcomeHtml(firstName) {
+  return customerEmail(
+    firstName ? `Welcome, ${firstName}.` : "Welcome.",
+    `<p style="font-size: 15px; line-height: 1.6; color: #c9c8c1; margin: 0 0 14px;">You are on the Prime Time Miami private list. You will be the first to hear about new pieces, offers and drops.</p>
+     <p style="font-size: 15px; line-height: 1.6; color: #c9c8c1; margin: 0;">Looking for something specific right now? Just reply to this email or DM us on Instagram and we will source it.</p>`
+  );
+}
+
+function buildInquiryHtml({ firstName, watchName, watchRef, watchBrand, watchImage }) {
+  const piece = [watchBrand, watchName].filter(Boolean).join(" ") || "your request";
+  return customerEmail(
+    "We received your inquiry.",
+    `${watchImage ? `<img src="${watchImage}" alt="${piece}" style="width: 100%; max-width: 240px; display: block; margin: 0 auto 20px; border: 1px solid #2a2a2a;">` : ""}
+     <p style="font-size: 15px; line-height: 1.6; color: #c9c8c1; margin: 0 0 14px;">${firstName ? `${firstName}, thank` : "Thank"} you for your inquiry about <strong style="color: #f2f1ec;">${piece}</strong>${watchRef ? ` (Ref. ${watchRef})` : ""}.</p>
+     <p style="font-size: 15px; line-height: 1.6; color: #c9c8c1; margin: 0;">We will get back to you as soon as possible. For the fastest response, message us on WhatsApp at +1 (305) 922-4975.</p>`
+  );
+}
 
 // Supabase REST API — Prime Time Miami project
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -252,15 +285,12 @@ module.exports = async (req, res) => {
         console.log("[submit-form] Queuing welcome email to:", data.email);
 
         emailPromises.push(
-          render(React.createElement(WelcomeEmail, { firstName }))
-            .then(welcomeHtml =>
-              getResend().emails.send({
-                from: "Prime Time Miami <sales@primetimemiami.com>",
-                to: data.email,
-                subject: "Welcome to the Private List",
-                html: welcomeHtml,
-              })
-            )
+          getResend().emails.send({
+            from: "Prime Time Miami <sales@primetimemiami.com>",
+            to: data.email,
+            subject: "Welcome to the Private List",
+            html: buildWelcomeHtml(firstName),
+          })
             .then(result => {
               if (result.error) console.error("[submit-form] WELCOME EMAIL ERROR:", JSON.stringify(result.error));
               else { console.log("[submit-form] Welcome email sent -ID:", result.data?.id); welcomeSent = true; }
@@ -278,21 +308,18 @@ module.exports = async (req, res) => {
         console.log("[submit-form] Queuing inquiry confirmation to:", data.email);
 
         emailPromises.push(
-          render(React.createElement(InquiryEmail, {
-            firstName,
-            watchName: data.watch_name || null,
-            watchRef: data.watch_ref || null,
-            watchBrand: watchBrand || null,
-            watchImage: watchImage || null,
-          }))
-            .then(inquiryHtml =>
-              getResend().emails.send({
-                from: "Prime Time Miami <sales@primetimemiami.com>",
-                to: data.email,
-                subject: `Your Inquiry: ${data.watch_name || "Watch Inquiry"}`,
-                html: inquiryHtml,
-              })
-            )
+          getResend().emails.send({
+            from: "Prime Time Miami <sales@primetimemiami.com>",
+            to: data.email,
+            subject: `Your Inquiry: ${data.watch_name || "Watch Inquiry"}`,
+            html: buildInquiryHtml({
+              firstName,
+              watchName: data.watch_name || null,
+              watchRef: data.watch_ref || null,
+              watchBrand: watchBrand || null,
+              watchImage: watchImage || null,
+            }),
+          })
             .then(result => {
               if (result.error) console.error("[submit-form] INQUIRY EMAIL ERROR:", JSON.stringify(result.error));
               else { console.log("[submit-form] Inquiry email sent -ID:", result.data?.id); inquirySent = true; }
