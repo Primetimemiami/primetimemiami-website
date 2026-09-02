@@ -35,7 +35,12 @@
         body { color: var(--l1) !important; opacity: 1 !important; transition: none !important; }
         ::selection { background: #fff; color: #000; }
 
-        /* toolbar */
+        /* toolbar (explicit CSS: the compiled Tailwind sheet does not include utilities for this page) */
+        .tb { max-width: 1152px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 16px 24px; }
+        .tb-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+        .tb-logo img { height: 24px; width: auto; display: block; }
+        .settings-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--line); }
+        .settings-card h3 { font-weight: 700; font-size: 18px; letter-spacing: -.01em; margin: 0 0 18px; }
         .top-toolbar { position: sticky; top: 0; z-index: 40; background: rgba(0,0,0,.85); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
         .save-state { font-size: 11px; letter-spacing: .12em; color: var(--l2); }
         .btn-primary, .btn-secondary, .btn-danger {
@@ -144,16 +149,16 @@
 <body>
     <!-- Top toolbar -->
     <div class="top-toolbar">
-        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 gap-4 flex-wrap">
-            <div class="flex items-center gap-4">
-                <a href="/admin#journal" class="flex items-center gap-3">
-                    <img src="/images/logo.png" alt="Prime Time Miami" class="h-6 w-auto">
+        <div class="tb">
+            <div class="tb-group">
+                <a href="/admin#journal" class="tb-logo">
+                    <img src="/images/logo.png" alt="Prime Time Miami">
                 </a>
                 <a href="/admin#journal" class="btn-secondary">&larr; Dashboard</a>
                 <span class="text-muted">/</span>
-                <span class="text-[10px] tracking-[0.22em] text-muted font-space">Journal</span>
+                <span class="save-state">Journal</span>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="tb-group">
                 <span id="save-state" class="save-state">Draft</span>
                 <button id="save-draft-btn" class="btn-secondary">Save Draft</button>
                 <button id="publish-btn" class="btn-primary">Publish</button>
@@ -180,7 +185,7 @@
 
         <!-- Settings -->
         <div class="settings-card">
-            <h3 class="font-space font-bold text-lg tracking-tight mb-5">Article Settings</h3>
+            <h3>Article Settings</h3>
 
             <div class="settings-row">
                 <label for="setting-hero-alt">Hero Image Alt Text</label>
@@ -217,9 +222,9 @@
                 <input id="setting-pubdate" type="date">
             </div>
 
-            <div class="flex flex-wrap items-center justify-between gap-3 pt-4 mt-4" style="border-top:1px solid var(--line)">
-                <div class="text-xs text-muted" id="meta-info"></div>
-                <div class="flex flex-wrap items-center gap-3">
+            <div class="settings-foot">
+                <div class="field-help" id="meta-info"></div>
+                <div class="tb-group">
                     <button id="unpublish-btn" class="btn-secondary" style="display:none">Unpublish</button>
                     <button id="delete-btn" class="btn-secondary btn-danger" style="display:none">Delete Article</button>
                 </div>
@@ -228,7 +233,7 @@
 
         <!-- Live SEO checklist -->
         <div class="settings-card" id="seo-check-card">
-            <h3 class="font-space font-bold text-lg tracking-tight mb-2">SEO Check</h3>
+            <h3 style="margin-bottom:6px">SEO Check</h3>
             <p class="field-help" style="margin:0 0 12px">Updates as you write. All green before publishing gives the best shot at ranking.</p>
             <ul id="seo-checklist" class="seo-check"></ul>
         </div>
@@ -236,8 +241,8 @@
 
     <!-- Unauthorized gate (shown if session expires) -->
     <div id="unauth-gate">
-        <div class="text-center">
-            <p class="text-muted mb-4 font-space text-xs tracking-[0.22em]">Session expired</p>
+        <div style="text-align:center">
+            <p class="field-help" style="margin:0 0 16px;letter-spacing:.22em">Session expired</p>
             <a href="/admin#journal" class="btn-primary">Sign in again</a>
         </div>
     </div>
