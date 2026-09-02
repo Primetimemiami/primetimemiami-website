@@ -1036,3 +1036,11 @@ body { text-transform: none !important; }
 /* mobile hero: bigger strip thumbnails to fill the gap under the buttons */
 @media (max-width: 640px) { .pt-strip { bottom: 40px; gap: 10px; } .pt-strip__shot { width: 25vw; } }
 @media (max-width: 640px) and (max-height: 700px) { .pt-strip { bottom: 28px; } .pt-strip__shot { width: 20vw; } }
+
+/* mobile hero: strip sits in flow, centered between the buttons and the hero bottom */
+@media (max-width: 640px) {
+  .pt-hero { padding-bottom: 0 !important; padding-top: 72px; justify-content: flex-start; }
+  .pt-hero__content { margin-top: auto; }
+  .pt-strip { position: static; margin-top: auto; margin-bottom: auto; padding: 0 16px; }
+  .pt-strip__shot { width: 28vw; }
+}
