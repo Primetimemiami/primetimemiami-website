@@ -133,6 +133,7 @@
     <!-- FLOATING NAV (desktop links / mobile burger) -->
     <nav id="pt-desknav" aria-label="Main">
         <a href="/inventory">Browse Pieces</a>
+        <a href="/journal">Journal</a>
         <a href="/about">About</a>
         <a href="/process">Process</a>
         <a href="#" onclick="event.preventDefault(); app.openModal('BUY')">Request a Piece</a>
@@ -144,6 +145,7 @@
     </button>
     <div id="pt-menu" class="fixed inset-0 flex flex-col items-center justify-center space-y-8" style="z-index:65;background:rgba(0,0,0,0.96);opacity:0;pointer-events:none;transition:opacity 0.45s ease;">
         <a href="/inventory" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Browse Pieces</a>
+        <a href="/journal" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Journal</a>
         <a href="/about" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">About</a>
         <a href="/process" class="text-2xl font-space font-bold tracking-widest hover:text-muted transition-colors">Process</a>
         <button onclick="ptMenu(false); app.openModal('BUY')" class="brutal-btn brutal-btn--solid px-10 py-4 text-sm font-space font-bold tracking-widest">Request a Piece</button>

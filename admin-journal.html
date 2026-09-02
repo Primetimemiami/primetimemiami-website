@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=2" />
+    <title>Write | Journal | Prime Time Miami</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css?v=31">
+
+    <!-- Editor.js + plugins (UMD via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.30.7/dist/editorjs.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@2.8.8/dist/header.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@2.0.9/dist/editorjs-list.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@2.10.2/dist/image.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@2.7.6/dist/quote.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@2.7.6/dist/embed.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@1.5.1/dist/inline-code.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@2.9.3/dist/code.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@1.4.2/dist/delimiter.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/marker@1.4.0/dist/marker.umd.min.js"></script>
+
+    <style>
+        :root {
+            --l1: #fff;
+            --l2: rgba(255,255,255,.6);
+            --l3: rgba(255,255,255,.32);
+            --line: rgba(255,255,255,.14);
+            --be: rgba(255,255,255,.05);
+            --red: #f87171;
+        }
+        html, body { background: #000 !important; }
+        body { color: var(--l1) !important; }
+        ::selection { background: #fff; color: #000; }
+
+        /* toolbar */
+        .top-toolbar { position: sticky; top: 0; z-index: 40; background: rgba(0,0,0,.85); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+        .save-state { font-size: 11px; letter-spacing: .12em; color: var(--l2); }
+        .btn-primary, .btn-secondary, .btn-danger {
+            font-size: 11px; letter-spacing: .12em; font-weight: 600; padding: 9px 15px; cursor: pointer;
+            border: 1px solid #fff; transition: all .15s; text-decoration: none; display: inline-block;
+        }
+        .btn-primary { background: #fff; color: #000; }
+        .btn-primary:hover { opacity: .82; }
+        .btn-secondary { background: transparent; color: var(--l1); border-color: rgba(255,255,255,.3); }
+        .btn-secondary:hover { border-color: #fff; }
+        .btn-danger { background: transparent; color: var(--red); border-color: rgba(248,113,113,.35); }
+        .btn-danger:hover { border-color: var(--red); }
+
+        /* shell */
+        .editor-shell { max-width: 760px; margin: 0 auto; padding: 48px 24px 140px; }
+        .title-input, .subtitle-input {
+            width: 100%; background: transparent; border: none; outline: none;
+            color: var(--l1); resize: none; padding: 0; margin: 0; overflow: hidden;
+        }
+        .title-input { font-weight: 700; font-size: 44px; line-height: 1.05; letter-spacing: -.03em; margin-bottom: 14px; }
+        .title-input::placeholder { color: var(--l3); }
+        .subtitle-input { font-weight: 400; font-size: 21px; line-height: 1.4; color: var(--l2); margin-bottom: 22px; }
+        .subtitle-input::placeholder { color: var(--l3); }
+        .field-help { font-size: 11px; line-height: 1.6; color: var(--l2); }
+        .char-count { font-size: 11px; color: var(--l3); }
+        .char-count.over { color: var(--red); }
+
+        /* hero */
+        .hero-upload {
+            position: relative; border: 1px dashed var(--l3); background: var(--be);
+            aspect-ratio: 16/9; margin-bottom: 34px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; overflow: hidden; transition: border-color .15s;
+        }
+        .hero-upload:hover { border-color: var(--l1); }
+        .hero-placeholder { font-size: 11px; line-height: 1.7; letter-spacing: .08em; color: var(--l2); text-align: center; padding: 24px; max-width: 460px; }
+        .hero-upload img { display: none; width: 100%; height: 100%; object-fit: cover; }
+        .hero-upload.has-image img { display: block; }
+        .hero-upload.has-image .hero-placeholder { display: none; }
+        .hero-upload .hero-remove { display: none; position: absolute; top: 10px; right: 10px; font-size: 10px; letter-spacing: .1em; background: #fff; color: #000; border: 0; padding: 6px 10px; cursor: pointer; }
+        .hero-upload.has-image .hero-remove { display: block; }
+
+        /* settings */
+        .settings-card { border: 1px solid var(--line); padding: 26px; margin-top: 48px; }
+        .settings-row { margin-bottom: 20px; }
+        .settings-row label { display: block; font-size: 10px; letter-spacing: .16em; font-weight: 600; color: var(--l2); margin-bottom: 7px; }
+        .settings-row input, .settings-row textarea, .settings-row select {
+            width: 100%; background: transparent; color: var(--l1); border: 0; border-bottom: 1px solid var(--line);
+            padding: 8px 2px; outline: none; font-size: 14px; border-radius: 0; color-scheme: dark;
+        }
+        .settings-row input:focus, .settings-row textarea:focus, .settings-row select:focus { border-bottom-color: var(--l1); }
+        .settings-row input::placeholder, .settings-row textarea::placeholder { color: var(--l3); }
+
+        .seo-check { list-style: none; padding: 0; margin: 0; }
+        .seo-check li { font-size: 12px; color: var(--l2); padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; gap: 10px; align-items: flex-start; }
+        .seo-check li:last-child { border-bottom: 0; }
+        .seo-check .mark { color: var(--l3); flex: none; }
+        .seo-check li.ok { color: var(--l1); }
+        .seo-check li.ok .mark { color: var(--l1); }
+        .seo-check li.bad .mark { color: var(--red); }
+
+        /* toast + gate */
+        .toast {
+            position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+            background: #fff; color: #000; font-size: 12px; letter-spacing: .08em; padding: 12px 20px;
+            opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 200;
+        }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+        .toast.error { background: #b91c1c; color: #fff; }
+        #unauth-gate { display: none; position: fixed; inset: 0; z-index: 300; background: #000; align-items: center; justify-content: center; }
+
+        /* Editor.js dark theme */
+        .codex-editor { color: var(--l1); }
+        .cdx-block { font-size: 17px; line-height: 1.7; }
+        .ce-header { font-weight: 700; letter-spacing: -.02em; }
+        h2.ce-header { font-size: 30px; }
+        h3.ce-header { font-size: 23px; }
+        h4.ce-header { font-size: 19px; }
+        .ce-paragraph[data-placeholder]:empty::before, .ce-header[data-placeholder]:empty::before { color: var(--l3); }
+        .cdx-input { border: 1px solid var(--line); background: transparent; color: var(--l1); }
+        .cdx-quote { border-left: 2px solid var(--l1); padding-left: 18px; }
+        .cdx-quote__caption { font-size: 12px; color: var(--l2); }
+        .ce-code__textarea { font-family: ui-monospace, Menlo, monospace; font-size: 13px; background: var(--be); color: var(--l1); border: 1px solid var(--line); }
+        .ce-delimiter::before { color: var(--l3); }
+        .embed-tool__caption { font-size: 12px; color: var(--l2); }
+        .image-tool__caption { color: var(--l2); }
+        .ce-toolbar__content { max-width: 760px; }
+        .ce-toolbar__settings-btn, .ce-toolbar__plus { color: var(--l1); background: transparent; border: 1px solid transparent; }
+        .ce-toolbar__settings-btn:hover, .ce-toolbar__plus:hover { background: var(--be); border-color: var(--line); }
+        .ce-inline-toolbar, .ce-popover, .ce-popover__container { background: #0a0a0a; border: 1px solid var(--line); box-shadow: 0 6px 24px rgba(0,0,0,.5); color: var(--l1); }
+        .ce-inline-tool, .ce-popover-item__title { color: var(--l1); }
+        .ce-inline-tool svg, .ce-conversion-tool__icon, .ce-popover-item__icon { color: var(--l1); background: transparent; }
+        .ce-inline-tool:hover, .ce-popover-item:hover, .ce-conversion-tool:hover { background: var(--be); }
+        .ce-popover-item--active { background: #fff; color: #000; }
+        .ce-popover-item--active .ce-popover-item__title { color: #000; }
+        .ce-popover-item__secondary-title { color: var(--l3); }
+        .ce-popover__nothing-found-message { color: var(--l2); }
+        .cdx-search-field { background: transparent; border: 1px solid var(--line); }
+        .cdx-search-field__input { color: var(--l1); font-size: 13px; }
+        .cdx-search-field__input::placeholder { color: var(--l3); }
+        .cdx-search-field__icon svg { color: var(--l2); }
+        .cdx-marker { background: #fff; color: #000; }
+        .ce-inline-toolbar__dropdown:hover, .ce-inline-toolbar__dropdown { background: transparent; color: var(--l1); }
+        .ce-inline-tool-input { background: var(--be); color: var(--l1); }
+    </style>
+</head>
+<body>
+    <!-- Top toolbar -->
+    <div class="top-toolbar">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 gap-4 flex-wrap">
+            <div class="flex items-center gap-4">
+                <a href="/admin#journal" class="flex items-center gap-3">
+                    <img src="/images/logo.png" alt="Prime Time Miami" class="h-6 w-auto">
+                </a>
+                <a href="/admin#journal" class="btn-secondary">&larr; Dashboard</a>
+                <span class="text-muted">/</span>
+                <span class="text-[10px] tracking-[0.22em] text-muted font-space">Journal</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span id="save-state" class="save-state">Draft</span>
+                <button id="save-draft-btn" class="btn-secondary">Save Draft</button>
+                <button id="publish-btn" class="btn-primary">Publish</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="editor-shell">
+        <!-- Hero image -->
+        <div id="hero-upload" class="hero-upload">
+            <div class="hero-placeholder">+ Upload hero image (16:9, at least 1600px wide. Sharp, high-contrast shots of the actual watch work best)</div>
+            <img id="hero-img" src="" alt="Hero">
+            <button id="hero-remove-btn" class="hero-remove" type="button">Remove</button>
+            <input id="hero-file-input" type="file" accept="image/*" class="hidden">
+        </div>
+
+        <!-- Title + Subtitle -->
+        <textarea id="title-input" class="title-input" rows="1" placeholder="Title"></textarea>
+        <textarea id="subtitle-input" class="subtitle-input" rows="1" placeholder="A short subtitle (optional)"></textarea>
+        <p class="field-help" style="margin-top:-6px;margin-bottom:18px">Title is your H1 and browser-tab text. Include the main keyword (brand + model or topic), keep it under 70 characters, make it specific. <span class="char-count" id="title-count"></span></p>
+
+        <!-- Editor.js mount point -->
+        <div id="editor"></div>
+
+        <!-- Settings -->
+        <div class="settings-card">
+            <h3 class="font-space font-bold text-lg tracking-tight mb-5">Article Settings</h3>
+
+            <div class="settings-row">
+                <label for="setting-hero-alt">Hero Image Alt Text</label>
+                <input id="setting-hero-alt" type="text" placeholder='Describe the photo, e.g. "Rolex Daytona 126500LN on a Porsche seat"'>
+                <p class="field-help">Read by Google Images and screen readers. Describe what is actually in the photo and include the reference when relevant. Also used as the social share image description.</p>
+            </div>
+
+            <div class="settings-row">
+                <label for="setting-category">Category</label>
+                <input id="setting-category" type="text" placeholder="e.g. Market Notes, New Arrivals, Sourcing Stories">
+                <p class="field-help">Groups posts on the journal index. Reuse an existing category instead of inventing a new one each time.</p>
+            </div>
+
+            <div class="settings-row">
+                <label for="setting-seo-title">SEO Title (defaults to article title)</label>
+                <input id="setting-seo-title" type="text" placeholder="Optional. Overrides title in search results.">
+                <p class="field-help">Only set this when the article title is too long or too clever for Google. Under 70 characters, keyword first. <span class="char-count" id="seo-title-count"></span></p>
+            </div>
+
+            <div class="settings-row">
+                <label for="setting-seo-description">SEO Description (defaults to excerpt)</label>
+                <textarea id="setting-seo-description" rows="3" placeholder="Optional. 1 to 2 sentences shown in search results."></textarea>
+                <p class="field-help">Shows in Google under the title. 50 to 160 characters. Lead with the main keyword and give a reason to click. <span class="char-count" id="seo-desc-count"></span></p>
+            </div>
+
+            <div class="settings-row">
+                <label for="setting-excerpt">Excerpt (defaults to first paragraph)</label>
+                <textarea id="setting-excerpt" rows="2" placeholder="Optional. Short preview shown on the journal index."></textarea>
+                <p class="field-help">Journal preview line. Also the fallback search description when the SEO Description above is empty.</p>
+            </div>
+
+            <div class="settings-row">
+                <label for="setting-pubdate">Article date (shown on the journal and used for sort order. Leave blank to auto-set when you publish.)</label>
+                <input id="setting-pubdate" type="date">
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-4 mt-4" style="border-top:1px solid var(--line)">
+                <div class="text-xs text-muted" id="meta-info"></div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <button id="unpublish-btn" class="btn-secondary" style="display:none">Unpublish</button>
+                    <button id="delete-btn" class="btn-secondary btn-danger" style="display:none">Delete Article</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live SEO checklist -->
+        <div class="settings-card" id="seo-check-card">
+            <h3 class="font-space font-bold text-lg tracking-tight mb-2">SEO Check</h3>
+            <p class="field-help" style="margin:0 0 12px">Updates as you write. All green before publishing gives the best shot at ranking.</p>
+            <ul id="seo-checklist" class="seo-check"></ul>
+        </div>
+    </main>
+
+    <!-- Unauthorized gate (shown if session expires) -->
+    <div id="unauth-gate">
+        <div class="text-center">
+            <p class="text-muted mb-4 font-space text-xs tracking-[0.22em]">Session expired</p>
+            <a href="/admin#journal" class="btn-primary">Sign in again</a>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        // ─── Auth: same token /admin stores at login ──────────────
+        const API = "/api/journal-admin";
+        const token = localStorage.getItem("pt_admin_token") || "";
+        if (!token) window.location.href = "/admin#journal";
+
+        async function adminFetch(action, body) {
+            const r = await fetch(API, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(Object.assign({ action, token }, body || {})),
+            });
+            const json = await r.json().catch(() => ({}));
+            if (r.status === 401) { localStorage.removeItem("pt_admin_token"); throw new Error("Unauthorized"); }
+            if (!r.ok) throw new Error(json.error || ("Request failed (" + r.status + ")"));
+            return json;
+        }
+
+        // ─── State ─────────────────────────────────────────────
+        const params = new URLSearchParams(window.location.search);
+        let articleId = params.get("id");
+
+        let editor;
+        let heroImageUrl = "";
+        let saving = false;
+        let pendingDirty = false;
+        let autoSaveTimer = null;
+        let currentStatus = "draft";
+
+        // ─── DOM refs ──────────────────────────────────────────
+        const titleEl       = document.getElementById("title-input");
+        const subtitleEl    = document.getElementById("subtitle-input");
+        const heroUploadEl  = document.getElementById("hero-upload");
+        const heroImgEl     = document.getElementById("hero-img");
+        const heroFileInput = document.getElementById("hero-file-input");
+        const heroRemoveBtn = document.getElementById("hero-remove-btn");
+        const saveStateEl   = document.getElementById("save-state");
+        const saveDraftBtn  = document.getElementById("save-draft-btn");
+        const publishBtn    = document.getElementById("publish-btn");
+        const unpublishBtn  = document.getElementById("unpublish-btn");
+        const deleteBtn     = document.getElementById("delete-btn");
+        const metaInfoEl    = document.getElementById("meta-info");
+        const toastEl       = document.getElementById("toast");
+        const unauthEl      = document.getElementById("unauth-gate");
+        const settingCategory = document.getElementById("setting-category");
+        const settingHeroAlt  = document.getElementById("setting-hero-alt");
+        const settingSeoTitle = document.getElementById("setting-seo-title");
+        const settingSeoDesc  = document.getElementById("setting-seo-description");
+        const settingExcerpt  = document.getElementById("setting-excerpt");
+        const settingPubdate  = document.getElementById("setting-pubdate");
+
+        function showUnauth() { unauthEl.style.display = "flex"; }
+
+        function showToast(msg, isError = false) {
+            toastEl.textContent = msg;
+            toastEl.classList.toggle("error", isError);
+            toastEl.classList.add("show");
+            clearTimeout(showToast._t);
+            showToast._t = setTimeout(() => toastEl.classList.remove("show"), 3000);
+        }
+
+        function autoResize(textarea) {
+            textarea.style.height = "auto";
+            textarea.style.height = textarea.scrollHeight + "px";
+        }
+        titleEl.addEventListener("input", () => { autoResize(titleEl); markDirty(); });
+        subtitleEl.addEventListener("input", () => { autoResize(subtitleEl); markDirty(); });
+
+        function markDirty() {
+            saveStateEl.textContent = "Unsaved";
+            pendingDirty = true;
+            scheduleAutoSave();
+            scheduleSeoCheck();
+        }
+        function scheduleAutoSave() {
+            if (autoSaveTimer) clearTimeout(autoSaveTimer);
+            autoSaveTimer = setTimeout(() => { if (pendingDirty && !saving) save({ silent: true }); }, 30000);
+        }
+
+        // ─── Image upload (client-side compression) ────────────
+        async function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(String(reader.result).split(",")[1]);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+        // Vercel functions cap request bodies at 4.5MB. Cap the longest side at
+        // 1800px and re-encode as JPEG so phone photos always fit.
+        async function compressImage(file) {
+            if (!file || !file.type || !file.type.startsWith("image/")) return file;
+            if (file.type === "image/svg+xml" || file.type === "image/gif") return file;
+            if (file.size < 700 * 1024) return file;
+            const MAX_SIDE = 1800, QUALITY = 0.85;
+            const objectUrl = URL.createObjectURL(file);
+            try {
+                const img = await new Promise((resolve, reject) => {
+                    const i = new Image();
+                    i.onload = () => resolve(i);
+                    i.onerror = () => reject(new Error("Could not decode image"));
+                    i.src = objectUrl;
+                });
+                const scale = Math.min(1, MAX_SIDE / Math.max(img.width, img.height));
+                const canvas = document.createElement("canvas");
+                canvas.width = Math.round(img.width * scale);
+                canvas.height = Math.round(img.height * scale);
+                canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+                const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", QUALITY));
+                if (!blob) return file;
+                const compressed = new File([blob], file.name.replace(/\.[^.]+$/, "") + ".jpg", { type: "image/jpeg" });
+                return compressed.size < file.size ? compressed : file;
+            } catch (e) {
+                return file;
+            } finally {
+                URL.revokeObjectURL(objectUrl);
+            }
+        }
+        async function uploadImage(file) {
+            file = await compressImage(file);
+            const base64 = await fileToBase64(file);
+            return adminFetch("upload-image", { filename: file.name, data: base64, contentType: file.type });
+        }
+
+        heroUploadEl.addEventListener("click", (ev) => { if (ev.target === heroRemoveBtn) return; heroFileInput.click(); });
+        heroFileInput.addEventListener("change", async () => {
+            const file = heroFileInput.files[0];
+            if (!file) return;
+            try {
+                showToast("Uploading hero...");
+                const json = await uploadImage(file);
+                heroImageUrl = json.file.url;
+                heroImgEl.src = heroImageUrl;
+                heroUploadEl.classList.add("has-image");
+                markDirty();
+                showToast("Hero uploaded");
+            } catch (e) {
+                if (e.message === "Unauthorized") return showUnauth();
+                showToast("Upload failed: " + e.message, true);
+            }
+        });
+        heroRemoveBtn.addEventListener("click", (ev) => {
+            ev.stopPropagation();
+            heroImageUrl = ""; heroImgEl.src = "";
+            heroUploadEl.classList.remove("has-image");
+            heroFileInput.value = "";
+            markDirty();
+        });
+
+        // ─── Editor.js init ────────────────────────────────────
+        function initEditor(initialData) {
+            editor = new EditorJS({
+                holder: "editor",
+                placeholder: "Start writing...",
+                autofocus: !articleId,
+                data: initialData || { blocks: [{ type: "paragraph", data: { text: "" } }] },
+                tools: {
+                    header: { class: window.Header, config: { levels: [2, 3, 4], defaultLevel: 2, placeholder: "Section heading" }, shortcut: "CMD+SHIFT+H" },
+                    list: { class: window.EditorjsList || window.List, inlineToolbar: true, config: { defaultStyle: "unordered" } },
+                    image: {
+                        class: window.ImageTool,
+                        config: {
+                            uploader: {
+                                async uploadByFile(file) {
+                                    try { return await uploadImage(file); }
+                                    catch (e) { if (e.message === "Unauthorized") showUnauth(); return { success: 0 }; }
+                                },
+                            },
+                        },
+                    },
+                    quote: { class: window.Quote, inlineToolbar: true, config: { quotePlaceholder: "Quote", captionPlaceholder: "Attribution" } },
+                    embed: { class: window.Embed, config: { services: { youtube: true, instagram: true, vimeo: true } } },
+                    inlineCode: { class: window.InlineCode, shortcut: "CMD+SHIFT+M" },
+                    code: { class: window.CodeTool },
+                    delimiter: window.Delimiter,
+                    marker: { class: window.Marker, shortcut: "CMD+SHIFT+M" },
+                },
+                onChange: markDirty,
+            });
+        }
+
+        function applyStatusUi(status) {
+            currentStatus = status || "draft";
+            saveStateEl.textContent = currentStatus === "published" ? "Published" : (currentStatus === "archived" ? "Archived" : "Draft");
+            publishBtn.textContent = currentStatus === "published" ? "Update" : "Publish";
+            unpublishBtn.style.display = currentStatus === "published" ? "inline-block" : "none";
+        }
+
+        // ─── Load existing or start fresh ──────────────────────
+        async function loadArticle() {
+            if (!articleId) {
+                initEditor(null);
+                deleteBtn.style.display = "none";
+                metaInfoEl.textContent = "New article. Unsaved.";
+                return;
+            }
+            try {
+                const { article } = await adminFetch("get", { id: articleId });
+                titleEl.value = article.title || "";
+                subtitleEl.value = article.subtitle || "";
+                heroImageUrl = article.hero_image_url || "";
+                if (heroImageUrl) { heroImgEl.src = heroImageUrl; heroUploadEl.classList.add("has-image"); }
+                settingCategory.value = article.category || "";
+                settingHeroAlt.value = article.hero_alt || "";
+                settingSeoTitle.value = article.seo_title || "";
+                settingSeoDesc.value  = article.seo_description || "";
+                settingExcerpt.value  = article.excerpt || "";
+                settingPubdate.value  = article.published_at ? new Date(article.published_at).toISOString().slice(0, 10) : "";
+
+                initEditor(article.content_json || { blocks: [{ type: "paragraph", data: { text: "" } }] });
+                deleteBtn.style.display = "inline-block";
+                applyStatusUi(article.status);
+
+                metaInfoEl.innerHTML =
+                    '<a href="/journal/' + (article.slug || "") + '" target="_blank" rel="noopener" style="text-decoration:underline">/journal/' + (article.slug || "") + '</a>' +
+                    (article.published_at ? '&nbsp;&middot;&nbsp;<span>Published ' + new Date(article.published_at).toLocaleDateString() + '</span>' : "");
+
+                autoResize(titleEl);
+                autoResize(subtitleEl);
+            } catch (e) {
+                if (e.message === "Unauthorized") return showUnauth();
+                showToast("Failed to load: " + e.message, true);
+            }
+        }
+
+        // ─── Save ──────────────────────────────────────────────
+        async function save({ status, silent } = {}) {
+            if (saving) return;
+            saving = true;
+            if (!silent) saveStateEl.textContent = "Saving...";
+            try {
+                const content_json = await editor.save();
+                const payload = {
+                    id: articleId || undefined,
+                    title: titleEl.value.trim() || "Untitled",
+                    subtitle: subtitleEl.value.trim() || null,
+                    excerpt: settingExcerpt.value.trim() || null,
+                    category: settingCategory.value.trim() || null,
+                    hero_image_url: heroImageUrl || null,
+                    hero_alt: settingHeroAlt.value.trim() || null,
+                    content_json,
+                    seo_title: settingSeoTitle.value.trim() || null,
+                    seo_description: settingSeoDesc.value.trim() || null,
+                    // YYYY-MM-DD (or "" to clear). Noon UTC avoids a timezone day-shift.
+                    published_at: settingPubdate.value ? settingPubdate.value + "T12:00:00Z" : "",
+                };
+                if (status) payload.status = status;
+
+                const { article } = await adminFetch("save", payload);
+                pendingDirty = false;
+                applyStatusUi(article.status);
+                if (article.status !== "published" && !status) saveStateEl.textContent = "Draft saved";
+
+                if (!articleId && article.id) {
+                    const newUrl = "/admin-journal?id=" + encodeURIComponent(article.id);
+                    window.location.href = newUrl;
+                    return;
+                }
+                if (!silent) showToast(status === "published" ? "Published" : "Saved");
+            } catch (e) {
+                if (e.message === "Unauthorized") return showUnauth();
+                saveStateEl.textContent = "Save failed";
+                showToast("Save failed: " + e.message, true);
+            } finally {
+                saving = false;
+            }
+        }
+
+        saveDraftBtn.addEventListener("click", () => save({ status: currentStatus === "published" ? undefined : "draft" }));
+        unpublishBtn.addEventListener("click", () => {
+            if (!confirm("Take this article off the site? It stays saved as a draft.")) return;
+            save({ status: "draft" });
+        });
+        publishBtn.addEventListener("click", async () => {
+            if (!titleEl.value.trim()) { showToast("Title required to publish", true); titleEl.focus(); return; }
+            await updateSeoCheck();
+            if (seoIssues.length) {
+                const go = confirm("SEO check has open items:\n\n✗ " + seoIssues.join("\n✗ ") + "\n\nPublish anyway?");
+                if (!go) { showToast("Not published. Still a draft.", true); return; }
+            }
+            save({ status: "published" });
+        });
+
+        // ─── Delete ────────────────────────────────────────────
+        deleteBtn.addEventListener("click", async () => {
+            if (!articleId) return;
+            if (!confirm("Delete this article? This cannot be undone.")) return;
+            try {
+                await adminFetch("delete", { id: articleId });
+                pendingDirty = false;
+                window.location.href = "/admin#journal";
+            } catch (e) {
+                if (e.message === "Unauthorized") return showUnauth();
+                showToast("Delete failed: " + e.message, true);
+            }
+        });
+
+        // ─── Live SEO check ────────────────────────────────────
+        const seoListEl = document.getElementById("seo-checklist");
+        let seoIssues = [];
+        let seoTimer = null;
+        function scheduleSeoCheck() { clearTimeout(seoTimer); seoTimer = setTimeout(() => { updateSeoCheck(); }, 800); }
+
+        function bindCount(el, countEl, max) {
+            const upd = () => {
+                const n = el.value.trim().length;
+                countEl.textContent = n ? n + "/" + max : "";
+                countEl.classList.toggle("over", n > max);
+            };
+            el.addEventListener("input", upd);
+            bindCount._all = (bindCount._all || []).concat(upd);
+        }
+        bindCount(titleEl, document.getElementById("title-count"), 70);
+        bindCount(settingSeoTitle, document.getElementById("seo-title-count"), 70);
+        bindCount(settingSeoDesc, document.getElementById("seo-desc-count"), 160);
+        function refreshCounts() { (bindCount._all || []).forEach(fn => fn()); }
+
+        async function updateSeoCheck() {
+            if (!seoListEl || !editor) return;
+            let blocks = [];
+            try { blocks = (await editor.save()).blocks || []; } catch (e) { /* editor not ready */ }
+
+            const titleLen = (settingSeoTitle.value.trim() || titleEl.value.trim()).length;
+            const desc = settingSeoDesc.value.trim() || settingExcerpt.value.trim();
+            const words = blocks.map(b => {
+                const d = b.data || {};
+                if (b.type === "paragraph" || b.type === "header" || b.type === "quote") return String(d.text || "").replace(/<[^>]+>/g, "");
+                if (b.type === "list") return (d.items || []).map(it => typeof it === "string" ? it : (it && it.content) || "").join(" ").replace(/<[^>]+>/g, "");
+                return "";
+            }).join(" ").split(/\s+/).filter(Boolean).length;
+            const images = blocks.filter(b => b.type === "image");
+            const missingCaptions = images.filter(b => !(b.data && String(b.data.caption || "").replace(/<[^>]+>/g, "").trim())).length;
+            const hasSubhead = blocks.some(b => b.type === "header");
+
+            const checks = [
+                { ok: titleLen >= 20 && titleLen <= 70, label: "Search title 20 to 70 characters (now " + titleLen + ")" },
+                { ok: desc.length >= 50 && desc.length <= 160, label: "Search description 50 to 160 characters (now " + desc.length + ")" },
+                { ok: !!heroImageUrl, label: "Hero image uploaded" },
+                { ok: !heroImageUrl || !!settingHeroAlt.value.trim(), label: "Hero image alt text written" },
+                { ok: images.length === 0 || missingCaptions === 0, label: images.length === 0 ? "Inline images have captions (alt text)" : (missingCaptions ? missingCaptions + " inline image" + (missingCaptions > 1 ? "s" : "") + " missing a caption (used as alt text)" : "All inline images have captions (alt text)") },
+                { ok: hasSubhead, label: "At least one subheading (H2/H3) in the body" },
+                { ok: words >= 300, label: "300+ words of body copy (now " + words + ")" },
+                { ok: !!settingCategory.value.trim(), label: "Category set" },
+            ];
+            seoIssues = checks.filter(c => !c.ok).map(c => c.label);
+            seoListEl.innerHTML = checks.map(c =>
+                '<li class="' + (c.ok ? "ok" : "bad") + '"><span class="mark">' + (c.ok ? "✓" : "✗") + '</span><span>' + c.label + '</span></li>'
+            ).join("");
+        }
+
+        [settingCategory, settingHeroAlt, settingSeoTitle, settingSeoDesc, settingExcerpt].forEach(el => el.addEventListener("input", markDirty));
+        settingPubdate.addEventListener("change", markDirty);
+
+        window.addEventListener("beforeunload", (e) => { if (pendingDirty) { e.preventDefault(); e.returnValue = ""; } });
+
+        loadArticle().then(() => { refreshCounts(); updateSeoCheck(); });
+    </script>
+</body>
+</html>

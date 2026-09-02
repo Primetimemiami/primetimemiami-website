@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=2" />
-    <title>Inventory Admin | Prime Time Miami</title>
+    <title>Admin | Prime Time Miami</title>
     <meta name="robots" content="noindex, nofollow">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/styles.css?v=31">
@@ -40,6 +40,14 @@
     .ad-check { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); cursor: pointer; margin: 18px 24px 0 0; }
     .ad-check input { appearance: none; width: 14px; height: 14px; border: 1px solid rgba(255,255,255,0.4); background: transparent; cursor: pointer; margin: 0; }
     .ad-check input:checked { background: #fff; }
+    .ad-tabs { display: flex; gap: 0; border-bottom: 1px solid rgba(255,255,255,0.14); margin-bottom: 28px; }
+    .ad-tab { background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px; color: rgba(255,255,255,0.5); font-size: 11px; letter-spacing: 0.18em; font-weight: 600; padding: 12px 18px; cursor: pointer; transition: color 0.2s ease, border-color 0.2s ease; }
+    .ad-tab:hover { color: #fff; }
+    .ad-tab[aria-selected="true"] { color: #fff; border-bottom-color: #fff; }
+    .ad-item .ph { width: 52px; height: 52px; background: #111; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 8px; letter-spacing: 0.12em; color: rgba(255,255,255,0.35); }
+    .ad-item.link { text-decoration: none; color: inherit; transition: background 0.15s ease; }
+    .ad-item.link:hover { background: rgba(255,255,255,0.04); }
+    .ad-tag.on { border-color: #fff; color: #fff; }
     .ad-preview { width: 120px; height: 120px; object-fit: cover; background: #111; border: 1px solid rgba(255,255,255,0.15); margin-top: 10px; display: none; }
     </style>
 </head>
@@ -52,7 +60,13 @@
                 <button class="ad-mini" id="ad-logout" style="display:none;">LOG OUT</button>
             </div>
         </div>
-        <h1 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-6">Inventory Admin</h1>
+        <h1 class="font-space font-bold text-2xl sm:text-3xl tracking-tight mb-6">Admin</h1>
+
+        <!-- TABS (shown after login) -->
+        <div class="ad-tabs hidden" id="ad-tabs">
+            <button class="ad-tab" data-tab="pieces">Inventory</button>
+            <button class="ad-tab" data-tab="journal">Journal</button>
+        </div>
 
         <div class="ad-banner hidden" id="ad-offline">
             TEST MODE — the real backend connects with the Supabase setup at launch.
@@ -67,7 +81,7 @@
             <div class="ad-msg" id="ad-login-msg"></div>
         </div>
 
-        <!-- DASHBOARD -->
+        <!-- DASHBOARD: INVENTORY -->
         <div class="hidden" id="ad-dash">
             <div class="ad-card" id="ad-form-card">
                 <h2 class="font-space font-bold text-lg tracking-tight" id="ad-form-title">Add a piece</h2>
@@ -104,6 +118,17 @@
             <input class="ad-input" id="ad-search" placeholder="Search brand, model, ref, year..." style="margin:6px 0 4px;">
             <div class="ad-msg" id="ad-count" style="margin:6px 0 0;color:rgba(255,255,255,0.4);"></div>
             <div class="ad-list" id="ad-list"></div>
+        </div>
+
+        <!-- DASHBOARD: JOURNAL -->
+        <div class="hidden" id="ad-journal">
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px;">
+                <a href="/admin-journal" class="brutal-btn brutal-btn--solid px-6 py-3 font-space font-bold tracking-widest text-xs" style="text-decoration:none;">New Article</a>
+                <a href="/journal" target="_blank" rel="noopener" class="ad-mini" style="text-decoration:none;display:inline-flex;align-items:center;">VIEW JOURNAL</a>
+            </div>
+            <div class="ad-msg" id="aj-count" style="margin:6px 0 0;color:rgba(255,255,255,0.4);"></div>
+            <div class="ad-list" id="aj-list"></div>
+            <div class="ad-msg" id="aj-msg"></div>
         </div>
     </div>
 
@@ -179,9 +204,43 @@
 
         function showDash() {
             $('ad-login').classList.add('hidden');
-            $('ad-dash').classList.remove('hidden');
             $('ad-logout').style.display = '';
-            loadList();
+            $('ad-tabs').classList.remove('hidden');
+            setTab(location.hash === '#journal' ? 'journal' : 'pieces');
+        }
+        function setTab(name) {
+            document.querySelectorAll('.ad-tab').forEach(function (b) { b.setAttribute('aria-selected', b.getAttribute('data-tab') === name ? 'true' : 'false'); });
+            $('ad-dash').classList.toggle('hidden', name !== 'pieces');
+            $('ad-journal').classList.toggle('hidden', name !== 'journal');
+            if (name === 'journal') { history.replaceState(null, '', '#journal'); loadJournal(); }
+            else { history.replaceState(null, '', location.pathname); loadList(); }
+        }
+        document.querySelectorAll('.ad-tab').forEach(function (b) { b.addEventListener('click', function () { setTab(b.getAttribute('data-tab')); }); });
+        window.addEventListener('hashchange', function () { if (!$('ad-tabs').classList.contains('hidden')) setTab(location.hash === '#journal' ? 'journal' : 'pieces'); });
+
+        /* ── JOURNAL ── */
+        function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+        function loadJournal() {
+            if (demo) { $('aj-list').innerHTML = '<div class="ad-item"><div class="sub">Journal needs the live backend (Supabase). Not available in test mode.</div></div>'; return; }
+            $('aj-msg').textContent = '';
+            fetch('/api/journal-admin', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'list-all', token: token }) })
+                .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, data: j }; }); })
+                .then(function (r) {
+                    if (r.status === 401) { localStorage.removeItem('pt_admin_token'); location.reload(); return; }
+                    if (!r.ok) { msg('aj-msg', r.data.error || 'Could not load the journal. Has the journal_articles table been created in Supabase?', false); $('aj-list').innerHTML = ''; return; }
+                    var arts = r.data.articles || [];
+                    $('aj-count').textContent = arts.length + ' ARTICLE' + (arts.length === 1 ? '' : 'S');
+                    $('aj-list').innerHTML = arts.map(function (a) {
+                        var when = a.published_at || a.updated_at || a.created_at;
+                        return '<a class="ad-item link" href="/admin-journal?id=' + encodeURIComponent(a.id) + '">' +
+                            (a.hero_image_url ? '<img src="' + esc(a.hero_image_url) + '" alt="" loading="lazy">' : '<div class="ph">NO IMG</div>') +
+                            '<div><div class="nm">' + esc(a.title || 'Untitled') + '</div>' +
+                            '<div class="sub">' + esc([a.category, when ? new Date(when).toLocaleDateString() : '', (a.view_count != null ? a.view_count + ' views' : '')].filter(Boolean).join(' · ')) + '</div></div>' +
+                            '<span class="ad-tag' + (a.status === 'published' ? ' on' : '') + '" style="margin-left:auto;">' + esc((a.status || 'draft').toUpperCase()) + '</span>' +
+                        '</a>';
+                    }).join('') || '<div class="ad-item"><div class="sub">No articles yet. Hit New Article to write the first one.</div></div>';
+                })
+                .catch(function () { msg('aj-msg', 'Could not reach the journal API.', false); });
         }
 
         $('ad-login-btn').addEventListener('click', function () {

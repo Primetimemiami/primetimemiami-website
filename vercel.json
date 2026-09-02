@@ -8,5 +8,15 @@
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/journal/:slug",
+      "destination": "/api/journal-render?slug=:slug"
+    },
+    {
+      "source": "/journal/:slug/",
+      "destination": "/api/journal-render?slug=:slug"
+    }
+  ]
 }

@@ -58,3 +58,19 @@ the real database automatically.
 - Instagram live feed: connect his IG (Business account) to a free Meta developer app,
   drop INSTAGRAM_ACCESS_TOKEN into Vercel. The strip works fine without it (baked posts).
 - Analytics: enable Vercel Analytics (one click in the dashboard).
+
+## 8. Journal (added 2026-09-02)
+The site now has a journal at `/journal` (empty until the first article) and a
+Journal tab in `/admin` with a full editor. It needs one table + one storage
+bucket in Supabase before it works:
+
+- [H] Supabase → project **primetime** (ref `aeutowqtsqjqogpjjjqc`) → SQL Editor → New query.
+- [H] Paste the whole **JOURNAL** section from `supabase/schema.sql` (everything
+  from `-- JOURNAL (added 2026-09-02)` to the end of the file) and click Run.
+  Expected result: "Success. No rows returned."
+- No new env vars. It reuses SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY and ADMIN_SECRET.
+- Test: log in at `/admin`, click the Journal tab, New Article, type a title,
+  upload a hero, Publish. It should show on `/journal` within a minute and open
+  at `/journal/<slug>`.
+- Not built yet (on purpose): email subscribers + "email this article" broadcast.
+  Say the word and it gets added; it needs a subscribers table + Resend templates.
