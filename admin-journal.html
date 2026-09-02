@@ -31,7 +31,8 @@
             --red: #f87171;
         }
         html, body { background: #000 !important; }
-        body { color: var(--l1) !important; }
+        /* the global sheet fades body in via premium-ui.js, which this page does not load */
+        body { color: var(--l1) !important; opacity: 1 !important; transition: none !important; }
         ::selection { background: #fff; color: #000; }
 
         /* toolbar */
