@@ -244,8 +244,9 @@ module.exports = async (req, res) => {
             headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` },
         });
         if (!r.ok) {
+            // Table missing (pre-launch) or a Supabase hiccup: serve the 404 page, never a 500.
             console.error("[journal-render] Supabase error:", r.status);
-            return res.status(500).send(notFoundHtml());
+            return res.status(404).send(notFoundHtml());
         }
         const rows = await r.json();
         if (!rows || rows.length === 0) return res.status(404).send(notFoundHtml());
