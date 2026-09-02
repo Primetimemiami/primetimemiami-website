@@ -1012,3 +1012,6 @@ body { text-transform: none !important; }
   .pt-strip { bottom: 32px; }
   .pt-strip__shot { width: clamp(48px, 7vw, 92px); }
 }
+
+/* modal consent checkbox */
+.pt-check{appearance:none;-webkit-appearance:none;width:14px;height:14px;border:1px solid rgba(255,255,255,.4);background:transparent;cursor:pointer;margin:0;flex-shrink:0}.pt-check:checked{background:#fff}
