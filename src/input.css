@@ -1018,3 +1018,17 @@ body { text-transform: none !important; }
 
 /* modal panel never exceeds viewport; body scrolls inside */
 #modal-body{max-height:calc(100dvh - 32px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}@supports not (height:100dvh){#modal-body{max-height:calc(100vh - 32px)}}
+
+/* compact two-column request form on desktop so it fits without scrolling */
+#modal-body form > div > label { margin-bottom: 4px !important; }
+#modal-body input:not([type="checkbox"]), #modal-body select, #modal-body textarea { padding: 8px 2px !important; font-size: 15px; }
+#modal-body textarea { min-height: 0; }
+#modal-body #form-view > p { margin-bottom: 18px !important; }
+#modal-body form.space-y-4 > :not(:last-child) { margin-block-end: 12px; }
+@media (min-width: 640px) {
+  #modal-body #form-view { padding: 28px 32px !important; }
+  #modal-body form { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; row-gap: 14px; }
+  #modal-body form > * { margin: 0 !important; }
+  #modal-body form > label, #modal-body form > div:has(> textarea), #modal-body form > button { grid-column: 1 / -1; }
+  #modal-body form > button { margin-top: 6px !important; }
+}
