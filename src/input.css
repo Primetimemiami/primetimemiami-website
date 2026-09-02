@@ -1032,3 +1032,7 @@ body { text-transform: none !important; }
   #modal-body form > label, #modal-body form > div:has(> textarea), #modal-body form > button { grid-column: 1 / -1; }
   #modal-body form > button { margin-top: 6px !important; }
 }
+
+/* mobile hero: bigger strip thumbnails to fill the gap under the buttons */
+@media (max-width: 640px) { .pt-strip { bottom: 40px; gap: 10px; } .pt-strip__shot { width: 25vw; } }
+@media (max-width: 640px) and (max-height: 700px) { .pt-strip { bottom: 28px; } .pt-strip__shot { width: 20vw; } }
