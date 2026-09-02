@@ -28,3 +28,20 @@ on conflict (id) do nothing;
 
 create policy "public read piece photos" on storage.objects
 for select using (bucket_id = 'pieces');
+
+-- Inquiry submissions from the site forms (buy / sell / trade / watch detail).
+-- Written only by the service role inside api/submit-form.js. No public access.
+create table if not exists pt_submissions (
+    id              uuid primary key default gen_random_uuid(),
+    submission_type text not null,
+    email           text not null,
+    full_name       text,
+    watch_details   text,
+    watch_name      text,
+    watch_ref       text,
+    status          text not null default 'new',
+    created_at      timestamptz not null default now()
+);
+
+alter table pt_submissions enable row level security;
+-- intentionally no policies: anon/authenticated get nothing, service role bypasses RLS
