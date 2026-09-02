@@ -279,8 +279,11 @@ module.exports = async (req, res) => {
         );
       }
 
+      // Client-facing emails are OFF for now (Henry, 2026-09-02). Flip to true to re-enable.
+      const SEND_CLIENT_EMAILS = false;
+
       // 2. Welcome email to subscriber (JOIN_LIST only)
-      if (type === "JOIN_LIST") {
+      if (SEND_CLIENT_EMAILS && type === "JOIN_LIST") {
         const firstName = data.full_name ? data.full_name.split(" ")[0] : null;
         console.log("[submit-form] Queuing welcome email to:", data.email);
 
@@ -303,7 +306,7 @@ module.exports = async (req, res) => {
       }
 
       // 3. Inquiry confirmation email to user (WATCH_DETAIL or BUY)
-      if (type === "WATCH_DETAIL" || type === "BUY") {
+      if (SEND_CLIENT_EMAILS && (type === "WATCH_DETAIL" || type === "BUY")) {
         const firstName = data.full_name ? data.full_name.split(" ")[0] : null;
         console.log("[submit-form] Queuing inquiry confirmation to:", data.email);
 
