@@ -1044,3 +1044,6 @@ body { text-transform: none !important; }
   .pt-strip { position: static; margin-top: auto; margin-bottom: auto; padding: 0 16px; }
   .pt-strip__shot { width: 28vw; }
 }
+
+/* modals must sit above the floating menu button (z 70) and WhatsApp bubble (z 60) */
+#modal-overlay, #success-overlay { z-index: 90 !important; }
